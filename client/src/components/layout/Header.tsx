@@ -1,7 +1,10 @@
-import { Search, MapPin, Phone, User, Menu } from "lucide-react";
+import { Search, MapPin, Phone, User, Menu, Truck, Target, Cloud } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 export default function Header() {
+  const [showServices, setShowServices] = useState(false);
+
   return (
     <header className="w-full flex flex-col relative z-50">
       {/* Top utility bar - gray background - Full width wrapper */}
@@ -19,19 +22,19 @@ export default function Header() {
             <div className="flex items-center space-x-6">
               <a href="#" className="flex items-center hover:text-[#e31818] transition-colors" data-testid="link-locations">
                 <MapPin className="w-4 h-4 mr-1.5" strokeWidth={2.5} />
-                Locations
+                Locais
               </a>
               <a href="#" className="flex items-center hover:text-[#e31818] transition-colors" data-testid="link-search">
                 <Search className="w-4 h-4 mr-1.5" strokeWidth={2.5} />
-                Search
+                Pesquisar
               </a>
               <a href="#" className="flex items-center hover:text-[#e31818] transition-colors" data-testid="link-contact">
                 <Phone className="w-4 h-4 mr-1.5" strokeWidth={2.5} />
-                Contact
+                Contato
               </a>
               <a href="#" className="flex items-center hover:text-[#e31818] transition-colors" data-testid="link-login">
                 <User className="w-4 h-4 mr-1.5" strokeWidth={2.5} />
-                Login
+                Entrar
               </a>
             </div>
           </div>
@@ -43,12 +46,44 @@ export default function Header() {
         <div className="container mx-auto px-4 h-full">
           <div className="flex items-center h-full">
             {/* Desktop Navigation - Pushed to the right with margin to clear the logo */}
-            <nav className="hidden lg:flex items-center ml-auto space-x-8 text-[15px] font-extrabold text-[#333333]">
-              <a href="#" className="hover:text-[#e31818] transition-colors uppercase tracking-wider" data-testid="nav-services">Services</a>
-              <a href="#" className="hover:text-[#e31818] transition-colors uppercase tracking-wider" data-testid="nav-global">Global accounts</a>
-              <a href="#" className="hover:text-[#e31818] transition-colors uppercase tracking-wider" data-testid="nav-sectors">Business sectors</a>
-              <a href="#" className="hover:text-[#e31818] transition-colors uppercase tracking-wider" data-testid="nav-about">About</a>
-              <a href="#" className="hover:text-[#e31818] transition-colors uppercase tracking-wider" data-testid="nav-blog">Blog</a>
+            <nav className="hidden lg:flex items-center ml-auto h-full text-[15px] font-extrabold text-[#333333]">
+              <div 
+                className="relative h-full flex items-center group cursor-pointer px-4"
+                onMouseEnter={() => setShowServices(true)}
+                onMouseLeave={() => setShowServices(false)}
+              >
+                <span className={`transition-colors uppercase tracking-wider ${showServices ? 'text-[#333333]' : 'hover:text-[#e31818]'}`} data-testid="nav-services">Serviços</span>
+                {showServices && (
+                  <div className="absolute bottom-0 left-0 w-full h-1 bg-[#e31818]" />
+                )}
+                
+                {/* Mega Menu Overlay */}
+                {showServices && (
+                  <div className="fixed top-[111.5px] left-0 w-full bg-[#f2f2f2] shadow-xl border-t border-gray-200 py-0 z-40">
+                    <div className="container mx-auto px-4 flex">
+                      <div className="w-[220px] shrink-0" /> {/* Spacer for logo alignment */}
+                      <div className="flex bg-white border-x border-gray-200 min-h-[160px]">
+                        <a href="#" className="flex flex-col items-center justify-center p-8 w-[180px] hover:bg-gray-50 transition-colors border-r border-gray-100 text-center">
+                          <Truck className="w-12 h-12 text-[#666666] mb-4" strokeWidth={1.5} />
+                          <span className="text-[14px] font-bold text-[#333333]">Todos os serviços</span>
+                        </a>
+                        <a href="#" className="flex flex-col items-center justify-center p-8 w-[180px] hover:bg-gray-50 transition-colors border-r border-gray-100 text-center">
+                          <Target className="w-12 h-12 text-[#666666] mb-4" strokeWidth={1.5} />
+                          <span className="text-[14px] font-bold text-[#333333]">Controle de pragas</span>
+                        </a>
+                        <a href="#" className="flex flex-col items-center justify-center p-8 w-[180px] hover:bg-gray-50 transition-colors text-center">
+                          <Cloud className="w-12 h-12 text-[#666666] mb-4" strokeWidth={1.5} />
+                          <span className="text-[14px] font-bold text-[#333333]">Controle digital de pragas</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+              <a href="#" className="px-4 hover:text-[#e31818] transition-colors uppercase tracking-wider" data-testid="nav-global">Contas globais</a>
+              <a href="#" className="px-4 hover:text-[#e31818] transition-colors uppercase tracking-wider" data-testid="nav-sectors">Setores empresariais</a>
+              <a href="#" className="px-4 hover:text-[#e31818] transition-colors uppercase tracking-wider" data-testid="nav-about">Sobre</a>
+              <a href="#" className="px-4 hover:text-[#e31818] transition-colors uppercase tracking-wider" data-testid="nav-blog">Blog</a>
             </nav>
 
             {/* Mobile Menu Button */}
