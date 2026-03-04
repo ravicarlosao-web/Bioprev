@@ -7,9 +7,9 @@ export default function Header() {
       {/* Top utility bar - gray background - Full width wrapper */}
       <div className="w-full bg-[#f2f2f2] border-b border-gray-200">
         <div className="container mx-auto px-4 relative">
-          {/* Logo - Red Background Block - Positioned to overlap both bars */}
+          {/* Logo - Red Background Block - Positioned to overlap both bars and touch Hero */}
           <div 
-            className="absolute top-0 left-4 bg-[#e31818] flex items-center justify-center px-8 z-50 w-[220px] h-[100px] shadow-md"
+            className="absolute top-0 left-4 bg-[#e31818] flex items-center justify-center px-8 z-50 w-[220px] h-[135px] shadow-md"
             data-testid="text-logo-container"
           >
             <span className="text-white font-bold text-3xl tracking-tight" data-testid="text-logo">Rentokil</span>
