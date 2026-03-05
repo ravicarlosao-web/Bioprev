@@ -1,10 +1,25 @@
 import { Search, MapPin, Phone, User, Menu, Truck, Target, Cloud, Globe, Info, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Header() {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
+  const [showSticky, setShowSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Show sticky header after scrolling past hero (approx 400px + some buffer)
+      if (window.scrollY > 450) {
+        setShowSticky(true);
+      } else {
+        setShowSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const menuItems = [
     {
@@ -59,6 +74,31 @@ export default function Header() {
 
   return (
     <header className="w-full flex flex-col relative z-50">
+      {/* Sticky Header - Image 1 Style */}
+      <AnimatePresence>
+        {showSticky && (
+          <motion.div 
+            initial={{ y: -100 }}
+            animate={{ y: 0 }}
+            exit={{ y: -100 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="fixed top-0 left-0 w-full bg-[#001d3d] z-[100] h-[60px] flex items-center shadow-lg"
+          >
+            <div className="container mx-auto px-4 flex items-center justify-between">
+              <div className="flex items-center space-x-8">
+                <span className="text-white font-bold text-xl tracking-tight">0808 273 1010</span>
+                <button className="bg-[#0077c0] text-white px-6 py-2 font-bold text-sm h-[60px] flex items-center">
+                  Get in touch
+                </button>
+                <a href="#" className="text-white font-bold text-sm hover:underline">
+                  Request a call back
+                </a>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* Top utility bar - gray background - Full width wrapper */}
       <div className="w-full bg-[#f2f2f2] border-b border-gray-200">
         <div className="container mx-auto px-4 relative">
