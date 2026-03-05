@@ -31,7 +31,7 @@ export default function Expertise() {
       </div>
 
       <div className="container mx-auto px-4 max-w-7xl">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {cards.map((card, index) => (
             <div 
               key={index} 
@@ -49,6 +49,15 @@ export default function Expertise() {
               </p>
             </div>
           ))}
+        </div>
+
+        <div className="flex justify-center">
+          <button 
+            className="bg-[#007cc3] text-white font-bold py-4 px-10 text-xl hover:bg-[#005a8f] transition-colors"
+            data-testid="button-contact-us"
+          >
+            Ready to simplify your pest management? Contact us today.
+          </button>
         </div>
       </div>
     </section>

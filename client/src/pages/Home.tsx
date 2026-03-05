@@ -3,6 +3,7 @@ import Hero from "@/components/home/Hero";
 import Services from "@/components/home/Services";
 import Reviews from "@/components/home/Reviews";
 import Expertise from "@/components/home/Expertise";
+import Sectors from "@/components/home/Sectors";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Services />
         <Reviews />
         <Expertise />
+        <Sectors />
       </main>
       
       {/* Simple Footer just to complete the page structure */}
