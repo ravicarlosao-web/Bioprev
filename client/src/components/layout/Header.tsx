@@ -60,8 +60,7 @@ export default function Header() {
                 {/* Mega Menu Overlay */}
                 {showServices && (
                   <div className="fixed top-[111.5px] left-0 w-full bg-[#f2f2f2] shadow-xl border-t border-gray-200 py-0 z-40">
-                    <div className="container mx-auto px-4 flex">
-                      <div className="w-[155px] shrink-0 lg:block hidden" /> {/* Adjust based on logo position */}
+                    <div className="container mx-auto px-4 flex justify-center">
                       <div className="flex bg-white border-x border-gray-200 min-h-[160px]">
                         <a href="#" className="flex flex-col items-center justify-center p-6 w-[140px] hover:bg-gray-50 transition-colors border-r border-gray-100 text-center group/item">
                           <Truck className="w-12 h-12 text-[#333333] mb-3 transition-transform group-hover/item:scale-105" strokeWidth={0.75} />
