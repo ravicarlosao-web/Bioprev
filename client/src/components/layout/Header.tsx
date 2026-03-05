@@ -84,10 +84,10 @@ export default function Header() {
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="fixed top-0 left-0 w-full bg-[#001d3d] z-[100] h-[60px] flex items-center shadow-lg"
           >
-            <div className="container mx-auto px-4 flex items-center justify-between">
-              <div className="flex items-center space-x-8">
+            <div className="container mx-auto px-4 flex items-center justify-center">
+              <div className="flex items-center space-x-12">
                 <span className="text-white font-bold text-xl tracking-tight">0808 273 1010</span>
-                <button className="bg-[#0077c0] text-white px-6 py-2 font-bold text-sm h-[60px] flex items-center">
+                <button className="bg-[#0077c0] text-white px-8 py-2 font-bold text-sm h-[60px] flex items-center transition-colors hover:bg-[#005fa3]">
                   Get in touch
                 </button>
                 <a href="#" className="text-white font-bold text-sm hover:underline">
