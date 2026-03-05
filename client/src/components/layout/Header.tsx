@@ -60,19 +60,20 @@ export default function Header() {
                 {/* Mega Menu Overlay */}
                 {showServices && (
                   <div className="fixed top-[111.5px] left-0 w-full bg-[#f2f2f2] shadow-xl border-t border-gray-200 py-0 z-40">
-                    <div className="container mx-auto px-4 flex justify-center">
-                      <div className="flex bg-white border-x border-gray-200 min-h-[200px]">
-                        <a href="#" className="flex flex-col items-center justify-center p-8 w-[220px] hover:bg-gray-50 transition-colors border-r border-gray-100 text-center group/item">
-                          <Truck className="w-10 h-10 text-[#333333] mb-6 transition-transform group-hover/item:scale-110" strokeWidth={1} />
-                          <span className="text-[14px] font-medium text-[#333333] leading-tight">Todos os<br/>serviços</span>
+                    <div className="container mx-auto px-4 flex">
+                      <div className="w-[155px] shrink-0 lg:block hidden" /> {/* Adjust based on logo position */}
+                      <div className="flex bg-white border-x border-gray-200 min-h-[160px]">
+                        <a href="#" className="flex flex-col items-center justify-center p-6 w-[140px] hover:bg-gray-50 transition-colors border-r border-gray-100 text-center group/item">
+                          <Truck className="w-12 h-12 text-[#333333] mb-3 transition-transform group-hover/item:scale-105" strokeWidth={0.75} />
+                          <span className="text-[13px] font-normal text-[#333333] leading-tight">Todos os<br/>serviços</span>
                         </a>
-                        <a href="#" className="flex flex-col items-center justify-center p-8 w-[220px] hover:bg-gray-50 transition-colors border-r border-gray-100 text-center group/item">
-                          <Target className="w-10 h-10 text-[#333333] mb-6 transition-transform group-hover/item:scale-110" strokeWidth={1} />
-                          <span className="text-[14px] font-medium text-[#333333] leading-tight">Controle de<br/>pragas</span>
+                        <a href="#" className="flex flex-col items-center justify-center p-6 w-[140px] hover:bg-gray-50 transition-colors border-r border-gray-100 text-center group/item">
+                          <Target className="w-12 h-12 text-[#333333] mb-3 transition-transform group-hover/item:scale-105" strokeWidth={0.75} />
+                          <span className="text-[13px] font-normal text-[#333333] leading-tight">Controle de<br/>pragas</span>
                         </a>
-                        <a href="#" className="flex flex-col items-center justify-center p-8 w-[220px] hover:bg-gray-50 transition-colors text-center group/item">
-                          <Cloud className="w-10 h-10 text-[#333333] mb-6 transition-transform group-hover/item:scale-110" strokeWidth={1} />
-                          <span className="text-[14px] font-medium text-[#333333] leading-tight">Controle digital<br/>de pragas</span>
+                        <a href="#" className="flex flex-col items-center justify-center p-6 w-[140px] hover:bg-gray-50 transition-colors text-center group/item">
+                          <Cloud className="w-12 h-12 text-[#333333] mb-3 transition-transform group-hover/item:scale-105" strokeWidth={0.75} />
+                          <span className="text-[13px] font-normal text-[#333333] leading-tight">Controle digital<br/>de pragas</span>
                         </a>
                       </div>
                     </div>
