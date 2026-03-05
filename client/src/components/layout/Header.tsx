@@ -106,7 +106,7 @@ export default function Header() {
                   onMouseLeave={() => setActiveMenu(null)}
                 >
                   <span 
-                    className={`transition-colors uppercase tracking-wider ${activeMenu === item.id ? 'text-[#333333]' : 'hover:text-[#e31818]'}`} 
+                    className={`transition-colors tracking-wider ${activeMenu === item.id ? 'text-[#333333]' : 'hover:text-[#e31818]'}`} 
                     data-testid={item.testId}
                   >
                     {item.label}
