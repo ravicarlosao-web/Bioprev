@@ -1,6 +1,7 @@
 import { Search, MapPin, Phone, User, Menu, Truck, Target, Cloud, Globe, Info, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Header() {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
@@ -111,31 +112,46 @@ export default function Header() {
                   >
                     {item.label}
                   </span>
-                  {activeMenu === item.id && (
-                    <>
-                      <div className="absolute bottom-0 left-0 w-full h-1 bg-[#e31818]" />
-                      
-                      {/* Mega Menu Overlay */}
-                      <div className="fixed top-[111.5px] left-0 w-full bg-[#f2f2f2] shadow-xl border-t border-gray-200 py-0 z-40">
-                        <div className="container mx-auto px-4 flex justify-center">
-                          <div className="flex bg-white border-x border-gray-200 min-h-[160px]">
-                            {item.content.map((subItem, idx) => (
-                              <a 
-                                key={idx}
-                                href="#" 
-                                className={`flex flex-col items-center justify-center p-6 w-[140px] hover:bg-gray-50 transition-colors ${idx !== item.content.length - 1 ? 'border-r border-gray-100' : ''} text-center group/item`}
-                              >
-                                <subItem.icon className="w-12 h-12 text-[#333333] mb-3 transition-transform group-hover/item:scale-105" strokeWidth={0.75} />
-                                <span className="text-[13px] font-normal text-[#333333] whitespace-pre-line leading-tight">
-                                  {subItem.text}
-                                </span>
-                              </a>
-                            ))}
+                  
+                  <AnimatePresence>
+                    {activeMenu === item.id && (
+                      <>
+                        <motion.div 
+                          initial={{ scaleX: 0 }}
+                          animate={{ scaleX: 1 }}
+                          exit={{ scaleX: 0 }}
+                          transition={{ duration: 0.2, ease: "easeOut" }}
+                          className="absolute bottom-0 left-0 w-full h-1 bg-[#e31818] origin-center" 
+                        />
+                        
+                        {/* Mega Menu Overlay */}
+                        <motion.div 
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: 10 }}
+                          transition={{ duration: 0.2, ease: "easeOut" }}
+                          className="fixed top-[111.5px] left-0 w-full bg-[#f2f2f2] shadow-xl border-t border-gray-200 py-0 z-40"
+                        >
+                          <div className="container mx-auto px-4 flex justify-center">
+                            <div className="flex bg-white border-x border-gray-200 min-h-[160px]">
+                              {item.content.map((subItem, idx) => (
+                                <a 
+                                  key={idx}
+                                  href="#" 
+                                  className={`flex flex-col items-center justify-center p-6 w-[140px] hover:bg-gray-50 transition-colors ${idx !== item.content.length - 1 ? 'border-r border-gray-100' : ''} text-center group/item`}
+                                >
+                                  <subItem.icon className="w-12 h-12 text-[#333333] mb-3 transition-transform group-hover/item:scale-105" strokeWidth={0.75} />
+                                  <span className="text-[13px] font-normal text-[#333333] whitespace-pre-line leading-tight">
+                                    {subItem.text}
+                                  </span>
+                                </a>
+                              ))}
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                    </>
-                  )}
+                        </motion.div>
+                      </>
+                    )}
+                  </AnimatePresence>
                 </div>
               ))}
             </nav>
