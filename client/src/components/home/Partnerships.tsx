@@ -54,6 +54,57 @@ export default function Partnerships() {
             </p>
           </div>
         </div>
+
+        {/* New Sections from Images */}
+        <div className="mt-24 grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Responsible Pest Control Card */}
+          <div className="bg-white border-t-4 border-[#e31837] shadow-lg p-8 flex flex-col h-full">
+            <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">
+              Responsible pest control
+            </h3>
+            <p className="text-[#666666] leading-relaxed text-[16px] mb-8 flex-grow">
+              We're committed to reducing the environmental impact of the products and services you rely on to protect your business from pests. Learn how we're driving improvements across our solutions, operations, and workplaces.
+            </p>
+            <button 
+              className="w-fit px-6 py-2 border border-[#007cc3] text-[#007cc3] font-medium hover:bg-[#007cc3] hover:text-white transition-colors duration-300"
+              data-testid="button-find-out-more"
+            >
+              Find out more
+            </button>
+          </div>
+
+          {/* Local Experts Card */}
+          <div className="bg-white border-t-4 border-[#e31837] shadow-lg p-8 flex flex-col h-full">
+            <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">
+              Your local pest control experts
+            </h3>
+            <p className="text-[#666666] leading-relaxed text-[16px] mb-8 flex-grow">
+              Operating in over 90 countries worldwide, Rentokil can help fulfil your commercial and residential pest control requirements. Find out more about the services, solutions and pricing in your country.
+            </p>
+            <button 
+              className="w-fit px-6 py-2 border border-[#007cc3] text-[#007cc3] font-medium hover:bg-[#007cc3] hover:text-white transition-colors duration-300"
+              data-testid="button-choose-country"
+            >
+              Choose your country
+            </button>
+          </div>
+        </div>
+
+        {/* CCPA Notice Section */}
+        <div className="mt-24 text-center border-t border-gray-100 pt-16 pb-8">
+          <h2 className="text-2xl md:text-[32px] font-medium text-[#333333] mb-8">
+            CCPA notice for US customers
+          </h2>
+          <p className="text-[#666666] max-w-3xl mx-auto leading-relaxed text-[16px] mb-8">
+            Your privacy is important to us. In rare circumstances, we may share your information with trusted partners to improve your service which may be deemed as a "sale" as defined in the CCPA. You can opt out here:
+          </p>
+          <button 
+            className="text-[#007cc3] font-medium hover:underline text-[16px]"
+            data-testid="button-ccpa-opt-out"
+          >
+            Do not sell my information
+          </button>
+        </div>
       </div>
     </section>
   );
