@@ -1,6 +1,7 @@
 import Header from "@/components/layout/Header";
 import Hero from "@/components/home/Hero";
 import Services from "@/components/home/Services";
+import Reviews from "@/components/home/Reviews";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <main className="flex-grow">
         <Hero />
         <Services />
+        <Reviews />
       </main>
       
       {/* Simple Footer just to complete the page structure */}
