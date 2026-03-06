@@ -29,7 +29,7 @@ export default function Header() {
       label: 'Serviços',
       testId: 'nav-services',
       content: [
-        { icon: ShieldCheck, text: 'Serviços de\ndesinfestação' },
+        { icon: ShieldCheck, text: 'Serviços de\ndesinfestação', href: '/services/disinfestation' },
         { icon: Bug, text: 'Gorgulhos e\ntraças' },
         { icon: Wind, text: 'Serviços de\nLimpeza' },
         { icon: Trash2, text: 'Recolha de\nResíduos' },
@@ -182,7 +182,7 @@ export default function Header() {
                               {item.content.map((subItem, idx) => (
                                 <Link 
                                   key={idx}
-                                  href={subItem.text.includes('Todos') ? '/services' : '#'} 
+                                  href={subItem.href || (subItem.text.includes('Todos') ? '/services' : '#')} 
                                   className={`flex flex-col items-center justify-center p-6 w-[140px] hover:bg-gray-50 transition-colors ${idx !== item.content.length - 1 ? 'border-r border-gray-100' : ''} text-center group/item`}
                                 >
                                   <subItem.icon className="w-12 h-12 text-[#333333] mb-3 transition-transform group-hover/item:scale-105" strokeWidth={0.75} />
