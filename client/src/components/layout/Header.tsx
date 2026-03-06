@@ -2,10 +2,12 @@ import { Search, MapPin, Phone, User, Menu, Truck, Target, Cloud, Globe, Info, B
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link, useLocation } from "wouter";
 
 export default function Header() {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const [showSticky, setShowSticky] = useState(false);
+  const [location] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -175,16 +177,16 @@ export default function Header() {
                           <div className="container mx-auto px-4 flex justify-center">
                             <div className="flex bg-white border-x border-gray-200 min-h-[160px]">
                               {item.content.map((subItem, idx) => (
-                                <a 
+                                <Link 
                                   key={idx}
-                                  href="#" 
+                                  href={subItem.text.includes('Todos') ? '/services' : '#'} 
                                   className={`flex flex-col items-center justify-center p-6 w-[140px] hover:bg-gray-50 transition-colors ${idx !== item.content.length - 1 ? 'border-r border-gray-100' : ''} text-center group/item`}
                                 >
                                   <subItem.icon className="w-12 h-12 text-[#333333] mb-3 transition-transform group-hover/item:scale-105" strokeWidth={0.75} />
                                   <span className="text-[13px] font-normal text-[#333333] whitespace-pre-line leading-tight">
                                     {subItem.text}
                                   </span>
-                                </a>
+                                </Link>
                               ))}
                             </div>
                           </div>
