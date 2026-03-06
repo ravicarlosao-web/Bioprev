@@ -176,9 +176,9 @@ export default function Disinfestation() {
               {disinfectionStages.map((step, idx) => (
                 <Accordion type="single" collapsible key={idx} className="w-full">
                   <AccordionItem value={`item-${idx}`} className="border-none">
-                    <AccordionTrigger className="bg-[#d0dae1] px-8 py-5 hover:bg-[#c4cfd7] transition-colors hover:no-underline rounded-none group flex justify-between items-center">
+                    <AccordionTrigger className="bg-[#d0dae1] px-8 py-5 hover:bg-[#c4cfd7] transition-colors hover:no-underline rounded-none group flex justify-between items-center [&[data-state=open]>svg]:rotate-45">
                       <span className="text-[18px] font-medium text-[#333333] text-left">{step}</span>
-                      <Plus className="w-6 h-6 text-[#333333] shrink-0 transition-transform duration-200 group-data-[state=open]:rotate-45" />
+                      <Plus className="w-6 h-6 text-[#333333] shrink-0 transition-transform duration-200" />
                     </AccordionTrigger>
                     <AccordionContent className="bg-white px-8 py-6 text-left text-[#666666] leading-relaxed border-x border-b border-[#d0dae1]">
                       Detailed information about {step} would go here, explaining the specific protocols and safety measures taken during this phase of the disinfection service.
