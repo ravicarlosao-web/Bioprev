@@ -7,6 +7,11 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import AllServices from "@/pages/services/AllServices";
 import Disinfestation from "@/pages/services/Disinfestation";
+import Pests from "@/pages/services/Pests";
+import Cleaning from "@/pages/services/Cleaning";
+import Waste from "@/pages/services/Waste";
+import Water from "@/pages/services/Water";
+import Gardening from "@/pages/services/Gardening";
 
 function Router() {
   return (
@@ -14,6 +19,11 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/services" component={AllServices} />
       <Route path="/services/disinfestation" component={Disinfestation} />
+      <Route path="/services/pests" component={Pests} />
+      <Route path="/services/cleaning" component={Cleaning} />
+      <Route path="/services/waste" component={Waste} />
+      <Route path="/services/water" component={Water} />
+      <Route path="/services/gardening" component={Gardening} />
       <Route component={NotFound} />
     </Switch>
   );
