@@ -30,11 +30,11 @@ export default function Header() {
       testId: 'nav-services',
       content: [
         { icon: ShieldCheck, text: 'Serviços de\ndesinfestação', href: '/services/disinfestation' },
-        { icon: Bug, text: 'Gorgulhos e\ntraças' },
-        { icon: Wind, text: 'Serviços de\nLimpeza' },
-        { icon: Trash2, text: 'Recolha de\nResíduos' },
-        { icon: Droplets, text: 'Fornecimento de\nAgua potavel' },
-        { icon: Trees, text: 'Serviço de\nJardinagem' },
+        { icon: Bug, text: 'Gorgulhos e\ntraças', href: '/services/pests' },
+        { icon: Wind, text: 'Serviços de\nLimpeza', href: '/services/cleaning' },
+        { icon: Trash2, text: 'Recolha de\nResíduos', href: '/services/waste' },
+        { icon: Droplets, text: 'Fornecimento de\nAgua potavel', href: '/services/water' },
+        { icon: Trees, text: 'Serviço de\nJardinagem', href: '/services/gardening' },
       ]
     },
     {
