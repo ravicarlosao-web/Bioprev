@@ -1,4 +1,4 @@
-import { Search, MapPin, Phone, User, Menu, Truck, Target, Cloud, Globe, Info, BookOpen } from "lucide-react";
+import { Search, MapPin, Phone, User, Menu, Truck, Target, Cloud, Globe, Info, BookOpen, Bug, Wind, Droplets, Trash2, Trees, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -29,9 +29,12 @@ export default function Header() {
       label: 'Serviços',
       testId: 'nav-services',
       content: [
-        { icon: Truck, text: 'Todos os\nserviços' },
-        { icon: Target, text: 'Controle de\npragas' },
-        { icon: Cloud, text: 'Controle digital\nde pragas' },
+        { icon: ShieldCheck, text: 'Serviços de\ndesinfestação' },
+        { icon: Bug, text: 'Gorgulhos e\ntraças' },
+        { icon: Wind, text: 'Serviços de\nLimpeza' },
+        { icon: Trash2, text: 'Recolha de\nResíduos' },
+        { icon: Droplets, text: 'Fornecimento de\nAgua potavel' },
+        { icon: Trees, text: 'Serviço de\nJardinagem' },
       ]
     },
     {
