@@ -108,12 +108,14 @@ export default function Header() {
       <div className="w-full bg-[#f2f2f2] border-b border-gray-200">
         <div className="container mx-auto px-4 relative">
           {/* Logo - Red Background Block - Positioned to overlap both bars and touch Hero */}
-          <div 
-            className="absolute top-0 left-15 bg-[#e31818] flex items-center justify-center px-8 z-50 w-[220px] h-[111.5px] shadow-md"
-            data-testid="text-logo-container"
-          >
-            <span className="text-white font-bold text-3xl tracking-tight" data-testid="text-logo">Rentokil</span>
-          </div>
+          <Link href="/">
+            <div 
+              className="absolute top-0 left-15 bg-[#e31818] flex items-center justify-center px-8 z-50 w-[220px] h-[111.5px] shadow-md cursor-pointer group"
+              data-testid="text-logo-container"
+            >
+              <span className="text-white font-bold text-3xl tracking-tight transition-transform group-hover:scale-105" data-testid="text-logo">Rentokil</span>
+            </div>
+          </Link>
 
           <div className="flex justify-end py-2 text-[13px] font-bold text-[#333333]">
             <div className="flex items-center space-x-6">
