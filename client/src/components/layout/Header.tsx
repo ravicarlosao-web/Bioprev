@@ -151,12 +151,14 @@ export default function Header() {
                   onMouseEnter={() => setActiveMenu(item.id)}
                   onMouseLeave={() => setActiveMenu(null)}
                 >
-                  <span 
-                    className={`transition-colors tracking-wider ${activeMenu === item.id ? 'text-[#333333]' : 'hover:text-[#e31818]'}`} 
-                    data-testid={item.testId}
-                  >
-                    {item.label}
-                  </span>
+                  <Link href={item.id === 'services' ? '/services' : '#'}>
+                    <span 
+                      className={`transition-colors tracking-wider ${activeMenu === item.id ? 'text-[#333333]' : 'hover:text-[#e31818]'}`} 
+                      data-testid={item.testId}
+                    >
+                      {item.label}
+                    </span>
+                  </Link>
                   
                   <AnimatePresence>
                     {activeMenu === item.id && (
