@@ -127,10 +127,10 @@ export default function Header() {
                 <Search className="w-4 h-4 mr-1.5" strokeWidth={2.5} />
                 Pesquisar
               </a>
-              <a href="#" className="flex items-center hover:text-[#e31818] transition-colors" data-testid="link-contact">
+              <Link href="/contact" className="flex items-center hover:text-[#e31818] transition-colors" data-testid="link-contact">
                 <Phone className="w-4 h-4 mr-1.5" strokeWidth={2.5} />
                 Contato
-              </a>
+              </Link>
               <a href="#" className="flex items-center hover:text-[#e31818] transition-colors" data-testid="link-login">
                 <User className="w-4 h-4 mr-1.5" strokeWidth={2.5} />
                 Entrar
