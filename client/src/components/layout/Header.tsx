@@ -3,11 +3,14 @@ import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "wouter";
+import LocationsModal from "@/components/LocationsModal";
 
 export default function Header() {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const [showSticky, setShowSticky] = useState(false);
   const [location] = useLocation();
+  const [showLocationsModal, setShowLocationsModal] = useState(false);
+  const [selectedLocation, setSelectedLocation] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -104,6 +107,13 @@ export default function Header() {
         )}
       </AnimatePresence>
 
+      {/* Locations Modal */}
+      <LocationsModal 
+        isOpen={showLocationsModal}
+        onClose={() => setShowLocationsModal(false)}
+        onSelectLocation={setSelectedLocation}
+      />
+
       {/* Top utility bar - gray background - Full width wrapper */}
       <div className="w-full bg-[#f2f2f2] border-b border-gray-200">
         <div className="container mx-auto px-4 relative">
@@ -119,10 +129,14 @@ export default function Header() {
 
           <div className="flex justify-end py-2 text-[13px] font-bold text-[#333333]">
             <div className="flex items-center space-x-6">
-              <a href="#" className="flex items-center hover:text-[#e31818] transition-colors" data-testid="link-locations">
+              <button 
+                onClick={() => setShowLocationsModal(true)}
+                className="flex items-center hover:text-[#e31818] transition-colors cursor-pointer" 
+                data-testid="link-locations"
+              >
                 <MapPin className="w-4 h-4 mr-1.5" strokeWidth={2.5} />
-                Locais
-              </a>
+                Locais {selectedLocation && `(${selectedLocation})`}
+              </button>
               <a href="#" className="flex items-center hover:text-[#e31818] transition-colors" data-testid="link-search">
                 <Search className="w-4 h-4 mr-1.5" strokeWidth={2.5} />
                 Pesquisar
