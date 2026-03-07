@@ -183,8 +183,11 @@ export default function Header() {
                                 <Link 
                                   key={idx}
                                   href={subItem.href || (subItem.text.includes('Todos') ? '/services' : '#')} 
-                                  className={`flex flex-col items-center justify-center p-6 w-[140px] hover:bg-gray-50 transition-colors ${idx !== item.content.length - 1 ? 'border-r border-gray-100' : ''} text-center group/item`}
+                                  className={`flex flex-col items-center justify-center p-6 w-[140px] hover:bg-gray-50 transition-colors ${idx !== item.content.length - 1 ? 'border-r border-gray-100' : ''} text-center group/item relative`}
                                 >
+                                  {/* Red Hover Indicator for Submenu Items */}
+                                  <div className="absolute bottom-0 left-0 w-full h-1 bg-[#e31818] transform scale-x-0 group-hover/item:scale-x-100 transition-transform duration-200 origin-center" />
+                                  
                                   <subItem.icon className="w-12 h-12 text-[#333333] mb-3 transition-transform group-hover/item:scale-105" strokeWidth={0.75} />
                                   <span className="text-[13px] font-normal text-[#333333] whitespace-pre-line leading-tight">
                                     {subItem.text}
