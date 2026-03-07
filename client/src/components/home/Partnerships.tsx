@@ -8,6 +8,8 @@ export default function Partnerships() {
     { name: "Oceaneering", src: "https://cdn.asp.events/CLIENT_GEP_Even_167A59CF_99D9_1363_5D410151722916AC/sites/gep-corporate-site/media/libraries/gep-partners/Oceaneering.png/fit-in/500x500/filters:no_upscale()" },
     { name: "Toyota Angola", src: "https://ao.empregosyoyota.net/storage/images/jobs/BiGTyg3RchyvpGR08n83fif0fqhCH0-metaMTczNDk2NDY3MzA1NS5qcGc=-.jpg" },
     { name: "Oceaneering International", src: "https://images.seeklogo.com/logo-png/31/3/oceaneering-international-logo-png_seeklogo-310930.png" },
+    { name: "Yewhing", src: "https://pt.yewhing.com/themes/yewhing/images/logo.png" },
+    { name: "GMA Angola", src: "https://static.gmangola.com/images/gma_logo_152x136.png" },
   ];
 
   return (
