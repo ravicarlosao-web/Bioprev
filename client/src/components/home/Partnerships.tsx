@@ -1,8 +1,13 @@
+import LogoCarousel from "./LogoCarousel";
+
 export default function Partnerships() {
   const logos = [
-    { name: "BRCGS", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/BRCGS_Logo.svg/2560px-BRCGS_Logo.svg.png" }, // Placeholder for BRCGS
-    { name: "CEPA", src: "https://www.cepa-europe.org/wp-content/uploads/2020/06/cepa-certified-logo.png" }, // Placeholder for CEPA
-    { name: "Google", src: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" }, // Placeholder for Google
+    { name: "Angola Lissar", src: "https://www.angoalissar.com/wp-content/uploads/2016/08/menu_Logo.png" },
+    { name: "Feito em Angola", src: "https://feitoemangola.gov.ao/wp-content/uploads/2023/07/basel.png" },
+    { name: "Elisal", src: "https://www.elisal.ao/wp-content/uploads/2023/02/logo-elisal.png" },
+    { name: "Oceaneering", src: "https://cdn.asp.events/CLIENT_GEP_Even_167A59CF_99D9_1363_5D410151722916AC/sites/gep-corporate-site/media/libraries/gep-partners/Oceaneering.png/fit-in/500x500/filters:no_upscale()" },
+    { name: "Toyota Angola", src: "https://ao.empregosyoyota.net/storage/images/jobs/BiGTyg3RchyvpGR08n83fif0fqhCH0-metaMTczNDk2NDY3MzA1NS5qcGc=-.jpg" },
+    { name: "Oceaneering International", src: "https://images.seeklogo.com/logo-png/31/3/oceaneering-international-logo-png_seeklogo-310930.png" },
   ];
 
   return (
@@ -16,18 +21,8 @@ export default function Partnerships() {
         </p>
       </div>
 
-      <div className="container mx-auto px-4 max-w-5xl mb-24">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-          {logos.map((logo, index) => (
-            <div key={index} className="flex justify-center p-8 bg-white shadow-sm border border-gray-50 h-40 items-center">
-              <img 
-                src={logo.src} 
-                alt={logo.name} 
-                className="max-h-full max-w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" 
-              />
-            </div>
-          ))}
-        </div>
+      <div className="container mx-auto px-20 max-w-7xl mb-24">
+        <LogoCarousel logos={logos} />
       </div>
 
       <div className="container mx-auto px-4 max-w-4xl text-left">
