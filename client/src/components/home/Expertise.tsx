@@ -1,6 +1,38 @@
 import { Globe, Smartphone, Users } from "lucide-react";
+import { useEffect, useState, useRef } from "react";
 
 export default function Expertise() {
+  const [visibleCards, setVisibleCards] = useState([false, false, false]);
+  const cardRefs = [useRef(null), useRef(null), useRef(null)];
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const index = cardRefs.findIndex(ref => ref.current === entry.target);
+        if (index !== -1) {
+          setVisibleCards(prev => {
+            const newState = [...prev];
+            newState[index] = entry.isIntersecting;
+            return newState;
+          });
+        }
+      });
+    }, {
+      threshold: 0.3,
+      rootMargin: "0px 0px -100px 0px"
+    });
+
+    cardRefs.forEach(ref => {
+      if (ref.current) observer.observe(ref.current);
+    });
+
+    return () => {
+      cardRefs.forEach(ref => {
+        if (ref.current) observer.unobserve(ref.current);
+      });
+    };
+  }, []);
+
   const cards = [
     {
       title: "Global yet local",
@@ -30,12 +62,48 @@ export default function Expertise() {
         </p>
       </div>
 
+      <style>{`
+        @keyframes slideUpFade {
+          from {
+            opacity: 0;
+            transform: translateY(60px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        .expertise-card {
+          opacity: 0;
+          transform: translateY(60px);
+          transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+        
+        .expertise-card.visible {
+          animation: slideUpFade 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+        
+        .expertise-card:nth-child(1).visible {
+          animation-delay: 0ms;
+        }
+        
+        .expertise-card:nth-child(2).visible {
+          animation-delay: 150ms;
+        }
+        
+        .expertise-card:nth-child(3).visible {
+          animation-delay: 300ms;
+        }
+      `}</style>
+
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {cards.map((card, index) => (
             <div 
-              key={index} 
-              className="bg-[#f9fafb] border-t-4 border-[#d41a1a] p-10 flex flex-col items-center text-center shadow-sm"
+              key={index}
+              ref={cardRefs[index]}
+              className={`expertise-card bg-[#f9fafb] border-t-4 border-[#d41a1a] p-10 flex flex-col items-center text-center shadow-sm ${visibleCards[index] ? 'visible' : ''}`}
               data-testid={`card-expertise-${index}`}
             >
               <div className="mb-8">
