@@ -15,7 +15,7 @@ const reviews = [
     time: "13 horas atrás",
     initial: "W",
     color: "bg-[#e91e63]",
-    text: "Cinco estrelas para Rentokil Boecker! Tivemos um problema repentino de pragas e Patrick chegou bem a tempo. Ele foi eficiente,...",
+    text: "Cinco estrelas para Bioprev Boecker! Tivemos um problema repentino de pragas e Patrick chegou bem a tempo. Ele foi eficiente,...",
   },
   {
     id: 3,

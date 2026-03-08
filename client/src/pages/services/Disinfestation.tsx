@@ -5,11 +5,11 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 export default function Disinfestation() {
   const sectors = [
-    { name: "Processamento de alimentos", icon: "https://www.rentokil.com/assets/images/icons/sector-food-processing.png" },
-    { name: "Varejo de alimentos", icon: "https://www.rentokil.com/assets/images/icons/sector-food-retail.png" },
-    { name: "Logística e armazenamento", icon: "https://www.rentokil.com/assets/images/icons/sector-logistics.png" },
-    { name: "Gestão de instalações", icon: "https://www.rentokil.com/assets/images/icons/sector-facilities.png" },
-    { name: "Hotéis", icon: "https://www.rentokil.com/assets/images/icons/sector-hotels.png" },
+    { name: "Processamento de alimentos", icon: "https://www.bioprev.com/assets/images/icons/sector-food-processing.png" },
+    { name: "Varejo de alimentos", icon: "https://www.bioprev.com/assets/images/icons/sector-food-retail.png" },
+    { name: "Logística e armazenamento", icon: "https://www.bioprev.com/assets/images/icons/sector-logistics.png" },
+    { name: "Gestão de instalações", icon: "https://www.bioprev.com/assets/images/icons/sector-facilities.png" },
+    { name: "Hotéis", icon: "https://www.bioprev.com/assets/images/icons/sector-hotels.png" },
   ];
 
   const disinfectionStages = [
@@ -51,7 +51,7 @@ export default function Disinfestation() {
               </h1>
               
               <p className="text-white text-xl md:text-[22px] max-w-3xl mb-12 leading-relaxed font-light">
-                Como líder global em soluções de higiene, a Rentokil oferece serviços de desinfecção especializados, fiáveis e profissionais a clientes comerciais em todo o mundo.
+                Como líder global em soluções de higiene, a Bioprev oferece serviços de desinfecção especializados, fiáveis e profissionais a clientes comerciais em todo o mundo.
               </p>
               
               <Button 
@@ -75,17 +75,17 @@ export default function Disinfestation() {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4 max-w-4xl text-center">
             <p className="text-[#333333] text-lg mb-8 leading-relaxed font-medium">
-              A Rentokil protege pessoas, residências e empresas dos perigos da falta de higiene e de doenças infecciosas há 100 anos.
+              A Bioprev protege pessoas, residências e empresas dos perigos da falta de higiene e de doenças infecciosas há 100 anos.
             </p>
             <p className="text-[#666666] text-base mb-16 leading-relaxed">
-              Acreditamos que a inovação é um fator-chave para o sucesso. O nosso <span className="text-[#007cc3] cursor-pointer hover:underline">centro global de pesquisa e desenvolvimento</span> fornece aos nossos colegas da linha de frente as ferramentas e soluções de que necessitam para fornecer <span className="text-[#007cc3] cursor-pointer hover:underline">serviços de desinfecção diferenciados</span>. A Rentokil está comprometida com a <span className="text-[#007cc3] cursor-pointer hover:underline">sustentabilidade</span> e em explorar o uso de soluções mais ecológicas e não tóxicas, ao mesmo tempo em que continua a oferecer aos nossos clientes os altos níveis de proteção que as suas empresas necessitam.
+              Acreditamos que a inovação é um fator-chave para o sucesso. O nosso <span className="text-[#007cc3] cursor-pointer hover:underline">centro global de pesquisa e desenvolvimento</span> fornece aos nossos colegas da linha de frente as ferramentas e soluções de que necessitam para fornecer <span className="text-[#007cc3] cursor-pointer hover:underline">serviços de desinfecção diferenciados</span>. A Bioprev está comprometida com a <span className="text-[#007cc3] cursor-pointer hover:underline">sustentabilidade</span> e em explorar o uso de soluções mais ecológicas e não tóxicas, ao mesmo tempo em que continua a oferecer aos nossos clientes os altos níveis de proteção que as suas empresas necessitam.
             </p>
             
             <h2 className="text-3xl md:text-[40px] font-medium text-[#333333] mb-8 leading-tight">
               Serviços especializados de desinfecção comercial
             </h2>
             <p className="text-[#666666] text-base leading-relaxed">
-              A Rentokil dedica-se a manter os seus funcionários, clientes e a reputação da marca protegidos com <span className="text-[#007cc3] cursor-pointer hover:underline">serviços de desinfecção</span> líderes de mercado, adaptados ao seu negócio e que apoiam totalmente a conformidade regulamentar. Com a higiene como prioridade, as nossas equipas de especialistas podem ajudar a salvaguardar o seu negócio para o futuro.
+              A Bioprev dedica-se a manter os seus funcionários, clientes e a reputação da marca protegidos com <span className="text-[#007cc3] cursor-pointer hover:underline">serviços de desinfecção</span> líderes de mercado, adaptados ao seu negócio e que apoiam totalmente a conformidade regulamentar. Com a higiene como prioridade, as nossas equipas de especialistas podem ajudar a salvaguardar o seu negócio para o futuro.
             </p>
           </div>
         </section>
@@ -142,7 +142,7 @@ export default function Disinfestation() {
               Experiência na indústria e especialização no setor
             </h2>
             <p className="text-[#666666] max-w-4xl mx-auto mb-16 leading-relaxed">
-              A Rentokil oferece programas integrados de higiene e desinfecção adaptados às necessidades individuais dos clientes, apoiando totalmente os requisitos regulamentares. A nossa história de 100 anos dá-nos o conhecimento para identificar e antecipar ameaças à <span className="text-[#007cc3] cursor-pointer hover:underline">higiene</span> do seu negócio.
+              A Bioprev oferece programas integrados de higiene e desinfecção adaptados às necessidades individuais dos clientes, apoiando totalmente os requisitos regulamentares. A nossa história de 100 anos dá-nos o conhecimento para identificar e antecipar ameaças à <span className="text-[#007cc3] cursor-pointer hover:underline">higiene</span> do seu negócio.
             </p>
             
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -169,7 +169,7 @@ export default function Disinfestation() {
               Nosso processo de desinfecção
             </h2>
             <p className="text-[#666666] mb-12 leading-relaxed">
-              A Rentokil segue uma abordagem rigorosa para a desinfecção profissional, garantindo que todas as etapas sejam tratadas com os mais altos padrões de segurança e qualidade.
+              A Bioprev segue uma abordagem rigorosa para a desinfecção profissional, garantindo que todas as etapas sejam tratadas com os mais altos padrões de segurança e qualidade.
             </p>
             
             <div className="space-y-2">
@@ -194,14 +194,14 @@ export default function Disinfestation() {
         <section className="py-24 bg-white">
           <div className="container mx-auto px-4 max-w-4xl text-center mb-20">
             <h2 className="text-3xl md:text-[36px] font-medium text-[#333333] mb-8 leading-tight">
-              Como funciona a Rentokil?
+              Como funciona a Bioprev?
             </h2>
             <div className="space-y-8 text-[#333333] text-[17px] leading-relaxed text-left">
               <p>
-                Na Rentokil, os nossos especialistas em desinfecção dedicam-se a identificar as soluções mais seguras e eficazes para proteger a sua casa e negócio. Entendendo que cada situação é única, enfatizamos a necessidade de uma inspeção minuciosa antes de cada tratamento. Essa abordagem permite-nos adaptar os nossos métodos especificamente às suas necessidades, garantindo a higienização mais eficiente e eficaz.
+                Na Bioprev, os nossos especialistas em desinfecção dedicam-se a identificar as soluções mais seguras e eficazes para proteger a sua casa e negócio. Entendendo que cada situação é única, enfatizamos a necessidade de uma inspeção minuciosa antes de cada tratamento. Essa abordagem permite-nos adaptar os nossos métodos especificamente às suas necessidades, garantindo a higienização mais eficiente e eficaz.
               </p>
               <p>
-                Escolha a Rentokil para uma experiência sem complicações, soluções ecológicas e um compromisso com os mais altos padrões de serviço e segurança.
+                Escolha a Bioprev para uma experiência sem complicações, soluções ecológicas e um compromisso com os mais altos padrões de serviço e segurança.
               </p>
             </div>
           </div>
@@ -305,9 +305,9 @@ export default function Disinfestation() {
               <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Código de conduta do fornecedor</a>
             </div>
             <div className="flex flex-col items-start md:items-end space-y-6">
-              <span className="text-[#e31837] text-4xl font-bold tracking-tight">Rentokil</span>
+              <span className="text-[#e31837] text-4xl font-bold tracking-tight">Bioprev</span>
               <div className="text-xs text-[#666666] text-left md:text-right leading-relaxed max-w-[280px]">
-                © {new Date().getFullYear()} Rentokil Initial plc e sujeito às condições na <a href="#" className="text-[#007cc3] hover:underline">declaração legal</a>
+                © {new Date().getFullYear()} Bioprev e sujeito às condições na <a href="#" className="text-[#007cc3] hover:underline">declaração legal</a>
               </div>
             </div>
           </div>

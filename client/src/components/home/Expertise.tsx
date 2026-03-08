@@ -67,7 +67,7 @@ export default function Expertise() {
           Capacitando multinacionais com experiência global em controle de pragas
         </h2>
         <p className="text-[#333333] max-w-4xl mx-auto leading-relaxed text-[16px]">
-          Na Rentokil, trazemos um mundo de excelência no controlo de pragas, protegendo empresas em 90 países com a nossa experiência incomparável e soluções inovadoras. Veja por que você prosperará em parceria com a nossa <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">Equipa de Gestão de Contas Globais.</span>
+          Na Bioprev, trazemos um mundo de excelência no controlo de pragas, protegendo empresas em 90 países com a nossa experiência incomparável e soluções inovadoras. Veja por que você prosperará em parceria com a nossa <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">Equipa de Gestão de Contas Globais.</span>
         </p>
       </div>
 

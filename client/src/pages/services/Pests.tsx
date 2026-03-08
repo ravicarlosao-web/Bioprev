@@ -5,11 +5,11 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 export default function Pests() {
   const sectors = [
-    { name: "Processamento de alimentos", icon: "https://www.rentokil.com/assets/images/icons/sector-food-processing.png" },
-    { name: "Varejo de alimentos", icon: "https://www.rentokil.com/assets/images/icons/sector-food-retail.png" },
-    { name: "Logística e armazenamento", icon: "https://www.rentokil.com/assets/images/icons/sector-logistics.png" },
-    { name: "Gestão de instalações", icon: "https://www.rentokil.com/assets/images/icons/sector-facilities.png" },
-    { name: "Hotéis", icon: "https://www.rentokil.com/assets/images/icons/sector-hotels.png" },
+    { name: "Processamento de alimentos", icon: "https://www.bioprev.com/assets/images/icons/sector-food-processing.png" },
+    { name: "Varejo de alimentos", icon: "https://www.bioprev.com/assets/images/icons/sector-food-retail.png" },
+    { name: "Logística e armazenamento", icon: "https://www.bioprev.com/assets/images/icons/sector-logistics.png" },
+    { name: "Gestão de instalações", icon: "https://www.bioprev.com/assets/images/icons/sector-facilities.png" },
+    { name: "Hotéis", icon: "https://www.bioprev.com/assets/images/icons/sector-hotels.png" },
   ];
 
   const stages = [
@@ -172,9 +172,9 @@ export default function Pests() {
               <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Código de conduta do fornecedor</a>
             </div>
             <div className="flex flex-col items-start md:items-end space-y-6">
-              <span className="text-[#e31837] text-4xl font-bold tracking-tight">Rentokil</span>
+              <span className="text-[#e31837] text-4xl font-bold tracking-tight">Bioprev</span>
               <div className="text-xs text-[#666666] text-left md:text-right leading-relaxed max-w-[280px]">
-                © {new Date().getFullYear()} Rentokil Initial plc e sujeito às condições na <a href="#" className="text-[#007cc3] hover:underline">declaração legal</a>
+                © {new Date().getFullYear()} Bioprev e sujeito às condições na <a href="#" className="text-[#007cc3] hover:underline">declaração legal</a>
               </div>
             </div>
           </div>

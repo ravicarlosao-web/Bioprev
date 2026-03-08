@@ -123,7 +123,7 @@ export default function Header() {
               className="absolute top-0 left-15 bg-[#e31818] flex items-center justify-center px-8 z-50 w-[220px] h-[111.5px] shadow-md cursor-pointer group"
               data-testid="text-logo-container"
             >
-              <span className="text-white font-bold text-3xl tracking-tight transition-transform group-hover:scale-105" data-testid="text-logo">Rentokil</span>
+              <span className="text-white font-bold text-3xl tracking-tight transition-transform group-hover:scale-105" data-testid="text-logo">Bioprev</span>
             </div>
           </Link>
 

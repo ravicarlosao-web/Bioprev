@@ -18,7 +18,7 @@ export default function Services() {
           <div className="absolute top-1/2 left-1/2 md:left-[15%] transform -translate-y-1/2 bg-white border-t-4 border-[#e31818] p-8 md:p-10 z-10 w-[90%] md:w-[380px] shadow-xl">
             <h3 className="text-[24px] font-normal text-[#333333] mb-6" data-testid="text-service-title-1">Serviços de controle de pragas</h3>
             <p className="text-[#333333] mb-8 text-[14px] leading-relaxed" data-testid="text-service-desc-1">
-              A Rentokil apoia mais de meio milhão de clientes em mais de 90 países e é reconhecida como a parceira preferida de controle de pragas para pequenas empresas e multinacionais em todo o mundo.
+              A Bioprev apoia mais de meio milhão de clientes em mais de 90 países e é reconhecida como a parceira preferida de controle de pragas para pequenas empresas e multinacionais em todo o mundo.
             </p>
             <button 
               className="border border-[#0077c0] text-[#0077c0] hover:bg-[#0077c0] hover:text-white transition-colors duration-300 font-normal px-6 py-2 text-[14px]"

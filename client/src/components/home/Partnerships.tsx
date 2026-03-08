@@ -19,7 +19,7 @@ export default function Partnerships() {
           Afiliações e parcerias internacionais
         </h2>
         <p className="text-[#333333] max-w-4xl mx-auto leading-relaxed text-[16px]">
-          Em parceria com renomados organismos de normalização internacionais, a Rentokil orgulhosamente eleva os padrões de controle de pragas, reforçando a segurança do cliente e mantendo as práticas líderes do setor.
+          Em parceria com renomados organismos de normalização internacionais, a Bioprev orgulhosamente eleva os padrões de controle de pragas, reforçando a segurança do cliente e mantendo as práticas líderes do setor.
         </p>
       </div>
 
@@ -76,7 +76,7 @@ export default function Partnerships() {
               Seus especialistas locais em controle de pragas
             </h3>
             <p className="text-[#666666] leading-relaxed text-[16px] mb-8 flex-grow">
-              Operando em mais de 90 países em todo o mundo, a Rentokil pode ajudar a atender às suas necessidades comerciais e residenciais de controle de pragas. Saiba mais sobre os serviços, soluções e preços no seu país.
+              Operando em mais de 90 países em todo o mundo, a Bioprev pode ajudar a atender às suas necessidades comerciais e residenciais de controle de pragas. Saiba mais sobre os serviços, soluções e preços no seu país.
             </p>
             <button 
               className="w-fit px-6 py-2 border border-[#007cc3] text-[#007cc3] font-medium hover:bg-[#007cc3] hover:text-white transition-colors duration-300"

@@ -26,9 +26,9 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center mb-16 opacity-80">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/BRCGS_Logo.svg/2560px-BRCGS_Logo.svg.png" alt="BRCGS" className="h-12 object-contain" />
             <img src="https://www.cepa-europe.org/wp-content/uploads/2020/06/cepa-certified-logo.png" alt="CEPA" className="h-12 object-contain" />
-            <img src="https://www.rentokil.com/assets/images/logos/dj-sustainability-indices.png" alt="Dow Jones Sustainability" className="h-12 object-contain" />
-            <img src="https://www.rentokil.com/assets/images/logos/ftse-index.png" alt="FTSE" className="h-10 object-contain" />
-            <img src="https://www.rentokil.com/assets/images/logos/bsi-logo.png" alt="BSI" className="h-12 object-contain" />
+            <img src="https://www.bioprev.com/assets/images/logos/dj-sustainability-indices.png" alt="Dow Jones Sustainability" className="h-12 object-contain" />
+            <img src="https://www.bioprev.com/assets/images/logos/ftse-index.png" alt="FTSE" className="h-10 object-contain" />
+            <img src="https://www.bioprev.com/assets/images/logos/bsi-logo.png" alt="BSI" className="h-12 object-contain" />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
@@ -62,7 +62,7 @@ export default function Home() {
 
             {/* Column 4 - Logo and Socials */}
             <div className="flex flex-col items-start md:items-end space-y-6">
-              <span className="text-[#e31837] text-4xl font-bold tracking-tight">Rentokil</span>
+              <span className="text-[#e31837] text-4xl font-bold tracking-tight">Bioprev</span>
               
               <div className="flex space-x-4">
                 <a href="#" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-[#666666] hover:border-[#007cc3] hover:text-[#007cc3] transition-colors">
@@ -83,7 +83,7 @@ export default function Home() {
               </div>
 
               <div className="text-xs text-[#666666] text-left md:text-right leading-relaxed max-w-[280px]">
-                © {new Date().getFullYear()} Rentokil Initial plc e sujeito às condições na <a href="#" className="text-[#007cc3] hover:underline">declaração legal</a>
+                © {new Date().getFullYear()} Bioprev e sujeito às condições na <a href="#" className="text-[#007cc3] hover:underline">declaração legal</a>
               </div>
             </div>
           </div>

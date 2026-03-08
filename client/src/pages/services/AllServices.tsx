@@ -5,11 +5,11 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 export default function AllServices() {
   const sectors = [
-    { name: "Processamento de alimentos", icon: "https://www.rentokil.com/assets/images/icons/sector-food-processing.png" },
-    { name: "Varejo de alimentos", icon: "https://www.rentokil.com/assets/images/icons/sector-food-retail.png" },
-    { name: "Logística e armazenamento", icon: "https://www.rentokil.com/assets/images/icons/sector-logistics.png" },
-    { name: "Gestão de instalações", icon: "https://www.rentokil.com/assets/images/icons/sector-facilities.png" },
-    { name: "Hotéis", icon: "https://www.rentokil.com/assets/images/icons/sector-hotels.png" },
+    { name: "Processamento de alimentos", icon: "https://www.bioprev.com/assets/images/icons/sector-food-processing.png" },
+    { name: "Varejo de alimentos", icon: "https://www.bioprev.com/assets/images/icons/sector-food-retail.png" },
+    { name: "Logística e armazenamento", icon: "https://www.bioprev.com/assets/images/icons/sector-logistics.png" },
+    { name: "Gestão de instalações", icon: "https://www.bioprev.com/assets/images/icons/sector-facilities.png" },
+    { name: "Hotéis", icon: "https://www.bioprev.com/assets/images/icons/sector-hotels.png" },
   ];
 
   const ipmSteps = [
@@ -49,7 +49,7 @@ export default function AllServices() {
               </h1>
               
               <p className="text-white text-xl md:text-[22px] max-w-3xl mb-12 leading-relaxed font-light">
-                Como líder global em soluções de higiene e controle de pragas, a Rentokil leva serviços especializados, fiáveis e profissionais a clientes comerciais em todo o mundo.
+                Como líder global em soluções de higiene e controle de pragas, a Bioprev leva serviços especializados, fiáveis e profissionais a clientes comerciais em todo o mundo.
               </p>
               
               <Button 
@@ -73,17 +73,17 @@ export default function AllServices() {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4 max-w-4xl text-center">
             <p className="text-[#333333] text-lg mb-8 leading-relaxed font-medium">
-              A Rentokil protege pessoas, residências e empresas dos perigos da falta de higiene e de doenças transmitidas por pragas há 100 anos.
+              A Bioprev protege pessoas, residências e empresas dos perigos da falta de higiene e de doenças transmitidas por pragas há 100 anos.
             </p>
             <p className="text-[#666666] text-base mb-16 leading-relaxed">
-              Acreditamos que a inovação é um fator-chave para o sucesso. O nosso <span className="text-[#007cc3] cursor-pointer hover:underline">centro global de pesquisa e desenvolvimento</span> fornece aos nossos colegas da linha de frente as ferramentas e soluções de que necessitam para prestar <span className="text-[#007cc3] cursor-pointer hover:underline">serviços diferenciados de controle de pragas</span>. A Rentokil está comprometida com a <span className="text-[#007cc3] cursor-pointer hover:underline">sustentabilidade</span> e em explorar o uso de soluções mais ecológicas e não tóxicas, ao mesmo tempo em que continua a oferecer aos nossos clientes os altos níveis de proteção contra pragas de que os seus negócios necessitam.
+              Acreditamos que a inovação é um fator-chave para o sucesso. O nosso <span className="text-[#007cc3] cursor-pointer hover:underline">centro global de pesquisa e desenvolvimento</span> fornece aos nossos colegas da linha de frente as ferramentas e soluções de que necessitam para prestar <span className="text-[#007cc3] cursor-pointer hover:underline">serviços diferenciados de controle de pragas</span>. A Bioprev está comprometida com a <span className="text-[#007cc3] cursor-pointer hover:underline">sustentabilidade</span> e em explorar o uso de soluções mais ecológicas e não tóxicas, ao mesmo tempo em que continua a oferecer aos nossos clientes os altos níveis de proteção contra pragas de que os seus negócios necessitam.
             </p>
             
             <h2 className="text-3xl md:text-[40px] font-medium text-[#333333] mb-8 leading-tight">
               Serviços de desinfecção e controle de pragas comerciais
             </h2>
             <p className="text-[#666666] text-base leading-relaxed">
-              O controle de pragas da Rentokil dedica-se a manter os seus funcionários, clientes e reputação da marca protegidos com <span className="text-[#007cc3] cursor-pointer hover:underline">serviços de controle de pragas</span> líderes de mercado, adaptados ao seu negócio e que apoiam totalmente a conformidade regulamentar. Com a higiene permanecendo como prioridade após a pandemia de COVID-19, os nossos <span className="text-[#007cc3] cursor-pointer hover:underline">serviços de desinfecção</span> podem ajudar a salvaguardar o seu negócio para o futuro.
+              O controle de pragas da Bioprev dedica-se a manter os seus funcionários, clientes e reputação da marca protegidos com <span className="text-[#007cc3] cursor-pointer hover:underline">serviços de controle de pragas</span> líderes de mercado, adaptados ao seu negócio e que apoiam totalmente a conformidade regulamentar. Com a higiene permanecendo como prioridade após a pandemia de COVID-19, os nossos <span className="text-[#007cc3] cursor-pointer hover:underline">serviços de desinfecção</span> podem ajudar a salvaguardar o seu negócio para o futuro.
             </p>
           </div>
         </section>
@@ -102,7 +102,7 @@ export default function AllServices() {
               <div className="bg-white border-t-4 border-[#e31837] shadow-xl p-10">
                 <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">Serviços de controle de pragas</h3>
                 <p className="text-[#666666] leading-relaxed mb-8">
-                  A Rentokil é líder global no controle de pragas comerciais. Oferecemos uma gama de tratamentos direcionados e inovadores e soluções de impermeabilização para garantir que o seu negócio fique livre de pragas.
+                  A Bioprev é líder global no controle de pragas comerciais. Oferecemos uma gama de tratamentos direcionados e inovadores e soluções de impermeabilização para garantir que o seu negócio fique livre de pragas.
                 </p>
                 <button className="text-[#007cc3] font-medium border border-[#007cc3] px-6 py-2 hover:bg-[#007cc3] hover:text-white transition-all">
                   Saiba mais
@@ -140,7 +140,7 @@ export default function AllServices() {
               Experiência no setor e especialização
             </h2>
             <p className="text-[#666666] max-w-4xl mx-auto mb-16 leading-relaxed">
-              A Rentokil oferece programas de Gestão Integrada de Pragas (IPM) adaptados às necessidades individuais de cada cliente, apoiando totalmente os requisitos regulamentares e de auditoria. A nossa história de 100 anos dá-nos o conhecimento e a experiência para identificar e prever ameaças de <span className="text-[#007cc3] cursor-pointer hover:underline">pragas</span> e <span className="text-[#007cc3] cursor-pointer hover:underline">higiene</span> ao seu negócio.
+              A Bioprev oferece programas de Gestão Integrada de Pragas (IPM) adaptados às necessidades individuais de cada cliente, apoiando totalmente os requisitos regulamentares e de auditoria. A nossa história de 100 anos dá-nos o conhecimento e a experiência para identificar e prever ameaças de <span className="text-[#007cc3] cursor-pointer hover:underline">pragas</span> e <span className="text-[#007cc3] cursor-pointer hover:underline">higiene</span> ao seu negócio.
             </p>
             
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -167,7 +167,7 @@ export default function AllServices() {
               Gestão Integrada de Pragas (IPM)
             </h2>
             <p className="text-[#666666] mb-12 leading-relaxed">
-              A Rentokil emprega uma abordagem em cinco estágios para o controle de pragas comerciais, focando em medidas preventivas estratégicas em vez de um programa reativo tático.
+              A Bioprev emprega uma abordagem em cinco estágios para o controle de pragas comerciais, focando em medidas preventivas estratégicas em vez de um programa reativo tático.
             </p>
             
             <div className="space-y-2">
@@ -192,14 +192,14 @@ export default function AllServices() {
         <section className="py-24 bg-white">
           <div className="container mx-auto px-4 max-w-4xl text-center mb-20">
             <h2 className="text-3xl md:text-[36px] font-medium text-[#333333] mb-8 leading-tight">
-              Como funciona a Rentokil?
+              Como funciona a Bioprev?
             </h2>
             <div className="space-y-8 text-[#333333] text-[17px] leading-relaxed text-left">
               <p>
-                Na Rentokil, os nossos especialistas em controle de pragas dedicam-se a identificar as soluções mais seguras e eficazes para eliminar pragas de sua casa e do seu negócio. Compreendendo que cada situação é única, enfatizamos a necessidade de uma inspeção minuciosa antes de cada tratamento. Esta abordagem permite-nos adaptar os nossos métodos especificamente às suas necessidades, garantindo a remoção de pragas mais eficiente e eficaz.
+                Na Bioprev, os nossos especialistas em controle de pragas dedicam-se a identificar as soluções mais seguras e eficazes para eliminar pragas de sua casa e do seu negócio. Compreendendo que cada situação é única, enfatizamos a necessidade de uma inspeção minuciosa antes de cada tratamento. Esta abordagem permite-nos adaptar os nossos métodos especificamente às suas necessidades, garantindo a remoção de pragas mais eficiente e eficaz.
               </p>
               <p>
-                Escolha a Rentokil para ter uma experiência sem preocupações, com soluções ecológicas e um compromisso com os mais altos padrões de serviço e segurança.
+                Escolha a Bioprev para ter uma experiência sem preocupações, com soluções ecológicas e um compromisso com os mais altos padrões de serviço e segurança.
               </p>
             </div>
           </div>
@@ -304,9 +304,9 @@ export default function AllServices() {
               <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Código de conduta do fornecedor</a>
             </div>
             <div className="flex flex-col items-start md:items-end space-y-6">
-              <span className="text-[#e31837] text-4xl font-bold tracking-tight">Rentokil</span>
+              <span className="text-[#e31837] text-4xl font-bold tracking-tight">Bioprev</span>
               <div className="text-xs text-[#666666] text-left md:text-right leading-relaxed max-w-[280px]">
-                © {new Date().getFullYear()} Rentokil Initial plc e sujeito às condições na <a href="#" className="text-[#007cc3] hover:underline">declaração legal</a>
+                © {new Date().getFullYear()} Bioprev e sujeito às condições na <a href="#" className="text-[#007cc3] hover:underline">declaração legal</a>
               </div>
             </div>
           </div>

@@ -243,7 +243,7 @@ export default function Contact() {
                   data-testid="checkbox-updates"
                 />
                 <span className="ml-3 text-gray-700 text-sm">
-                  Gostaria de receber atualizações relacionadas aos produtos e serviços da Rentokil.
+                  Gostaria de receber atualizações relacionadas aos produtos e serviços da Bioprev.
                 </span>
               </label>
               <p className="text-xs text-gray-600 mt-3">

@@ -23,7 +23,7 @@ export default function Hero() {
               className="border border-white text-white bg-transparent hover:bg-white/10 transition-all duration-300 font-normal px-6 py-2.5 text-[16px] min-w-[200px]"
               data-testid="button-contact-specialist"
             >
-              Contate o seu especialista local da Rentokil
+              Contate o seu especialista local da Bioprev
             </button>
           </div>
         </div>
@@ -50,7 +50,7 @@ export default function Hero() {
       <div className="w-full bg-white py-12">
         <div className="container mx-auto px-4 text-center max-w-4xl">
           <p className="text-[#333333] text-[18px] leading-relaxed font-normal" data-testid="text-hero-intro">
-            A Rentokil é a maior empresa de controle de pragas do mundo, oferecendo a mais ampla e avançada gama de soluções e serviços de controle de pragas da indústria.
+            A Bioprev é a maior empresa de controle de pragas do mundo, oferecendo a mais ampla e avançada gama de soluções e serviços de controle de pragas da indústria.
           </p>
         </div>
       </div>

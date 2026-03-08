@@ -5,10 +5,10 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 export default function Water() {
   const sectors = [
-    { name: "Eventos", icon: "https://www.rentokil.com/assets/images/icons/sector-hotels.png" },
-    { name: "Construção", icon: "https://www.rentokil.com/assets/images/icons/sector-facilities.png" },
-    { name: "Emergência", icon: "https://www.rentokil.com/assets/images/icons/sector-facilities.png" },
-    { name: "Escritórios", icon: "https://www.rentokil.com/assets/images/icons/sector-facilities.png" },
+    { name: "Eventos", icon: "https://www.bioprev.com/assets/images/icons/sector-hotels.png" },
+    { name: "Construção", icon: "https://www.bioprev.com/assets/images/icons/sector-facilities.png" },
+    { name: "Emergência", icon: "https://www.bioprev.com/assets/images/icons/sector-facilities.png" },
+    { name: "Escritórios", icon: "https://www.bioprev.com/assets/images/icons/sector-facilities.png" },
   ];
 
   const stages = [
@@ -108,8 +108,8 @@ export default function Water() {
         </section>
       </main>
       <footer className="bg-white border-t-8 border-[#e31837] py-16 text-center">
-        <span className="text-[#e31837] text-4xl font-bold">Rentokil</span>
-        <p className="text-gray-500 mt-4">© {new Date().getFullYear()} Rentokil Initial plc.</p>
+        <span className="text-[#e31837] text-4xl font-bold">Bioprev</span>
+        <p className="text-gray-500 mt-4">© {new Date().getFullYear()} Bioprev.</p>
       </footer>
     </div>
   );

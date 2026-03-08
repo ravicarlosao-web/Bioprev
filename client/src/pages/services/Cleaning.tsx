@@ -5,11 +5,11 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 export default function Cleaning() {
   const sectors = [
-    { name: "Escritórios", icon: "https://www.rentokil.com/assets/images/icons/sector-facilities.png" },
-    { name: "Industrial", icon: "https://www.rentokil.com/assets/images/icons/sector-food-processing.png" },
-    { name: "Varejo", icon: "https://www.rentokil.com/assets/images/icons/sector-food-retail.png" },
-    { name: "Educação", icon: "https://www.rentokil.com/assets/images/icons/sector-facilities.png" },
-    { name: "Hospitalidade", icon: "https://www.rentokil.com/assets/images/icons/sector-hotels.png" },
+    { name: "Escritórios", icon: "https://www.bioprev.com/assets/images/icons/sector-facilities.png" },
+    { name: "Industrial", icon: "https://www.bioprev.com/assets/images/icons/sector-food-processing.png" },
+    { name: "Varejo", icon: "https://www.bioprev.com/assets/images/icons/sector-food-retail.png" },
+    { name: "Educação", icon: "https://www.bioprev.com/assets/images/icons/sector-facilities.png" },
+    { name: "Hospitalidade", icon: "https://www.bioprev.com/assets/images/icons/sector-hotels.png" },
   ];
 
   const stages = [
@@ -116,8 +116,8 @@ export default function Cleaning() {
         </section>
       </main>
       <footer className="bg-white border-t-8 border-[#e31837] py-16 text-center">
-        <span className="text-[#e31837] text-4xl font-bold">Rentokil</span>
-        <p className="text-gray-500 mt-4">© {new Date().getFullYear()} Rentokil Initial plc.</p>
+        <span className="text-[#e31837] text-4xl font-bold">Bioprev</span>
+        <p className="text-gray-500 mt-4">© {new Date().getFullYear()} Bioprev.</p>
       </footer>
     </div>
   );
