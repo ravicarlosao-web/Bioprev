@@ -3,18 +3,24 @@ import { useEffect, useState, useRef } from "react";
 
 export default function Expertise() {
   const [visibleCards, setVisibleCards] = useState([false, false, false]);
+  const [visibleButton, setVisibleButton] = useState(false);
   const cardRefs = [useRef(null), useRef(null), useRef(null)];
+  const buttonRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        const index = cardRefs.findIndex(ref => ref.current === entry.target);
-        if (index !== -1) {
+        const cardIndex = cardRefs.findIndex(ref => ref.current === entry.target);
+        if (cardIndex !== -1) {
           setVisibleCards(prev => {
             const newState = [...prev];
-            newState[index] = entry.isIntersecting;
+            newState[cardIndex] = entry.isIntersecting;
             return newState;
           });
+        }
+        
+        if (buttonRef.current === entry.target) {
+          setVisibleButton(entry.isIntersecting);
         }
       });
     }, {
@@ -25,11 +31,14 @@ export default function Expertise() {
     cardRefs.forEach(ref => {
       if (ref.current) observer.observe(ref.current);
     });
+    
+    if (buttonRef.current) observer.observe(buttonRef.current);
 
     return () => {
       cardRefs.forEach(ref => {
         if (ref.current) observer.unobserve(ref.current);
       });
+      if (buttonRef.current) observer.unobserve(buttonRef.current);
     };
   }, []);
 
@@ -85,6 +94,17 @@ export default function Expertise() {
         .expertise-card:nth-child(3).visible {
           transition-delay: 300ms;
         }
+        
+        .expertise-button {
+          opacity: 0;
+          transform: translateY(60px);
+          transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .expertise-button.visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
       `}</style>
 
       <div className="container mx-auto px-4 max-w-7xl">
@@ -111,7 +131,8 @@ export default function Expertise() {
 
         <div className="flex justify-center">
           <button 
-            className="bg-[#007cc3] text-white font-bold py-4 px-10 text-xl hover:bg-[#005a8f] transition-colors"
+            ref={buttonRef}
+            className={`expertise-button bg-[#007cc3] text-white font-bold py-4 px-10 text-xl hover:bg-[#005a8f] transition-colors ${visibleButton ? 'visible' : ''}`}
             data-testid="button-contact-us"
           >
             Ready to simplify your pest management? Contact us today.
