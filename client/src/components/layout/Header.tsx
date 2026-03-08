@@ -131,18 +131,8 @@ export default function Header() {
             </div>
           </Link>
 
-          {/* Contact Numbers and Email on Top Bar */}
-          <div className="flex items-center ml-auto mr-12 text-[#333333] font-bold text-sm tracking-tight hidden md:flex">
-            <a href="mailto:geral@bioprev.com" className="hover:text-[#e31818] transition-colors mr-4 flex items-center">
-              <span className="mr-1">✉️</span> geral@bioprev.com
-            </a>
-            <span className="mx-2 text-gray-400">|</span>
-            <a href="tel:+244947059109" className="hover:text-[#e31818] transition-colors">+244 947 059 109</a>
-            <span className="mx-2 text-gray-400">|</span>
-            <a href="tel:+244928737888" className="hover:text-[#e31818] transition-colors">+244 928 737 888</a>
-          </div>
-
-          <div className="flex justify-end py-2 text-[13px] font-bold text-[#333333]">
+          {/* Main utilities on Top Bar */}
+          <div className="flex justify-end py-2 text-[13px] font-bold text-[#333333] ml-auto">
             <div className="flex items-center space-x-6">
               <button 
                 onClick={() => setShowLocationsModal(true)}
@@ -160,10 +150,6 @@ export default function Header() {
                 <Phone className="w-4 h-4 mr-1.5" strokeWidth={2.5} />
                 Contato
               </Link>
-              <a href="#" className="flex items-center hover:text-[#e31818] transition-colors" data-testid="link-login">
-                <User className="w-4 h-4 mr-1.5" strokeWidth={2.5} />
-                Entrar
-              </a>
             </div>
           </div>
         </div>
