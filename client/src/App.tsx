@@ -13,6 +13,8 @@ import Cleaning from "@/pages/services/Cleaning";
 import Waste from "@/pages/services/Waste";
 import Water from "@/pages/services/Water";
 import Gardening from "@/pages/services/Gardening";
+import BlogList from "@/pages/blog/BlogList";
+import BlogPost from "@/pages/blog/BlogPost";
 
 function Router() {
   return (
@@ -26,6 +28,8 @@ function Router() {
       <Route path="/services/waste" component={Waste} />
       <Route path="/services/water" component={Water} />
       <Route path="/services/gardening" component={Gardening} />
+      <Route path="/blog" component={BlogList} />
+      <Route path="/blog/:id" component={BlogPost} />
       <Route component={NotFound} />
     </Switch>
   );

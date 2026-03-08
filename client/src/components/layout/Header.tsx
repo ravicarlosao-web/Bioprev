@@ -74,8 +74,9 @@ export default function Header() {
       label: 'Blog',
       testId: 'nav-blog',
       content: [
-        { icon: BookOpen, text: 'Últimas\nnotícias' },
-        { icon: Info, text: 'Dicas de\nprevenção' },
+        { icon: BookOpen, text: 'Blog', href: '/blog' },
+        { icon: BookOpen, text: 'Últimas\nnotícias', href: '/blog' },
+        { icon: Info, text: 'Dicas de\nprevenção', href: '/blog' },
       ]
     }
   ];
