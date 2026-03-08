@@ -61,9 +61,25 @@ export default function Contact() {
             <p className="text-gray-700 mb-4">
               Precisa de ajuda com pragas? Diga-nos o que está a acontecer e iremos conectá-lo ao especialista certo.
             </p>
-            <p className="text-gray-600 text-sm">
+            <p className="text-gray-600 text-sm mb-8">
               Leia a nossa <a href="#" className="text-[#0077c0] hover:underline">política de privacidade</a> para entender como usamos seus dados.
             </p>
+
+            <div className="bg-gray-50 p-6 border-l-4 border-[#e31818] mb-8 shadow-sm">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Ligue-nos diretamente</h3>
+              <p className="text-gray-700 mb-3">
+                Pode entrar em contato connosco através dos números:
+              </p>
+              <div className="font-bold text-xl text-[#0077c0] flex flex-wrap gap-2 items-center">
+                <a href="tel:+244947059109" className="hover:underline flex items-center">
+                  📞 +244 947 059 109
+                </a>
+                <span className="text-gray-300 hidden sm:inline">|</span>
+                <a href="tel:+244928737888" className="hover:underline flex items-center">
+                  📞 +244 928 737 888
+                </a>
+              </div>
+            </div>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-8">
