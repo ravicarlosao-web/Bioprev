@@ -63,37 +63,27 @@ export default function Expertise() {
       </div>
 
       <style>{`
-        @keyframes slideUpFade {
-          from {
-            opacity: 0;
-            transform: translateY(60px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        
         .expertise-card {
           opacity: 0;
           transform: translateY(60px);
-          transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+          transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
         
         .expertise-card.visible {
-          animation: slideUpFade 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+          opacity: 1;
+          transform: translateY(0);
         }
         
         .expertise-card:nth-child(1).visible {
-          animation-delay: 0ms;
+          transition-delay: 0ms;
         }
         
         .expertise-card:nth-child(2).visible {
-          animation-delay: 150ms;
+          transition-delay: 150ms;
         }
         
         .expertise-card:nth-child(3).visible {
-          animation-delay: 300ms;
+          transition-delay: 300ms;
         }
       `}</style>
 
