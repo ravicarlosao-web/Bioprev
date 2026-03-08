@@ -34,30 +34,30 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
             {/* Column 1 */}
             <div className="space-y-3">
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Locations</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Search</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Contact</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Login</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Locais</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Pesquisar</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Contato</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Entrar</a>
             </div>
 
             {/* Column 2 */}
             <div className="space-y-3">
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Home</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Services</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Global accounts</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Business sectors</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">About</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Início</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Serviços</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Contas globais</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Setores de negócios</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Sobre</a>
               <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Blog</a>
             </div>
 
             {/* Column 3 */}
             <div className="space-y-3">
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Careers</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Company information</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Legal statement</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Privacy policy</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Cookie policy</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Supplier code</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Carreiras</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Informações da empresa</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Declaração legal</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Política de privacidade</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Política de cookies</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Código do fornecedor</a>
             </div>
 
             {/* Column 4 - Logo and Socials */}
@@ -83,7 +83,7 @@ export default function Home() {
               </div>
 
               <div className="text-xs text-[#666666] text-left md:text-right leading-relaxed max-w-[280px]">
-                © {new Date().getFullYear()} Rentokil Initial plc and subject to the conditions in the <a href="#" className="text-[#007cc3] hover:underline">legal statement</a>
+                © {new Date().getFullYear()} Rentokil Initial plc e sujeito às condições na <a href="#" className="text-[#007cc3] hover:underline">declaração legal</a>
               </div>
             </div>
           </div>

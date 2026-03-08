@@ -2,21 +2,21 @@ import { Factory, Building2, Truck, Hotel, ShoppingCart, Plus } from "lucide-rea
 
 export default function Sectors() {
   const sectors = [
-    { name: "Food processing", icon: <Factory className="w-16 h-16 text-[#333333] stroke-[1px]" /> },
-    { name: "Facilities management", icon: <Building2 className="w-16 h-16 text-[#333333] stroke-[1px]" /> },
-    { name: "Logistics & warehousing", icon: <Truck className="w-16 h-16 text-[#333333] stroke-[1px]" /> },
-    { name: "Hotels", icon: <Hotel className="w-16 h-16 text-[#333333] stroke-[1px]" /> },
-    { name: "Food retail", icon: <ShoppingCart className="w-16 h-16 text-[#333333] stroke-[1px]" /> },
+    { name: "Processamento de alimentos", icon: <Factory className="w-16 h-16 text-[#333333] stroke-[1px]" /> },
+    { name: "Gestão de instalações", icon: <Building2 className="w-16 h-16 text-[#333333] stroke-[1px]" /> },
+    { name: "Logística e armazenamento", icon: <Truck className="w-16 h-16 text-[#333333] stroke-[1px]" /> },
+    { name: "Hotéis", icon: <Hotel className="w-16 h-16 text-[#333333] stroke-[1px]" /> },
+    { name: "Varejo de alimentos", icon: <ShoppingCart className="w-16 h-16 text-[#333333] stroke-[1px]" /> },
   ];
 
   return (
     <section className="py-20 bg-[#f2f4f6]">
       <div className="container mx-auto px-4 max-w-6xl text-center mb-16">
         <h2 className="text-3xl md:text-[32px] font-medium text-[#333333] mb-8 leading-tight">
-          Global leaders in tailored pest control services
+          Líderes globais em serviços personalizados de controle de pragas
         </h2>
         <p className="text-[#333333] max-w-4xl mx-auto leading-relaxed text-[16px]">
-          Rentokil is the global leader in <span className="text-[#007cc3] cursor-pointer hover:underline">pest control</span> and <span className="text-[#007cc3] cursor-pointer hover:underline">specialist disinfection services</span>, serving diverse sectors such as <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">Food Processing</span>, <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">Logistics</span>, <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">Facilities Management</span> and <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">more</span> worldwide—partner with us for global pest control expertise tailored to your industry.
+          A Rentokil é líder global em <span className="text-[#007cc3] cursor-pointer hover:underline">controle de pragas</span> e <span className="text-[#007cc3] cursor-pointer hover:underline">serviços especializados de desinfecção</span>, atendendo a diversos setores, como <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">Processamento de Alimentos</span>, <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">Logística</span>, <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">Gestão de Instalações</span> e <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">muito mais</span> em todo o mundo — seja nosso parceiro para experiência global em controle de pragas adaptada à sua indústria.
         </p>
       </div>
 
@@ -43,7 +43,7 @@ export default function Sectors() {
           >
             <Plus className="w-12 h-12 mb-4 stroke-[3px]" />
             <p className="font-bold text-[14px] uppercase tracking-wider">
-              Show all sectors
+              Ver todos os setores
             </p>
           </div>
         </div>

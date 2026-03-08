@@ -45,31 +45,31 @@ export default function Contact() {
         {/* Breadcrumb */}
         <div className="mb-8 flex items-center space-x-2 text-sm text-gray-600">
           <Link href="/">
-            <a className="hover:text-[#e31818] transition-colors">Home</a>
+            <a className="hover:text-[#e31818] transition-colors">Início</a>
           </Link>
           <span>›</span>
-          <span className="text-gray-800 font-medium">Contact</span>
+          <span className="text-gray-800 font-medium">Contato</span>
         </div>
 
         {/* Main Title */}
-        <h1 className="text-5xl font-bold text-[#e31818] mb-12 text-center">Contact</h1>
+        <h1 className="text-5xl font-bold text-[#e31818] mb-12 text-center">Contato</h1>
 
         {/* Form Section */}
         <div className="max-w-3xl mx-auto">
           <div className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">How can we help?</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">Como podemos ajudar?</h2>
             <p className="text-gray-700 mb-4">
-              Need help with pests? Tell us what's going on and we'll connect you with the right expert.
+              Precisa de ajuda com pragas? Diga-nos o que está a acontecer e iremos conectá-lo ao especialista certo.
             </p>
             <p className="text-gray-600 text-sm">
-              Please read our <a href="#" className="text-[#0077c0] hover:underline">privacy policy</a> to understand how we use your data.
+              Leia a nossa <a href="#" className="text-[#0077c0] hover:underline">política de privacidade</a> para entender como usamos seus dados.
             </p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-8">
             {/* Type of Enquiry */}
             <div>
-              <label className="block text-sm font-bold text-gray-900 mb-4">Type of enquiry</label>
+              <label className="block text-sm font-bold text-gray-900 mb-4">Tipo de consulta</label>
               <div className="space-y-3">
                 <label className="flex items-center cursor-pointer">
                   <input 
@@ -81,7 +81,7 @@ export default function Contact() {
                     className="w-4 h-4 text-[#e31818] cursor-pointer"
                     data-testid="radio-new-commercial"
                   />
-                  <span className="ml-3 text-gray-700">I am a new commercial customer</span>
+                  <span className="ml-3 text-gray-700">Sou um novo cliente comercial</span>
                 </label>
                 <label className="flex items-center cursor-pointer">
                   <input 
@@ -93,7 +93,7 @@ export default function Contact() {
                     className="w-4 h-4 text-[#e31818] cursor-pointer"
                     data-testid="radio-existing-customer"
                   />
-                  <span className="ml-3 text-gray-700">I am an existing customer</span>
+                  <span className="ml-3 text-gray-700">Sou um cliente existente</span>
                 </label>
                 <label className="flex items-center cursor-pointer">
                   <input 
@@ -105,7 +105,7 @@ export default function Contact() {
                     className="w-4 h-4 text-[#e31818] cursor-pointer"
                     data-testid="radio-new-residential"
                   />
-                  <span className="ml-3 text-gray-700">I am a new residential customer</span>
+                  <span className="ml-3 text-gray-700">Sou um novo cliente residencial</span>
                 </label>
               </div>
             </div>
@@ -113,14 +113,14 @@ export default function Contact() {
             {/* First Name */}
             <div>
               <label className="block text-sm font-bold text-gray-900 mb-2">
-                First name <span className="text-[#e31818]">*</span>
+                Primeiro nome <span className="text-[#e31818]">*</span>
               </label>
               <input 
                 type="text" 
                 name="firstName"
                 value={formData.firstName}
                 onChange={handleChange}
-                placeholder="eg. John"
+                placeholder="ex. João"
                 required
                 className="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-[#0077c0] text-gray-900"
                 data-testid="input-firstname"
@@ -130,14 +130,14 @@ export default function Contact() {
             {/* Last Name */}
             <div>
               <label className="block text-sm font-bold text-gray-900 mb-2">
-                Last name <span className="text-[#e31818]">*</span>
+                Sobrenome <span className="text-[#e31818]">*</span>
               </label>
               <input 
                 type="text" 
                 name="lastName"
                 value={formData.lastName}
                 onChange={handleChange}
-                placeholder="eg. Doe"
+                placeholder="ex. Silva"
                 required
                 className="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-[#0077c0] text-gray-900"
                 data-testid="input-lastname"
@@ -147,14 +147,14 @@ export default function Contact() {
             {/* Email */}
             <div>
               <label className="block text-sm font-bold text-gray-900 mb-2">
-                Email <span className="text-[#e31818]">*</span>
+                E-mail <span className="text-[#e31818]">*</span>
               </label>
               <input 
                 type="email" 
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="eg. john.doe@example.com"
+                placeholder="ex. joao.silva@exemplo.com"
                 required
                 className="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-[#0077c0] text-gray-900"
                 data-testid="input-email"
@@ -164,14 +164,14 @@ export default function Contact() {
             {/* Telephone */}
             <div>
               <label className="block text-sm font-bold text-gray-900 mb-2">
-                Telephone <span className="text-[#e31818]">*</span>
+                Telefone <span className="text-[#e31818]">*</span>
               </label>
               <input 
                 type="tel" 
                 name="telephone"
                 value={formData.telephone}
                 onChange={handleChange}
-                placeholder="eg. 01234 567890"
+                placeholder="ex. 912 345 678"
                 required
                 className="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-[#0077c0] text-gray-900"
                 data-testid="input-telephone"
@@ -181,14 +181,14 @@ export default function Contact() {
             {/* Company Name */}
             <div>
               <label className="block text-sm font-bold text-gray-900 mb-2">
-                Company name <span className="text-[#e31818]">*</span>
+                Nome da empresa <span className="text-[#e31818]">*</span>
               </label>
               <input 
                 type="text" 
                 name="companyName"
                 value={formData.companyName}
                 onChange={handleChange}
-                placeholder="eg. Example Corp"
+                placeholder="ex. Exemplo Corp"
                 required
                 className="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-[#0077c0] text-gray-900"
                 data-testid="input-companyname"
@@ -198,7 +198,7 @@ export default function Contact() {
             {/* Country / Region */}
             <div>
               <label className="block text-sm font-bold text-gray-900 mb-2">
-                Choose your country / region <span className="text-[#e31818]">*</span>
+                Escolha o seu país / região <span className="text-[#e31818]">*</span>
               </label>
               <select 
                 name="country"
@@ -208,24 +208,23 @@ export default function Contact() {
                 className="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-[#0077c0] text-gray-900 bg-white cursor-pointer"
                 data-testid="select-country"
               >
-                <option value="">Select a country...</option>
+                <option value="">Selecione um país...</option>
+                <option value="angola">Angola</option>
                 <option value="portugal">Portugal</option>
-                <option value="spain">Spain</option>
-                <option value="uk">United Kingdom</option>
-                <option value="france">France</option>
-                <option value="germany">Germany</option>
-                <option value="italy">Italy</option>
+                <option value="brazil">Brasil</option>
+                <option value="spain">Espanha</option>
+                <option value="uk">Reino Unido</option>
               </select>
             </div>
 
             {/* Enquiry */}
             <div>
-              <label className="block text-sm font-bold text-gray-900 mb-2">Enquiry</label>
+              <label className="block text-sm font-bold text-gray-900 mb-2">Consulta</label>
               <textarea 
                 name="enquiry"
                 value={formData.enquiry}
                 onChange={handleChange}
-                placeholder="eg. I need help with..."
+                placeholder="ex. Preciso de ajuda com..."
                 rows={5}
                 className="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-[#0077c0] text-gray-900 resize-none"
                 data-testid="textarea-enquiry"
@@ -244,11 +243,11 @@ export default function Contact() {
                   data-testid="checkbox-updates"
                 />
                 <span className="ml-3 text-gray-700 text-sm">
-                  I would like to receive updates relating to Rentokil's products and services.
+                  Gostaria de receber atualizações relacionadas aos produtos e serviços da Rentokil.
                 </span>
               </label>
               <p className="text-xs text-gray-600 mt-3">
-                You can unsubscribe from communications at any time. View our <a href="#" className="text-[#0077c0] hover:underline">privacy policy</a> to see our commitment to protect and respect your privacy and how to manage your preferences.
+                Você pode cancelar a assinatura das comunicações a qualquer momento. Veja nossa <a href="#" className="text-[#0077c0] hover:underline">política de privacidade</a> para ver nosso compromisso de proteger e respeitar sua privacidade e como gerenciar suas preferências.
               </p>
             </div>
 
@@ -259,7 +258,7 @@ export default function Contact() {
                 className="bg-[#0077c0] hover:bg-[#005fa3] text-white font-bold py-3 px-12 transition-colors"
                 data-testid="button-submit-contact"
               >
-                Send
+                Enviar
               </button>
             </div>
           </form>

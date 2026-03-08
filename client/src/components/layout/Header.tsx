@@ -96,10 +96,10 @@ export default function Header() {
               <div className="flex items-center space-x-12">
                 <span className="text-white font-bold text-xl tracking-tight">0808 273 1010</span>
                 <button className="bg-[#0077c0] text-white px-8 py-2 font-bold text-sm h-[60px] flex items-center transition-colors hover:bg-[#005fa3]">
-                  Get in touch
+                  Entre em contato
                 </button>
                 <a href="#" className="text-white font-bold text-sm hover:underline">
-                  Request a call back
+                  Solicite uma chamada
                 </a>
               </div>
             </div>

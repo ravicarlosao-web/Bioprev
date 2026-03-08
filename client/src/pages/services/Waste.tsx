@@ -5,10 +5,10 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 export default function Waste() {
   const sectors = [
-    { name: "Medical", icon: "https://www.rentokil.com/assets/images/icons/sector-facilities.png" },
+    { name: "Médico", icon: "https://www.rentokil.com/assets/images/icons/sector-facilities.png" },
     { name: "Industrial", icon: "https://www.rentokil.com/assets/images/icons/sector-food-processing.png" },
-    { name: "Commercial", icon: "https://www.rentokil.com/assets/images/icons/sector-facilities.png" },
-    { name: "Food Waste", icon: "https://www.rentokil.com/assets/images/icons/sector-food-retail.png" },
+    { name: "Comercial", icon: "https://www.rentokil.com/assets/images/icons/sector-facilities.png" },
+    { name: "Desperdício Alimentar", icon: "https://www.rentokil.com/assets/images/icons/sector-food-retail.png" },
   ];
 
   const stages = [
@@ -35,7 +35,7 @@ export default function Waste() {
           <div className="container mx-auto px-4 z-10">
             <div className="max-w-4xl">
               <nav className="flex items-center space-x-2 text-white/90 text-sm mb-8 font-medium">
-                <a href="/" className="hover:underline">Home</a>
+                <a href="/" className="hover:underline">Início</a>
                 <ChevronRight className="w-4 h-4" />
                 <a href="/services" className="hover:underline">Serviços</a>
                 <ChevronRight className="w-4 h-4" />

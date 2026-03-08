@@ -8,14 +8,14 @@ export default function Hero() {
       <div className="relative h-[400px] w-full bg-gray-900">
         <img 
           src={heroBg}
-          alt="Pest control specialist" 
+          alt="Especialista em controle de pragas" 
           className="absolute inset-0 w-full h-full object-cover"
         />
         
         {/* Content */}
         <div className="relative h-full container mx-auto px-4 flex flex-col items-center justify-center text-center">
           <h1 className="text-4xl md:text-5xl font-normal text-white mb-8 max-w-4xl leading-tight" data-testid="text-hero-title">
-            The global experts in pest control
+            Os especialistas globais em controle de pragas
           </h1>
           
           <div className="flex justify-center w-full">
@@ -23,7 +23,7 @@ export default function Hero() {
               className="border border-white text-white bg-transparent hover:bg-white/10 transition-all duration-300 font-normal px-6 py-2.5 text-[16px] min-w-[200px]"
               data-testid="button-contact-specialist"
             >
-              Contact your local Rentokil specialist
+              Contate o seu especialista local da Rentokil
             </button>
           </div>
         </div>
@@ -50,7 +50,7 @@ export default function Hero() {
       <div className="w-full bg-white py-12">
         <div className="container mx-auto px-4 text-center max-w-4xl">
           <p className="text-[#333333] text-[18px] leading-relaxed font-normal" data-testid="text-hero-intro">
-            Rentokil is the world's largest pest control company, offering the broadest, most advanced range of pest control solutions and services in the industry.
+            A Rentokil é a maior empresa de controle de pragas do mundo, oferecendo a mais ampla e avançada gama de soluções e serviços de controle de pragas da indústria.
           </p>
         </div>
       </div>

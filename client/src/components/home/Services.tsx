@@ -10,21 +10,21 @@ export default function Services() {
         <div className="relative group overflow-hidden h-[500px]">
           <img 
             src={services1Img}
-            alt="Pest control services" 
+            alt="Serviços de controle de pragas" 
             className="absolute inset-0 w-full h-full object-cover"
           />
           
           {/* Card Overlap - Image 1 Style */}
           <div className="absolute top-1/2 left-1/2 md:left-[15%] transform -translate-y-1/2 bg-white border-t-4 border-[#e31818] p-8 md:p-10 z-10 w-[90%] md:w-[380px] shadow-xl">
-            <h3 className="text-[24px] font-normal text-[#333333] mb-6" data-testid="text-service-title-1">Pest control services</h3>
+            <h3 className="text-[24px] font-normal text-[#333333] mb-6" data-testid="text-service-title-1">Serviços de controle de pragas</h3>
             <p className="text-[#333333] mb-8 text-[14px] leading-relaxed" data-testid="text-service-desc-1">
-              Rentokil supports more than half a million customers in over 90 countries and is trusted as the pest control partner of choice for small businesses and multinationals worldwide.
+              A Rentokil apoia mais de meio milhão de clientes em mais de 90 países e é reconhecida como a parceira preferida de controle de pragas para pequenas empresas e multinacionais em todo o mundo.
             </p>
             <button 
               className="border border-[#0077c0] text-[#0077c0] hover:bg-[#0077c0] hover:text-white transition-colors duration-300 font-normal px-6 py-2 text-[14px]"
               data-testid="button-service-1"
             >
-              Find out more
+              Saiba mais
             </button>
           </div>
         </div>
@@ -33,21 +33,21 @@ export default function Services() {
         <div className="relative group overflow-hidden h-[500px]">
           <img 
             src={services2Img}
-            alt="Digital pest control" 
+            alt="Controle de pragas digital" 
             className="absolute inset-0 w-full h-full object-cover"
           />
           
           {/* Card Overlap - Image 1 Style */}
           <div className="absolute top-1/2 left-1/2 md:left-[15%] transform -translate-y-1/2 bg-white border-t-4 border-[#e31818] p-8 md:p-10 z-10 w-[90%] md:w-[380px] shadow-xl">
-            <h3 className="text-[24px] font-normal text-[#333333] mb-6" data-testid="text-service-title-2">Digital pest control</h3>
+            <h3 className="text-[24px] font-normal text-[#333333] mb-6" data-testid="text-service-title-2">Controle de pragas digital</h3>
             <p className="text-[#333333] mb-8 text-[14px] leading-relaxed" data-testid="text-service-desc-2">
-              A range of digitally enhanced, connected pest management solutions provide commercial customers with unrivalled data, insights and reporting to proactively prevent and manage pests.
+              Uma gama de soluções de gestão de pragas conectadas e digitalmente aprimoradas fornece aos clientes comerciais dados, percepções e relatórios incomparáveis para prevenir e gerenciar pragas de forma proativa.
             </p>
             <button 
               className="border border-[#0077c0] text-[#0077c0] hover:bg-[#0077c0] hover:text-white transition-colors duration-300 font-normal px-6 py-2 text-[14px]"
               data-testid="button-service-2"
             >
-              Find out more
+              Saiba mais
             </button>
           </div>
         </div>

@@ -5,10 +5,10 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 export default function Water() {
   const sectors = [
-    { name: "Events", icon: "https://www.rentokil.com/assets/images/icons/sector-hotels.png" },
-    { name: "Construction", icon: "https://www.rentokil.com/assets/images/icons/sector-facilities.png" },
-    { name: "Emergency", icon: "https://www.rentokil.com/assets/images/icons/sector-facilities.png" },
-    { name: "Offices", icon: "https://www.rentokil.com/assets/images/icons/sector-facilities.png" },
+    { name: "Eventos", icon: "https://www.rentokil.com/assets/images/icons/sector-hotels.png" },
+    { name: "Construção", icon: "https://www.rentokil.com/assets/images/icons/sector-facilities.png" },
+    { name: "Emergência", icon: "https://www.rentokil.com/assets/images/icons/sector-facilities.png" },
+    { name: "Escritórios", icon: "https://www.rentokil.com/assets/images/icons/sector-facilities.png" },
   ];
 
   const stages = [
@@ -35,7 +35,7 @@ export default function Water() {
           <div className="container mx-auto px-4 z-10">
             <div className="max-w-4xl">
               <nav className="flex items-center space-x-2 text-white/90 text-sm mb-8 font-medium">
-                <a href="/" className="hover:underline">Home</a>
+                <a href="/" className="hover:underline">Início</a>
                 <ChevronRight className="w-4 h-4" />
                 <a href="/services" className="hover:underline">Serviços</a>
                 <ChevronRight className="w-4 h-4" />

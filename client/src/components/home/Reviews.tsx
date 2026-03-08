@@ -4,26 +4,26 @@ const reviews = [
   {
     id: 1,
     author: "Kabir Hossain",
-    time: "7 hours ago",
+    time: "7 horas atrás",
     initial: "K",
     color: "bg-[#0077c0]",
-    text: "Good technicians loyal with their work I am extremely satisfied with the pest control serives provided by MR Aqeel...",
+    text: "Bons técnicos leais com o seu trabalho Estou extremamente satisfeito com os serviços de controle de pragas fornecidos pelo SR. Aqeel...",
   },
   {
     id: 2,
     author: "Wanjiko Stancy",
-    time: "13 hours ago",
+    time: "13 horas atrás",
     initial: "W",
     color: "bg-[#e91e63]",
-    text: "Five stars for Rentokil Boecker! We had a sudden pest problem and Patrick arrived right on time. He was efficient,...",
+    text: "Cinco estrelas para Rentokil Boecker! Tivemos um problema repentino de pragas e Patrick chegou bem a tempo. Ele foi eficiente,...",
   },
   {
     id: 3,
     author: "Warren Vincent",
-    time: "A day ago",
+    time: "Um dia atrás",
     initial: "W",
     color: "bg-[#5d4037]",
-    text: "Today Mr Taofiq visited to carryout our regular pest control service. Fast efficient and very courteous service as...",
+    text: "Hoje o Sr. Taofiq visitou para realizar nosso serviço regular de controle de pragas. Serviço rápido e eficiente e muito cortês, pois...",
   },
 ];
 
@@ -33,7 +33,7 @@ export default function Reviews() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
           <h2 className="text-[20px] font-bold text-[#333333]">
-            4.9 rating <span className="font-normal text-gray-600">of 29767 reviews</span>
+            Avaliação de 4.9 <span className="font-normal text-gray-600">de 29767 avaliações</span>
           </h2>
         </div>
 
@@ -68,7 +68,7 @@ export default function Reviews() {
                 </div>
 
                 <p className="text-[14px] text-[#333333] leading-relaxed flex-grow">
-                  {review.text} <span className="font-bold cursor-pointer">See More</span>
+                  {review.text} <span className="font-bold cursor-pointer">Ver mais</span>
                 </p>
               </div>
             ))}

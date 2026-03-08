@@ -5,11 +5,11 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 export default function Pests() {
   const sectors = [
-    { name: "Food processing", icon: "https://www.rentokil.com/assets/images/icons/sector-food-processing.png" },
-    { name: "Food retail", icon: "https://www.rentokil.com/assets/images/icons/sector-food-retail.png" },
-    { name: "Logistics & warehousing", icon: "https://www.rentokil.com/assets/images/icons/sector-logistics.png" },
-    { name: "Facilities management", icon: "https://www.rentokil.com/assets/images/icons/sector-facilities.png" },
-    { name: "Hotels", icon: "https://www.rentokil.com/assets/images/icons/sector-hotels.png" },
+    { name: "Processamento de alimentos", icon: "https://www.rentokil.com/assets/images/icons/sector-food-processing.png" },
+    { name: "Varejo de alimentos", icon: "https://www.rentokil.com/assets/images/icons/sector-food-retail.png" },
+    { name: "Logística e armazenamento", icon: "https://www.rentokil.com/assets/images/icons/sector-logistics.png" },
+    { name: "Gestão de instalações", icon: "https://www.rentokil.com/assets/images/icons/sector-facilities.png" },
+    { name: "Hotéis", icon: "https://www.rentokil.com/assets/images/icons/sector-hotels.png" },
   ];
 
   const stages = [
@@ -36,7 +36,7 @@ export default function Pests() {
           <div className="container mx-auto px-4 z-10">
             <div className="max-w-4xl">
               <nav className="flex items-center space-x-2 text-white/90 text-sm mb-8 font-medium">
-                <a href="/" className="hover:underline">Home</a>
+                <a href="/" className="hover:underline">Início</a>
                 <ChevronRight className="w-4 h-4" />
                 <a href="/services" className="hover:underline">Serviços</a>
                 <ChevronRight className="w-4 h-4" />
@@ -146,9 +146,39 @@ export default function Pests() {
           </div>
         </section>
       </main>
-      <footer className="bg-white border-t-8 border-[#e31837] py-16 text-center">
-        <span className="text-[#e31837] text-4xl font-bold">Rentokil</span>
-        <p className="text-gray-500 mt-4">© {new Date().getFullYear()} Rentokil Initial plc.</p>
+      <footer className="bg-white border-t-8 border-[#e31837] pt-16 pb-8">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+            <div className="space-y-3">
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Locais</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Pesquisa</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Contato</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Entrar</a>
+            </div>
+            <div className="space-y-3">
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Início</a>
+              <a href="/services" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Serviços</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Contas globais</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Setores empresariais</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Sobre</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Blog</a>
+            </div>
+            <div className="space-y-3">
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Carreiras</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Informação da empresa</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Declaração legal</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Política de privacidade</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Política de cookies</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Código de conduta do fornecedor</a>
+            </div>
+            <div className="flex flex-col items-start md:items-end space-y-6">
+              <span className="text-[#e31837] text-4xl font-bold tracking-tight">Rentokil</span>
+              <div className="text-xs text-[#666666] text-left md:text-right leading-relaxed max-w-[280px]">
+                © {new Date().getFullYear()} Rentokil Initial plc e sujeito às condições na <a href="#" className="text-[#007cc3] hover:underline">declaração legal</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   );

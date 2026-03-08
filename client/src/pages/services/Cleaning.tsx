@@ -5,11 +5,11 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 export default function Cleaning() {
   const sectors = [
-    { name: "Offices", icon: "https://www.rentokil.com/assets/images/icons/sector-facilities.png" },
+    { name: "Escritórios", icon: "https://www.rentokil.com/assets/images/icons/sector-facilities.png" },
     { name: "Industrial", icon: "https://www.rentokil.com/assets/images/icons/sector-food-processing.png" },
-    { name: "Retail", icon: "https://www.rentokil.com/assets/images/icons/sector-food-retail.png" },
-    { name: "Education", icon: "https://www.rentokil.com/assets/images/icons/sector-facilities.png" },
-    { name: "Hospitality", icon: "https://www.rentokil.com/assets/images/icons/sector-hotels.png" },
+    { name: "Varejo", icon: "https://www.rentokil.com/assets/images/icons/sector-food-retail.png" },
+    { name: "Educação", icon: "https://www.rentokil.com/assets/images/icons/sector-facilities.png" },
+    { name: "Hospitalidade", icon: "https://www.rentokil.com/assets/images/icons/sector-hotels.png" },
   ];
 
   const stages = [
@@ -36,7 +36,7 @@ export default function Cleaning() {
           <div className="container mx-auto px-4 z-10">
             <div className="max-w-4xl">
               <nav className="flex items-center space-x-2 text-white/90 text-sm mb-8 font-medium">
-                <a href="/" className="hover:underline">Home</a>
+                <a href="/" className="hover:underline">Início</a>
                 <ChevronRight className="w-4 h-4" />
                 <a href="/services" className="hover:underline">Serviços</a>
                 <ChevronRight className="w-4 h-4" />

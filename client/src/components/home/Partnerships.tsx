@@ -16,10 +16,10 @@ export default function Partnerships() {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 max-w-6xl text-center mb-16">
         <h2 className="text-3xl md:text-[32px] font-medium text-[#333333] mb-8 leading-tight">
-          International affiliations and partnerships
+          Afiliações e parcerias internacionais
         </h2>
         <p className="text-[#333333] max-w-4xl mx-auto leading-relaxed text-[16px]">
-          In partnership with renowned international standard bodies, Rentokil proudly elevates the standards of pest control, reinforcing customer safety and upholding industry-leading practices.
+          Em parceria com renomados organismos de normalização internacionais, a Rentokil orgulhosamente eleva os padrões de controle de pragas, reforçando a segurança do cliente e mantendo as práticas líderes do setor.
         </p>
       </div>
 
@@ -29,25 +29,25 @@ export default function Partnerships() {
 
       <div className="container mx-auto px-4 max-w-4xl text-left">
         <p className="text-[#333333] mb-12 text-[16px]">
-          Trusted in <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">over 90 countries</span>, protects homes and businesses from pests. Our legacy is built on:
+          Confiável em <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">mais de 90 países</span>, protege residências e empresas contra pragas. Nosso legado é construído em:
         </p>
 
         <div className="space-y-12">
           <div>
             <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">
-              Giving you peace of mind
+              Dando a você paz de espírito
             </h3>
             <p className="text-[#333333] leading-relaxed text-[16px]">
-              With over 19,000 qualified service technicians worldwide, we tailor pest control solutions across numerous sectors, acting as your frontline defence against potential pest threats.
+              Com mais de 19.000 técnicos de serviço qualificados em todo o mundo, adaptamos soluções de controle de pragas em vários setores, agindo como sua linha de frente de defesa contra possíveis ameaças de pragas.
             </p>
           </div>
 
           <div>
             <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">
-              Safeguarding your reputation
+              Salvaguardando a sua reputação
             </h3>
             <p className="text-[#333333] leading-relaxed text-[16px]">
-              We adopt a forward-thinking strategy, blending preventive measures with swift responses. We ensure your home or business remains pest-free thanks to state-of-the-art technologies and a comprehensive pest control approach.
+              Adotamos uma estratégia com visão de futuro, combinando medidas preventivas com respostas rápidas. Garantimos que a sua casa ou empresa permaneça livre de pragas graças a tecnologias de ponta e a uma abordagem abrangente de controle de pragas.
             </p>
           </div>
         </div>
@@ -57,32 +57,32 @@ export default function Partnerships() {
           {/* Responsible Pest Control Card */}
           <div className="bg-white border-t-4 border-[#e31837] shadow-lg p-8 flex flex-col h-full">
             <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">
-              Responsible pest control
+              Controle de pragas responsável
             </h3>
             <p className="text-[#666666] leading-relaxed text-[16px] mb-8 flex-grow">
-              We're committed to reducing the environmental impact of the products and services you rely on to protect your business from pests. Learn how we're driving improvements across our solutions, operations, and workplaces.
+              Estamos comprometidos em reduzir o impacto ambiental dos produtos e serviços nos quais você confia para proteger sua empresa contra pragas. Saiba como estamos promovendo melhorias em nossas soluções, operações e locais de trabalho.
             </p>
             <button 
               className="w-fit px-6 py-2 border border-[#007cc3] text-[#007cc3] font-medium hover:bg-[#007cc3] hover:text-white transition-colors duration-300"
               data-testid="button-find-out-more"
             >
-              Find out more
+              Saiba mais
             </button>
           </div>
 
           {/* Local Experts Card */}
           <div className="bg-white border-t-4 border-[#e31837] shadow-lg p-8 flex flex-col h-full">
             <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">
-              Your local pest control experts
+              Seus especialistas locais em controle de pragas
             </h3>
             <p className="text-[#666666] leading-relaxed text-[16px] mb-8 flex-grow">
-              Operating in over 90 countries worldwide, Rentokil can help fulfil your commercial and residential pest control requirements. Find out more about the services, solutions and pricing in your country.
+              Operando em mais de 90 países em todo o mundo, a Rentokil pode ajudar a atender às suas necessidades comerciais e residenciais de controle de pragas. Saiba mais sobre os serviços, soluções e preços no seu país.
             </p>
             <button 
               className="w-fit px-6 py-2 border border-[#007cc3] text-[#007cc3] font-medium hover:bg-[#007cc3] hover:text-white transition-colors duration-300"
               data-testid="button-choose-country"
             >
-              Choose your country
+              Escolha seu país
             </button>
           </div>
         </div>
@@ -90,16 +90,16 @@ export default function Partnerships() {
         {/* CCPA Notice Section */}
         <div className="mt-24 text-center border-t border-gray-100 pt-16 pb-8">
           <h2 className="text-2xl md:text-[32px] font-medium text-[#333333] mb-8">
-            CCPA notice for US customers
+            Aviso CCPA para clientes nos EUA
           </h2>
           <p className="text-[#666666] max-w-3xl mx-auto leading-relaxed text-[16px] mb-8">
-            Your privacy is important to us. In rare circumstances, we may share your information with trusted partners to improve your service which may be deemed as a "sale" as defined in the CCPA. You can opt out here:
+            A sua privacidade é importante para nós. Em raras circunstâncias, podemos compartilhar as suas informações com parceiros de confiança para melhorar o seu serviço, o que pode ser considerado uma "venda" conforme definido no CCPA. Pode desativar aqui:
           </p>
           <button 
             className="text-[#007cc3] font-medium hover:underline text-[16px]"
             data-testid="button-ccpa-opt-out"
           >
-            Do not sell my information
+            Não venda minhas informações
           </button>
         </div>
       </div>

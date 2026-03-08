@@ -44,18 +44,18 @@ export default function Expertise() {
 
   const cards = [
     {
-      title: "Global yet local",
-      description: "We are everywhere, serving more locations than any other pest control provider, blending our 100-year legacy with local expertise in 1,800 teams worldwide.",
+      title: "Global mas local",
+      description: "Estamos em todos os lugares, atendendo a mais locais do que qualquer outro provedor de controle de pragas, combinando nosso legado de 100 anos com experiência local em 1.800 equipes em todo o mundo.",
       icon: <Globe className="w-12 h-12 text-[#333333] stroke-[1px]" />,
     },
     {
-      title: "Leading the digital pest control era",
-      description: "Our pioneering PestConnect range offers constant protection. With innovation in our DNA, we anticipate, resolve, and report pest risks seamlessly.",
+      title: "Liderando a era do controle digital de pragas",
+      description: "A nossa pioneira linha PestConnect oferece proteção constante. Com a inovação no nosso DNA, antecipamos, resolvemos e relatamos os riscos de pragas de forma contínua.",
       icon: <Smartphone className="w-12 h-12 text-[#333333] stroke-[1px]" />,
     },
     {
-      title: "One team, one contact",
-      description: "Our Global Accounts Management Team provides tailored services and a dedicated single point of contact, ensuring an effortless, consistent pest management experience across your estate.",
+      title: "Uma equipe, um contato",
+      description: "A nossa Equipa de Gestão de Contas Globais fornece serviços personalizados e um ponto de contacto único dedicado, garantindo uma experiência de gestão de pragas consistente e sem esforço em toda a sua propriedade.",
       icon: <Users className="w-12 h-12 text-[#333333] stroke-[1px]" />,
     },
   ];
@@ -64,10 +64,10 @@ export default function Expertise() {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 max-w-6xl text-center mb-16">
         <h2 className="text-3xl md:text-[32px] font-medium text-[#333333] mb-8 leading-tight">
-          Empowering multinationals with global pest control expertise
+          Capacitando multinacionais com experiência global em controle de pragas
         </h2>
         <p className="text-[#333333] max-w-4xl mx-auto leading-relaxed text-[16px]">
-          At Rentokil, we bring a world of excellence in pest control, safeguarding businesses across 90 countries with our unmatched expertise and innovative solutions. Here is why you'll thrive partnering with our <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">Global Accounts Management Team.</span>
+          Na Rentokil, trazemos um mundo de excelência no controlo de pragas, protegendo empresas em 90 países com a nossa experiência incomparável e soluções inovadoras. Veja por que você prosperará em parceria com a nossa <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">Equipa de Gestão de Contas Globais.</span>
         </p>
       </div>
 
@@ -135,7 +135,7 @@ export default function Expertise() {
             className={`expertise-button bg-[#007cc3] text-white font-bold py-4 px-10 text-xl hover:bg-[#005a8f] transition-colors ${visibleButton ? 'visible' : ''}`}
             data-testid="button-contact-us"
           >
-            Ready to simplify your pest management? Contact us today.
+            Pronto para simplificar a gestão de pragas? Contacte-nos hoje.
           </button>
         </div>
       </div>
