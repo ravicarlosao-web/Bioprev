@@ -131,8 +131,12 @@ export default function Header() {
             </div>
           </Link>
 
-          {/* Contact Numbers on Top Bar */}
+          {/* Contact Numbers and Email on Top Bar */}
           <div className="flex items-center ml-auto mr-12 text-[#333333] font-bold text-sm tracking-tight hidden md:flex">
+            <a href="mailto:geral@bioprev.com" className="hover:text-[#e31818] transition-colors mr-4 flex items-center">
+              <span className="mr-1">✉️</span> geral@bioprev.com
+            </a>
+            <span className="mx-2 text-gray-400">|</span>
             <a href="tel:+244947059109" className="hover:text-[#e31818] transition-colors">+244 947 059 109</a>
             <span className="mx-2 text-gray-400">|</span>
             <a href="tel:+244928737888" className="hover:text-[#e31818] transition-colors">+244 928 737 888</a>

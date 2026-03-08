@@ -66,18 +66,23 @@ export default function Contact() {
             </p>
 
             <div className="bg-gray-50 p-6 border-l-4 border-[#e31818] mb-8 shadow-sm">
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Ligue-nos diretamente</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Contatos Diretos</h3>
               <p className="text-gray-700 mb-3">
-                Pode entrar em contato connosco através dos números:
+                Pode entrar em contato connosco através dos seguintes meios:
               </p>
-              <div className="font-bold text-xl text-[#0077c0] flex flex-wrap gap-2 items-center">
-                <a href="tel:+244947059109" className="hover:underline flex items-center">
-                  📞 +244 947 059 109
+              <div className="font-bold text-xl text-[#0077c0] flex flex-col gap-3">
+                <a href="mailto:geral@bioprev.com" className="hover:underline flex items-center text-lg">
+                  <span className="mr-2">✉️</span> geral@bioprev.com
                 </a>
-                <span className="text-gray-300 hidden sm:inline">|</span>
-                <a href="tel:+244928737888" className="hover:underline flex items-center">
-                  📞 +244 928 737 888
-                </a>
+                <div className="flex flex-wrap gap-2 items-center">
+                  <a href="tel:+244947059109" className="hover:underline flex items-center">
+                    📞 +244 947 059 109
+                  </a>
+                  <span className="text-gray-300 hidden sm:inline">|</span>
+                  <a href="tel:+244928737888" className="hover:underline flex items-center">
+                    📞 +244 928 737 888
+                  </a>
+                </div>
               </div>
             </div>
           </div>
