@@ -2,6 +2,7 @@ import Header from "@/components/layout/Header";
 import { ChevronRight, Plus, CheckCircle2, Target, Search, ShieldCheck, Zap, Shield, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import Footer from "@/components/layout/Footer";
 
 export default function Disinfestation() {
   const sectors = [
@@ -279,40 +280,7 @@ export default function Disinfestation() {
         </section>
       </main>
 
-      <footer className="bg-white border-t-8 border-[#e31837] pt-16 pb-8">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-            <div className="space-y-3">
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Locais</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Pesquisa</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Contato</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Entrar</a>
-            </div>
-            <div className="space-y-3">
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Início</a>
-              <a href="/services" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Serviços</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Contas nacionais</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Setores empresariais</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Sobre</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Blog</a>
-            </div>
-            <div className="space-y-3">
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Carreiras</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Informação da empresa</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Declaração legal</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Política de privacidade</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Política de cookies</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Código de conduta do fornecedor</a>
-            </div>
-            <div className="flex flex-col items-start md:items-end space-y-6">
-              <span className="text-[#e31837] text-4xl font-bold tracking-tight">Bioprev</span>
-              <div className="text-xs text-[#666666] text-left md:text-right leading-relaxed max-w-[280px]">
-                © {new Date().getFullYear()} Bioprev e sujeito às condições na <a href="#" className="text-[#007cc3] hover:underline">declaração legal</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

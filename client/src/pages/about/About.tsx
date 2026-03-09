@@ -1,6 +1,7 @@
 import { ChevronRight, Target, ShieldCheck, Leaf } from "lucide-react";
 import Header from "@/components/layout/Header";
 import { Link } from "wouter";
+import Footer from "@/components/layout/Footer";
 
 export default function About() {
   return (
@@ -144,35 +145,7 @@ export default function About() {
 
       </main>
 
-      {/* Footer */}
-      <footer className="bg-white border-t-8 border-[#e31837] pt-16 pb-8">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-            <div className="space-y-3">
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Locais</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Pesquisar</a>
-              <a href="/contact" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Contato</a>
-            </div>
-            <div className="space-y-3">
-              <Link href="/"><span className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium cursor-pointer">Início</span></Link>
-              <Link href="/services"><span className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium cursor-pointer">Serviços</span></Link>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Contas nacionais</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Setores empresariais</a>
-              <Link href="/about"><span className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium cursor-pointer">Sobre</span></Link>
-              <Link href="/blog"><span className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium cursor-pointer">Blog</span></Link>
-            </div>
-            <div className="space-y-3">
-              <h3 className="font-bold text-[#333333] mb-4">Perguntas Frequentes</h3>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Privacidade e Termos</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Termos e Condições do Site</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Preferências de Cookies</a>
-            </div>
-          </div>
-          <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-[#666666] text-xs">© 2024 Bioprev. Todos os direitos reservados.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

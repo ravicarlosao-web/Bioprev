@@ -2,6 +2,7 @@ import Header from "@/components/layout/Header";
 import { ChevronRight, Plus, CheckCircle2, Target, Search, ShieldCheck, Zap, Shield, Info, Droplets } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import Footer from "@/components/layout/Footer";
 
 export default function Water() {
   const sectors = [
@@ -107,10 +108,7 @@ export default function Water() {
           </div>
         </section>
       </main>
-      <footer className="bg-white border-t-8 border-[#e31837] py-16 text-center">
-        <span className="text-[#e31837] text-4xl font-bold">Bioprev</span>
-        <p className="text-gray-500 mt-4">© {new Date().getFullYear()} Bioprev.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
