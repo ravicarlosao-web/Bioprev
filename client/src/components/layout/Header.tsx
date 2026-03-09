@@ -64,9 +64,9 @@ export default function Header() {
       label: 'Sobre',
       testId: 'nav-about',
       content: [
-        { icon: Info, text: 'Quem\nsomos' },
-        { icon: Globe, text: 'Nossa\nhistória' },
-        { icon: Target, text: 'Carreiras' },
+        { icon: Info, text: 'Quem\nsomos', href: '/about' },
+        { icon: Globe, text: 'Nossa\nhistória', href: '/about/history' },
+        { icon: Target, text: 'Carreiras', href: '/about/careers' },
       ]
     },
     {
