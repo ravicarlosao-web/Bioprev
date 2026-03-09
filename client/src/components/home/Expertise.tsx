@@ -1,4 +1,4 @@
-import { Globe, Smartphone, Users } from "lucide-react";
+import { MapPinned, Radar, Headset } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
 
 export default function Expertise() {
@@ -46,17 +46,29 @@ export default function Expertise() {
     {
       title: "Nacional mas local",
       description: "Estamos em todos os lugares, atendendo a mais locais do que qualquer outro provedor de controle de pragas, combinando nossa experiência com equipes locais em todo o país.",
-      icon: <Globe className="w-12 h-12 text-[#333333] stroke-[1px]" />,
+      icon: (
+        <div className="w-24 h-24 rounded-full bg-[#f0f7fc] border-2 border-[#cce4f2] shadow-sm flex items-center justify-center transition-transform hover:scale-110 duration-300">
+          <MapPinned className="w-12 h-12 text-[#007cc3] stroke-[1.5px]" />
+        </div>
+      ),
     },
     {
       title: "Liderando a era do controle digital de pragas",
       description: "A nossa pioneira linha PestConnect oferece proteção constante. Com a inovação no nosso DNA, antecipamos, resolvemos e relatamos os riscos de pragas de forma contínua.",
-      icon: <Smartphone className="w-12 h-12 text-[#333333] stroke-[1px]" />,
+      icon: (
+        <div className="w-24 h-24 rounded-full bg-[#fde8e8] border-2 border-[#f5c2c2] shadow-sm flex items-center justify-center transition-transform hover:scale-110 duration-300">
+          <Radar className="w-12 h-12 text-[#e31837] stroke-[1.5px]" />
+        </div>
+      ),
     },
     {
       title: "Uma equipe, um contato",
       description: "A nossa Equipa de Gestão de Contas Nacionais fornece serviços personalizados e um ponto de contacto único dedicado, garantindo uma experiência de gestão de pragas consistente e sem esforço em toda a sua propriedade.",
-      icon: <Users className="w-12 h-12 text-[#333333] stroke-[1px]" />,
+      icon: (
+        <div className="w-24 h-24 rounded-full bg-[#f0f7fc] border-2 border-[#cce4f2] shadow-sm flex items-center justify-center transition-transform hover:scale-110 duration-300">
+          <Headset className="w-12 h-12 text-[#007cc3] stroke-[1.5px]" />
+        </div>
+      ),
     },
   ];
 
