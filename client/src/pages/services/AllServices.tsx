@@ -45,11 +45,11 @@ export default function AllServices() {
               </nav>
               
               <h1 className="text-white text-5xl md:text-6xl font-medium mb-8 leading-tight">
-                Serviços globais de controle de pragas<br />e soluções
+                Serviços nacionais de controle de pragas<br />e soluções
               </h1>
               
               <p className="text-white text-xl md:text-[22px] max-w-3xl mb-12 leading-relaxed font-light">
-                Como líder global em soluções de higiene e controle de pragas, a Bioprev leva serviços especializados, fiáveis e profissionais a clientes comerciais em todo o mundo.
+                Como líder nacional em soluções de higiene e controle de pragas, a Bioprev leva serviços especializados, fiáveis e profissionais a clientes comerciais em todo o país.
               </p>
               
               <Button 
@@ -76,7 +76,7 @@ export default function AllServices() {
               A Bioprev protege pessoas, residências e empresas dos perigos da falta de higiene e de doenças transmitidas por pragas há 100 anos.
             </p>
             <p className="text-[#666666] text-base mb-16 leading-relaxed">
-              Acreditamos que a inovação é um fator-chave para o sucesso. O nosso <span className="text-[#007cc3] cursor-pointer hover:underline">centro global de pesquisa e desenvolvimento</span> fornece aos nossos colegas da linha de frente as ferramentas e soluções de que necessitam para prestar <span className="text-[#007cc3] cursor-pointer hover:underline">serviços diferenciados de controle de pragas</span>. A Bioprev está comprometida com a <span className="text-[#007cc3] cursor-pointer hover:underline">sustentabilidade</span> e em explorar o uso de soluções mais ecológicas e não tóxicas, ao mesmo tempo em que continua a oferecer aos nossos clientes os altos níveis de proteção contra pragas de que os seus negócios necessitam.
+              Acreditamos que a inovação é um fator-chave para o sucesso. O nosso <span className="text-[#007cc3] cursor-pointer hover:underline">centro nacional de pesquisa e desenvolvimento</span> fornece aos nossos colegas da linha de frente as ferramentas e soluções de que necessitam para prestar <span className="text-[#007cc3] cursor-pointer hover:underline">serviços diferenciados de controle de pragas</span>. A Bioprev está comprometida com a <span className="text-[#007cc3] cursor-pointer hover:underline">sustentabilidade</span> e em explorar o uso de soluções mais ecológicas e não tóxicas, ao mesmo tempo em que continua a oferecer aos nossos clientes os altos níveis de proteção contra pragas de que os seus negócios necessitam.
             </p>
             
             <h2 className="text-3xl md:text-[40px] font-medium text-[#333333] mb-8 leading-tight">
@@ -102,7 +102,7 @@ export default function AllServices() {
               <div className="bg-white border-t-4 border-[#e31837] shadow-xl p-10">
                 <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">Serviços de controle de pragas</h3>
                 <p className="text-[#666666] leading-relaxed mb-8">
-                  A Bioprev é líder global no controle de pragas comerciais. Oferecemos uma gama de tratamentos direcionados e inovadores e soluções de impermeabilização para garantir que o seu negócio fique livre de pragas.
+                  A Bioprev é líder nacional no controle de pragas comerciais. Oferecemos uma gama de tratamentos direcionados e inovadores e soluções de impermeabilização para garantir que o seu negócio fique livre de pragas.
                 </p>
                 <button className="text-[#007cc3] font-medium border border-[#007cc3] px-6 py-2 hover:bg-[#007cc3] hover:text-white transition-all">
                   Saiba mais
@@ -290,7 +290,7 @@ export default function AllServices() {
             <div className="space-y-3">
               <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Início</a>
               <a href="/services" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Serviços</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Contas globais</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Contas nacionais</a>
               <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Setores empresariais</a>
               <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Sobre</a>
               <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Blog</a>

@@ -15,7 +15,7 @@ export default function Hero() {
         {/* Content */}
         <div className="relative h-full container mx-auto px-4 flex flex-col items-center justify-center text-center">
           <h1 className="text-4xl md:text-5xl font-normal text-white mb-8 max-w-4xl leading-tight" data-testid="text-hero-title">
-            Os especialistas globais em controle de pragas
+            Os especialistas nacionais em controle de pragas
           </h1>
           
           <div className="flex justify-center w-full">

@@ -13,10 +13,10 @@ export default function Sectors() {
     <section className="py-20 bg-[#f2f4f6]">
       <div className="container mx-auto px-4 max-w-6xl text-center mb-16">
         <h2 className="text-3xl md:text-[32px] font-medium text-[#333333] mb-8 leading-tight">
-          Líderes globais em serviços personalizados de controle de pragas
+          Líderes nacionais em serviços personalizados de controle de pragas
         </h2>
         <p className="text-[#333333] max-w-4xl mx-auto leading-relaxed text-[16px]">
-          A Bioprev é líder global em <span className="text-[#007cc3] cursor-pointer hover:underline">controle de pragas</span> e <span className="text-[#007cc3] cursor-pointer hover:underline">serviços especializados de desinfecção</span>, atendendo a diversos setores, como <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">Processamento de Alimentos</span>, <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">Logística</span>, <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">Gestão de Instalações</span> e <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">muito mais</span> em todo o mundo — seja nosso parceiro para experiência global em controle de pragas adaptada à sua indústria.
+          A Bioprev é líder nacional em <span className="text-[#007cc3] cursor-pointer hover:underline">controle de pragas</span> e <span className="text-[#007cc3] cursor-pointer hover:underline">serviços especializados de desinfecção</span>, atendendo a diversos setores, como <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">Processamento de Alimentos</span>, <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">Logística</span>, <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">Gestão de Instalações</span> e <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">muito mais</span> em todo o país — seja nosso parceiro para experiência nacional em controle de pragas adaptada à sua indústria.
         </p>
       </div>
 

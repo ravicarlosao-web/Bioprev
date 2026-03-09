@@ -44,8 +44,8 @@ export default function Expertise() {
 
   const cards = [
     {
-      title: "Global mas local",
-      description: "Estamos em todos os lugares, atendendo a mais locais do que qualquer outro provedor de controle de pragas, combinando nosso legado de 100 anos com experiência local em 1.800 equipes em todo o mundo.",
+      title: "Nacional mas local",
+      description: "Estamos em todos os lugares, atendendo a mais locais do que qualquer outro provedor de controle de pragas, combinando nossa experiência com equipes locais em todo o país.",
       icon: <Globe className="w-12 h-12 text-[#333333] stroke-[1px]" />,
     },
     {
@@ -55,7 +55,7 @@ export default function Expertise() {
     },
     {
       title: "Uma equipe, um contato",
-      description: "A nossa Equipa de Gestão de Contas Globais fornece serviços personalizados e um ponto de contacto único dedicado, garantindo uma experiência de gestão de pragas consistente e sem esforço em toda a sua propriedade.",
+      description: "A nossa Equipa de Gestão de Contas Nacionais fornece serviços personalizados e um ponto de contacto único dedicado, garantindo uma experiência de gestão de pragas consistente e sem esforço em toda a sua propriedade.",
       icon: <Users className="w-12 h-12 text-[#333333] stroke-[1px]" />,
     },
   ];
@@ -64,10 +64,10 @@ export default function Expertise() {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 max-w-6xl text-center mb-16">
         <h2 className="text-3xl md:text-[32px] font-medium text-[#333333] mb-8 leading-tight">
-          Capacitando multinacionais com experiência global em controle de pragas
+          Capacitando empresas com experiência nacional em controle de pragas
         </h2>
         <p className="text-[#333333] max-w-4xl mx-auto leading-relaxed text-[16px]">
-          Na Bioprev, trazemos um mundo de excelência no controlo de pragas, protegendo empresas em 90 países com a nossa experiência incomparável e soluções inovadoras. Veja por que você prosperará em parceria com a nossa <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">Equipa de Gestão de Contas Globais.</span>
+          Na Bioprev, trazemos excelência no controlo de pragas, protegendo empresas em todo o país com a nossa experiência incomparável e soluções inovadoras. Veja por que você prosperará em parceria com a nossa <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">Equipa de Gestão de Contas Nacionais.</span>
         </p>
       </div>
 

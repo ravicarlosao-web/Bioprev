@@ -44,7 +44,7 @@ export default function Home() {
             <div className="space-y-3">
               <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Início</a>
               <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Serviços</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Contas globais</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Contas nacionais</a>
               <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Setores de negócios</a>
               <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Sobre</a>
               <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Blog</a>

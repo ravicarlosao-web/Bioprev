@@ -42,11 +42,11 @@ export default function Header() {
     },
     {
       id: 'global',
-      label: 'Contas globais',
+      label: 'Contas nacionais',
       testId: 'nav-global',
       content: [
         { icon: Globe, text: 'Visão\ngeral' },
-        { icon: Target, text: 'Soluções\nglobais' },
+        { icon: Target, text: 'Soluções\nnacionais' },
       ]
     },
     {

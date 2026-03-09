@@ -51,7 +51,7 @@ export default function Disinfestation() {
               </h1>
               
               <p className="text-white text-xl md:text-[22px] max-w-3xl mb-12 leading-relaxed font-light">
-                Como líder global em soluções de higiene, a Bioprev oferece serviços de desinfecção especializados, fiáveis e profissionais a clientes comerciais em todo o mundo.
+                Como líder nacional em soluções de higiene, a Bioprev oferece serviços de desinfecção especializados, fiáveis e profissionais a clientes comerciais em todo o país.
               </p>
               
               <Button 
@@ -78,7 +78,7 @@ export default function Disinfestation() {
               A Bioprev protege pessoas, residências e empresas dos perigos da falta de higiene e de doenças infecciosas há 100 anos.
             </p>
             <p className="text-[#666666] text-base mb-16 leading-relaxed">
-              Acreditamos que a inovação é um fator-chave para o sucesso. O nosso <span className="text-[#007cc3] cursor-pointer hover:underline">centro global de pesquisa e desenvolvimento</span> fornece aos nossos colegas da linha de frente as ferramentas e soluções de que necessitam para fornecer <span className="text-[#007cc3] cursor-pointer hover:underline">serviços de desinfecção diferenciados</span>. A Bioprev está comprometida com a <span className="text-[#007cc3] cursor-pointer hover:underline">sustentabilidade</span> e em explorar o uso de soluções mais ecológicas e não tóxicas, ao mesmo tempo em que continua a oferecer aos nossos clientes os altos níveis de proteção que as suas empresas necessitam.
+              Acreditamos que a inovação é um fator-chave para o sucesso. O nosso <span className="text-[#007cc3] cursor-pointer hover:underline">centro nacional de pesquisa e desenvolvimento</span> fornece aos nossos colegas da linha de frente as ferramentas e soluções de que necessitam para fornecer <span className="text-[#007cc3] cursor-pointer hover:underline">serviços de desinfecção diferenciados</span>. A Bioprev está comprometida com a <span className="text-[#007cc3] cursor-pointer hover:underline">sustentabilidade</span> e em explorar o uso de soluções mais ecológicas e não tóxicas, ao mesmo tempo em que continua a oferecer aos nossos clientes os altos níveis de proteção que as suas empresas necessitam.
             </p>
             
             <h2 className="text-3xl md:text-[40px] font-medium text-[#333333] mb-8 leading-tight">
@@ -291,7 +291,7 @@ export default function Disinfestation() {
             <div className="space-y-3">
               <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Início</a>
               <a href="/services" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Serviços</a>
-              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Contas globais</a>
+              <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Contas nacionais</a>
               <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Setores empresariais</a>
               <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Sobre</a>
               <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Blog</a>
