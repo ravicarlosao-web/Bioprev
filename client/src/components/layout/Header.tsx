@@ -259,8 +259,8 @@ export default function Header() {
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
               className="fixed top-0 right-0 w-[85%] max-w-[360px] h-full bg-white z-[201] overflow-y-auto shadow-2xl"
             >
-              <div className="flex items-center justify-end p-4 border-b border-gray-100">
-                <button onClick={() => { setMobileMenuOpen(false); setMobileSubmenu(null); }} className="p-2 text-[#333333]" data-testid="button-close-mobile-menu">
+              <div className="flex items-center justify-end px-4 py-2 border-b border-gray-100">
+                <button onClick={() => { setMobileMenuOpen(false); setMobileSubmenu(null); }} className="p-1.5 text-[#333333]" data-testid="button-close-mobile-menu">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
                 </button>
               </div>
