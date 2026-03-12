@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "wouter";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { Mail, Phone } from "lucide-react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -11,7 +12,7 @@ export default function Contact() {
     email: "",
     telephone: "",
     companyName: "",
-    country: "",
+    service: "",
     enquiry: "",
     receiveUpdates: false,
   });
@@ -33,9 +34,25 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Mock submission - in a real app, this would send to a backend
-    alert("Obrigado pelo seu contacto! Entraremos em contacto brevemente.");
+    
+    // Construct WhatsApp message
+    const typeLabel = formData.enquiryType === 'new-commercial' 
+      ? 'Novo cliente comercial' 
+      : formData.enquiryType === 'existing-customer' 
+        ? 'Cliente existente' 
+        : 'Novo cliente residencial';
+
+    const message = `*Nova Consulta de Contato (Site)*\n\n` +
+      `*Tipo:* ${typeLabel}\n` +
+      `*Nome:* ${formData.firstName} ${formData.lastName}\n` +
+      `*Email:* ${formData.email}\n` +
+      `*Telefone:* ${formData.telephone}\n` +
+      `${formData.companyName ? `*Empresa:* ${formData.companyName}\n` : ''}` +
+      `*Serviço Pretendido:* ${formData.service}\n` +
+      `*Consulta:*\n${formData.enquiry}`;
+
+    const whatsappUrl = `https://wa.me/244928737888?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   return (
@@ -57,29 +74,30 @@ export default function Contact() {
 
         {/* Form Section */}
         <div className="max-w-3xl mx-auto">
-          <div className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">Como podemos ajudar?</h2>
-            <p className="text-gray-700 mb-4">
+          <div className="mb-10">
+            <h2 className="text-[28px] font-bold text-[#111111] mb-4">Como podemos ajudar?</h2>
+            <p className="text-[#555555] mb-6 text-[16px] leading-relaxed">
               Precisa de ajuda com pragas? Diga-nos o que está a acontecer e iremos conectá-lo ao especialista certo.
             </p>
-            <p className="text-gray-600 text-sm mb-8">
-              Leia a nossa <a href="#" className="text-[#0077c0] hover:underline">política de privacidade</a> para entender como usamos seus dados.
+            <p className="text-[#555555] text-[14px] mb-10">
+              Leia a nossa <a href="#" className="text-[#007cc3] hover:underline">política de privacidade</a> para entender como usamos seus dados.
             </p>
 
-            <div className="bg-gray-50 p-6 border-l-4 border-[#f2c92f] mb-8 shadow-sm">
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Contatos Diretos</h3>
-              <p className="text-gray-700 mb-3">
+            <div className="bg-[#fafafa] p-8 border-l-[4px] border-[#f2c92f] mb-12">
+              <h3 className="text-[20px] font-bold text-[#111111] mb-3">Contatos Diretos</h3>
+              <p className="text-[#555555] mb-6 text-[16px]">
                 Pode entrar em contato connosco através dos seguintes meios:
               </p>
-              <div className="font-bold text-xl text-[#0077c0] flex flex-col gap-3">
-                <a href="mailto:geral@bioprev.com" className="hover:underline flex items-center text-lg">
-                  <span className="mr-2">✉️</span> geral@bioprev.com
+              <div className="flex flex-col gap-4 font-bold text-[18px] text-[#007cc3]">
+                <a href="mailto:geral@bioprev.com" className="hover:underline flex items-center">
+                  <Mail className="w-[22px] h-[22px] mr-3 text-[#d6b4e6]" fill="currentColor" strokeWidth={0} /> geral@bioprev.com
                 </a>
-                <div className="flex flex-wrap gap-2 items-center">
-                  <a href="tel:+244928737888" className="hover:underline flex items-center">
-                    📞 +244 928 737 888
-                  </a>
-                </div>
+                <a href="tel:+244928737888" className="hover:underline flex items-center">
+                  <Phone className="w-[22px] h-[22px] mr-3 text-[#d82c75]" fill="currentColor" strokeWidth={0} /> +244 928 737 888
+                </a>
+                <a href="tel:+244947059109" className="hover:underline flex items-center">
+                  <Phone className="w-[22px] h-[22px] mr-3 text-[#d82c75]" fill="currentColor" strokeWidth={0} /> +244 947 059 109
+                </a>
               </div>
             </div>
           </div>
@@ -213,25 +231,27 @@ export default function Contact() {
               />
             </div>
 
-            {/* Country / Region */}
+            {/* Service / Region */}
             <div>
               <label className="block text-sm font-bold text-gray-900 mb-2">
-                Escolha o seu país / região <span className="text-[#f2c92f]">*</span>
+                Serviço Pretendido <span className="text-[#f2c92f]">*</span>
               </label>
               <select 
-                name="country"
-                value={formData.country}
+                name="service"
+                value={formData.service}
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-[#0077c0] text-gray-900 bg-white cursor-pointer"
-                data-testid="select-country"
+                data-testid="select-service"
               >
-                <option value="">Selecione um país...</option>
-                <option value="angola">Angola</option>
-                <option value="portugal">Portugal</option>
-                <option value="brazil">Brasil</option>
-                <option value="spain">Espanha</option>
-                <option value="uk">Reino Unido</option>
+                <option value="">Selecione um serviço...</option>
+                <option value="desinfestacao">Serviços de desinfestação</option>
+                <option value="pragas">Gorgulhos e traças</option>
+                <option value="limpeza">Serviços de Limpeza</option>
+                <option value="residuos">Recolha de Resíduos</option>
+                <option value="agua">Fornecimento de Água potável</option>
+                <option value="jardinagem">Serviço de Jardinagem</option>
+                <option value="outro">Outro serviço</option>
               </select>
             </div>
 
