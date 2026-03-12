@@ -11,7 +11,7 @@ const data: SectorPageData = {
   introText: "A indústria de processamento alimentar exige os mais altos padrões de higiene e segurança. Uma infestação de pragas pode comprometer toda a cadeia de produção, resultar em recalls de produtos e causar danos irreparáveis à reputação da sua marca.",
   introSubtext: "A Bioprev compreende os desafios únicos do processamento alimentar e oferece programas de Gestão Integrada de Pragas (IPM) que se integram perfeitamente nas suas operações de produção, sem causar interrupções. Os nossos técnicos possuem formação específica em segurança alimentar e conhecem as normas HACCP, BRC, IFS e outras certificações exigidas pela indústria.",
   sectionTitle: "Proteção completa para a sua linha de produção",
-  sectionText: "Desde a receção de matérias-primas até ao produto acabado, a Bioprev protege cada etapa do seu processo de produção alimentar com soluções de controle de pragas que cumprem os mais rigorosos padrões internacionais de segurança alimentar.",
+  sectionText: "Desde a receção de matérias-primas até ao produto acabado, a Bioprev protege cada etapa do seu processo de produção alimentar com soluções de controle de pragas que cumprem os mais rigorosos padrões de segurança alimentar.",
   serviceCards: [
     {
       title: "Controle preventivo de pragas",

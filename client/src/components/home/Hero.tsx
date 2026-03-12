@@ -49,7 +49,7 @@ export default function Hero() {
       <div className="w-full bg-white py-12">
         <div className="container mx-auto px-4 text-center max-w-4xl">
           <p className="text-[#333333] text-[18px] leading-relaxed font-normal" data-testid="text-hero-intro">
-            A Bioprev é a maior empresa de controle de pragas do mundo, oferecendo a mais ampla e avançada gama de soluções e serviços de controle de pragas da indústria.
+            A Bioprev é a empresa angolana de referência em controle de pragas, oferecendo a mais ampla e avançada gama de soluções e serviços de higiene e desinfestação do mercado nacional.
           </p>
         </div>
       </div>

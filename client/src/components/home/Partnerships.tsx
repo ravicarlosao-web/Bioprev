@@ -7,7 +7,7 @@ export default function Partnerships() {
     { name: "Elisal", src: "https://www.elisal.ao/wp-content/uploads/2023/02/logo-elisal.png" },
     { name: "Oceaneering", src: "https://cdn.asp.events/CLIENT_GEP_Even_167A59CF_99D9_1363_5D410151722916AC/sites/gep-corporate-site/media/libraries/gep-partners/Oceaneering.png/fit-in/500x500/filters:no_upscale()" },
     { name: "Toyota Angola", src: "https://ao.empregosyoyota.net/storage/images/jobs/BiGTyg3RchyvpGR08n83fif0fqhCH0-metaMTczNDk2NDY3MzA1NS5qcGc=-.jpg" },
-    { name: "Oceaneering International", src: "https://images.seeklogo.com/logo-png/31/3/oceaneering-international-logo-png_seeklogo-310930.png" },
+    { name: "Oceaneering", src: "https://images.seeklogo.com/logo-png/31/3/oceaneering-international-logo-png_seeklogo-310930.png" },
     { name: "Yewhing", src: "https://pt.yewhing.com/themes/yewhing/images/logo.png" },
     { name: "GMA Angola", src: "https://static.gmangola.com/images/gma_logo_152x136.png" },
   ];
@@ -16,10 +16,10 @@ export default function Partnerships() {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 max-w-6xl text-center mb-16">
         <h2 className="text-3xl md:text-[32px] font-medium text-[#333333] mb-8 leading-tight">
-          Afiliações e parcerias internacionais
+          Os nossos parceiros e clientes
         </h2>
         <p className="text-[#333333] max-w-4xl mx-auto leading-relaxed text-[16px]">
-          Em parceria com renomados organismos de normalização internacionais, a Bioprev orgulhosamente eleva os padrões de controle de pragas, reforçando a segurança do cliente e mantendo as práticas líderes do setor.
+          Trabalhamos com empresas e instituições de referência em Angola, elevando os padrões de controle de pragas, reforçando a segurança dos nossos clientes e mantendo as melhores práticas do setor.
         </p>
       </div>
 
@@ -29,7 +29,7 @@ export default function Partnerships() {
 
       <div className="container mx-auto px-4 max-w-4xl text-left">
         <p className="text-[#333333] mb-12 text-[16px]">
-          Confiável em <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">mais de 90 países</span>, protege residências e empresas contra pragas. Nosso legado é construído em:
+          Com presença em <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">Luanda, Benguela e Huambo</span>, a Bioprev protege residências e empresas contra pragas em todo o território angolano. O nosso compromisso é construído em:
         </p>
 
         <div className="space-y-12">
@@ -38,7 +38,7 @@ export default function Partnerships() {
               Dando a você paz de espírito
             </h3>
             <p className="text-[#333333] leading-relaxed text-[16px]">
-              Com mais de 19.000 técnicos de serviço qualificados em todo o mundo, adaptamos soluções de controle de pragas em vários setores, agindo como sua linha de frente de defesa contra possíveis ameaças de pragas.
+              Com uma equipa de técnicos qualificados e certificados em todo o país, adaptamos soluções de controle de pragas a vários setores, agindo como a sua linha de frente de defesa contra possíveis ameaças de pragas nas suas instalações.
             </p>
           </div>
 
@@ -52,15 +52,13 @@ export default function Partnerships() {
           </div>
         </div>
 
-        {/* New Sections from Images */}
         <div className="mt-12 sm:mt-24 grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-          {/* Responsible Pest Control Card */}
           <div className="bg-white border-t-4 border-[#f2c92f] shadow-lg p-8 flex flex-col h-full">
             <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">
               Controle de pragas responsável
             </h3>
             <p className="text-[#666666] leading-relaxed text-[16px] mb-8 flex-grow">
-              Estamos comprometidos em reduzir o impacto ambiental dos produtos e serviços nos quais você confia para proteger sua empresa contra pragas. Saiba como estamos promovendo melhorias em nossas soluções, operações e locais de trabalho.
+              Estamos comprometidos em reduzir o impacto ambiental dos produtos e serviços nos quais você confia para proteger a sua empresa contra pragas. Utilizamos produtos certificados e sem prejuízo para a saúde do homem e para o meio ambiente.
             </p>
             <button 
               className="w-fit px-6 py-2 border border-[#007cc3] text-[#007cc3] font-medium hover:bg-[#007cc3] hover:text-white transition-colors duration-300"
@@ -70,37 +68,20 @@ export default function Partnerships() {
             </button>
           </div>
 
-          {/* Local Experts Card */}
           <div className="bg-white border-t-4 border-[#f2c92f] shadow-lg p-8 flex flex-col h-full">
             <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">
-              Seus especialistas locais em controle de pragas
+              Especialistas locais em controle de pragas
             </h3>
             <p className="text-[#666666] leading-relaxed text-[16px] mb-8 flex-grow">
-              Operando em mais de 90 países em todo o mundo, a Bioprev pode ajudar a atender às suas necessidades comerciais e residenciais de controle de pragas. Saiba mais sobre os serviços, soluções e preços no seu país.
+              Com filiais em Luanda, Benguela e Huambo, a Bioprev está perto de si para atender às suas necessidades comerciais e residenciais de controle de pragas. Conheça os nossos serviços, soluções e preços.
             </p>
             <button 
               className="w-fit px-6 py-2 border border-[#007cc3] text-[#007cc3] font-medium hover:bg-[#007cc3] hover:text-white transition-colors duration-300"
-              data-testid="button-choose-country"
+              data-testid="button-choose-location"
             >
-              Escolha seu país
+              Ver localizações
             </button>
           </div>
-        </div>
-
-        {/* CCPA Notice Section */}
-        <div className="mt-24 text-center border-t border-gray-100 pt-16 pb-8">
-          <h2 className="text-2xl md:text-[32px] font-medium text-[#333333] mb-8">
-            Aviso CCPA para clientes nos EUA
-          </h2>
-          <p className="text-[#666666] max-w-3xl mx-auto leading-relaxed text-[16px] mb-8">
-            A sua privacidade é importante para nós. Em raras circunstâncias, podemos compartilhar as suas informações com parceiros de confiança para melhorar o seu serviço, o que pode ser considerado uma "venda" conforme definido no CCPA. Pode desativar aqui:
-          </p>
-          <button 
-            className="text-[#007cc3] font-medium hover:underline text-[16px]"
-            data-testid="button-ccpa-opt-out"
-          >
-            Não venda minhas informações
-          </button>
         </div>
       </div>
     </section>

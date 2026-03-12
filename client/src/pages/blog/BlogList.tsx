@@ -12,7 +12,7 @@ export default function BlogList() {
     {
       id: "noticias-e-lideranca",
       title: "Notícias e liderança inovadora",
-      description: "Obtenha as atualizações mais recentes da Bioprev — incluindo notícias da empresa, prêmios, entrevistas com especialistas e nossas contribuições para moldar o futuro do controle de pragas em todo o mundo.",
+      description: "Obtenha as atualizações mais recentes da Bioprev — incluindo notícias da empresa, prêmios, entrevistas com especialistas e as nossas contribuições para elevar os padrões de controle de pragas em Angola.",
       image: blogNews,
       link: "/blog/noticias-e-lideranca"
     },

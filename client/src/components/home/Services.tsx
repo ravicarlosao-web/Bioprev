@@ -16,7 +16,7 @@ export default function Services() {
             <div className="bg-white border-t-4 border-[#f2c92f] p-6 sm:p-8 md:p-10 z-10 w-[88%] sm:w-[85%] md:w-[380px] shadow-xl">
               <h3 className="text-[20px] sm:text-[24px] font-normal text-[#333333] mb-4 sm:mb-6" data-testid="text-service-title-1">Serviços de controle de pragas</h3>
               <p className="text-[#333333] mb-6 sm:mb-8 text-[13px] sm:text-[14px] leading-relaxed" data-testid="text-service-desc-1">
-                A Bioprev apoia mais de meio milhão de clientes em mais de 90 países e é reconhecida como a parceira preferida de controle de pragas para pequenas empresas e multinacionais em todo o mundo.
+                A Bioprev é reconhecida como a parceira preferida de controle de pragas em Angola, apoiando empresas, condomínios e instituições em Luanda, Benguela e Huambo com soluções profissionais e eficazes.
               </p>
               <button 
                 className="border border-[#0077c0] text-[#0077c0] hover:bg-[#0077c0] hover:text-white transition-colors duration-300 font-normal px-5 sm:px-6 py-2 text-[13px] sm:text-[14px]"
