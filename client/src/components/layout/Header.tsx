@@ -126,7 +126,7 @@ export default function Header() {
           {/* Logo - Positioned to overlap both bars and touch Hero */}
           <Link href="/">
             <div 
-              className="absolute top-0 left-15 flex items-center justify-center px-4 z-50 w-[220px] h-[111.5px] cursor-pointer"
+              className="absolute top-0 left-15 bg-white flex items-center justify-center px-4 z-50 w-[220px] h-[111.5px] cursor-pointer"
               data-testid="text-logo-container"
             >
               <img src={logoImg} alt="Bioprev Logo" className="max-w-full max-h-full object-contain" data-testid="img-logo" />
