@@ -3,15 +3,12 @@ import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "wouter";
-import LocationsModal from "@/components/LocationsModal";
 import logoImg from "@/assets/images/logo.png";
 
 export default function Header() {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const [showSticky, setShowSticky] = useState(false);
   const [location] = useLocation();
-  const [showLocationsModal, setShowLocationsModal] = useState(false);
-  const [selectedLocation, setSelectedLocation] = useState<string | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileSubmenu, setMobileSubmenu] = useState<string | null>(null);
 
@@ -118,27 +115,20 @@ export default function Header() {
         )}
       </AnimatePresence>
 
-      {/* Locations Modal */}
-      <LocationsModal 
-        isOpen={showLocationsModal}
-        onClose={() => setShowLocationsModal(false)}
-        onSelectLocation={setSelectedLocation}
-      />
-
       {/* Top utility bar - gray background - Full width wrapper */}
       <div className="w-full bg-[#f2f2f2] border-b border-gray-200">
         <div className="container mx-auto px-4 relative flex items-center justify-between">
           {/* Main utilities on Top Bar */}
           <div className="flex justify-end py-2 text-[13px] font-medium text-[#333333] ml-auto">
             <div className="flex items-center space-x-6">
-              <button 
-                onClick={() => setShowLocationsModal(true)}
+              <Link 
+                href="/locations"
                 className="flex items-center hover:text-[#f2c92f] transition-colors cursor-pointer" 
                 data-testid="link-locations"
               >
                 <MapPin className="w-4 h-4 mr-1.5" strokeWidth={2.5} />
-                Locais {selectedLocation && `(${selectedLocation})`}
-              </button>
+                Locais
+              </Link>
               <a href="#" className="flex items-center hover:text-[#f2c92f] transition-colors" data-testid="link-search">
                 <Search className="w-4 h-4 mr-1.5" strokeWidth={2.5} />
                 Pesquisar
@@ -304,9 +294,9 @@ export default function Header() {
               </div>
 
               <div className="p-6 space-y-3 border-t border-gray-100">
-                <button onClick={() => { setShowLocationsModal(true); setMobileMenuOpen(false); }} className="flex items-center gap-2 text-[14px] text-[#555555] hover:text-[#007cc3]">
+                <Link href="/locations" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-2 text-[14px] text-[#555555] hover:text-[#007cc3]">
                   <MapPin className="w-4 h-4" /> Locais
-                </button>
+                </Link>
                 <Link href="/contact" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-2 text-[14px] text-[#555555] hover:text-[#007cc3]">
                   <Phone className="w-4 h-4" /> Contato
                 </Link>

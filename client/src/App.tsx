@@ -27,12 +27,14 @@ import FoodRetail from "@/pages/sectors/FoodRetail";
 import Pharmaceutical from "@/pages/sectors/Pharmaceutical";
 import Offices from "@/pages/sectors/Offices";
 import Restaurants from "@/pages/sectors/Restaurants";
+import Locations from "@/pages/Locations";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/contact" component={Contact} />
+      <Route path="/locations" component={Locations} />
       <Route path="/services" component={AllServices} />
       <Route path="/services/disinfestation" component={Disinfestation} />
       <Route path="/services/pests" component={Pests} />
