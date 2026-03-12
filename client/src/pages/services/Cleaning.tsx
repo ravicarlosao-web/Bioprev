@@ -1,122 +1,63 @@
-import Header from "@/components/layout/Header";
-import { ChevronRight, Plus, CheckCircle2, Target, Search, ShieldCheck, Zap, Shield, Info, Sparkles } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import Footer from "@/components/layout/Footer";
+import { Sparkles, Building2, Factory, GraduationCap, Sofa, Wind, ClipboardCheck, Clock } from "lucide-react";
+import { Search, Target, CheckCircle2 } from "lucide-react";
+import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
+
+const data: ServicePageData = {
+  heroImage: "https://images.unsplash.com/photo-1581578731522-745505146317?auto=format&fit=crop&q=80&w=2000",
+  heroImageAlt: "Serviços de limpeza",
+  breadcrumbLabel: "Serviços de limpeza",
+  heroTitle: "Serviços de limpeza\nprofissional",
+  heroSubtitle: "Mantemos o seu ambiente de trabalho impecável e higienizado com as melhores práticas do setor, equipas qualificadas e produtos de limpeza de alta qualidade.",
+  introText: "A Bioprev oferece serviços de limpeza profissional que vão muito além da limpeza convencional. Cada espaço recebe uma atenção personalizada que garante os mais altos padrões de higiene e apresentação.",
+  introSubtext: "As nossas equipas de limpeza são treinadas e equipadas com as mais recentes tecnologias e produtos ecológicos para garantir resultados superiores. Oferecemos soluções de limpeza profunda, manutenção diária e serviços especializados adaptados às necessidades de cada cliente, desde escritórios corporativos a instalações industriais.",
+  sectionTitle: "Excelência em higiene para o seu negócio",
+  sectionText: "A Bioprev fornece programas de limpeza profissional que se adaptam ao ritmo do seu negócio, garantindo espaços limpos, seguros e acolhedores para colaboradores, clientes e visitantes.",
+  serviceCards: [
+    {
+      title: "Limpeza comercial",
+      description: "Serviços de limpeza para escritórios, lojas e espaços públicos que mantêm os seus ambientes sempre apresentáveis e higienizados, com equipas dedicadas e horários flexíveis.",
+      image: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&q=80&w=1000",
+      imageAlt: "Limpeza comercial"
+    },
+    {
+      title: "Limpeza industrial",
+      description: "Especialistas em limpeza de ambientes de produção, armazéns e instalações industriais, utilizando equipamento e técnicas adequados a cada tipo de superfície e contaminação.",
+      image: "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&q=80&w=1000",
+      imageAlt: "Limpeza industrial"
+    }
+  ],
+  detailsTitle: "Os nossos serviços de limpeza",
+  detailsSubtitle: "Soluções completas de limpeza profissional para todos os tipos de espaços comerciais e industriais.",
+  details: [
+    { icon: Building2, title: "Limpeza de escritórios", description: "Serviço diário ou periódico de limpeza de escritórios, incluindo áreas de trabalho, salas de reunião, copas e instalações sanitárias." },
+    { icon: Factory, title: "Limpeza industrial", description: "Limpeza especializada de instalações de produção, armazéns e áreas técnicas, com equipamento industrial e produtos adequados." },
+    { icon: Sparkles, title: "Limpeza profunda", description: "Serviços de limpeza intensiva para renovação de espaços, incluindo limpeza de tetos, paredes, pisos e áreas de difícil acesso." },
+    { icon: GraduationCap, title: "Instituições de ensino", description: "Programas de limpeza adaptados a escolas e universidades, com foco na higiene de salas de aula, cantinas e áreas desportivas." },
+    { icon: Sofa, title: "Limpeza de estofados", description: "Tratamento profissional de carpetes, tapetes, cortinas e mobiliário estofado com equipamento de extração e produtos especializados." },
+    { icon: Wind, title: "Tratamento de pisos", description: "Lavagem, enceramento e polimento de pisos de todos os tipos — mosaico, madeira, vinil, betão e pedra natural." },
+    { icon: ClipboardCheck, title: "Controlo de qualidade", description: "Inspeções regulares de qualidade para garantir que os padrões de limpeza são mantidos de forma consistente em todas as visitas." },
+    { icon: Clock, title: "Horários flexíveis", description: "Serviços de limpeza disponíveis em horários diurnos, noturnos e de fim de semana, adaptados ao funcionamento do seu negócio." }
+  ],
+  approachTitle: "O nosso processo de limpeza",
+  approachText: "A Bioprev segue uma metodologia profissional que garante resultados consistentes e de alta qualidade em cada intervenção de limpeza.",
+  approachSteps: [
+    { title: "Avaliação do espaço", content: "Realizamos uma avaliação detalhada das suas instalações para compreender as necessidades específicas, o tipo de superfícies, os horários de funcionamento e os requisitos especiais de cada área." },
+    { title: "Definição do plano de limpeza", content: "Desenvolvemos um plano de limpeza personalizado que define a frequência, os métodos, os produtos e os equipamentos a utilizar em cada área, garantindo eficiência e consistência." },
+    { title: "Execução técnica", content: "As nossas equipas treinadas executam o plano de limpeza utilizando técnicas profissionais e equipamento de qualidade, seguindo protocolos que garantem resultados superiores." },
+    { title: "Controlo de qualidade", content: "Realizamos inspeções regulares de qualidade utilizando checklists detalhados e feedback dos clientes para garantir que os padrões são mantidos e melhorados continuamente." },
+    { title: "Relatório de serviço", content: "Fornecemos relatórios periódicos que documentam os serviços realizados, os resultados das inspeções de qualidade e as recomendações para otimização do programa." }
+  ],
+  whyTitle: "Porquê escolher a Bioprev para limpeza?",
+  whyText1: "Na Bioprev, acreditamos que um ambiente limpo é fundamental para a produtividade, o bem-estar e a imagem profissional da sua organização. As nossas equipas de limpeza são cuidadosamente selecionadas, formadas e supervisionadas para garantir os mais altos padrões de serviço em cada visita.",
+  whyText2: "Utilizamos produtos de limpeza ecológicos e equipamento profissional de última geração, e trabalhamos de forma discreta e eficiente para que os seus espaços estejam sempre impecáveis sem interferir com as suas operações.",
+  processCards: [
+    { icon: Search, title: "1. Avaliação personalizada", subtitle: "Análise detalhada das suas necessidades", items: ["Inspeção de todas as áreas e superfícies", "Definição de frequência e horários", "Orçamento transparente sem surpresas"] },
+    { icon: Target, title: "2. Execução profissional", subtitle: "Equipas treinadas e equipamento de qualidade", items: ["Técnicas profissionais de limpeza", "Produtos ecológicos certificados", "Atenção a cada detalhe"] },
+    { icon: CheckCircle2, title: "3. Qualidade garantida", subtitle: "Padrões elevados em cada visita", items: ["Inspeções regulares de qualidade", "Feedback e melhoria contínua", "Relatórios periódicos de serviço"] }
+  ],
+  ctaTitle: "Ambiente limpo é produtividade garantida"
+};
 
 export default function Cleaning() {
-  const sectors = [
-    { name: "Escritórios", icon: "https://www.bioprev.com/assets/images/icons/sector-facilities.png" },
-    { name: "Industrial", icon: "https://www.bioprev.com/assets/images/icons/sector-food-processing.png" },
-    { name: "Varejo", icon: "https://www.bioprev.com/assets/images/icons/sector-food-retail.png" },
-    { name: "Educação", icon: "https://www.bioprev.com/assets/images/icons/sector-facilities.png" },
-    { name: "Hospitalidade", icon: "https://www.bioprev.com/assets/images/icons/sector-hotels.png" },
-  ];
-
-  const stages = [
-    "Avaliação do espaço",
-    "Definição de cronograma",
-    "Execução técnica",
-    "Controlo de qualidade",
-    "Relatório de serviço"
-  ];
-
-  return (
-    <div className="min-h-screen bg-white flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
-        <section className="relative h-[350px] sm:h-[420px] md:h-[500px] flex items-center overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <img 
-              src="https://images.unsplash.com/photo-1581578731522-745505146317?auto=format&fit=crop&q=80&w=2000" 
-              alt="Serviços de Limpeza" 
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-black/40" />
-          </div>
-          <div className="container mx-auto px-4 z-10">
-            <div className="max-w-4xl">
-              <nav className="flex items-center space-x-2 text-white/90 text-sm mb-8 font-medium">
-                <a href="/" className="hover:underline">Início</a>
-                <ChevronRight className="w-4 h-4" />
-                <a href="/services" className="hover:underline">Serviços</a>
-                <ChevronRight className="w-4 h-4" />
-                <span>Serviços de Limpeza</span>
-              </nav>
-              <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-6 sm:mb-8 leading-tight">
-                Serviços de Limpeza<br />Profissional
-              </h1>
-              <p className="text-white text-base sm:text-lg md:text-xl lg:text-[22px] max-w-3xl mb-8 sm:mb-12 leading-relaxed font-light">
-                Mantemos o seu ambiente de trabalho impecável e higienizado com as melhores práticas do setor.
-              </p>
-              <Button variant="outline" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#333333] px-10 py-6 text-lg font-medium transition-all duration-300 rounded-none">
-                Solicitar Orçamento
-              </Button>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4 max-w-4xl text-center">
-            <p className="text-[#333333] text-lg mb-8 leading-relaxed font-medium">Excelência em higiene para o seu negócio.</p>
-            <p className="text-[#666666] text-base mb-16 leading-relaxed">Nossas soluções de <span className="text-[#007cc3] cursor-pointer hover:underline">limpeza profunda</span> e manutenção garantem um ambiente saudável para os seus colaboradores e clientes.</p>
-          </div>
-        </section>
-
-        <section className="grid grid-cols-1 md:grid-cols-2">
-          <div className="relative h-[400px] sm:h-[500px] md:h-[600px] group overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&q=80&w=1000" alt="Limpeza Comercial" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-            <div className="absolute inset-0 bg-black/20" />
-            <div className="absolute inset-0 flex items-center justify-center px-4">
-              <div className="bg-white border-t-4 border-[#f2c92f] shadow-xl p-6 sm:p-8 md:p-10 w-full max-w-md">
-                <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">Limpeza Comercial</h3>
-                <p className="text-[#666666] leading-relaxed mb-8">Escritórios, lojas e espaços públicos sempre brilhantes.</p>
-                <button className="text-[#007cc3] font-medium border border-[#007cc3] px-6 py-2 hover:bg-[#007cc3] hover:text-white transition-all">Saber mais</button>
-              </div>
-            </div>
-          </div>
-          <div className="relative h-[400px] sm:h-[500px] md:h-[600px] group overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&q=80&w=1000" alt="Limpeza Industrial" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-            <div className="absolute inset-0 bg-black/30" />
-            <div className="absolute inset-0 flex items-center justify-center px-4">
-              <div className="bg-white border-t-4 border-[#f2c92f] shadow-xl p-6 sm:p-8 md:p-10 w-full max-w-md">
-                <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">Limpeza Industrial</h3>
-                <p className="text-[#666666] leading-relaxed mb-8">Especialistas em ambientes de produção e armazéns.</p>
-                <button className="text-[#007cc3] font-medium border border-[#007cc3] px-6 py-2 hover:bg-[#007cc3] hover:text-white transition-all">Saber mais</button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-24 bg-[#f2f5f7]">
-          <div className="container mx-auto px-4 max-w-4xl text-center">
-            <h2 className="text-3xl md:text-[36px] font-medium text-[#333333] mb-8 leading-tight">Processo de Limpeza</h2>
-            <div className="space-y-2">
-              {stages.map((step, idx) => (
-                <Accordion type="single" collapsible key={idx} className="w-full">
-                  <AccordionItem value={`item-${idx}`} className="border-none">
-                    <AccordionTrigger className="bg-[#d0dae1] px-8 py-5 hover:bg-[#c4cfd7] transition-colors hover:no-underline rounded-none group flex justify-between items-center [&[data-state=open]>svg]:rotate-45">
-                      <span className="text-[18px] font-medium text-[#333333] text-left">{step}</span>
-                      <Plus className="w-6 h-6 text-[#333333] shrink-0 transition-transform duration-200" />
-                    </AccordionTrigger>
-                    <AccordionContent className="bg-white px-8 py-6 text-left text-[#666666] border-x border-b border-[#d0dae1]">
-                      Garantimos os mais altos padrões em {step}.
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-[#007cc3] py-16 text-center text-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-medium mb-8">Ambiente limpo é produtividade garantida</h2>
-            <Button className="bg-white text-[#007cc3] hover:bg-white/90 px-12 py-6 text-lg font-bold rounded-none">Contactar-nos</Button>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </div>
-  );
+  return <ServicePageTemplate data={data} />;
 }

@@ -1,114 +1,63 @@
-import Header from "@/components/layout/Header";
-import { ChevronRight, Plus, CheckCircle2, Target, Search, ShieldCheck, Zap, Shield, Info, TreePine } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import Footer from "@/components/layout/Footer";
+import { TreePine, Flower2, Droplets, Sun, Scissors, Bug, Palette, Wrench } from "lucide-react";
+import { Search, Target, CheckCircle2 } from "lucide-react";
+import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
+
+const data: ServicePageData = {
+  heroImage: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&q=80&w=2000",
+  heroImageAlt: "Serviços de jardinagem",
+  breadcrumbLabel: "Jardinagem",
+  heroTitle: "Serviços de jardinagem\ne paisagismo",
+  heroSubtitle: "Criação e manutenção de espaços verdes deslumbrantes que valorizam a imagem da sua organização e contribuem para o bem-estar de todos.",
+  introText: "Os espaços verdes são o cartão de visita do seu negócio. A Bioprev oferece serviços de jardinagem e paisagismo profissional que transformam e mantêm os seus exteriores em perfeitas condições durante todo o ano.",
+  introSubtext: "A nossa equipa de jardineiros e paisagistas profissionais possui conhecimento profundo da flora local e das condições climáticas de Angola, permitindo-nos criar e manter jardins que prosperam no nosso clima. Desde a conceção de novos espaços verdes à manutenção regular de jardins existentes, oferecemos um serviço completo que valoriza as suas instalações.",
+  sectionTitle: "Espaços verdes que inspiram",
+  sectionText: "A Bioprev cria e mantém espaços verdes para empresas, hotéis, condomínios e espaços públicos, combinando estética, funcionalidade e sustentabilidade em cada projeto.",
+  serviceCards: [
+    {
+      title: "Manutenção regular",
+      description: "Serviços de manutenção programada que incluem corte de relva, podas, fertilização, controlo de ervas daninhas e cuidados sazonais para manter os seus jardins sempre impecáveis.",
+      image: "https://images.unsplash.com/photo-1592150621344-bb30b13e7d0b?auto=format&fit=crop&q=80&w=1000",
+      imageAlt: "Manutenção de jardins"
+    },
+    {
+      title: "Projeto paisagístico",
+      description: "Design e criação de novos jardins e espaços de lazer, com seleção de espécies adaptadas ao clima local, sistemas de rega eficientes e elementos decorativos.",
+      image: "https://images.unsplash.com/photo-1416872834464-4e7852621763?auto=format&fit=crop&q=80&w=1000",
+      imageAlt: "Projeto paisagístico"
+    }
+  ],
+  detailsTitle: "Os nossos serviços de jardinagem",
+  detailsSubtitle: "Soluções completas de jardinagem e paisagismo para criar e manter espaços verdes de excelência.",
+  details: [
+    { icon: TreePine, title: "Manutenção de jardins", description: "Corte de relva, podas de árvores e arbustos, limpeza de canteiros e cuidados sazonais programados para manter os seus espaços sempre cuidados." },
+    { icon: Flower2, title: "Plantação e floração", description: "Seleção e plantação de espécies adaptadas ao clima de Angola, com programas de floração sazonal que garantem cor e vida durante todo o ano." },
+    { icon: Droplets, title: "Sistemas de rega", description: "Projeto, instalação e manutenção de sistemas de rega automática eficientes que otimizam o consumo de água e garantem a hidratação adequada de todas as plantas." },
+    { icon: Sun, title: "Limpeza de terrenos", description: "Serviços de limpeza e desmatação de terrenos, preparação de solo para novos projetos e remoção de vegetação indesejada." },
+    { icon: Scissors, title: "Poda artística", description: "Podas de formação e poda artística de sebes, topiárias e árvores ornamentais que conferem carácter e distinção aos seus espaços." },
+    { icon: Bug, title: "Controlo fitossanitário", description: "Tratamentos preventivos e curativos contra pragas e doenças de plantas, utilizando métodos integrados e produtos ecológicos sempre que possível." },
+    { icon: Palette, title: "Design paisagístico", description: "Projetos de paisagismo completos, desde a conceção à execução, incluindo seleção de plantas, pavimentos, iluminação e elementos decorativos." },
+    { icon: Wrench, title: "Instalação de equipamentos", description: "Instalação de sistemas de iluminação exterior, mobiliário de jardim, pérgolas, fontes e outros elementos que valorizam os seus espaços verdes." }
+  ],
+  approachTitle: "O nosso ciclo de manutenção",
+  approachText: "A Bioprev segue um ciclo de manutenção estruturado que garante que os seus espaços verdes se mantêm saudáveis e atraentes em todas as estações do ano.",
+  approachSteps: [
+    { title: "Planeamento paisagístico", content: "Avaliamos o espaço existente, as condições de solo e clima, e desenvolvemos um plano de manutenção ou um projeto paisagístico personalizado que responde aos seus objetivos e orçamento." },
+    { title: "Manutenção programada", content: "Implementamos um calendário de manutenção regular que inclui corte de relva, podas, fertilização, controlo de ervas daninhas e cuidados sazonais específicos para cada espécie." },
+    { title: "Gestão de sistemas de rega", content: "Monitorizamos e ajustamos os sistemas de rega de acordo com as condições meteorológicas e as necessidades das plantas, otimizando o consumo de água." },
+    { title: "Controlo fitossanitário", content: "Realizamos inspeções regulares para detetar precocemente pragas e doenças, aplicando tratamentos preventivos e curativos que protegem a saúde das plantas." },
+    { title: "Limpeza e conservação", content: "Mantemos todos os elementos do jardim — caminhos, bordaduras, equipamentos e mobiliário — limpos e em bom estado, garantindo um aspeto cuidado e convidativo." }
+  ],
+  whyTitle: "Porquê escolher a Bioprev para jardinagem?",
+  whyText1: "Os seus espaços verdes são uma extensão da imagem da sua organização. Na Bioprev, tratamos cada jardim como uma obra de arte viva que requer conhecimento, dedicação e atenção constante. A nossa equipa de profissionais garante que os seus exteriores refletem a qualidade e o profissionalismo que define a sua marca.",
+  whyText2: "Com experiência em projetos de todos os tamanhos — desde pequenos jardins corporativos a grandes parques empresariais — oferecemos soluções que combinam beleza, funcionalidade e sustentabilidade, adaptadas ao clima e às condições específicas de Angola.",
+  processCards: [
+    { icon: Search, title: "1. Avaliação do espaço", subtitle: "Análise completa do terreno e necessidades", items: ["Avaliação de solo e condições climáticas", "Identificação de espécies existentes", "Definição de objetivos e orçamento"] },
+    { icon: Target, title: "2. Execução profissional", subtitle: "Implementação e manutenção de qualidade", items: ["Equipas treinadas e equipamento adequado", "Espécies adaptadas ao clima local", "Sistemas de rega eficientes"] },
+    { icon: CheckCircle2, title: "3. Acompanhamento contínuo", subtitle: "Jardins sempre saudáveis e bonitos", items: ["Manutenção programada regular", "Controlo fitossanitário preventivo", "Ajustes sazonais e renovação"] }
+  ],
+  ctaTitle: "Transforme os seus espaços verdes com a Bioprev"
+};
 
 export default function Gardening() {
-  const sectors = [
-    { name: "Parques Empresariais", icon: "https://www.bioprev.com/assets/images/icons/sector-facilities.png" },
-    { name: "Residencial", icon: "https://www.bioprev.com/assets/images/icons/sector-facilities.png" },
-    { name: "Espaços Públicos", icon: "https://www.bioprev.com/assets/images/icons/sector-facilities.png" },
-    { name: "Hotéis", icon: "https://www.bioprev.com/assets/images/icons/sector-hotels.png" },
-  ];
-
-  const stages = [
-    "Planeamento paisagístico",
-    "Manutenção de jardins",
-    "Sistemas de rega",
-    "Controlo fitossanitário",
-    "Limpeza de terrenos"
-  ];
-
-  return (
-    <div className="min-h-screen bg-white flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
-        <section className="relative h-[350px] sm:h-[420px] md:h-[500px] flex items-center overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <img 
-              src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&q=80&w=2000" 
-              alt="Serviços de Jardinagem" 
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-black/40" />
-          </div>
-          <div className="container mx-auto px-4 z-10">
-            <div className="max-w-4xl">
-              <nav className="flex items-center space-x-2 text-white/90 text-sm mb-8 font-medium">
-                <a href="/" className="hover:underline">Início</a>
-                <ChevronRight className="w-4 h-4" />
-                <a href="/services" className="hover:underline">Serviços</a>
-                <ChevronRight className="w-4 h-4" />
-                <span>Jardinagem</span>
-              </nav>
-              <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-6 sm:mb-8 leading-tight">
-                Serviços de Jardinagem e<br />Paisagismo
-              </h1>
-              <p className="text-white text-base sm:text-lg md:text-xl lg:text-[22px] max-w-3xl mb-8 sm:mb-12 leading-relaxed font-light">
-                Criação e manutenção de espaços verdes deslumbrantes para o seu bem-estar e imagem corporativa.
-              </p>
-              <Button variant="outline" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#333333] px-10 py-6 text-lg font-medium transition-all duration-300 rounded-none">
-                Ver Portfólio
-              </Button>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4 max-w-4xl text-center">
-            <p className="text-[#333333] text-lg mb-8 leading-relaxed font-medium">Espaços verdes com vida.</p>
-            <p className="text-[#666666] text-base mb-16 leading-relaxed">Nossa equipa de <span className="text-[#007cc3] cursor-pointer hover:underline">jardinagem profissional</span> garante que o seu exterior seja um reflexo positivo da sua organização.</p>
-          </div>
-        </section>
-
-        <section className="grid grid-cols-1 md:grid-cols-2">
-          <div className="relative h-[400px] sm:h-[500px] md:h-[600px] group overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1592150621344-bb30b13e7d0b?auto=format&fit=crop&q=80&w=1000" alt="Manutenção" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-            <div className="absolute inset-0 bg-black/20" />
-            <div className="absolute inset-0 flex items-center justify-center px-4">
-              <div className="bg-white border-t-4 border-[#f2c92f] shadow-xl p-6 sm:p-8 md:p-10 w-full max-w-md">
-                <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">Manutenção Regular</h3>
-                <p className="text-[#666666] leading-relaxed mb-8">Corte de relva, podas e cuidados sazonais.</p>
-                <button className="text-[#007cc3] font-medium border border-[#007cc3] px-6 py-2 hover:bg-[#007cc3] hover:text-white transition-all">Saber mais</button>
-              </div>
-            </div>
-          </div>
-          <div className="relative h-[400px] sm:h-[500px] md:h-[600px] group overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1416872834464-4e7852621763?auto=format&fit=crop&q=80&w=1000" alt="Paisagismo" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-            <div className="absolute inset-0 bg-black/30" />
-            <div className="absolute inset-0 flex items-center justify-center px-4">
-              <div className="bg-white border-t-4 border-[#f2c92f] shadow-xl p-6 sm:p-8 md:p-10 w-full max-w-md">
-                <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">Projeto Paisagístico</h3>
-                <p className="text-[#666666] leading-relaxed mb-8">Design e criação de novos jardins e espaços de lazer.</p>
-                <button className="text-[#007cc3] font-medium border border-[#007cc3] px-6 py-2 hover:bg-[#007cc3] hover:text-white transition-all">Saber mais</button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-24 bg-[#f2f5f7]">
-          <div className="container mx-auto px-4 max-w-4xl text-center">
-            <h2 className="text-3xl md:text-[36px] font-medium text-[#333333] mb-8 leading-tight">Ciclo de Manutenção</h2>
-            <div className="space-y-2">
-              {stages.map((step, idx) => (
-                <Accordion type="single" collapsible key={idx} className="w-full">
-                  <AccordionItem value={`item-${idx}`} className="border-none">
-                    <AccordionTrigger className="bg-[#d0dae1] px-8 py-5 hover:bg-[#c4cfd7] transition-colors hover:no-underline rounded-none group flex justify-between items-center [&[data-state=open]>svg]:rotate-45">
-                      <span className="text-[18px] font-medium text-[#333333] text-left">{step}</span>
-                      <Plus className="w-6 h-6 text-[#333333] shrink-0 transition-transform duration-200" />
-                    </AccordionTrigger>
-                    <AccordionContent className="bg-white px-8 py-6 text-left text-[#666666] border-x border-b border-[#d0dae1]">
-                      Excelência técnica em cada etapa de {step}.
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
-              ))}
-            </div>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </div>
-  );
+  return <ServicePageTemplate data={data} />;
 }

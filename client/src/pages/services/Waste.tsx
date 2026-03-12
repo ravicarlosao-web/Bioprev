@@ -1,121 +1,63 @@
-import Header from "@/components/layout/Header";
-import { ChevronRight, Plus, CheckCircle2, Target, Search, ShieldCheck, Zap, Shield, Info, Trash2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import Footer from "@/components/layout/Footer";
+import { Trash2, Recycle, Truck, FileCheck, AlertTriangle, Leaf, Factory, Shield } from "lucide-react";
+import { Search, Target, CheckCircle2 } from "lucide-react";
+import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
+
+const data: ServicePageData = {
+  heroImage: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&q=80&w=2000",
+  heroImageAlt: "Recolha de resíduos",
+  breadcrumbLabel: "Recolha de resíduos",
+  heroTitle: "Gestão e recolha de\nresíduos",
+  heroSubtitle: "Gestão profissional e sustentável de resíduos comerciais e industriais, cumprindo todas as normas ambientais e garantindo o destino correto de cada tipo de resíduo.",
+  introText: "A gestão responsável de resíduos é fundamental para a sustentabilidade do seu negócio e para o cumprimento das regulamentações ambientais em Angola. A Bioprev oferece soluções completas de recolha e gestão de resíduos.",
+  introSubtext: "A nossa abordagem à gestão de resíduos foca-se na minimização do impacto ambiental e na correta gestão de cada fluxo de desperdício. Trabalhamos com os nossos clientes para implementar programas de separação na origem, maximizar a reciclagem e garantir que todos os resíduos são encaminhados para destinos licenciados e certificados.",
+  sectionTitle: "Sustentabilidade e conformidade ambiental",
+  sectionText: "A Bioprev oferece programas de gestão de resíduos que combinam eficiência operacional com responsabilidade ambiental, ajudando o seu negócio a cumprir todas as obrigações legais e a contribuir para um futuro mais sustentável.",
+  serviceCards: [
+    {
+      title: "Resíduos perigosos",
+      description: "Manuseamento seguro, transporte certificado e tratamento adequado de resíduos perigosos, incluindo químicos, biológicos e hospitalares, cumprindo todas as normas de segurança.",
+      image: "https://images.unsplash.com/photo-1618477461839-210199432687?auto=format&fit=crop&q=80&w=1000",
+      imageAlt: "Resíduos perigosos"
+    },
+    {
+      title: "Reciclagem comercial",
+      description: "Maximizamos o reaproveitamento de materiais recicláveis do seu negócio — papel, plástico, vidro e metais — com programas de separação na origem e recolha dedicada.",
+      image: "https://images.unsplash.com/photo-1591193686104-fddba4d0e4d8?auto=format&fit=crop&q=80&w=1000",
+      imageAlt: "Reciclagem comercial"
+    }
+  ],
+  detailsTitle: "Os nossos serviços de gestão de resíduos",
+  detailsSubtitle: "Soluções completas para todos os tipos de resíduos, desde a separação na origem até ao destino final certificado.",
+  details: [
+    { icon: Trash2, title: "Recolha regular", description: "Serviço de recolha programada de resíduos comerciais com frequência adaptada ao volume de produção do seu negócio." },
+    { icon: Recycle, title: "Programas de reciclagem", description: "Implementação de sistemas de separação na origem e recolha seletiva para maximizar a taxa de reciclagem e reduzir custos de eliminação." },
+    { icon: AlertTriangle, title: "Resíduos perigosos", description: "Gestão especializada de resíduos perigosos — químicos, biológicos, eletrónicos — com manuseamento, transporte e tratamento certificados." },
+    { icon: Truck, title: "Transporte licenciado", description: "Frota de veículos licenciados e equipados para o transporte seguro de todos os tipos de resíduos, incluindo resíduos perigosos." },
+    { icon: Factory, title: "Resíduos industriais", description: "Soluções para a gestão de resíduos de produção industrial, incluindo resíduos de construção, demolição e processos fabris." },
+    { icon: Leaf, title: "Resíduos orgânicos", description: "Programas de compostagem e valorização de resíduos orgânicos provenientes de restaurantes, cantinas e indústria alimentar." },
+    { icon: FileCheck, title: "Certificação de destino", description: "Documentação completa que certifica o destino final de todos os resíduos recolhidos, garantindo rastreabilidade e conformidade legal." },
+    { icon: Shield, title: "Resíduos hospitalares", description: "Gestão especializada de resíduos hospitalares e clínicos, seguindo protocolos rigorosos de segurança biológica." }
+  ],
+  approachTitle: "O nosso ciclo de gestão de resíduos",
+  approachText: "A Bioprev segue um ciclo completo de gestão de resíduos que garante a conformidade ambiental e a rastreabilidade desde a origem até ao destino final.",
+  approachSteps: [
+    { title: "Identificação e classificação", content: "Realizamos uma auditoria aos resíduos produzidos pelo seu negócio, classificando-os por tipo e perigosidade, e identificando oportunidades de redução e reciclagem." },
+    { title: "Acondicionamento seguro", content: "Fornecemos contentores e sistemas de acondicionamento adequados a cada tipo de resíduo, incluindo sinalização e formação dos colaboradores sobre separação na origem." },
+    { title: "Transporte licenciado", content: "Os nossos veículos licenciados recolhem os resíduos com a frequência definida, seguindo rotas otimizadas e protocolos de segurança adequados ao tipo de carga." },
+    { title: "Tratamento e reciclagem", content: "Encaminhamos cada tipo de resíduo para o destino mais adequado — reciclagem, valorização energética, compostagem ou tratamento específico — maximizando a recuperação de materiais." },
+    { title: "Certificação de destino final", content: "Emitimos certificados que documentam o destino final de todos os resíduos recolhidos, garantindo a rastreabilidade total e o cumprimento das obrigações legais da sua empresa." }
+  ],
+  whyTitle: "Porquê escolher a Bioprev para gestão de resíduos?",
+  whyText1: "A gestão adequada de resíduos é uma obrigação legal e uma responsabilidade ambiental. Na Bioprev, ajudamos os nossos clientes a transformar a gestão de resíduos de um custo numa oportunidade, maximizando a reciclagem e reduzindo os volumes enviados para aterro.",
+  whyText2: "Com licenças e certificações para o transporte e gestão de todos os tipos de resíduos em Angola, oferecemos tranquilidade e conformidade total aos nossos clientes, com documentação que suporta auditorias ambientais e demonstra responsabilidade corporativa.",
+  processCards: [
+    { icon: Search, title: "1. Auditoria de resíduos", subtitle: "Análise completa dos seus fluxos", items: ["Classificação de todos os tipos de resíduos", "Identificação de oportunidades de reciclagem", "Proposta de otimização personalizada"] },
+    { icon: Target, title: "2. Gestão integrada", subtitle: "Recolha e tratamento certificados", items: ["Contentores adequados a cada resíduo", "Recolha programada com veículos licenciados", "Destinos de tratamento certificados"] },
+    { icon: CheckCircle2, title: "3. Conformidade garantida", subtitle: "Documentação e rastreabilidade total", items: ["Certificados de destino final", "Relatórios ambientais periódicos", "Suporte para auditorias ambientais"] }
+  ],
+  ctaTitle: "Soluções sustentáveis para o seu negócio"
+};
 
 export default function Waste() {
-  const sectors = [
-    { name: "Médico", icon: "https://www.bioprev.com/assets/images/icons/sector-facilities.png" },
-    { name: "Industrial", icon: "https://www.bioprev.com/assets/images/icons/sector-food-processing.png" },
-    { name: "Comercial", icon: "https://www.bioprev.com/assets/images/icons/sector-facilities.png" },
-    { name: "Desperdício Alimentar", icon: "https://www.bioprev.com/assets/images/icons/sector-food-retail.png" },
-  ];
-
-  const stages = [
-    "Identificação do resíduo",
-    "Acondicionamento seguro",
-    "Transporte licenciado",
-    "Tratamento/Reciclagem",
-    "Certificação de destino final"
-  ];
-
-  return (
-    <div className="min-h-screen bg-white flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
-        <section className="relative h-[350px] sm:h-[420px] md:h-[500px] flex items-center overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <img 
-              src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&q=80&w=2000" 
-              alt="Recolha de Resíduos" 
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-black/40" />
-          </div>
-          <div className="container mx-auto px-4 z-10">
-            <div className="max-w-4xl">
-              <nav className="flex items-center space-x-2 text-white/90 text-sm mb-8 font-medium">
-                <a href="/" className="hover:underline">Início</a>
-                <ChevronRight className="w-4 h-4" />
-                <a href="/services" className="hover:underline">Serviços</a>
-                <ChevronRight className="w-4 h-4" />
-                <span>Recolha de Resíduos</span>
-              </nav>
-              <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-6 sm:mb-8 leading-tight">
-                Gestão e Recolha de<br />Resíduos
-              </h1>
-              <p className="text-white text-base sm:text-lg md:text-xl lg:text-[22px] max-w-3xl mb-8 sm:mb-12 leading-relaxed font-light">
-                Gestão profissional e sustentável de resíduos comerciais e industriais, cumprindo todas as normas ambientais.
-              </p>
-              <Button variant="outline" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#333333] px-10 py-6 text-lg font-medium transition-all duration-300 rounded-none">
-                Saber mais
-              </Button>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4 max-w-4xl text-center">
-            <p className="text-[#333333] text-lg mb-8 leading-relaxed font-medium">Sustentabilidade e conformidade legal.</p>
-            <p className="text-[#666666] text-base mb-16 leading-relaxed">Nossa <span className="text-[#007cc3] cursor-pointer hover:underline">recolha de resíduos</span> foca na minimização do impacto ambiental e na correta gestão de cada fluxo de desperdício.</p>
-          </div>
-        </section>
-
-        <section className="grid grid-cols-1 md:grid-cols-2">
-          <div className="relative h-[400px] sm:h-[500px] md:h-[600px] group overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1618477461839-210199432687?auto=format&fit=crop&q=80&w=1000" alt="Resíduos Industriais" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-            <div className="absolute inset-0 bg-black/20" />
-            <div className="absolute inset-0 flex items-center justify-center px-4">
-              <div className="bg-white border-t-4 border-[#f2c92f] shadow-xl p-6 sm:p-8 md:p-10 w-full max-w-md">
-                <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">Resíduos Perigosos</h3>
-                <p className="text-[#666666] leading-relaxed mb-8">Manuseamento seguro e transporte certificado de resíduos especiais.</p>
-                <button className="text-[#007cc3] font-medium border border-[#007cc3] px-6 py-2 hover:bg-[#007cc3] hover:text-white transition-all">Saber mais</button>
-              </div>
-            </div>
-          </div>
-          <div className="relative h-[400px] sm:h-[500px] md:h-[600px] group overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1591193686104-fddba4d0e4d8?auto=format&fit=crop&q=80&w=1000" alt="Reciclagem" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-            <div className="absolute inset-0 bg-black/30" />
-            <div className="absolute inset-0 flex items-center justify-center px-4">
-              <div className="bg-white border-t-4 border-[#f2c92f] shadow-xl p-6 sm:p-8 md:p-10 w-full max-w-md">
-                <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">Reciclagem Comercial</h3>
-                <p className="text-[#666666] leading-relaxed mb-8">Maximizamos o reaproveitamento de materiais para o seu negócio.</p>
-                <button className="text-[#007cc3] font-medium border border-[#007cc3] px-6 py-2 hover:bg-[#007cc3] hover:text-white transition-all">Saber mais</button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-24 bg-[#f2f5f7]">
-          <div className="container mx-auto px-4 max-w-4xl text-center">
-            <h2 className="text-3xl md:text-[36px] font-medium text-[#333333] mb-8 leading-tight">Ciclo de Gestão</h2>
-            <div className="space-y-2">
-              {stages.map((step, idx) => (
-                <Accordion type="single" collapsible key={idx} className="w-full">
-                  <AccordionItem value={`item-${idx}`} className="border-none">
-                    <AccordionTrigger className="bg-[#d0dae1] px-8 py-5 hover:bg-[#c4cfd7] transition-colors hover:no-underline rounded-none group flex justify-between items-center [&[data-state=open]>svg]:rotate-45">
-                      <span className="text-[18px] font-medium text-[#333333] text-left">{step}</span>
-                      <Plus className="w-6 h-6 text-[#333333] shrink-0 transition-transform duration-200" />
-                    </AccordionTrigger>
-                    <AccordionContent className="bg-white px-8 py-6 text-left text-[#666666] border-x border-b border-[#d0dae1]">
-                      Foco total em segurança e meio ambiente em {step}.
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-[#007cc3] py-16 text-center text-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-medium mb-8">Soluções verdes para o seu negócio</h2>
-            <Button className="bg-white text-[#007cc3] hover:bg-white/90 px-12 py-6 text-lg font-bold rounded-none">Pedir Cotação</Button>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </div>
-  );
+  return <ServicePageTemplate data={data} />;
 }

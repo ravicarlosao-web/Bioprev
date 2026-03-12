@@ -1,153 +1,63 @@
-import Header from "@/components/layout/Header";
-import { ChevronRight, Plus, CheckCircle2, Target, Search, ShieldCheck, Zap, Shield, Info, Bug } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import Footer from "@/components/layout/Footer";
+import { Bug, Wheat, Archive, Thermometer, FlaskConical, ScanLine, ShieldCheck, AlertTriangle } from "lucide-react";
+import { Search, Target, CheckCircle2 } from "lucide-react";
+import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
+
+const data: ServicePageData = {
+  heroImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=2000",
+  heroImageAlt: "Gorgulhos e traças",
+  breadcrumbLabel: "Gorgulhos e traças",
+  heroTitle: "Controlo de gorgulhos\ne traças",
+  heroSubtitle: "Soluções especializadas para proteger os seus stocks e produtos armazenados contra infestações de gorgulhos e traças, preservando a qualidade e integridade das suas mercadorias.",
+  introText: "Infestações de gorgulhos e traças podem causar danos irreparáveis a stocks alimentares, têxteis e produtos armazenados. A deteção precoce e o tratamento eficaz são fundamentais para minimizar perdas.",
+  introSubtext: "A Bioprev utiliza tecnologias avançadas de monitorização por feromonas e tratamentos térmicos inovadores para identificar e eliminar infestações de gorgulhos e traças. A nossa abordagem integrada combina métodos preventivos com tratamentos curativos, garantindo a proteção a longo prazo dos seus produtos armazenados e cumprindo todas as normas de segurança alimentar.",
+  sectionTitle: "Proteção especializada para produtos armazenados",
+  sectionText: "Garantimos a integridade dos seus produtos com inspeções detalhadas e métodos de controlo que respeitam as normas de segurança alimentar, protegendo cereais, farinhas, têxteis e outros materiais vulneráveis.",
+  serviceCards: [
+    {
+      title: "Controlo de traças",
+      description: "Tratamentos especializados para eliminar traças têxteis e alimentares, protegendo museus, arquivos, lojas têxteis e armazéns alimentares com métodos seguros e eficazes.",
+      image: "https://images.unsplash.com/photo-1590611380053-9a367201c10d?auto=format&fit=crop&q=80&w=1000",
+      imageAlt: "Controlo de traças"
+    },
+    {
+      title: "Controlo de gorgulhos",
+      description: "Soluções para silos, armazéns e indústria alimentar que eliminam gorgulhos e protegem cereais, farinhas e outros produtos secos contra contaminação e perdas de stock.",
+      image: "https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?auto=format&fit=crop&q=80&w=1000",
+      imageAlt: "Controlo de gorgulhos"
+    }
+  ],
+  detailsTitle: "Os nossos serviços de controlo",
+  detailsSubtitle: "Soluções completas para proteger os seus produtos armazenados contra todas as espécies de gorgulhos e traças, com métodos adaptados a cada tipo de produto.",
+  details: [
+    { icon: Bug, title: "Identificação de espécies", description: "Análise laboratorial para identificar a espécie exata de praga presente, permitindo a seleção do tratamento mais eficaz e direcionado." },
+    { icon: Wheat, title: "Proteção de cereais e grãos", description: "Programas específicos para silos e armazéns de cereais, protegendo trigo, milho, arroz e outros grãos contra gorgulhos e carunchos." },
+    { icon: Archive, title: "Proteção de têxteis e arquivos", description: "Tratamentos para proteger roupas, tapetes, documentos históricos e coleções de museu contra traças e outros insetos destruidores." },
+    { icon: Thermometer, title: "Tratamento térmico", description: "Eliminação de pragas através de calor controlado, um método ecológico que não utiliza químicos e é seguro para produtos alimentares e têxteis sensíveis." },
+    { icon: FlaskConical, title: "Fumigação controlada", description: "Fumigação profissional de armazéns e contentores de transporte para eliminar todas as fases do ciclo de vida das pragas, incluindo ovos e larvas." },
+    { icon: ScanLine, title: "Monitorização por feromonas", description: "Armadilhas com feromonas específicas para deteção precoce de atividade de gorgulhos e traças, permitindo intervenção antes que a infestação se propague." },
+    { icon: ShieldCheck, title: "Tratamento preventivo de stocks", description: "Aplicação de tratamentos preventivos em mercadorias recebidas para evitar a introdução de pragas no armazém através de fornecedores." },
+    { icon: AlertTriangle, title: "Resposta a infestações ativas", description: "Intervenção rápida para infestações já estabelecidas, com isolamento de produtos afetados e tratamento intensivo para evitar a propagação." }
+  ],
+  approachTitle: "O nosso processo de controlo",
+  approachText: "A Bioprev segue uma metodologia estruturada para o controlo de gorgulhos e traças, combinando ciência aplicada com experiência de campo para resultados garantidos.",
+  approachSteps: [
+    { title: "Identificação da espécie", content: "Recolhemos amostras e realizamos análise laboratorial para identificar a espécie exata de praga, o seu ciclo de vida e o nível de infestação. Esta informação é essencial para selecionar o tratamento mais eficaz." },
+    { title: "Avaliação do nível de infestação", content: "Através de armadilhas de monitorização e inspeção visual, determinamos a extensão da infestação e identificamos as áreas e produtos mais afetados, permitindo priorizar as intervenções." },
+    { title: "Tratamento personalizado", content: "Selecionamos o método de tratamento mais adequado — térmico, químico ou fumigação — com base na espécie identificada, no tipo de produto afetado e nas condições do armazém." },
+    { title: "Monitorização pós-tratamento", content: "Após o tratamento, mantemos armadilhas de monitorização ativas para confirmar a eficácia da intervenção e detetar precocemente qualquer reinfestação." },
+    { title: "Prevenção e aconselhamento", content: "Fornecemos recomendações detalhadas sobre boas práticas de armazenamento, rotação de stock e controle ambiental para prevenir futuras infestações." }
+  ],
+  whyTitle: "Porquê escolher a Bioprev?",
+  whyText1: "Os gorgulhos e traças podem destruir stocks inteiros em pouco tempo se não forem detetados e tratados atempadamente. Na Bioprev, os nossos entomologistas e técnicos especializados possuem conhecimento profundo sobre o comportamento destas pragas e as melhores estratégias para a sua eliminação e prevenção.",
+  whyText2: "Com experiência em armazéns alimentares, silos, museus e arquivos em Angola, oferecemos soluções que protegem os seus produtos mais valiosos, utilizando métodos que respeitam a natureza dos materiais armazenados e as normas de segurança alimentar aplicáveis.",
+  processCards: [
+    { icon: Search, title: "1. Diagnóstico especializado", subtitle: "Identificação precisa da praga", items: ["Análise laboratorial de espécies", "Mapeamento da extensão da infestação", "Avaliação de produtos afetados"] },
+    { icon: Target, title: "2. Tratamento direcionado", subtitle: "Método adaptado ao produto e à praga", items: ["Tratamentos térmicos ecológicos", "Fumigação controlada certificada", "Produtos seguros para alimentos"] },
+    { icon: CheckCircle2, title: "3. Prevenção contínua", subtitle: "Proteção a longo prazo dos seus stocks", items: ["Monitorização permanente por feromonas", "Aconselhamento de boas práticas", "Inspeção regular de mercadorias"] }
+  ],
+  ctaTitle: "Proteja os seus produtos armazenados hoje"
+};
 
 export default function Pests() {
-  const sectors = [
-    { name: "Processamento de alimentos", icon: "https://www.bioprev.com/assets/images/icons/sector-food-processing.png" },
-    { name: "Varejo de alimentos", icon: "https://www.bioprev.com/assets/images/icons/sector-food-retail.png" },
-    { name: "Logística e armazenamento", icon: "https://www.bioprev.com/assets/images/icons/sector-logistics.png" },
-    { name: "Gestão de instalações", icon: "https://www.bioprev.com/assets/images/icons/sector-facilities.png" },
-    { name: "Hotéis", icon: "https://www.bioprev.com/assets/images/icons/sector-hotels.png" },
-  ];
-
-  const stages = [
-    "Identificação da espécie",
-    "Avaliação do nível de infestação",
-    "Tratamento térmico ou químico",
-    "Monitorização pós-serviço",
-    "Prevenção e aconselhamento"
-  ];
-
-  return (
-    <div className="min-h-screen bg-white flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
-        <section className="relative h-[350px] sm:h-[420px] md:h-[500px] flex items-center overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <img 
-              src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=2000" 
-              alt="Gorgulhos e traças" 
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-black/40" />
-          </div>
-          <div className="container mx-auto px-4 z-10">
-            <div className="max-w-4xl">
-              <nav className="flex items-center space-x-2 text-white/90 text-sm mb-8 font-medium">
-                <a href="/" className="hover:underline">Início</a>
-                <ChevronRight className="w-4 h-4" />
-                <a href="/services" className="hover:underline">Serviços</a>
-                <ChevronRight className="w-4 h-4" />
-                <span>Gorgulhos e traças</span>
-              </nav>
-              <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-6 sm:mb-8 leading-tight">
-                Controlo de Gorgulhos<br />e Traças
-              </h1>
-              <p className="text-white text-base sm:text-lg md:text-xl lg:text-[22px] max-w-3xl mb-8 sm:mb-12 leading-relaxed font-light">
-                Soluções especializadas para proteger os seus stocks e produtos armazenados contra infestações de gorgulhos e traças.
-              </p>
-              <Button variant="outline" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#333333] px-10 py-6 text-lg font-medium transition-all duration-300 rounded-none">
-                Saber mais
-              </Button>
-            </div>
-          </div>
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 mb-4">
-            <div className="w-12 h-8 bg-[#f2c92f] flex items-center justify-center clip-path-v">
-              <ChevronRight className="w-6 h-6 text-white rotate-90" />
-            </div>
-          </div>
-        </section>
-
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4 max-w-4xl text-center">
-            <p className="text-[#333333] text-lg mb-8 leading-relaxed font-medium">
-              Proteção especializada para produtos armazenados e têxteis.
-            </p>
-            <p className="text-[#666666] text-base mb-16 leading-relaxed">
-              Infestações de <span className="text-[#007cc3] cursor-pointer hover:underline">gorgulhos</span> e <span className="text-[#007cc3] cursor-pointer hover:underline">traças</span> podem causar danos irreparáveis a stocks alimentares e têxteis. A nossa abordagem utiliza tecnologias de monitorização por feromonas e tratamentos térmicos inovadores.
-            </p>
-            <h2 className="text-3xl md:text-[40px] font-medium text-[#333333] mb-8 leading-tight">Serviços para Produtos Armazenados</h2>
-            <p className="text-[#666666] text-base leading-relaxed">Garantimos a integridade dos seus produtos com inspeções detalhadas e métodos de controlo que respeitam as normas de segurança alimentar.</p>
-          </div>
-        </section>
-
-        <section className="grid grid-cols-1 md:grid-cols-2">
-          <div className="relative h-[400px] sm:h-[500px] md:h-[600px] group overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1590611380053-9a367201c10d?auto=format&fit=crop&q=80&w=1000" alt="Traças Têxteis" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-            <div className="absolute inset-0 bg-black/20" />
-            <div className="absolute inset-0 flex items-center justify-center px-4">
-              <div className="bg-white border-t-4 border-[#f2c92f] shadow-xl p-6 sm:p-8 md:p-10 w-full max-w-md">
-                <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">Controlo de Traças</h3>
-                <p className="text-[#666666] leading-relaxed mb-8">Tratamentos especializados para museus, arquivos e lojas têxteis.</p>
-                <button className="text-[#007cc3] font-medium border border-[#007cc3] px-6 py-2 hover:bg-[#007cc3] hover:text-white transition-all">Saber mais</button>
-              </div>
-            </div>
-          </div>
-          <div className="relative h-[400px] sm:h-[500px] md:h-[600px] group overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?auto=format&fit=crop&q=80&w=1000" alt="Gorgulhos" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-            <div className="absolute inset-0 bg-black/30" />
-            <div className="absolute inset-0 flex items-center justify-center px-4">
-              <div className="bg-white border-t-4 border-[#f2c92f] shadow-xl p-6 sm:p-8 md:p-10 w-full max-w-md">
-                <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">Controlo de Gorgulhos</h3>
-                <p className="text-[#666666] leading-relaxed mb-8">Soluções para silos, armazéns e indústria alimentar.</p>
-                <button className="text-[#007cc3] font-medium border border-[#007cc3] px-6 py-2 hover:bg-[#007cc3] hover:text-white transition-all">Saber mais</button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-24 bg-white">
-          <div className="container mx-auto px-4 max-w-6xl text-center">
-            <h2 className="text-3xl md:text-[36px] font-medium text-[#333333] mb-8 leading-tight">Experiência em Diversos Setores</h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-              {sectors.map((sector, idx) => (
-                <div key={idx} className="bg-white border border-gray-100 p-6 flex flex-col items-center justify-center hover:shadow-md transition-shadow cursor-pointer group">
-                  <div className="w-16 h-16 mb-4 flex items-center justify-center grayscale group-hover:grayscale-0 transition-all">
-                    <img src={sector.icon} alt={sector.name} className="max-w-full max-h-full" />
-                  </div>
-                  <span className="text-[13px] font-bold text-[#007cc3] text-center leading-tight">{sector.name}</span>
-                </div>
-              ))}
-              <div className="bg-[#1a2b3c] p-6 flex flex-col items-center justify-center cursor-pointer group">
-                <Plus className="w-10 h-10 text-white mb-4 transition-transform group-hover:scale-110" strokeWidth={1} />
-                <span className="text-[13px] font-bold text-white text-center">Ver tudo</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-24 bg-[#f2f5f7]">
-          <div className="container mx-auto px-4 max-w-4xl text-center">
-            <h2 className="text-3xl md:text-[36px] font-medium text-[#333333] mb-8 leading-tight">Nosso Processo</h2>
-            <div className="space-y-2">
-              {stages.map((step, idx) => (
-                <Accordion type="single" collapsible key={idx} className="w-full">
-                  <AccordionItem value={`item-${idx}`} className="border-none">
-                    <AccordionTrigger className="bg-[#d0dae1] px-8 py-5 hover:bg-[#c4cfd7] transition-colors hover:no-underline rounded-none group flex justify-between items-center [&[data-state=open]>svg]:rotate-45">
-                      <span className="text-[18px] font-medium text-[#333333] text-left">{step}</span>
-                      <Plus className="w-6 h-6 text-[#333333] shrink-0 transition-transform duration-200" />
-                    </AccordionTrigger>
-                    <AccordionContent className="bg-white px-8 py-6 text-left text-[#666666] border-x border-b border-[#d0dae1]">
-                      Descrição detalhada do processo de {step}.
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-[#007cc3] py-16 text-center text-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-medium mb-8">Proteja os seus produtos hoje mesmo</h2>
-            <Button className="bg-white text-[#007cc3] hover:bg-white/90 px-12 py-6 text-lg font-bold rounded-none">Contactar Especialista</Button>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </div>
-  );
+  return <ServicePageTemplate data={data} />;
 }
