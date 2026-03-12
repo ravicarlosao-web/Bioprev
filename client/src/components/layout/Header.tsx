@@ -123,13 +123,13 @@ export default function Header() {
       {/* Top utility bar - gray background - Full width wrapper */}
       <div className="w-full bg-[#f2f2f2] border-b border-gray-200">
         <div className="container mx-auto px-4 relative flex items-center justify-between">
-          {/* Logo - Red Background Block - Positioned to overlap both bars and touch Hero */}
+          {/* Logo - Positioned to overlap both bars and touch Hero */}
           <Link href="/">
             <div 
-              className="absolute top-0 left-15 bg-white border border-gray-200 flex items-center justify-center px-4 z-50 w-[220px] h-[111.5px] shadow-sm cursor-pointer group"
+              className="absolute top-0 left-15 flex items-center justify-center px-4 z-50 w-[220px] h-[111.5px] cursor-pointer"
               data-testid="text-logo-container"
             >
-              <img src={logoImg} alt="Bioprev Logo" className="max-w-full max-h-full object-contain transition-transform group-hover:scale-105" data-testid="img-logo" />
+              <img src={logoImg} alt="Bioprev Logo" className="max-w-full max-h-full object-contain" data-testid="img-logo" />
             </div>
           </Link>
 
