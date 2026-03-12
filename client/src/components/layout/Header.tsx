@@ -99,17 +99,17 @@ export default function Header() {
             animate={{ y: 0 }}
             exit={{ y: -100 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="fixed top-0 left-0 w-full bg-[#001d3d] z-[100] h-[60px] flex items-center shadow-lg"
+            className="fixed top-0 left-0 w-full bg-[#001d3d] z-[100] h-[48px] sm:h-[60px] flex items-center shadow-lg"
           >
-            <div className="container mx-auto px-4 flex items-center justify-center">
-              <div className="flex items-center space-x-8">
-                <div className="text-white font-bold text-[15px] tracking-tight">
-                  <a href="tel:+244928737888" className="hover:underline">+244 928 737 888</a>
-                </div>
-                <a href="tel:+244928737888" className="bg-[#0077c0] text-white px-8 py-2 font-bold text-sm h-[60px] flex items-center transition-colors hover:bg-[#005fa3]">
+            <div className="container mx-auto px-2 sm:px-4 flex items-center justify-center">
+              <div className="flex items-center gap-2 sm:gap-8">
+                <a href="tel:+244928737888" className="text-white font-bold text-[11px] sm:text-[15px] tracking-tight hover:underline whitespace-nowrap">
+                  +244 928 737 888
+                </a>
+                <a href="tel:+244928737888" className="bg-[#0077c0] text-white px-3 sm:px-8 py-1.5 sm:py-2 font-bold text-[11px] sm:text-sm h-[48px] sm:h-[60px] flex items-center transition-colors hover:bg-[#005fa3] whitespace-nowrap">
                   Ligar agora
                 </a>
-                <a href="#" className="text-white font-bold text-sm hover:underline">
+                <a href="#" className="text-white font-bold text-[11px] sm:text-sm hover:underline whitespace-nowrap hidden sm:block">
                   Solicite uma chamada
                 </a>
               </div>
