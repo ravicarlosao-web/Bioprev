@@ -84,19 +84,19 @@ export default function Contact() {
             </p>
 
             <div className="bg-[#fafafa] p-8 border-l-[4px] border-[#f2c92f] mb-12">
-              <h3 className="text-[20px] font-bold text-[#111111] mb-3">Contatos Diretos</h3>
-              <p className="text-[#555555] mb-6 text-[16px]">
+              <h3 className="text-[18px] font-bold text-gray-900 mb-3">Contatos Diretos</h3>
+              <p className="text-[#555555] mb-6 text-[15px]">
                 Pode entrar em contato connosco através dos seguintes meios:
               </p>
-              <div className="flex flex-col gap-4 font-bold text-[18px] text-[#007cc3]">
+              <div className="flex flex-col gap-4 font-bold text-[16px] text-[#007cc3]">
                 <a href="mailto:geral@bioprev.com" className="hover:underline flex items-center">
-                  <Mail className="w-[22px] h-[22px] mr-3 text-[#d6b4e6]" fill="currentColor" strokeWidth={0} /> geral@bioprev.com
+                  <Mail className="w-[16px] h-[16px] text-[#d5a8df] mr-3" fill="currentColor" strokeWidth={0} /> geral@bioprev.com
                 </a>
                 <a href="tel:+244928737888" className="hover:underline flex items-center">
-                  <Phone className="w-[22px] h-[22px] mr-3 text-[#d82c75]" fill="currentColor" strokeWidth={0} /> +244 928 737 888
+                  <Phone className="w-[16px] h-[16px] text-[#d82c75] mr-3" fill="currentColor" strokeWidth={0} /> +244 928 737 888
                 </a>
                 <a href="tel:+244947059109" className="hover:underline flex items-center">
-                  <Phone className="w-[22px] h-[22px] mr-3 text-[#d82c75]" fill="currentColor" strokeWidth={0} /> +244 947 059 109
+                  <Phone className="w-[16px] h-[16px] text-[#d82c75] mr-3" fill="currentColor" strokeWidth={0} /> +244 947 059 109
                 </a>
               </div>
             </div>
