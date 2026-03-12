@@ -151,10 +151,10 @@ export default function AllServices() {
                   <span className="text-[13px] font-bold text-[#007cc3] text-center leading-tight">{sector.name}</span>
                 </div>
               ))}
-              <div className="bg-[#1a2b3c] p-6 flex flex-col items-center justify-center cursor-pointer group">
+              <a href="/sectors" className="bg-[#1a2b3c] p-6 flex flex-col items-center justify-center cursor-pointer group">
                 <Plus className="w-10 h-10 text-white mb-4 transition-transform group-hover:scale-110" strokeWidth={1} />
                 <span className="text-[13px] font-bold text-white text-center">Ver todos os setores</span>
-              </div>
+              </a>
             </div>
           </div>
         </section>

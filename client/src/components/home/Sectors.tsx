@@ -1,4 +1,5 @@
 import { Factory, Building2, Truck, Hotel, ShoppingCart, Plus } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Sectors() {
   const sectors = [
@@ -37,15 +38,17 @@ export default function Sectors() {
             </div>
           ))}
           
-          <div 
-            className="bg-[#1a2b3b] p-4 sm:p-6 md:p-8 flex flex-col items-center justify-center text-center shadow-sm hover:bg-[#243a4e] transition-colors cursor-pointer text-white h-full"
-            data-testid="card-sector-all"
-          >
-            <Plus className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mb-3 sm:mb-4 stroke-[3px]" />
-            <p className="font-bold text-[12px] sm:text-[13px] md:text-[14px] uppercase tracking-wider">
-              Ver todos os setores
-            </p>
-          </div>
+          <Link href="/sectors">
+            <div 
+              className="bg-[#1a2b3b] p-4 sm:p-6 md:p-8 flex flex-col items-center justify-center text-center shadow-sm hover:bg-[#243a4e] transition-colors cursor-pointer text-white h-full"
+              data-testid="card-sector-all"
+            >
+              <Plus className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mb-3 sm:mb-4 stroke-[3px]" />
+              <p className="font-bold text-[12px] sm:text-[13px] md:text-[14px] uppercase tracking-wider">
+                Ver todos os setores
+              </p>
+            </div>
+          </Link>
         </div>
       </div>
     </section>

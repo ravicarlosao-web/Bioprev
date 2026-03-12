@@ -57,14 +57,14 @@ export default function Header() {
       label: 'Setores empresariais',
       testId: 'nav-sectors',
       content: [
-        { icon: LayoutGrid, text: 'Todos os setores\nempresariais' },
-        { icon: Factory, text: 'Processamento\nalimentar' },
-        { icon: Building2, text: 'Gestão de\ninstalações' },
-        { icon: Warehouse, text: 'Logística e\narmazenamento' },
-        { icon: Hotel, text: 'Hotelaria' },
-        { icon: ShoppingCart, text: 'Retalho\nalimentar' },
-        { icon: Pill, text: 'Farmacêutica' },
-        { icon: Briefcase, text: 'Escritórios' },
+        { icon: LayoutGrid, text: 'Todos os setores\nempresariais', href: '/sectors' },
+        { icon: Factory, text: 'Processamento\nalimentar', href: '/sectors' },
+        { icon: Building2, text: 'Gestão de\ninstalações', href: '/sectors' },
+        { icon: Warehouse, text: 'Logística e\narmazenamento', href: '/sectors' },
+        { icon: Hotel, text: 'Hotelaria', href: '/sectors' },
+        { icon: ShoppingCart, text: 'Retalho\nalimentar', href: '/sectors' },
+        { icon: Pill, text: 'Farmacêutica', href: '/sectors' },
+        { icon: Briefcase, text: 'Escritórios', href: '/sectors' },
       ]
     },
     {

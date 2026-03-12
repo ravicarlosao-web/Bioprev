@@ -18,6 +18,7 @@ import BlogPost from "@/pages/blog/BlogPost";
 import About from "@/pages/about/About";
 import History from "@/pages/about/History";
 import Careers from "@/pages/about/Careers";
+import AllSectors from "@/pages/sectors/AllSectors";
 
 function Router() {
   return (
@@ -31,6 +32,7 @@ function Router() {
       <Route path="/services/waste" component={Waste} />
       <Route path="/services/water" component={Water} />
       <Route path="/services/gardening" component={Gardening} />
+      <Route path="/sectors" component={AllSectors} />
       <Route path="/about" component={About} />
       <Route path="/about/history" component={History} />
       <Route path="/about/careers" component={Careers} />
