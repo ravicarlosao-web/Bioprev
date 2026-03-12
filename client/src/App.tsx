@@ -19,6 +19,14 @@ import About from "@/pages/about/About";
 import History from "@/pages/about/History";
 import Careers from "@/pages/about/Careers";
 import AllSectors from "@/pages/sectors/AllSectors";
+import FoodProcessing from "@/pages/sectors/FoodProcessing";
+import Facilities from "@/pages/sectors/Facilities";
+import Logistics from "@/pages/sectors/Logistics";
+import Hospitality from "@/pages/sectors/Hospitality";
+import FoodRetail from "@/pages/sectors/FoodRetail";
+import Pharmaceutical from "@/pages/sectors/Pharmaceutical";
+import Offices from "@/pages/sectors/Offices";
+import Restaurants from "@/pages/sectors/Restaurants";
 
 function Router() {
   return (
@@ -33,6 +41,14 @@ function Router() {
       <Route path="/services/water" component={Water} />
       <Route path="/services/gardening" component={Gardening} />
       <Route path="/sectors" component={AllSectors} />
+      <Route path="/sectors/food-processing" component={FoodProcessing} />
+      <Route path="/sectors/facilities" component={Facilities} />
+      <Route path="/sectors/logistics" component={Logistics} />
+      <Route path="/sectors/hospitality" component={Hospitality} />
+      <Route path="/sectors/food-retail" component={FoodRetail} />
+      <Route path="/sectors/pharmaceutical" component={Pharmaceutical} />
+      <Route path="/sectors/offices" component={Offices} />
+      <Route path="/sectors/restaurants" component={Restaurants} />
       <Route path="/about" component={About} />
       <Route path="/about/history" component={History} />
       <Route path="/about/careers" component={Careers} />

@@ -58,13 +58,13 @@ export default function Header() {
       testId: 'nav-sectors',
       content: [
         { icon: LayoutGrid, text: 'Todos os setores\nempresariais', href: '/sectors' },
-        { icon: Factory, text: 'Processamento\nalimentar', href: '/sectors' },
-        { icon: Building2, text: 'Gestão de\ninstalações', href: '/sectors' },
-        { icon: Warehouse, text: 'Logística e\narmazenamento', href: '/sectors' },
-        { icon: Hotel, text: 'Hotelaria', href: '/sectors' },
-        { icon: ShoppingCart, text: 'Retalho\nalimentar', href: '/sectors' },
-        { icon: Pill, text: 'Farmacêutica', href: '/sectors' },
-        { icon: Briefcase, text: 'Escritórios', href: '/sectors' },
+        { icon: Factory, text: 'Processamento\nalimentar', href: '/sectors/food-processing' },
+        { icon: Building2, text: 'Gestão de\ninstalações', href: '/sectors/facilities' },
+        { icon: Warehouse, text: 'Logística e\narmazenamento', href: '/sectors/logistics' },
+        { icon: Hotel, text: 'Hotelaria', href: '/sectors/hospitality' },
+        { icon: ShoppingCart, text: 'Retalho\nalimentar', href: '/sectors/food-retail' },
+        { icon: Pill, text: 'Farmacêutica', href: '/sectors/pharmaceutical' },
+        { icon: Briefcase, text: 'Escritórios', href: '/sectors/offices' },
       ]
     },
     {

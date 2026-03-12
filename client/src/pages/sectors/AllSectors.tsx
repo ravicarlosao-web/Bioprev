@@ -7,14 +7,14 @@ import Footer from "@/components/layout/Footer";
 
 export default function AllSectors() {
   const sectors = [
-    { name: "Processamento alimentar", icon: Factory, desc: "Garantimos que as instalações de processamento de alimentos cumpram os mais altos padrões de higiene e segurança alimentar, protegendo contra contaminação e pragas." },
-    { name: "Gestão de instalações", icon: Building2, desc: "Oferecemos soluções integradas de controle de pragas para edifícios comerciais, escritórios e complexos empresariais, mantendo ambientes de trabalho seguros." },
-    { name: "Logística e armazenamento", icon: Warehouse, desc: "Protegemos armazéns e centros de distribuição contra pragas que podem danificar mercadorias armazenadas e comprometer a cadeia de abastecimento." },
-    { name: "Hotelaria", icon: Hotel, desc: "Ajudamos hotéis e resorts a manter os mais altos padrões de higiene, protegendo a reputação e garantindo o conforto dos hóspedes." },
-    { name: "Retalho alimentar", icon: ShoppingCart, desc: "Supermercados e lojas de alimentos confiam na Bioprev para manter os seus espaços livres de pragas e em conformidade com as normas sanitárias." },
-    { name: "Farmacêutica", icon: Pill, desc: "Laboratórios e instalações farmacêuticas requerem ambientes ultra-limpos. As nossas soluções garantem a conformidade com os rigorosos padrões da indústria." },
-    { name: "Escritórios", icon: Briefcase, desc: "Mantemos ambientes de escritório confortáveis e livres de pragas, contribuindo para a produtividade e bem-estar dos colaboradores." },
-    { name: "Restauração", icon: Utensils, desc: "Restaurantes e serviços de catering dependem da Bioprev para garantir a segurança alimentar e cumprir todas as regulamentações de higiene." },
+    { name: "Processamento alimentar", icon: Factory, href: "/sectors/food-processing", desc: "Garantimos que as instalações de processamento de alimentos cumpram os mais altos padrões de higiene e segurança alimentar, protegendo contra contaminação e pragas." },
+    { name: "Gestão de instalações", icon: Building2, href: "/sectors/facilities", desc: "Oferecemos soluções integradas de controle de pragas para edifícios comerciais, escritórios e complexos empresariais, mantendo ambientes de trabalho seguros." },
+    { name: "Logística e armazenamento", icon: Warehouse, href: "/sectors/logistics", desc: "Protegemos armazéns e centros de distribuição contra pragas que podem danificar mercadorias armazenadas e comprometer a cadeia de abastecimento." },
+    { name: "Hotelaria", icon: Hotel, href: "/sectors/hospitality", desc: "Ajudamos hotéis e resorts a manter os mais altos padrões de higiene, protegendo a reputação e garantindo o conforto dos hóspedes." },
+    { name: "Retalho alimentar", icon: ShoppingCart, href: "/sectors/food-retail", desc: "Supermercados e lojas de alimentos confiam na Bioprev para manter os seus espaços livres de pragas e em conformidade com as normas sanitárias." },
+    { name: "Farmacêutica", icon: Pill, href: "/sectors/pharmaceutical", desc: "Laboratórios e instalações farmacêuticas requerem ambientes ultra-limpos. As nossas soluções garantem a conformidade com os rigorosos padrões da indústria." },
+    { name: "Escritórios", icon: Briefcase, href: "/sectors/offices", desc: "Mantemos ambientes de escritório confortáveis e livres de pragas, contribuindo para a produtividade e bem-estar dos colaboradores." },
+    { name: "Restauração", icon: Utensils, href: "/sectors/restaurants", desc: "Restaurantes e serviços de catering dependem da Bioprev para garantir a segurança alimentar e cumprir todas as regulamentações de higiene." },
   ];
 
   const approachSteps = [
@@ -144,12 +144,14 @@ export default function AllSectors() {
             
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
               {sectors.map((sector, idx) => (
-                <div key={idx} className="bg-white border border-gray-100 p-6 flex flex-col items-center justify-center hover:shadow-md transition-shadow cursor-pointer group" data-testid={`sector-card-${idx}`}>
-                  <div className="w-16 h-16 mb-4 flex items-center justify-center">
-                    <sector.icon className="w-12 h-12 text-[#333333] group-hover:text-[#007cc3] transition-colors" strokeWidth={1} />
+                <Link key={idx} href={sector.href}>
+                  <div className="bg-white border border-gray-100 p-6 flex flex-col items-center justify-center hover:shadow-md transition-shadow cursor-pointer group h-full" data-testid={`sector-card-${idx}`}>
+                    <div className="w-16 h-16 mb-4 flex items-center justify-center">
+                      <sector.icon className="w-12 h-12 text-[#333333] group-hover:text-[#007cc3] transition-colors" strokeWidth={1} />
+                    </div>
+                    <span className="text-[13px] font-bold text-[#007cc3] text-center leading-tight">{sector.name}</span>
                   </div>
-                  <span className="text-[13px] font-bold text-[#007cc3] text-center leading-tight">{sector.name}</span>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
@@ -168,13 +170,15 @@ export default function AllSectors() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {sectors.map((sector, idx) => (
-                <div key={idx} className="bg-white border-t-4 border-[#f2c92f] shadow-sm p-8 flex flex-col" data-testid={`sector-detail-${idx}`}>
-                  <div className="flex items-center gap-4 mb-4">
-                    <sector.icon className="w-8 h-8 text-[#007cc3] shrink-0" strokeWidth={1.5} />
-                    <h3 className="text-xl font-medium text-[#333333]">{sector.name}</h3>
+                <Link key={idx} href={sector.href}>
+                  <div className="bg-white border-t-4 border-[#f2c92f] shadow-sm p-8 flex flex-col h-full hover:shadow-md transition-shadow cursor-pointer" data-testid={`sector-detail-${idx}`}>
+                    <div className="flex items-center gap-4 mb-4">
+                      <sector.icon className="w-8 h-8 text-[#007cc3] shrink-0" strokeWidth={1.5} />
+                      <h3 className="text-xl font-medium text-[#333333]">{sector.name}</h3>
+                    </div>
+                    <p className="text-[#666666] leading-relaxed text-[15px] flex-grow">{sector.desc}</p>
                   </div>
-                  <p className="text-[#666666] leading-relaxed text-[15px] flex-grow">{sector.desc}</p>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
