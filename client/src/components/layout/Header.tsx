@@ -196,25 +196,30 @@ export default function Header() {
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: 10 }}
                           transition={{ duration: 0.2, ease: "easeOut" }}
-                          className="fixed top-[111.5px] left-0 w-full bg-[#f2f2f2] shadow-xl border-t border-gray-200 py-0 z-40"
+                          className="fixed top-[127px] left-0 w-full z-40"
+                          style={{ pointerEvents: "auto" }}
                         >
-                          <div className="container mx-auto px-4 flex justify-center">
-                            <div className="flex bg-white border-x border-gray-200 min-h-[160px]">
-                              {item.content.map((subItem, idx) => (
-                                <Link 
-                                  key={idx}
-                                  href={subItem.href || (subItem.text.includes('Todos') ? '/services' : '#')} 
-                                  className={`flex flex-col items-center justify-center p-6 w-[140px] hover:bg-gray-50 transition-colors ${idx !== item.content.length - 1 ? 'border-r border-gray-100' : ''} text-center group/item relative`}
-                                >
-                                  {/* Red Hover Indicator for Submenu Items */}
-                                  <div className="absolute bottom-0 left-0 w-full h-1 bg-[#e31818] transform scale-x-0 group-hover/item:scale-x-100 transition-transform duration-200 origin-center" />
-                                  
-                                  <subItem.icon className="w-12 h-12 text-[#333333] mb-3 transition-transform group-hover/item:scale-105" strokeWidth={0.75} />
-                                  <span className="text-[13px] font-normal text-[#333333] whitespace-pre-line leading-tight">
-                                    {subItem.text}
-                                  </span>
-                                </Link>
-                              ))}
+                          {/* Ponte invisível para evitar a perda do hover entre o menu e o dropdown */}
+                          <div className="absolute top-[-20px] left-0 w-full h-[20px] bg-transparent" />
+                          <div className="w-full bg-[#f2f2f2] shadow-xl border-t border-gray-200 py-0">
+                            <div className="container mx-auto px-4 flex justify-center">
+                              <div className="flex bg-white border-x border-gray-200 min-h-[160px]">
+                                {item.content.map((subItem, idx) => (
+                                  <Link 
+                                    key={idx}
+                                    href={subItem.href || (subItem.text.includes('Todos') ? '/services' : '#')} 
+                                    className={`flex flex-col items-center justify-center p-6 w-[140px] hover:bg-gray-50 transition-colors ${idx !== item.content.length - 1 ? 'border-r border-gray-100' : ''} text-center group/item relative`}
+                                  >
+                                    {/* Red Hover Indicator for Submenu Items */}
+                                    <div className="absolute bottom-0 left-0 w-full h-1 bg-[#e31818] transform scale-x-0 group-hover/item:scale-x-100 transition-transform duration-200 origin-center" />
+                                    
+                                    <subItem.icon className="w-12 h-12 text-[#333333] mb-3 transition-transform group-hover/item:scale-105" strokeWidth={0.75} />
+                                    <span className="text-[13px] font-normal text-[#333333] whitespace-pre-line leading-tight">
+                                      {subItem.text}
+                                    </span>
+                                  </Link>
+                                ))}
+                              </div>
                             </div>
                           </div>
                         </motion.div>
