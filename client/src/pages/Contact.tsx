@@ -74,7 +74,7 @@ export default function Contact() {
         {/* Form Section */}
         <div className="max-w-3xl mx-auto">
           <div className="mb-10">
-            <h2 className="text-[28px] font-bold text-[#111111] mb-4">Como podemos ajudar?</h2>
+            <h2 className="text-[28px] font-medium text-[#111111] mb-4">Como podemos ajudar?</h2>
             <p className="text-[#555555] mb-6 text-[16px] leading-relaxed">
               Precisa de ajuda com pragas? Diga-nos o que está a acontecer e iremos conectá-lo ao especialista certo.
             </p>
@@ -83,11 +83,11 @@ export default function Contact() {
             </p>
 
             <div className="mb-12">
-              <h3 className="text-[16px] font-bold text-[#111111] mb-2">Contatos Diretos</h3>
+              <h3 className="text-[16px] font-medium text-[#111111] mb-2">Contatos Diretos</h3>
               <p className="text-[#555555] mb-4 text-[16px] leading-relaxed">
                 Pode entrar em contato connosco através dos seguintes meios:
               </p>
-              <div className="flex flex-col gap-2 text-[16px] text-[#007cc3] font-bold">
+              <div className="flex flex-col gap-2 text-[16px] text-[#007cc3] font-medium">
                 <a href="mailto:geral@bioprev.com" className="hover:underline">
                   geral@bioprev.com
                 </a>

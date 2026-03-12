@@ -122,7 +122,7 @@ export default function Header() {
       <div className="w-full bg-[#f2f2f2] border-b border-gray-200">
         <div className="container mx-auto px-4 relative flex items-center justify-between">
           {/* Main utilities on Top Bar */}
-          <div className="flex justify-end py-2 text-[13px] font-bold text-[#333333] ml-auto">
+          <div className="flex justify-end py-2 text-[13px] font-medium text-[#333333] ml-auto">
             <div className="flex items-center space-x-6">
               <button 
                 onClick={() => setShowLocationsModal(true)}
