@@ -97,11 +97,9 @@ export default function Header() {
             <div className="container mx-auto px-4 flex items-center justify-center">
               <div className="flex items-center space-x-8">
                 <div className="text-white font-bold text-[15px] tracking-tight">
-                  <a href="tel:+244947059109" className="hover:underline">+244 947 059 109</a>
-                  <span className="mx-2">|</span>
                   <a href="tel:+244928737888" className="hover:underline">+244 928 737 888</a>
                 </div>
-                <a href="tel:+244947059109" className="bg-[#0077c0] text-white px-8 py-2 font-bold text-sm h-[60px] flex items-center transition-colors hover:bg-[#005fa3]">
+                <a href="tel:+244928737888" className="bg-[#0077c0] text-white px-8 py-2 font-bold text-sm h-[60px] flex items-center transition-colors hover:bg-[#005fa3]">
                   Ligar agora
                 </a>
                 <a href="#" className="text-white font-bold text-sm hover:underline">

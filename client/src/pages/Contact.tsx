@@ -76,10 +76,6 @@ export default function Contact() {
                   <span className="mr-2">✉️</span> geral@bioprev.com
                 </a>
                 <div className="flex flex-wrap gap-2 items-center">
-                  <a href="tel:+244947059109" className="hover:underline flex items-center">
-                    📞 +244 947 059 109
-                  </a>
-                  <span className="text-gray-300 hidden sm:inline">|</span>
                   <a href="tel:+244928737888" className="hover:underline flex items-center">
                     📞 +244 928 737 888
                   </a>
