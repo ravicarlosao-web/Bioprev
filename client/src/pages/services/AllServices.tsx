@@ -61,11 +61,6 @@ export default function AllServices() {
             </div>
           </div>
           
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 mb-3 sm:mb-4">
-            <div className="w-10 h-7 sm:w-12 sm:h-8 bg-[#f2c92f] flex items-center justify-center clip-path-v">
-              <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-white rotate-90" />
-            </div>
-          </div>
         </section>
 
         <section className="py-12 sm:py-16 md:py-20 bg-white">
