@@ -41,12 +41,12 @@ export default function Header() {
       ]
     },
     {
-      id: 'global',
+      id: 'national',
       label: 'Contas nacionais',
-      testId: 'nav-global',
+      testId: 'nav-national',
       content: [
-        { icon: Globe, text: 'Visão\ngeral' },
-        { icon: Target, text: 'Soluções\nnacionais' },
+        { icon: Globe, text: 'Visão\ngeral', href: '/national-accounts/overview' },
+        { icon: Target, text: 'Soluções\nnacionais', href: '/national-accounts/solutions' },
       ]
     },
     {

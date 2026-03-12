@@ -34,6 +34,7 @@ export interface ServicePageData {
   heroImage: string;
   heroImageAlt: string;
   breadcrumbLabel: string;
+  breadcrumbParent?: { label: string; href: string };
   heroTitle: string;
   heroSubtitle: string;
   introTitle: string;
@@ -76,7 +77,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
               <nav className="flex items-center flex-wrap gap-1 text-white/90 text-xs sm:text-sm mb-4 sm:mb-6 md:mb-8 font-medium">
                 <Link href="/" className="hover:underline">Início</Link>
                 <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4" />
-                <Link href="/services" className="hover:underline">Serviços</Link>
+                <Link href={data.breadcrumbParent?.href || "/services"} className="hover:underline">{data.breadcrumbParent?.label || "Serviços"}</Link>
                 <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4" />
                 <span>{data.breadcrumbLabel}</span>
               </nav>

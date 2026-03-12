@@ -28,6 +28,9 @@ import Pharmaceutical from "@/pages/sectors/Pharmaceutical";
 import Offices from "@/pages/sectors/Offices";
 import Restaurants from "@/pages/sectors/Restaurants";
 import Locations from "@/pages/Locations";
+import AllNationalAccounts from "@/pages/national-accounts/AllNationalAccounts";
+import NationalOverview from "@/pages/national-accounts/Overview";
+import NationalSolutions from "@/pages/national-accounts/Solutions";
 
 function Router() {
   return (
@@ -35,6 +38,9 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/contact" component={Contact} />
       <Route path="/locations" component={Locations} />
+      <Route path="/national-accounts" component={AllNationalAccounts} />
+      <Route path="/national-accounts/overview" component={NationalOverview} />
+      <Route path="/national-accounts/solutions" component={NationalSolutions} />
       <Route path="/services" component={AllServices} />
       <Route path="/services/disinfestation" component={Disinfestation} />
       <Route path="/services/pests" component={Pests} />
