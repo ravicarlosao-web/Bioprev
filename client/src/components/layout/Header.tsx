@@ -153,7 +153,7 @@ export default function Header() {
       </div>
 
       {/* Main navigation - white background - Full width wrapper */}
-      <div className="w-full bg-white border-b border-gray-100 relative h-[90px]">
+      <div className="w-full bg-white border-b border-gray-100 relative h-[70px] sm:h-[80px] md:h-[90px]">
         <div className="container mx-auto px-4 h-full">
           <div className="flex items-center justify-between h-full">
             {/* Logo - Restrained to the main navigation bar */}
@@ -162,7 +162,7 @@ export default function Header() {
                 className="flex items-center justify-center h-full cursor-pointer py-2"
                 data-testid="text-logo-container"
               >
-                <img src={logoImg} alt="Bioprev Logo" className="w-[180px] max-h-full object-contain" data-testid="img-logo" />
+                <img src={logoImg} alt="Bioprev Logo" className="w-[120px] sm:w-[150px] md:w-[180px] max-h-full object-contain" data-testid="img-logo" />
               </div>
             </Link>
 
@@ -259,8 +259,7 @@ export default function Header() {
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
               className="fixed top-0 right-0 w-[85%] max-w-[360px] h-full bg-white z-[201] overflow-y-auto shadow-2xl"
             >
-              <div className="flex items-center justify-between p-4 border-b border-gray-100">
-                <img src={logoImg} alt="Bioprev" className="h-10 object-contain" />
+              <div className="flex items-center justify-end p-4 border-b border-gray-100">
                 <button onClick={() => { setMobileMenuOpen(false); setMobileSubmenu(null); }} className="p-2 text-[#333333]" data-testid="button-close-mobile-menu">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
                 </button>
