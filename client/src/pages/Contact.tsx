@@ -58,7 +58,6 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
       <div className="container mx-auto px-4 py-12">
         {/* Breadcrumb */}
         <div className="mb-8 flex items-center space-x-2 text-sm text-gray-600">
@@ -83,7 +82,7 @@ export default function Contact() {
               Leia a nossa <a href="#" className="text-[#007cc3] hover:underline">política de privacidade</a> para entender como usamos seus dados.
             </p>
 
-            <div className="bg-[#fafafa] p-8 border-l-[4px] border-[#f2c92f] mb-12">
+            <div className="p-8 border-l-[4px] border-[#f2c92f] mb-12 text-[#33333300] bg-[#fafafa00]">
               <h3 className="text-[18px] font-bold text-gray-900 mb-3">Contatos Diretos</h3>
               <p className="text-[#555555] mb-6 text-[15px]">
                 Pode entrar em contato connosco através dos seguintes meios:
@@ -302,7 +301,6 @@ export default function Contact() {
           </form>
         </div>
       </div>
-      
       <Footer />
     </div>
   );
