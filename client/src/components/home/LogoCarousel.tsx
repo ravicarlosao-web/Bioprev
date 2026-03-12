@@ -46,7 +46,7 @@ export default function LogoCarousel({ logos }: LogoCarouselProps) {
           {logos.map((logo, index) => (
             <div
               key={index}
-              className="flex-[0_0_calc(25%-1.5rem)] md:flex-[0_0_calc(20%-1.6rem)] h-40 flex items-center justify-center bg-white shadow-sm border border-gray-50 hover:shadow-md transition-all duration-300 group"
+              className="flex-[0_0_calc(50%-1rem)] sm:flex-[0_0_calc(33.33%-1.2rem)] md:flex-[0_0_calc(25%-1.5rem)] lg:flex-[0_0_calc(20%-1.6rem)] h-28 sm:h-32 md:h-40 flex items-center justify-center bg-white shadow-sm border border-gray-50 hover:shadow-md transition-all duration-300 group"
               data-testid={`carousel-slide-${index}`}
             >
               <div className="w-full h-full flex items-center justify-center p-6">
@@ -74,21 +74,21 @@ export default function LogoCarousel({ logos }: LogoCarouselProps) {
       <button
         onClick={scrollPrev}
         disabled={!canScrollPrev}
-        className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-16 md:-translate-x-20 z-10 p-2 rounded-full bg-[#333333] text-white hover:bg-[#f2c92f] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+        className="absolute -left-2 sm:-left-4 md:left-0 top-1/2 transform -translate-y-1/2 md:-translate-x-16 lg:-translate-x-20 z-10 p-1.5 sm:p-2 rounded-full bg-[#333333] text-white hover:bg-[#f2c92f] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
         data-testid="button-carousel-prev"
         aria-label="Previous slide"
       >
-        <ChevronLeft className="w-6 h-6" strokeWidth={2} />
+        <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" strokeWidth={2} />
       </button>
 
       <button
         onClick={scrollNext}
         disabled={!canScrollNext}
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-16 md:translate-x-20 z-10 p-2 rounded-full bg-[#333333] text-white hover:bg-[#f2c92f] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+        className="absolute -right-2 sm:-right-4 md:right-0 top-1/2 transform -translate-y-1/2 md:translate-x-16 lg:translate-x-20 z-10 p-1.5 sm:p-2 rounded-full bg-[#333333] text-white hover:bg-[#f2c92f] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
         data-testid="button-carousel-next"
         aria-label="Next slide"
       >
-        <ChevronRight className="w-6 h-6" strokeWidth={2} />
+        <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" strokeWidth={2} />
       </button>
 
       {/* Dots Indicator */}

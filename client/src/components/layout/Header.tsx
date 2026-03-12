@@ -1,4 +1,4 @@
-import { Search, MapPin, Phone, User, Menu, Truck, Target, Cloud, Globe, Info, BookOpen, Bug, Wind, Droplets, Trash2, Trees, ShieldCheck, Building2, Factory, Warehouse, Hotel, ShoppingCart, Pill, Briefcase, LayoutGrid } from "lucide-react";
+import { Search, MapPin, Phone, User, Menu, Truck, Target, Cloud, Globe, Info, BookOpen, Bug, Wind, Droplets, Trash2, Trees, ShieldCheck, Building2, Factory, Warehouse, Hotel, ShoppingCart, Pill, Briefcase, LayoutGrid, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -12,6 +12,8 @@ export default function Header() {
   const [location] = useLocation();
   const [showLocationsModal, setShowLocationsModal] = useState(false);
   const [selectedLocation, setSelectedLocation] = useState<string | null>(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileSubmenu, setMobileSubmenu] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -231,15 +233,92 @@ export default function Header() {
               ))}
             </nav>
 
-            {/* Mobile Menu Button */}
             <div className="ml-auto lg:hidden flex items-center">
-              <Button variant="ghost" size="icon" className="text-[#333333]" data-testid="button-mobile-menu">
+              <Button variant="ghost" size="icon" className="text-[#333333]" data-testid="button-mobile-menu" onClick={() => setMobileMenuOpen(true)}>
                 <Menu className="w-8 h-8" />
               </Button>
             </div>
           </div>
         </div>
       </div>
+
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 bg-black/50 z-[200]"
+              onClick={() => { setMobileMenuOpen(false); setMobileSubmenu(null); }}
+            />
+            <motion.div
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ type: "spring", damping: 25, stiffness: 300 }}
+              className="fixed top-0 right-0 w-[85%] max-w-[360px] h-full bg-white z-[201] overflow-y-auto shadow-2xl"
+            >
+              <div className="flex items-center justify-between p-4 border-b border-gray-100">
+                <img src={logoImg} alt="Bioprev" className="h-10 object-contain" />
+                <button onClick={() => { setMobileMenuOpen(false); setMobileSubmenu(null); }} className="p-2 text-[#333333]" data-testid="button-close-mobile-menu">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+              </div>
+
+              <div className="py-2">
+                {menuItems.map((item) => (
+                  <div key={item.id} className="border-b border-gray-50">
+                    <button
+                      className="w-full flex items-center justify-between px-6 py-4 text-[15px] font-bold text-[#333333] hover:bg-gray-50"
+                      onClick={() => setMobileSubmenu(mobileSubmenu === item.id ? null : item.id)}
+                      data-testid={`mobile-${item.testId}`}
+                    >
+                      {item.label}
+                      <ChevronRight className={`w-4 h-4 transition-transform ${mobileSubmenu === item.id ? 'rotate-90' : ''}`} />
+                    </button>
+                    <AnimatePresence>
+                      {mobileSubmenu === item.id && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: "auto", opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.2 }}
+                          className="overflow-hidden bg-gray-50"
+                        >
+                          {item.content.map((subItem, idx) => (
+                            <Link
+                              key={idx}
+                              href={subItem.href || '#'}
+                              onClick={() => { setMobileMenuOpen(false); setMobileSubmenu(null); }}
+                              className="flex items-center gap-3 px-8 py-3 text-[14px] text-[#555555] hover:text-[#007cc3] hover:bg-white transition-colors"
+                            >
+                              <subItem.icon className="w-5 h-5 text-[#007cc3] shrink-0" strokeWidth={1.5} />
+                              <span className="whitespace-pre-line leading-tight">{subItem.text}</span>
+                            </Link>
+                          ))}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                ))}
+              </div>
+
+              <div className="p-6 space-y-3 border-t border-gray-100">
+                <button onClick={() => { setShowLocationsModal(true); setMobileMenuOpen(false); }} className="flex items-center gap-2 text-[14px] text-[#555555] hover:text-[#007cc3]">
+                  <MapPin className="w-4 h-4" /> Locais
+                </button>
+                <Link href="/contact" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-2 text-[14px] text-[#555555] hover:text-[#007cc3]">
+                  <Phone className="w-4 h-4" /> Contato
+                </Link>
+                <a href="tel:+244928737888" className="flex items-center gap-2 text-[14px] font-bold text-[#007cc3]">
+                  <Phone className="w-4 h-4" /> +244 928 737 888
+                </a>
+              </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
     </header>
   );
 }

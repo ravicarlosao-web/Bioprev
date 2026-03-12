@@ -69,7 +69,7 @@ export default function Contact() {
         </div>
 
         {/* Main Title */}
-        <h1 className="text-5xl font-bold text-[#f2c92f] mb-12 text-center">Contato</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#f2c92f] mb-8 sm:mb-12 text-center">Contato</h1>
 
         {/* Form Section */}
         <div className="max-w-3xl mx-auto">

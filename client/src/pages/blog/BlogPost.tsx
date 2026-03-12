@@ -22,7 +22,7 @@ export default function BlogPost() {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <div className="relative h-[400px] w-full bg-[#001d3d] overflow-hidden">
+        <div className="relative h-[280px] sm:h-[340px] md:h-[400px] w-full bg-[#001d3d] overflow-hidden">
           {/* Background Image */}
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-60"
@@ -48,7 +48,7 @@ export default function BlogPost() {
 
             {/* Title */}
             <div className="mb-16 max-w-4xl">
-              <h1 className="text-5xl font-extrabold text-white leading-tight tracking-tight shadow-sm drop-shadow-md">
+              <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-white leading-tight tracking-tight shadow-sm drop-shadow-md">
                 {title}
               </h1>
             </div>

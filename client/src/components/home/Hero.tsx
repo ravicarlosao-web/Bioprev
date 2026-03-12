@@ -4,8 +4,7 @@ import heroBg from "../../assets/images/hero-bg.jpg";
 export default function Hero() {
   return (
     <section className="relative w-full overflow-hidden">
-      {/* Background Image - Clean, no filters */}
-      <div className="relative h-[400px] w-full bg-gray-900">
+      <div className="relative h-[280px] sm:h-[340px] md:h-[400px] w-full bg-gray-900">
         <img 
           src={heroBg}
           alt="Especialista em controle de pragas" 
@@ -14,13 +13,13 @@ export default function Hero() {
         
         {/* Content */}
         <div className="relative h-full container mx-auto px-4 flex flex-col items-center justify-center text-center">
-          <h1 className="text-4xl md:text-5xl font-normal text-white mb-8 max-w-4xl leading-tight" data-testid="text-hero-title">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-normal text-white mb-6 md:mb-8 max-w-4xl leading-tight px-2" data-testid="text-hero-title">
             Os especialistas nacionais em controle de pragas
           </h1>
           
           <div className="flex justify-center w-full">
             <button 
-              className="border border-white text-white bg-transparent hover:bg-white/10 transition-all duration-300 font-normal px-6 py-2.5 text-[16px] min-w-[200px]"
+              className="border border-white text-white bg-transparent hover:bg-white/10 transition-all duration-300 font-normal px-4 sm:px-6 py-2 sm:py-2.5 text-[13px] sm:text-[16px] min-w-0 sm:min-w-[200px]"
               data-testid="button-contact-specialist"
             >
               Contate o seu especialista local da Bioprev

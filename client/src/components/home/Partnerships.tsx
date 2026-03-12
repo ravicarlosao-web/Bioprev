@@ -23,7 +23,7 @@ export default function Partnerships() {
         </p>
       </div>
 
-      <div className="container mx-auto px-20 max-w-7xl mb-24">
+      <div className="container mx-auto px-4 sm:px-8 md:px-20 max-w-7xl mb-16 sm:mb-24">
         <LogoCarousel logos={logos} />
       </div>
 
@@ -53,7 +53,7 @@ export default function Partnerships() {
         </div>
 
         {/* New Sections from Images */}
-        <div className="mt-24 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="mt-12 sm:mt-24 grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
           {/* Responsible Pest Control Card */}
           <div className="bg-white border-t-4 border-[#f2c92f] shadow-lg p-8 flex flex-col h-full">
             <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">

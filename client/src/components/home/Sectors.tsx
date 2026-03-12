@@ -21,28 +21,28 @@ export default function Sectors() {
       </div>
 
       <div className="container mx-auto px-4 max-w-7xl">
-        <div className="grid grid-cols-2 md:grid-cols-6 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 sm:gap-4">
           {sectors.map((sector, index) => (
             <div 
               key={index} 
-              className="bg-white p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow cursor-pointer group h-full"
+              className="bg-white p-4 sm:p-6 md:p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow cursor-pointer group h-full"
               data-testid={`card-sector-${index}`}
             >
-              <div className="mb-6 group-hover:scale-105 transition-transform">
+              <div className="mb-4 sm:mb-6 group-hover:scale-105 transition-transform [&>svg]:w-10 [&>svg]:h-10 sm:[&>svg]:w-12 sm:[&>svg]:h-12 md:[&>svg]:w-16 md:[&>svg]:h-16">
                 {sector.icon}
               </div>
-              <p className="text-[#007cc3] font-bold text-[14px] leading-tight mt-auto">
+              <p className="text-[#007cc3] font-bold text-[12px] sm:text-[13px] md:text-[14px] leading-tight mt-auto">
                 {sector.name}
               </p>
             </div>
           ))}
           
           <div 
-            className="bg-[#1a2b3b] p-8 flex flex-col items-center justify-center text-center shadow-sm hover:bg-[#243a4e] transition-colors cursor-pointer text-white h-full"
+            className="bg-[#1a2b3b] p-4 sm:p-6 md:p-8 flex flex-col items-center justify-center text-center shadow-sm hover:bg-[#243a4e] transition-colors cursor-pointer text-white h-full"
             data-testid="card-sector-all"
           >
-            <Plus className="w-12 h-12 mb-4 stroke-[3px]" />
-            <p className="font-bold text-[14px] uppercase tracking-wider">
+            <Plus className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mb-3 sm:mb-4 stroke-[3px]" />
+            <p className="font-bold text-[12px] sm:text-[13px] md:text-[14px] uppercase tracking-wider">
               Ver todos os setores
             </p>
           </div>

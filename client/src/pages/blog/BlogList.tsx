@@ -55,15 +55,14 @@ export default function BlogList() {
 
         {/* Main Title */}
         <div className="container mx-auto px-4 py-8 mb-4">
-          <h1 className="text-5xl font-extrabold text-[#f2c92f] text-center mb-12 tracking-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#f2c92f] text-center mb-8 sm:mb-12 tracking-tight">
             Blog
           </h1>
 
-          {/* Grid of Blog Posts */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 max-w-6xl mx-auto">
             {blogPosts.map((post) => (
               <Link key={post.id} href={post.link}>
-                <div className="group relative overflow-hidden rounded-sm cursor-pointer shadow-sm hover:shadow-lg transition-all duration-300 h-[380px] border-t-4 border-[#f2c92f] bg-gray-900">
+                <div className="group relative overflow-hidden rounded-sm cursor-pointer shadow-sm hover:shadow-lg transition-all duration-300 h-[300px] sm:h-[340px] md:h-[380px] border-t-4 border-[#f2c92f] bg-gray-900">
                   {/* Background Image */}
                   <div 
                     className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105 opacity-50 mix-blend-overlay"

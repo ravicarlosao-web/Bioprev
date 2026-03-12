@@ -27,7 +27,7 @@ export default function Disinfestation() {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative h-[500px] flex items-center overflow-hidden">
+        <section className="relative h-[350px] sm:h-[420px] md:h-[500px] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img 
               src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&q=80&w=2000" 
@@ -47,11 +47,11 @@ export default function Disinfestation() {
                 <span>Desinfecção</span>
               </nav>
               
-              <h1 className="text-white text-5xl md:text-6xl font-medium mb-8 leading-tight">
-                Serviços e soluções de<br />desinfecção profissional
+              <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-6 sm:mb-8 leading-tight">
+                Serviços e soluções de<br className="hidden sm:block" />desinfecção profissional
               </h1>
               
-              <p className="text-white text-xl md:text-[22px] max-w-3xl mb-12 leading-relaxed font-light">
+              <p className="text-white text-base sm:text-lg md:text-xl lg:text-[22px] max-w-3xl mb-8 sm:mb-12 leading-relaxed font-light">
                 Como líder nacional em soluções de higiene, a Bioprev oferece serviços de desinfecção especializados, fiáveis e profissionais a clientes comerciais em todo o país.
               </p>
               
@@ -93,17 +93,16 @@ export default function Disinfestation() {
 
         {/* Service Cards */}
         <section className="grid grid-cols-1 md:grid-cols-2">
-          {/* Card 1 */}
-          <div className="relative h-[600px] group overflow-hidden">
+          <div className="relative h-[400px] sm:h-[500px] md:h-[600px] group overflow-hidden">
             <img 
               src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1000" 
               alt="Desinfecção Especializada" 
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-black/20" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md px-4">
-              <div className="bg-white border-t-4 border-[#f2c92f] shadow-xl p-10">
-                <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">Desinfecção especializada</h3>
+            <div className="absolute inset-0 flex items-center justify-center px-4">
+              <div className="bg-white border-t-4 border-[#f2c92f] shadow-xl p-6 sm:p-8 md:p-10 w-full max-w-md">
+                <h3 className="text-xl sm:text-2xl md:text-[28px] font-medium text-[#333333] mb-4 sm:mb-6">Desinfecção especializada</h3>
                 <p className="text-[#666666] leading-relaxed mb-8">
                   Os nossos serviços de desinfecção especializada fornecem uma resposta rápida para ajudá-lo a manter um alto nível de higiene nas suas instalações, reduzindo o risco de infecção.
                 </p>
@@ -114,17 +113,16 @@ export default function Disinfestation() {
             </div>
           </div>
           
-          {/* Card 2 */}
-          <div className="relative h-[600px] group overflow-hidden">
+          <div className="relative h-[400px] sm:h-[500px] md:h-[600px] group overflow-hidden">
             <img 
               src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000" 
               alt="Desinfecção Preventiva" 
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-black/30" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md px-4">
-              <div className="bg-white border-t-4 border-[#f2c92f] shadow-xl p-10">
-                <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">Desinfecção preventiva</h3>
+            <div className="absolute inset-0 flex items-center justify-center px-4">
+              <div className="bg-white border-t-4 border-[#f2c92f] shadow-xl p-6 sm:p-8 md:p-10 w-full max-w-md">
+                <h3 className="text-xl sm:text-2xl md:text-[28px] font-medium text-[#333333] mb-4 sm:mb-6">Desinfecção preventiva</h3>
                 <p className="text-[#666666] leading-relaxed mb-8">
                   Uma série de soluções de desinfecção preventiva concebidas para ajudar as empresas a manter um ambiente seguro e proporcionar paz de espírito aos funcionários e visitantes.
                 </p>

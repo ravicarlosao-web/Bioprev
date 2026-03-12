@@ -7,15 +7,15 @@ export default function Footer() {
     <footer className="bg-white border-t-8 border-[#f2c92f] pt-16 pb-8">
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Partnership Logos in Footer */}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center mb-16 opacity-80">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/BRCGS_Logo.svg/2560px-BRCGS_Logo.svg.png" alt="BRCGS" className="h-12 object-contain" />
-          <img src="https://www.cepa-europe.org/wp-content/uploads/2020/06/cepa-certified-logo.png" alt="CEPA" className="h-12 object-contain" />
-          <img src="https://www.bioprev.com/assets/images/logos/dj-sustainability-indices.png" alt="Dow Jones Sustainability" className="h-12 object-contain" />
-          <img src="https://www.bioprev.com/assets/images/logos/ftse-index.png" alt="FTSE" className="h-10 object-contain" />
-          <img src="https://www.bioprev.com/assets/images/logos/bsi-logo.png" alt="BSI" className="h-12 object-contain" />
+        <div className="grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-8 items-center mb-10 sm:mb-16 opacity-80">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/BRCGS_Logo.svg/2560px-BRCGS_Logo.svg.png" alt="BRCGS" className="h-8 sm:h-12 object-contain" />
+          <img src="https://www.cepa-europe.org/wp-content/uploads/2020/06/cepa-certified-logo.png" alt="CEPA" className="h-8 sm:h-12 object-contain" />
+          <img src="https://www.bioprev.com/assets/images/logos/dj-sustainability-indices.png" alt="Dow Jones Sustainability" className="h-8 sm:h-12 object-contain" />
+          <img src="https://www.bioprev.com/assets/images/logos/ftse-index.png" alt="FTSE" className="h-7 sm:h-10 object-contain" />
+          <img src="https://www.bioprev.com/assets/images/logos/bsi-logo.png" alt="BSI" className="h-8 sm:h-12 object-contain" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 mb-10 sm:mb-16">
           {/* Column 1 */}
           <div className="space-y-3">
             <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Locais</a>

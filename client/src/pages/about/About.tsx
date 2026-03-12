@@ -10,7 +10,7 @@ export default function About() {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative h-[500px] flex items-center overflow-hidden">
+        <section className="relative h-[350px] sm:h-[420px] md:h-[500px] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img 
               src="/src/assets/images/about-hero.jpg" 
@@ -30,11 +30,11 @@ export default function About() {
                 <span>Quem somos</span>
               </nav>
               
-              <h1 className="text-white text-5xl md:text-6xl font-medium mb-8 leading-tight">
+              <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-6 sm:mb-8 leading-tight">
                 Quem somos
               </h1>
               
-              <p className="text-white text-xl md:text-[22px] max-w-3xl leading-relaxed font-light">
+              <p className="text-white text-base sm:text-lg md:text-xl lg:text-[22px] max-w-3xl leading-relaxed font-light">
                 Conheça a BIOPREV, a nossa visão, a nossa equipa e o nosso compromisso em moldar um futuro sustentável através de soluções de excelência.
               </p>
             </div>

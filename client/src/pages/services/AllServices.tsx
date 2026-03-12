@@ -27,7 +27,7 @@ export default function AllServices() {
       
       <main className="flex-grow">
         {/* Hero Section - Image 1 */}
-        <section className="relative h-[500px] flex items-center overflow-hidden">
+        <section className="relative h-[350px] sm:h-[420px] md:h-[500px] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img 
               src="https://images.unsplash.com/photo-1581578731522-745505146317?auto=format&fit=crop&q=80&w=2000" 
@@ -45,11 +45,11 @@ export default function AllServices() {
                 <span>Serviços</span>
               </nav>
               
-              <h1 className="text-white text-5xl md:text-6xl font-medium mb-8 leading-tight">
-                Serviços nacionais de controle de pragas<br />e soluções
+              <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-6 sm:mb-8 leading-tight">
+                Serviços nacionais de controle de pragas<br className="hidden sm:block" />e soluções
               </h1>
               
-              <p className="text-white text-xl md:text-[22px] max-w-3xl mb-12 leading-relaxed font-light">
+              <p className="text-white text-base sm:text-lg md:text-xl lg:text-[22px] max-w-3xl mb-8 sm:mb-12 leading-relaxed font-light">
                 Como líder nacional em soluções de higiene e controle de pragas, a Bioprev leva serviços especializados, fiáveis e profissionais a clientes comerciais em todo o país.
               </p>
               
@@ -91,17 +91,16 @@ export default function AllServices() {
 
         {/* Service Cards - Image 3 */}
         <section className="grid grid-cols-1 md:grid-cols-2">
-          {/* Card 1 */}
-          <div className="relative h-[600px] group overflow-hidden">
+          <div className="relative h-[400px] sm:h-[500px] md:h-[600px] group overflow-hidden">
             <img 
               src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1000" 
               alt="Controle de pragas" 
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-black/20" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md px-4">
-              <div className="bg-white border-t-4 border-[#f2c92f] shadow-xl p-10">
-                <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">Serviços de controle de pragas</h3>
+            <div className="absolute inset-0 flex items-center justify-center px-4">
+              <div className="bg-white border-t-4 border-[#f2c92f] shadow-xl p-6 sm:p-8 md:p-10 w-full max-w-md">
+                <h3 className="text-xl sm:text-2xl md:text-[28px] font-medium text-[#333333] mb-4 sm:mb-6">Serviços de controle de pragas</h3>
                 <p className="text-[#666666] leading-relaxed mb-8">
                   A Bioprev é líder nacional no controle de pragas comerciais. Oferecemos uma gama de tratamentos direcionados e inovadores e soluções de impermeabilização para garantir que o seu negócio fique livre de pragas.
                 </p>
@@ -112,17 +111,16 @@ export default function AllServices() {
             </div>
           </div>
           
-          {/* Card 2 */}
-          <div className="relative h-[600px] group overflow-hidden">
+          <div className="relative h-[400px] sm:h-[500px] md:h-[600px] group overflow-hidden">
             <img 
               src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000" 
               alt="Controle de pragas digital" 
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-black/30" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md px-4">
-              <div className="bg-white border-t-4 border-[#f2c92f] shadow-xl p-10">
-                <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">Controle de pragas digital</h3>
+            <div className="absolute inset-0 flex items-center justify-center px-4">
+              <div className="bg-white border-t-4 border-[#f2c92f] shadow-xl p-6 sm:p-8 md:p-10 w-full max-w-md">
+                <h3 className="text-xl sm:text-2xl md:text-[28px] font-medium text-[#333333] mb-4 sm:mb-6">Controle de pragas digital</h3>
                 <p className="text-[#666666] leading-relaxed mb-8">
                   Uma série de soluções de gestão de pragas conectadas e aprimoradas digitalmente fornecem aos clientes comerciais dados, insights e relatórios incomparáveis para prevenir e gerenciar pragas proativamente.
                 </p>

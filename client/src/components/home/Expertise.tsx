@@ -73,9 +73,9 @@ export default function Expertise() {
   ];
 
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4 max-w-6xl text-center mb-16">
-        <h2 className="text-3xl md:text-[32px] font-medium text-[#333333] mb-8 leading-tight">
+    <section className="py-12 sm:py-16 md:py-20 bg-white">
+      <div className="container mx-auto px-4 max-w-6xl text-center mb-10 sm:mb-16">
+        <h2 className="text-2xl sm:text-3xl md:text-[32px] font-medium text-[#333333] mb-6 sm:mb-8 leading-tight">
           Capacitando empresas com experiência nacional em controle de pragas
         </h2>
         <p className="text-[#333333] max-w-4xl mx-auto leading-relaxed text-[16px]">
@@ -120,12 +120,12 @@ export default function Expertise() {
       `}</style>
 
       <div className="container mx-auto px-4 max-w-7xl">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-10 sm:mb-16">
           {cards.map((card, index) => (
             <div 
               key={index}
               ref={cardRefs[index]}
-              className={`expertise-card bg-[#f9fafb] border-t-4 border-[#d41a1a] p-10 flex flex-col items-center text-center shadow-sm ${visibleCards[index] ? 'visible' : ''}`}
+              className={`expertise-card bg-[#f9fafb] border-t-4 border-[#d41a1a] p-6 sm:p-8 md:p-10 flex flex-col items-center text-center shadow-sm ${visibleCards[index] ? 'visible' : ''}`}
               data-testid={`card-expertise-${index}`}
             >
               <div className="mb-8">
@@ -144,7 +144,7 @@ export default function Expertise() {
         <div className="flex justify-center">
           <button 
             ref={buttonRef}
-            className={`expertise-button bg-[#007cc3] text-white font-bold py-4 px-10 text-xl hover:bg-[#005a8f] transition-colors ${visibleButton ? 'visible' : ''}`}
+            className={`expertise-button bg-[#007cc3] text-white font-bold py-3 sm:py-4 px-6 sm:px-10 text-base sm:text-lg md:text-xl hover:bg-[#005a8f] transition-colors ${visibleButton ? 'visible' : ''}`}
             data-testid="button-contact-us"
           >
             Pronto para simplificar a gestão de pragas? Contacte-nos hoje.

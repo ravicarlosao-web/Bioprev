@@ -10,7 +10,7 @@ export default function Careers() {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative h-[500px] flex items-center overflow-hidden">
+        <section className="relative h-[350px] sm:h-[420px] md:h-[500px] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img 
               src="/src/assets/images/careers-hero.jpg" 
@@ -30,7 +30,7 @@ export default function Careers() {
                 <span>Carreiras</span>
               </nav>
               
-              <h1 className="text-white text-5xl md:text-6xl font-medium mb-8 leading-tight">
+              <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-6 sm:mb-8 leading-tight">
                 Carreiras na BIOPREV
               </h1>
               
