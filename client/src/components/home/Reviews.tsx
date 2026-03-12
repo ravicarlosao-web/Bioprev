@@ -85,12 +85,34 @@ const reviews = [
   },
 ];
 
+function useItemsPerView() {
+  const [itemsPerView, setItemsPerView] = useState(3);
+
+  useEffect(() => {
+    const update = () => {
+      if (window.innerWidth < 640) setItemsPerView(1);
+      else if (window.innerWidth < 1024) setItemsPerView(2);
+      else setItemsPerView(3);
+    };
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
+
+  return itemsPerView;
+}
+
 export default function Reviews() {
+  const itemsPerView = useItemsPerView();
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(false);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
-  const itemsPerView = 3;
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
   const maxIndex = reviews.length - itemsPerView;
+
+  useEffect(() => {
+    setCurrentIndex((prev) => Math.min(prev, maxIndex));
+  }, [maxIndex]);
 
   const resetTimer = useCallback(() => {
     if (intervalRef.current) clearInterval(intervalRef.current);
@@ -108,13 +130,10 @@ export default function Reviews() {
 
   const goTo = useCallback(
     (index: number) => {
-      if (isTransitioning) return;
-      setIsTransitioning(true);
       setCurrentIndex(Math.max(0, Math.min(index, maxIndex)));
       resetTimer();
-      setTimeout(() => setIsTransitioning(false), 700);
     },
-    [isTransitioning, maxIndex, resetTimer]
+    [maxIndex, resetTimer]
   );
 
   const goNext = useCallback(() => {
@@ -125,6 +144,22 @@ export default function Reviews() {
     goTo(currentIndex <= 0 ? maxIndex : currentIndex - 1);
   }, [currentIndex, maxIndex, goTo]);
 
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+  const handleTouchMove = (e: React.TouchEvent) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+  const handleTouchEnd = () => {
+    const diff = touchStartX.current - touchEndX.current;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) goNext();
+      else goPrev();
+    }
+  };
+
+  const gap = 24;
+  const cardWidthPercent = 100 / itemsPerView;
   const totalDots = maxIndex + 1;
 
   return (
@@ -140,20 +175,27 @@ export default function Reviews() {
         </div>
 
         <div className="relative max-w-6xl mx-auto">
-          <div className="overflow-hidden">
+          <div
+            className="overflow-hidden"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+          >
             <div
-              className="flex gap-6"
+              className="flex"
               style={{
-                transform: `translateX(calc(-${currentIndex} * (100% / 3 + 8px)))`,
+                gap: `${gap}px`,
+                transform: `translateX(calc(-${currentIndex} * (${cardWidthPercent}% + ${gap - (gap * itemsPerView - gap) / reviews.length}px)))`,
                 transition: "transform 0.7s cubic-bezier(0.25, 0.1, 0.25, 1)",
-                width: `calc(${reviews.length} * (100% / 3 - 16px + 24px))`,
               }}
             >
               {reviews.map((review) => (
                 <div
                   key={review.id}
                   className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 flex flex-col shrink-0"
-                  style={{ width: "calc(100% / 9 - 16px)" }}
+                  style={{
+                    width: `calc(${cardWidthPercent}% - ${gap * (itemsPerView - 1) / itemsPerView}px)`,
+                  }}
                   data-testid={`review-card-${review.id}`}
                 >
                   <div className="flex items-center mb-4">
