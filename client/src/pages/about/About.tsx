@@ -8,9 +8,6 @@ export default function About() {
     <div className="min-h-screen bg-white flex flex-col font-sans">
       <Header />
       
-      {/* Spacer to push content below the fixed header */}
-      <div className="pt-[140px] md:pt-[111.5px]"></div>
-      
       <main className="flex-grow">
         {/* Hero Section */}
         <section className="relative h-[500px] flex items-center overflow-hidden">
