@@ -1,4 +1,4 @@
-import { Search, MapPin, Phone, User, Menu, Truck, Target, Cloud, Globe, Info, BookOpen, Bug, Wind, Droplets, Trash2, Trees, ShieldCheck } from "lucide-react";
+import { Search, MapPin, Phone, User, Menu, Truck, Target, Cloud, Globe, Info, BookOpen, Bug, Wind, Droplets, Trash2, Trees, ShieldCheck, Building2, Factory, Warehouse, Hotel, ShoppingCart, Pill, Briefcase, LayoutGrid } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -55,9 +55,14 @@ export default function Header() {
       label: 'Setores empresariais',
       testId: 'nav-sectors',
       content: [
-        { icon: Target, text: 'Alimentos e\nbebidas' },
-        { icon: Truck, text: 'Logística e\nvarejo' },
-        { icon: Info, text: 'Saúde e\neducação' },
+        { icon: LayoutGrid, text: 'Todos os setores\nempresariais' },
+        { icon: Factory, text: 'Processamento\nalimentar' },
+        { icon: Building2, text: 'Gestão de\ninstalações' },
+        { icon: Warehouse, text: 'Logística e\narmazenamento' },
+        { icon: Hotel, text: 'Hotelaria' },
+        { icon: ShoppingCart, text: 'Retalho\nalimentar' },
+        { icon: Pill, text: 'Farmacêutica' },
+        { icon: Briefcase, text: 'Escritórios' },
       ]
     },
     {
@@ -200,14 +205,13 @@ export default function Header() {
                           <div className="absolute top-[-10px] left-0 w-full h-[10px] bg-transparent" />
                           <div className="w-full bg-[#f2f2f2] shadow-xl border-t-0 py-0">
                             <div className="container mx-auto px-4 flex justify-center">
-                              <div className="flex bg-white border-x border-gray-200 min-h-[160px]">
+                              <div className="flex flex-wrap bg-white border-x border-gray-200" style={{ maxWidth: `${Math.min(item.content.length, 6) * 140}px` }}>
                                 {item.content.map((subItem, idx) => (
                                   <Link 
                                     key={idx}
                                     href={subItem.href || (subItem.text.includes('Todos') ? '/services' : '#')} 
-                                    className={`flex flex-col items-center justify-center p-6 w-[140px] hover:bg-gray-50 transition-colors ${idx !== item.content.length - 1 ? 'border-r border-gray-100' : ''} text-center group/item relative`}
+                                    className="flex flex-col items-center justify-center p-6 w-[140px] min-h-[140px] hover:bg-gray-50 transition-colors border-r border-b border-gray-100 text-center group/item relative"
                                   >
-                                    {/* Red Hover Indicator for Submenu Items */}
                                     <div className="absolute bottom-0 left-0 w-full h-1 bg-[#f2c92f] transform scale-x-0 group-hover/item:scale-x-100 transition-transform duration-200 origin-center" />
                                     
                                     <subItem.icon className="w-12 h-12 text-[#333333] mb-3 transition-transform group-hover/item:scale-105" strokeWidth={0.75} />
