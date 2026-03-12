@@ -205,12 +205,12 @@ export default function Header() {
                           <div className="absolute top-[-10px] left-0 w-full h-[10px] bg-transparent" />
                           <div className="w-full bg-[#f2f2f2] shadow-xl border-t-0 py-0">
                             <div className="container mx-auto px-4 flex justify-center">
-                              <div className="flex flex-wrap bg-white border-x border-gray-200" style={{ maxWidth: `${Math.min(item.content.length, 6) * 140}px` }}>
+                              <div className="flex bg-white border-x border-gray-200">
                                 {item.content.map((subItem, idx) => (
                                   <Link 
                                     key={idx}
                                     href={subItem.href || (subItem.text.includes('Todos') ? '/services' : '#')} 
-                                    className="flex flex-col items-center justify-center p-6 w-[140px] min-h-[140px] hover:bg-gray-50 transition-colors border-r border-b border-gray-100 text-center group/item relative"
+                                    className={`flex flex-col items-center justify-center p-6 w-[140px] min-h-[160px] hover:bg-gray-50 transition-colors ${idx !== item.content.length - 1 ? 'border-r border-gray-100' : ''} text-center group/item relative`}
                                   >
                                     <div className="absolute bottom-0 left-0 w-full h-1 bg-[#f2c92f] transform scale-x-0 group-hover/item:scale-x-100 transition-transform duration-200 origin-center" />
                                     
