@@ -146,7 +146,7 @@ export default function Header() {
       </div>
 
       {/* Main navigation - white background - Full width wrapper */}
-      <div className="w-full bg-white border-b border-gray-200 relative h-[90px]">
+      <div className="w-full bg-white border-b border-gray-100 relative h-[90px]">
         <div className="container mx-auto px-4 h-full">
           <div className="flex items-center justify-between h-full">
             {/* Logo - Restrained to the main navigation bar */}
@@ -190,16 +190,15 @@ export default function Header() {
                         
                         {/* Mega Menu Overlay */}
                         <motion.div 
-                          initial={{ opacity: 0, y: 10 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: 10 }}
-                          transition={{ duration: 0.2, ease: "easeOut" }}
-                          className="fixed top-[127px] left-0 w-full z-40"
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          exit={{ opacity: 0 }}
+                          transition={{ duration: 0.15, ease: "easeOut" }}
+                          className="fixed top-[126px] left-0 w-full z-40"
                           style={{ pointerEvents: "auto" }}
                         >
-                          {/* Ponte invisível para evitar a perda do hover entre o menu e o dropdown */}
-                          <div className="absolute top-[-20px] left-0 w-full h-[20px] bg-transparent" />
-                          <div className="w-full bg-[#f2f2f2] shadow-xl border-t border-gray-200 py-0">
+                          <div className="absolute top-[-10px] left-0 w-full h-[10px] bg-transparent" />
+                          <div className="w-full bg-[#f2f2f2] shadow-xl border-t-0 py-0">
                             <div className="container mx-auto px-4 flex justify-center">
                               <div className="flex bg-white border-x border-gray-200 min-h-[160px]">
                                 {item.content.map((subItem, idx) => (
