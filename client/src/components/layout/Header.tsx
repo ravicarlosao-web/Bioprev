@@ -123,16 +123,6 @@ export default function Header() {
       {/* Top utility bar - gray background - Full width wrapper */}
       <div className="w-full bg-[#f2f2f2] border-b border-gray-200">
         <div className="container mx-auto px-4 relative flex items-center justify-between">
-          {/* Logo - Positioned to overlap both bars and touch Hero */}
-          <Link href="/">
-            <div 
-              className="absolute top-0 left-15 bg-white flex items-center justify-center px-4 z-50 w-[220px] h-[111.5px] cursor-pointer"
-              data-testid="text-logo-container"
-            >
-              <img src={logoImg} alt="Bioprev Logo" className="max-w-full max-h-full object-contain" data-testid="img-logo" />
-            </div>
-          </Link>
-
           {/* Main utilities on Top Bar */}
           <div className="flex justify-end py-2 text-[13px] font-bold text-[#333333] ml-auto">
             <div className="flex items-center space-x-6">
@@ -158,11 +148,21 @@ export default function Header() {
       </div>
 
       {/* Main navigation - white background - Full width wrapper */}
-      <div className="w-full bg-white border-b border-gray-200 relative h-[75px]">
+      <div className="w-full bg-white border-b border-gray-200 relative h-[90px]">
         <div className="container mx-auto px-4 h-full">
-          <div className="flex items-center h-full">
-            {/* Desktop Navigation - Pushed to the right with margin to clear the logo */}
-            <nav className="hidden lg:flex items-center ml-auto h-full text-[15px] font-extrabold text-[#333333]">
+          <div className="flex items-center justify-between h-full">
+            {/* Logo - Restrained to the main navigation bar */}
+            <Link href="/">
+              <div 
+                className="flex items-center justify-center h-full cursor-pointer py-2"
+                data-testid="text-logo-container"
+              >
+                <img src={logoImg} alt="Bioprev Logo" className="w-[180px] max-h-full object-contain" data-testid="img-logo" />
+              </div>
+            </Link>
+
+            {/* Desktop Navigation */}
+            <nav className="hidden lg:flex items-center h-full text-[15px] font-extrabold text-[#333333]">
               {menuItems.map((item) => (
                 <div 
                   key={item.id}
