@@ -60,7 +60,7 @@ export default function BlogPost() {
               <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" className="fill-white"></path>
             </svg>
             {/* Arrow pointing down */}
-            <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-[#e31818]">
+            <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-[#f2c92f]">
               <svg width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2 2L20 16L38 2" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
@@ -116,7 +116,7 @@ export default function BlogPost() {
             {/* Sidebar */}
             <div className="lg:w-1/3">
               {/* Promo Card */}
-              <div className="bg-gray-50 border-t-4 border-[#e31818] p-8 shadow-sm text-center">
+              <div className="bg-gray-50 border-t-4 border-[#f2c92f] p-8 shadow-sm text-center">
                 <h3 className="text-2xl font-bold text-[#333333] mb-4 leading-tight">
                   Controle de pragas para o setor de hospitalidade
                 </h3>

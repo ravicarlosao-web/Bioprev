@@ -46,14 +46,14 @@ export default function Contact() {
         {/* Breadcrumb */}
         <div className="mb-8 flex items-center space-x-2 text-sm text-gray-600">
           <Link href="/">
-            <a className="hover:text-[#e31818] transition-colors">Início</a>
+            <a className="hover:text-[#f2c92f] transition-colors">Início</a>
           </Link>
           <span>›</span>
           <span className="text-gray-800 font-medium">Contato</span>
         </div>
 
         {/* Main Title */}
-        <h1 className="text-5xl font-bold text-[#e31818] mb-12 text-center">Contato</h1>
+        <h1 className="text-5xl font-bold text-[#f2c92f] mb-12 text-center">Contato</h1>
 
         {/* Form Section */}
         <div className="max-w-3xl mx-auto">
@@ -66,7 +66,7 @@ export default function Contact() {
               Leia a nossa <a href="#" className="text-[#0077c0] hover:underline">política de privacidade</a> para entender como usamos seus dados.
             </p>
 
-            <div className="bg-gray-50 p-6 border-l-4 border-[#e31818] mb-8 shadow-sm">
+            <div className="bg-gray-50 p-6 border-l-4 border-[#f2c92f] mb-8 shadow-sm">
               <h3 className="text-lg font-bold text-gray-900 mb-2">Contatos Diretos</h3>
               <p className="text-gray-700 mb-3">
                 Pode entrar em contato connosco através dos seguintes meios:
@@ -100,7 +100,7 @@ export default function Contact() {
                     value="new-commercial"
                     checked={formData.enquiryType === "new-commercial"}
                     onChange={handleChange}
-                    className="w-4 h-4 text-[#e31818] cursor-pointer"
+                    className="w-4 h-4 text-[#f2c92f] cursor-pointer"
                     data-testid="radio-new-commercial"
                   />
                   <span className="ml-3 text-gray-700">Sou um novo cliente comercial</span>
@@ -112,7 +112,7 @@ export default function Contact() {
                     value="existing-customer"
                     checked={formData.enquiryType === "existing-customer"}
                     onChange={handleChange}
-                    className="w-4 h-4 text-[#e31818] cursor-pointer"
+                    className="w-4 h-4 text-[#f2c92f] cursor-pointer"
                     data-testid="radio-existing-customer"
                   />
                   <span className="ml-3 text-gray-700">Sou um cliente existente</span>
@@ -124,7 +124,7 @@ export default function Contact() {
                     value="new-residential"
                     checked={formData.enquiryType === "new-residential"}
                     onChange={handleChange}
-                    className="w-4 h-4 text-[#e31818] cursor-pointer"
+                    className="w-4 h-4 text-[#f2c92f] cursor-pointer"
                     data-testid="radio-new-residential"
                   />
                   <span className="ml-3 text-gray-700">Sou um novo cliente residencial</span>
@@ -135,7 +135,7 @@ export default function Contact() {
             {/* First Name */}
             <div>
               <label className="block text-sm font-bold text-gray-900 mb-2">
-                Primeiro nome <span className="text-[#e31818]">*</span>
+                Primeiro nome <span className="text-[#f2c92f]">*</span>
               </label>
               <input 
                 type="text" 
@@ -152,7 +152,7 @@ export default function Contact() {
             {/* Last Name */}
             <div>
               <label className="block text-sm font-bold text-gray-900 mb-2">
-                Sobrenome <span className="text-[#e31818]">*</span>
+                Sobrenome <span className="text-[#f2c92f]">*</span>
               </label>
               <input 
                 type="text" 
@@ -169,7 +169,7 @@ export default function Contact() {
             {/* Email */}
             <div>
               <label className="block text-sm font-bold text-gray-900 mb-2">
-                E-mail <span className="text-[#e31818]">*</span>
+                E-mail <span className="text-[#f2c92f]">*</span>
               </label>
               <input 
                 type="email" 
@@ -186,7 +186,7 @@ export default function Contact() {
             {/* Telephone */}
             <div>
               <label className="block text-sm font-bold text-gray-900 mb-2">
-                Telefone <span className="text-[#e31818]">*</span>
+                Telefone <span className="text-[#f2c92f]">*</span>
               </label>
               <input 
                 type="tel" 
@@ -203,7 +203,7 @@ export default function Contact() {
             {/* Company Name */}
             <div>
               <label className="block text-sm font-bold text-gray-900 mb-2">
-                Nome da empresa <span className="text-[#e31818]">*</span>
+                Nome da empresa <span className="text-[#f2c92f]">*</span>
               </label>
               <input 
                 type="text" 
@@ -220,7 +220,7 @@ export default function Contact() {
             {/* Country / Region */}
             <div>
               <label className="block text-sm font-bold text-gray-900 mb-2">
-                Escolha o seu país / região <span className="text-[#e31818]">*</span>
+                Escolha o seu país / região <span className="text-[#f2c92f]">*</span>
               </label>
               <select 
                 name="country"
@@ -261,7 +261,7 @@ export default function Contact() {
                   name="receiveUpdates"
                   checked={formData.receiveUpdates}
                   onChange={handleChange}
-                  className="w-4 h-4 text-[#e31818] mt-1 cursor-pointer"
+                  className="w-4 h-4 text-[#f2c92f] mt-1 cursor-pointer"
                   data-testid="checkbox-updates"
                 />
                 <span className="ml-3 text-gray-700 text-sm">

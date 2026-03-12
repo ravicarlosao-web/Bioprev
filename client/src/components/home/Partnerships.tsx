@@ -55,7 +55,7 @@ export default function Partnerships() {
         {/* New Sections from Images */}
         <div className="mt-24 grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Responsible Pest Control Card */}
-          <div className="bg-white border-t-4 border-[#e31837] shadow-lg p-8 flex flex-col h-full">
+          <div className="bg-white border-t-4 border-[#f2c92f] shadow-lg p-8 flex flex-col h-full">
             <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">
               Controle de pragas responsável
             </h3>
@@ -71,7 +71,7 @@ export default function Partnerships() {
           </div>
 
           {/* Local Experts Card */}
-          <div className="bg-white border-t-4 border-[#e31837] shadow-lg p-8 flex flex-col h-full">
+          <div className="bg-white border-t-4 border-[#f2c92f] shadow-lg p-8 flex flex-col h-full">
             <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">
               Seus especialistas locais em controle de pragas
             </h3>

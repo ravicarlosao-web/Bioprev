@@ -61,8 +61,8 @@ export default function Careers() {
               </div>
               <div className="md:w-1/2">
                 <div className="grid grid-cols-1 gap-6">
-                  <div className="flex items-start gap-4 p-6 bg-[#f8f9fa] border-l-4 border-[#e31837] shadow-sm">
-                    <GraduationCap className="w-8 h-8 text-[#e31837] shrink-0" />
+                  <div className="flex items-start gap-4 p-6 bg-[#f8f9fa] border-l-4 border-[#f2c92f] shadow-sm">
+                    <GraduationCap className="w-8 h-8 text-[#f2c92f] shrink-0" />
                     <div>
                       <h4 className="text-lg font-bold text-[#333333] mb-2">Treinamento e Capacitação</h4>
                       <p className="text-[#666666] text-sm">Investimos constantemente no desenvolvimento das habilidades técnicas e comportamentais da nossa equipa.</p>

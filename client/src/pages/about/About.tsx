@@ -49,7 +49,7 @@ export default function About() {
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="flex flex-col md:flex-row gap-16 items-center">
               <div className="md:w-1/2">
-                <div className="w-16 h-1 bg-[#e31837] mb-8"></div>
+                <div className="w-16 h-1 bg-[#f2c92f] mb-8"></div>
                 <h2 className="text-3xl md:text-[40px] font-medium text-[#333333] mb-8 leading-tight">
                   Moldando o nosso futuro
                 </h2>
@@ -105,7 +105,7 @@ export default function About() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="mt-1 bg-[#e31837] p-2 rounded-full">
+                  <div className="mt-1 bg-[#f2c92f] p-2 rounded-full">
                     <ShieldCheck className="w-5 h-5 text-white" />
                   </div>
                   <div>

@@ -57,7 +57,7 @@ export default function Expertise() {
       description: "A nossa pioneira linha PestConnect oferece proteção constante. Com a inovação no nosso DNA, antecipamos, resolvemos e relatamos os riscos de pragas de forma contínua.",
       icon: (
         <div className="w-24 h-24 rounded-full bg-[#fde8e8] border-2 border-[#f5c2c2] shadow-sm flex items-center justify-center transition-transform hover:scale-110 duration-300">
-          <Radar className="w-12 h-12 text-[#e31837] stroke-[1.5px]" />
+          <Radar className="w-12 h-12 text-[#f2c92f] stroke-[1.5px]" />
         </div>
       ),
     },

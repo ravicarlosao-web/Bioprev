@@ -67,7 +67,7 @@ export default function Waste() {
             <img src="https://images.unsplash.com/photo-1618477461839-210199432687?auto=format&fit=crop&q=80&w=1000" alt="Resíduos Industriais" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
             <div className="absolute inset-0 bg-black/20" />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md px-4">
-              <div className="bg-white border-t-4 border-[#e31837] shadow-xl p-10">
+              <div className="bg-white border-t-4 border-[#f2c92f] shadow-xl p-10">
                 <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">Resíduos Perigosos</h3>
                 <p className="text-[#666666] leading-relaxed mb-8">Manuseamento seguro e transporte certificado de resíduos especiais.</p>
                 <button className="text-[#007cc3] font-medium border border-[#007cc3] px-6 py-2 hover:bg-[#007cc3] hover:text-white transition-all">Saber mais</button>
@@ -78,7 +78,7 @@ export default function Waste() {
             <img src="https://images.unsplash.com/photo-1591193686104-fddba4d0e4d8?auto=format&fit=crop&q=80&w=1000" alt="Reciclagem" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
             <div className="absolute inset-0 bg-black/30" />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md px-4">
-              <div className="bg-white border-t-4 border-[#e31837] shadow-xl p-10">
+              <div className="bg-white border-t-4 border-[#f2c92f] shadow-xl p-10">
                 <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">Reciclagem Comercial</h3>
                 <p className="text-[#666666] leading-relaxed mb-8">Maximizamos o reaproveitamento de materiais para o seu negócio.</p>
                 <button className="text-[#007cc3] font-medium border border-[#007cc3] px-6 py-2 hover:bg-[#007cc3] hover:text-white transition-all">Saber mais</button>

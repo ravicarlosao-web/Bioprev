@@ -3,7 +3,7 @@ import logoImg from "@/assets/images/logo.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t-8 border-[#e31837] pt-16 pb-8">
+    <footer className="bg-white border-t-8 border-[#f2c92f] pt-16 pb-8">
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Partnership Logos in Footer */}
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center mb-16 opacity-80">

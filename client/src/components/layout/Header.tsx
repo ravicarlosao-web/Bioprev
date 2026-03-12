@@ -128,17 +128,17 @@ export default function Header() {
             <div className="flex items-center space-x-6">
               <button 
                 onClick={() => setShowLocationsModal(true)}
-                className="flex items-center hover:text-[#e31818] transition-colors cursor-pointer" 
+                className="flex items-center hover:text-[#f2c92f] transition-colors cursor-pointer" 
                 data-testid="link-locations"
               >
                 <MapPin className="w-4 h-4 mr-1.5" strokeWidth={2.5} />
                 Locais {selectedLocation && `(${selectedLocation})`}
               </button>
-              <a href="#" className="flex items-center hover:text-[#e31818] transition-colors" data-testid="link-search">
+              <a href="#" className="flex items-center hover:text-[#f2c92f] transition-colors" data-testid="link-search">
                 <Search className="w-4 h-4 mr-1.5" strokeWidth={2.5} />
                 Pesquisar
               </a>
-              <Link href="/contact" className="flex items-center hover:text-[#e31818] transition-colors" data-testid="link-contact">
+              <Link href="/contact" className="flex items-center hover:text-[#f2c92f] transition-colors" data-testid="link-contact">
                 <Phone className="w-4 h-4 mr-1.5" strokeWidth={2.5} />
                 Contato
               </Link>
@@ -172,7 +172,7 @@ export default function Header() {
                 >
                   <Link href={item.id === 'services' ? '/services' : '#'}>
                     <span 
-                      className={`transition-colors tracking-wider ${activeMenu === item.id ? 'text-[#333333]' : 'hover:text-[#e31818]'}`} 
+                      className={`transition-colors tracking-wider ${activeMenu === item.id ? 'text-[#333333]' : 'hover:text-[#f2c92f]'}`} 
                       data-testid={item.testId}
                     >
                       {item.label}
@@ -187,7 +187,7 @@ export default function Header() {
                           animate={{ scaleX: 1 }}
                           exit={{ scaleX: 0 }}
                           transition={{ duration: 0.2, ease: "easeOut" }}
-                          className="absolute bottom-0 left-0 w-full h-1 bg-[#e31818] origin-center" 
+                          className="absolute bottom-0 left-0 w-full h-1 bg-[#f2c92f] origin-center" 
                         />
                         
                         {/* Mega Menu Overlay */}
@@ -211,7 +211,7 @@ export default function Header() {
                                     className={`flex flex-col items-center justify-center p-6 w-[140px] hover:bg-gray-50 transition-colors ${idx !== item.content.length - 1 ? 'border-r border-gray-100' : ''} text-center group/item relative`}
                                   >
                                     {/* Red Hover Indicator for Submenu Items */}
-                                    <div className="absolute bottom-0 left-0 w-full h-1 bg-[#e31818] transform scale-x-0 group-hover/item:scale-x-100 transition-transform duration-200 origin-center" />
+                                    <div className="absolute bottom-0 left-0 w-full h-1 bg-[#f2c92f] transform scale-x-0 group-hover/item:scale-x-100 transition-transform duration-200 origin-center" />
                                     
                                     <subItem.icon className="w-12 h-12 text-[#333333] mb-3 transition-transform group-hover/item:scale-105" strokeWidth={0.75} />
                                     <span className="text-[13px] font-normal text-[#333333] whitespace-pre-line leading-tight">

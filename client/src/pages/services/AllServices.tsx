@@ -64,7 +64,7 @@ export default function AllServices() {
           </div>
           
           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 mb-4">
-            <div className="w-12 h-8 bg-[#e31837] flex items-center justify-center clip-path-v">
+            <div className="w-12 h-8 bg-[#f2c92f] flex items-center justify-center clip-path-v">
               <ChevronRight className="w-6 h-6 text-white rotate-90" />
             </div>
           </div>
@@ -100,7 +100,7 @@ export default function AllServices() {
             />
             <div className="absolute inset-0 bg-black/20" />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md px-4">
-              <div className="bg-white border-t-4 border-[#e31837] shadow-xl p-10">
+              <div className="bg-white border-t-4 border-[#f2c92f] shadow-xl p-10">
                 <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">Serviços de controle de pragas</h3>
                 <p className="text-[#666666] leading-relaxed mb-8">
                   A Bioprev é líder nacional no controle de pragas comerciais. Oferecemos uma gama de tratamentos direcionados e inovadores e soluções de impermeabilização para garantir que o seu negócio fique livre de pragas.
@@ -121,7 +121,7 @@ export default function AllServices() {
             />
             <div className="absolute inset-0 bg-black/30" />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md px-4">
-              <div className="bg-white border-t-4 border-[#e31837] shadow-xl p-10">
+              <div className="bg-white border-t-4 border-[#f2c92f] shadow-xl p-10">
                 <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">Controle de pragas digital</h3>
                 <p className="text-[#666666] leading-relaxed mb-8">
                   Uma série de soluções de gestão de pragas conectadas e aprimoradas digitalmente fornecem aos clientes comerciais dados, insights e relatórios incomparáveis para prevenir e gerenciar pragas proativamente.
@@ -208,7 +208,7 @@ export default function AllServices() {
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Step 1 */}
-              <div className="bg-white border-t-4 border-[#e31837] shadow-lg p-10 flex flex-col h-full">
+              <div className="bg-white border-t-4 border-[#f2c92f] shadow-lg p-10 flex flex-col h-full">
                 <div className="mb-8 flex justify-center">
                   <Search className="w-12 h-12 text-[#333333]" strokeWidth={1} />
                 </div>
@@ -226,7 +226,7 @@ export default function AllServices() {
               </div>
 
               {/* Step 2 */}
-              <div className="bg-white border-t-4 border-[#e31837] shadow-lg p-10 flex flex-col h-full">
+              <div className="bg-white border-t-4 border-[#f2c92f] shadow-lg p-10 flex flex-col h-full">
                 <div className="mb-8 flex justify-center">
                   <Target className="w-12 h-12 text-[#333333]" strokeWidth={1} />
                 </div>
@@ -244,7 +244,7 @@ export default function AllServices() {
               </div>
 
               {/* Step 3 */}
-              <div className="bg-white border-t-4 border-[#e31837] shadow-lg p-10 flex flex-col h-full">
+              <div className="bg-white border-t-4 border-[#f2c92f] shadow-lg p-10 flex flex-col h-full">
                 <div className="mb-8 flex justify-center">
                   <CheckCircle2 className="w-12 h-12 text-[#333333]" strokeWidth={1} />
                 </div>

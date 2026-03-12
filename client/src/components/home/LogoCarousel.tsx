@@ -74,7 +74,7 @@ export default function LogoCarousel({ logos }: LogoCarouselProps) {
       <button
         onClick={scrollPrev}
         disabled={!canScrollPrev}
-        className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-16 md:-translate-x-20 z-10 p-2 rounded-full bg-[#333333] text-white hover:bg-[#e31818] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+        className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-16 md:-translate-x-20 z-10 p-2 rounded-full bg-[#333333] text-white hover:bg-[#f2c92f] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
         data-testid="button-carousel-prev"
         aria-label="Previous slide"
       >
@@ -84,7 +84,7 @@ export default function LogoCarousel({ logos }: LogoCarouselProps) {
       <button
         onClick={scrollNext}
         disabled={!canScrollNext}
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-16 md:translate-x-20 z-10 p-2 rounded-full bg-[#333333] text-white hover:bg-[#e31818] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+        className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-16 md:translate-x-20 z-10 p-2 rounded-full bg-[#333333] text-white hover:bg-[#f2c92f] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
         data-testid="button-carousel-next"
         aria-label="Next slide"
       >

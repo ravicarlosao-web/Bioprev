@@ -66,7 +66,7 @@ export default function Disinfestation() {
           </div>
           
           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 mb-4">
-            <div className="w-12 h-8 bg-[#e31837] flex items-center justify-center clip-path-v">
+            <div className="w-12 h-8 bg-[#f2c92f] flex items-center justify-center clip-path-v">
               <ChevronRight className="w-6 h-6 text-white rotate-90" />
             </div>
           </div>
@@ -102,7 +102,7 @@ export default function Disinfestation() {
             />
             <div className="absolute inset-0 bg-black/20" />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md px-4">
-              <div className="bg-white border-t-4 border-[#e31837] shadow-xl p-10">
+              <div className="bg-white border-t-4 border-[#f2c92f] shadow-xl p-10">
                 <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">Desinfecção especializada</h3>
                 <p className="text-[#666666] leading-relaxed mb-8">
                   Os nossos serviços de desinfecção especializada fornecem uma resposta rápida para ajudá-lo a manter um alto nível de higiene nas suas instalações, reduzindo o risco de infecção.
@@ -123,7 +123,7 @@ export default function Disinfestation() {
             />
             <div className="absolute inset-0 bg-black/30" />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md px-4">
-              <div className="bg-white border-t-4 border-[#e31837] shadow-xl p-10">
+              <div className="bg-white border-t-4 border-[#f2c92f] shadow-xl p-10">
                 <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">Desinfecção preventiva</h3>
                 <p className="text-[#666666] leading-relaxed mb-8">
                   Uma série de soluções de desinfecção preventiva concebidas para ajudar as empresas a manter um ambiente seguro e proporcionar paz de espírito aos funcionários e visitantes.
@@ -210,7 +210,7 @@ export default function Disinfestation() {
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Step 1 */}
-              <div className="bg-white border-t-4 border-[#e31837] shadow-lg p-10 flex flex-col h-full">
+              <div className="bg-white border-t-4 border-[#f2c92f] shadow-lg p-10 flex flex-col h-full">
                 <div className="mb-8 flex justify-center">
                   <Search className="w-12 h-12 text-[#333333]" strokeWidth={1} />
                 </div>
@@ -228,7 +228,7 @@ export default function Disinfestation() {
               </div>
 
               {/* Step 2 */}
-              <div className="bg-white border-t-4 border-[#e31837] shadow-lg p-10 flex flex-col h-full">
+              <div className="bg-white border-t-4 border-[#f2c92f] shadow-lg p-10 flex flex-col h-full">
                 <div className="mb-8 flex justify-center">
                   <Target className="w-12 h-12 text-[#333333]" strokeWidth={1} />
                 </div>
@@ -246,7 +246,7 @@ export default function Disinfestation() {
               </div>
 
               {/* Step 3 */}
-              <div className="bg-white border-t-4 border-[#e31837] shadow-lg p-10 flex flex-col h-full">
+              <div className="bg-white border-t-4 border-[#f2c92f] shadow-lg p-10 flex flex-col h-full">
                 <div className="mb-8 flex justify-center">
                   <CheckCircle2 className="w-12 h-12 text-[#333333]" strokeWidth={1} />
                 </div>

@@ -67,7 +67,7 @@ export default function History() {
               {timeline.map((item, idx) => (
                 <div key={idx} className="relative pl-8 md:pl-0">
                   {/* Timeline Dot */}
-                  <div className="absolute left-[-14px] md:left-1/2 md:-ml-[10px] top-1 w-6 h-6 rounded-full bg-[#e31837] border-4 border-white shadow"></div>
+                  <div className="absolute left-[-14px] md:left-1/2 md:-ml-[10px] top-1 w-6 h-6 rounded-full bg-[#f2c92f] border-4 border-white shadow"></div>
                   
                   <div className={`md:w-[45%] ${idx % 2 === 0 ? 'md:ml-auto md:pl-12' : 'md:mr-auto md:pr-12 md:text-right'}`}>
                     <span className="text-[#007cc3] font-extrabold text-2xl mb-2 block">{item.year}</span>
@@ -85,7 +85,7 @@ export default function History() {
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <div className="text-center p-8 bg-white shadow-sm hover:shadow-md transition-shadow">
-                <Award className="w-16 h-16 text-[#e31837] mx-auto mb-6" strokeWidth={1} />
+                <Award className="w-16 h-16 text-[#f2c92f] mx-auto mb-6" strokeWidth={1} />
                 <h3 className="text-xl font-bold text-[#333333] mb-4">Excelência Comprovada</h3>
                 <p className="text-[#666666]">Anos de experiência garantindo as melhores soluções para cada cliente.</p>
               </div>
