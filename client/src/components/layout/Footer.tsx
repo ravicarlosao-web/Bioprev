@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import { Facebook, Instagram, Linkedin } from "lucide-react";
 import logoImg from "@/assets/images/logo.png";
 
 export default function Footer() {
@@ -48,20 +49,14 @@ export default function Footer() {
             <img src={logoImg} alt="Bioprev Logo" className="h-16 object-contain" />
             
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-[#666666] hover:border-[#007cc3] hover:text-[#007cc3] transition-colors">
-                <span className="text-xs font-bold">in</span>
+              <a href="https://www.linkedin.com/company/bioprev-pres/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-[#666666] hover:border-[#007cc3] hover:text-[#007cc3] transition-colors" aria-label="LinkedIn">
+                <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-[#666666] hover:border-[#007cc3] hover:text-[#007cc3] transition-colors">
-                <span className="text-xs font-bold">f</span>
+              <a href="https://www.facebook.com/bioprevcontrolodepragas" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-[#666666] hover:border-[#007cc3] hover:text-[#007cc3] transition-colors" aria-label="Facebook">
+                <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-[#666666] hover:border-[#007cc3] hover:text-[#007cc3] transition-colors">
-                <span className="text-xs font-bold">X</span>
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-[#666666] hover:border-[#007cc3] hover:text-[#007cc3] transition-colors">
-                <div className="w-3 h-3 bg-current rounded-full" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-[#666666] hover:border-[#007cc3] hover:text-[#007cc3] transition-colors">
-                <div className="w-3 h-3 border-2 border-current rounded-sm" />
+              <a href="https://www.instagram.com/bioprev_angola/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-[#666666] hover:border-[#007cc3] hover:text-[#007cc3] transition-colors" aria-label="Instagram">
+                <Instagram className="w-5 h-5" />
               </a>
             </div>
 
