@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "wouter";
 import LocationsModal from "@/components/LocationsModal";
+import logoImg from "@/assets/images/logo.png";
 
 export default function Header() {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
@@ -125,10 +126,10 @@ export default function Header() {
           {/* Logo - Red Background Block - Positioned to overlap both bars and touch Hero */}
           <Link href="/">
             <div 
-              className="absolute top-0 left-15 bg-[#e31818] flex items-center justify-center px-8 z-50 w-[220px] h-[111.5px] shadow-md cursor-pointer group"
+              className="absolute top-0 left-15 bg-white border border-gray-200 flex items-center justify-center px-4 z-50 w-[220px] h-[111.5px] shadow-sm cursor-pointer group"
               data-testid="text-logo-container"
             >
-              <span className="text-white font-bold text-3xl tracking-tight transition-transform group-hover:scale-105" data-testid="text-logo">Bioprev</span>
+              <img src={logoImg} alt="Bioprev Logo" className="max-w-full max-h-full object-contain transition-transform group-hover:scale-105" data-testid="img-logo" />
             </div>
           </Link>
 

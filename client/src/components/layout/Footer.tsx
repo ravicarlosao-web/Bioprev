@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import logoImg from "@/assets/images/logo.png";
 
 export default function Footer() {
   return (
@@ -44,7 +45,7 @@ export default function Footer() {
 
           {/* Column 4 - Logo and Socials */}
           <div className="flex flex-col items-start md:items-end space-y-6">
-            <span className="text-[#e31837] text-4xl font-bold tracking-tight">Bioprev</span>
+            <img src={logoImg} alt="Bioprev Logo" className="h-16 object-contain" />
             
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-[#666666] hover:border-[#007cc3] hover:text-[#007cc3] transition-colors">
