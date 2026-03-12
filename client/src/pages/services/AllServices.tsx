@@ -1,24 +1,25 @@
 import Header from "@/components/layout/Header";
-import { ChevronRight, Plus, CheckCircle2, Target, Search } from "lucide-react";
+import { ChevronRight, Plus, CheckCircle2, Target, Search, Factory, ShoppingCart, Warehouse, Building2, Hotel } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Link } from "wouter";
 import Footer from "@/components/layout/Footer";
 
 export default function AllServices() {
   const sectors = [
-    { name: "Processamento de alimentos", icon: "https://www.bioprev.com/assets/images/icons/sector-food-processing.png" },
-    { name: "Varejo de alimentos", icon: "https://www.bioprev.com/assets/images/icons/sector-food-retail.png" },
-    { name: "Logística e armazenamento", icon: "https://www.bioprev.com/assets/images/icons/sector-logistics.png" },
-    { name: "Gestão de instalações", icon: "https://www.bioprev.com/assets/images/icons/sector-facilities.png" },
-    { name: "Hotéis", icon: "https://www.bioprev.com/assets/images/icons/sector-hotels.png" },
+    { name: "Processamento alimentar", icon: Factory, href: "/sectors/food-processing" },
+    { name: "Retalho alimentar", icon: ShoppingCart, href: "/sectors/food-retail" },
+    { name: "Logística e armazenamento", icon: Warehouse, href: "/sectors/logistics" },
+    { name: "Gestão de instalações", icon: Building2, href: "/sectors/facilities" },
+    { name: "Hotelaria", icon: Hotel, href: "/sectors/hospitality" },
   ];
 
   const ipmSteps = [
-    "Concepção e construção",
-    "Práticas de controle de pragas e formação",
-    "Monitoramento e manutenção de pragas",
-    "Resposta a surtos de pragas",
-    "Avaliação do programa de controle de pragas"
+    { title: "Concepção e construção", content: "Na fase de concepção e construção, a Bioprev avalia o design das instalações para identificar vulnerabilidades a pragas e implementar medidas preventivas estruturais desde o início, como vedação de pontos de entrada e escolha de materiais resistentes." },
+    { title: "Práticas de controle de pragas e formação", content: "Formamos as suas equipas sobre as melhores práticas de prevenção de pragas, incluindo higiene operacional, armazenamento correto de alimentos e materiais, e identificação precoce de sinais de infestação." },
+    { title: "Monitoramento e manutenção de pragas", content: "Implementamos sistemas de monitorização contínua com estações de isca, armadilhas e sensores que permitem detetar a atividade de pragas antes que se tornem um problema visível." },
+    { title: "Resposta a surtos de pragas", content: "Quando é detetada atividade significativa de pragas, a nossa equipa de resposta rápida intervém com tratamentos direcionados e eficazes, minimizando o impacto nas suas operações." },
+    { title: "Avaliação do programa de controle de pragas", content: "Realizamos revisões periódicas do programa de IPM para avaliar a sua eficácia, identificar áreas de melhoria e adaptar as estratégias às mudanças nas condições e nos riscos." }
   ];
 
   return (
@@ -26,12 +27,11 @@ export default function AllServices() {
       <Header />
       
       <main className="flex-grow">
-        {/* Hero Section - Image 1 */}
         <section className="relative h-[350px] sm:h-[420px] md:h-[500px] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img 
-              src="https://images.unsplash.com/photo-1581578731522-745505146317?auto=format&fit=crop&q=80&w=2000" 
-              alt="Técnico trabalhando" 
+              src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=2000" 
+              alt="Técnico de controle de pragas" 
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/40" />
@@ -40,7 +40,7 @@ export default function AllServices() {
           <div className="container mx-auto px-4 z-10">
             <div className="max-w-4xl">
               <nav className="flex items-center space-x-2 text-white/90 text-sm mb-8 font-medium">
-                <a href="/" className="hover:underline">Início</a>
+                <Link href="/" className="hover:underline">Início</Link>
                 <ChevronRight className="w-4 h-4" />
                 <span>Serviços</span>
               </nav>
@@ -53,13 +53,15 @@ export default function AllServices() {
                 Como líder nacional em soluções de higiene e controle de pragas, a Bioprev leva serviços especializados, fiáveis e profissionais a clientes comerciais em todo o país.
               </p>
               
-              <Button 
-                variant="outline" 
-                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#333333] px-10 py-6 text-lg font-medium transition-all duration-300 rounded-none"
-                data-testid="button-get-in-touch"
-              >
-                Entre em contato
-              </Button>
+              <Link href="/contact">
+                <Button 
+                  variant="outline" 
+                  className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#333333] px-10 py-6 text-lg font-medium transition-all duration-300 rounded-none"
+                  data-testid="button-get-in-touch"
+                >
+                  Entre em contato
+                </Button>
+              </Link>
             </div>
           </div>
           
@@ -70,26 +72,24 @@ export default function AllServices() {
           </div>
         </section>
 
-        {/* Intro Text - Image 2 */}
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4 max-w-4xl text-center">
             <p className="text-[#333333] text-lg mb-8 leading-relaxed font-medium">
-              A Bioprev protege pessoas, residências e empresas dos perigos da falta de higiene e de doenças transmitidas por pragas há 100 anos.
+              A Bioprev protege pessoas, residências e empresas dos perigos da falta de higiene e de doenças transmitidas por pragas com décadas de experiência no mercado angolano.
             </p>
             <p className="text-[#666666] text-base mb-16 leading-relaxed">
-              Acreditamos que a inovação é um fator-chave para o sucesso. O nosso <span className="text-[#007cc3] cursor-pointer hover:underline">centro nacional de pesquisa e desenvolvimento</span> fornece aos nossos colegas da linha de frente as ferramentas e soluções de que necessitam para prestar <span className="text-[#007cc3] cursor-pointer hover:underline">serviços diferenciados de controle de pragas</span>. A Bioprev está comprometida com a <span className="text-[#007cc3] cursor-pointer hover:underline">sustentabilidade</span> e em explorar o uso de soluções mais ecológicas e não tóxicas, ao mesmo tempo em que continua a oferecer aos nossos clientes os altos níveis de proteção contra pragas de que os seus negócios necessitam.
+              Acreditamos que a inovação é um fator-chave para o sucesso. O nosso centro de pesquisa e desenvolvimento fornece aos nossos técnicos as ferramentas e soluções de que necessitam para prestar serviços diferenciados de controle de pragas. A Bioprev está comprometida com a sustentabilidade e em explorar o uso de soluções mais ecológicas e não tóxicas, ao mesmo tempo em que continua a oferecer aos nossos clientes os altos níveis de proteção contra pragas de que os seus negócios necessitam.
             </p>
             
             <h2 className="text-3xl md:text-[40px] font-medium text-[#333333] mb-8 leading-tight">
               Serviços de desinfecção e controle de pragas comerciais
             </h2>
             <p className="text-[#666666] text-base leading-relaxed">
-              O controle de pragas da Bioprev dedica-se a manter os seus funcionários, clientes e reputação da marca protegidos com <span className="text-[#007cc3] cursor-pointer hover:underline">serviços de controle de pragas</span> líderes de mercado, adaptados ao seu negócio e que apoiam totalmente a conformidade regulamentar. Com a higiene permanecendo como prioridade após a pandemia de COVID-19, os nossos <span className="text-[#007cc3] cursor-pointer hover:underline">serviços de desinfecção</span> podem ajudar a salvaguardar o seu negócio para o futuro.
+              O controle de pragas da Bioprev dedica-se a manter os seus funcionários, clientes e reputação da marca protegidos com serviços de controle de pragas líderes de mercado, adaptados ao seu negócio e que apoiam totalmente a conformidade regulamentar. Com a higiene como prioridade, os nossos serviços de desinfecção podem ajudar a salvaguardar o seu negócio para o futuro.
             </p>
           </div>
         </section>
 
-        {/* Service Cards - Image 3 */}
         <section className="grid grid-cols-1 md:grid-cols-2">
           <div className="relative h-[400px] sm:h-[500px] md:h-[600px] group overflow-hidden">
             <img 
@@ -104,9 +104,11 @@ export default function AllServices() {
                 <p className="text-[#666666] leading-relaxed mb-8">
                   A Bioprev é líder nacional no controle de pragas comerciais. Oferecemos uma gama de tratamentos direcionados e inovadores e soluções de impermeabilização para garantir que o seu negócio fique livre de pragas.
                 </p>
-                <button className="text-[#007cc3] font-medium border border-[#007cc3] px-6 py-2 hover:bg-[#007cc3] hover:text-white transition-all">
-                  Saiba mais
-                </button>
+                <Link href="/services/disinfestation">
+                  <button className="text-[#007cc3] font-medium border border-[#007cc3] px-6 py-2 hover:bg-[#007cc3] hover:text-white transition-all">
+                    Saiba mais
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -124,42 +126,46 @@ export default function AllServices() {
                 <p className="text-[#666666] leading-relaxed mb-8">
                   Uma série de soluções de gestão de pragas conectadas e aprimoradas digitalmente fornecem aos clientes comerciais dados, insights e relatórios incomparáveis para prevenir e gerenciar pragas proativamente.
                 </p>
-                <button className="text-[#007cc3] font-medium border border-[#007cc3] px-6 py-2 hover:bg-[#007cc3] hover:text-white transition-all">
-                  Saiba mais
-                </button>
+                <Link href="/contact">
+                  <button className="text-[#007cc3] font-medium border border-[#007cc3] px-6 py-2 hover:bg-[#007cc3] hover:text-white transition-all">
+                    Saiba mais
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Sectors - Image 4 */}
         <section className="py-24 bg-white">
           <div className="container mx-auto px-4 max-w-6xl text-center">
             <h2 className="text-3xl md:text-[36px] font-medium text-[#333333] mb-8 leading-tight">
               Experiência no setor e especialização
             </h2>
             <p className="text-[#666666] max-w-4xl mx-auto mb-16 leading-relaxed">
-              A Bioprev oferece programas de Gestão Integrada de Pragas (IPM) adaptados às necessidades individuais de cada cliente, apoiando totalmente os requisitos regulamentares e de auditoria. A nossa história de 100 anos dá-nos o conhecimento e a experiência para identificar e prever ameaças de <span className="text-[#007cc3] cursor-pointer hover:underline">pragas</span> e <span className="text-[#007cc3] cursor-pointer hover:underline">higiene</span> ao seu negócio.
+              A Bioprev oferece programas de Gestão Integrada de Pragas (IPM) adaptados às necessidades individuais de cada cliente, apoiando totalmente os requisitos regulamentares e de auditoria. A nossa experiência dá-nos o conhecimento para identificar e prever ameaças de pragas e higiene ao seu negócio.
             </p>
             
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
               {sectors.map((sector, idx) => (
-                <div key={idx} className="bg-white border border-gray-100 p-6 flex flex-col items-center justify-center hover:shadow-md transition-shadow cursor-pointer group">
-                  <div className="w-16 h-16 mb-4 flex items-center justify-center grayscale group-hover:grayscale-0 transition-all">
-                    <img src={sector.icon} alt={sector.name} className="max-w-full max-h-full" />
+                <Link key={idx} href={sector.href}>
+                  <div className="bg-white border border-gray-100 p-6 flex flex-col items-center justify-center hover:shadow-md transition-shadow cursor-pointer group h-full">
+                    <div className="w-16 h-16 mb-4 flex items-center justify-center">
+                      <sector.icon className="w-12 h-12 text-[#333333] group-hover:text-[#007cc3] transition-colors" strokeWidth={1} />
+                    </div>
+                    <span className="text-[13px] font-bold text-[#007cc3] text-center leading-tight">{sector.name}</span>
                   </div>
-                  <span className="text-[13px] font-bold text-[#007cc3] text-center leading-tight">{sector.name}</span>
-                </div>
+                </Link>
               ))}
-              <a href="/sectors" className="bg-[#1a2b3c] p-6 flex flex-col items-center justify-center cursor-pointer group">
-                <Plus className="w-10 h-10 text-white mb-4 transition-transform group-hover:scale-110" strokeWidth={1} />
-                <span className="text-[13px] font-bold text-white text-center">Ver todos os setores</span>
-              </a>
+              <Link href="/sectors">
+                <div className="bg-[#1a2b3c] p-6 flex flex-col items-center justify-center cursor-pointer group h-full">
+                  <Plus className="w-10 h-10 text-white mb-4 transition-transform group-hover:scale-110" strokeWidth={1} />
+                  <span className="text-[13px] font-bold text-white text-center">Ver todos os setores</span>
+                </div>
+              </Link>
             </div>
           </div>
         </section>
 
-        {/* IPM - Image 5 */}
         <section className="py-24 bg-[#f2f5f7]">
           <div className="container mx-auto px-4 max-w-4xl text-center">
             <h2 className="text-3xl md:text-[36px] font-medium text-[#333333] mb-8 leading-tight">
@@ -174,11 +180,11 @@ export default function AllServices() {
                 <Accordion type="single" collapsible key={idx} className="w-full">
                   <AccordionItem value={`item-${idx}`} className="border-none">
                     <AccordionTrigger className="bg-[#d0dae1] px-8 py-5 hover:bg-[#c4cfd7] transition-colors hover:no-underline rounded-none group">
-                      <span className="text-[18px] font-medium text-[#333333] text-left">{step}</span>
+                      <span className="text-[18px] font-medium text-[#333333] text-left">{step.title}</span>
                       <Plus className="w-6 h-6 text-[#333333] shrink-0 transition-transform duration-200 group-data-[state=open]:rotate-45" />
                     </AccordionTrigger>
                     <AccordionContent className="bg-white px-8 py-6 text-left text-[#666666] leading-relaxed border-x border-b border-[#d0dae1]">
-                      Informações detalhadas sobre {step} seriam apresentadas aqui, explicando as metodologias e os benefícios específicos desta fase no processo de IPM.
+                      {step.content}
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>
@@ -187,7 +193,6 @@ export default function AllServices() {
           </div>
         </section>
 
-        {/* How it works - Image 6 & 7 */}
         <section className="py-24 bg-white">
           <div className="container mx-auto px-4 max-w-4xl text-center mb-20">
             <h2 className="text-3xl md:text-[36px] font-medium text-[#333333] mb-8 leading-tight">
@@ -205,7 +210,6 @@ export default function AllServices() {
 
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Step 1 */}
               <div className="bg-white border-t-4 border-[#f2c92f] shadow-lg p-10 flex flex-col h-full">
                 <div className="mb-8 flex justify-center">
                   <Search className="w-12 h-12 text-[#333333]" strokeWidth={1} />
@@ -223,7 +227,6 @@ export default function AllServices() {
                 </div>
               </div>
 
-              {/* Step 2 */}
               <div className="bg-white border-t-4 border-[#f2c92f] shadow-lg p-10 flex flex-col h-full">
                 <div className="mb-8 flex justify-center">
                   <Target className="w-12 h-12 text-[#333333]" strokeWidth={1} />
@@ -233,7 +236,7 @@ export default function AllServices() {
                   Programa de tratamento abrangente adaptado às suas necessidades
                 </p>
                 <div className="space-y-2 mt-auto">
-                  {["Especialistas locais certificados", "Abordagem ecologicamente sensível", "Conhecimento sobre legislação específica do setor garante a conformidade nas auditorias"].map((item, i) => (
+                  {["Especialistas locais certificados", "Abordagem ecologicamente sensível", "Conhecimento sobre legislação específica do setor garante a conformidade"].map((item, i) => (
                     <div key={i} className="bg-[#f2f5f7] p-4 text-[13px] text-[#333333] leading-tight">
                       {item}
                     </div>
@@ -241,7 +244,6 @@ export default function AllServices() {
                 </div>
               </div>
 
-              {/* Step 3 */}
               <div className="bg-white border-t-4 border-[#f2c92f] shadow-lg p-10 flex flex-col h-full">
                 <div className="mb-8 flex justify-center">
                   <CheckCircle2 className="w-12 h-12 text-[#333333]" strokeWidth={1} />
@@ -262,16 +264,17 @@ export default function AllServices() {
           </div>
         </section>
 
-        {/* CTA */}
         <section className="bg-[#007cc3] py-16 text-center">
           <div className="container mx-auto px-4">
             <h2 className="text-white text-3xl font-medium mb-8">Marque sua avaliação de risco de pragas hoje</h2>
-            <Button 
-              className="bg-white text-[#007cc3] hover:bg-white/90 px-12 py-6 text-lg font-bold rounded-none"
-              data-testid="button-cta-book"
-            >
-              Contacte-nos
-            </Button>
+            <Link href="/contact">
+              <Button 
+                className="bg-white text-[#007cc3] hover:bg-white/90 px-12 py-6 text-lg font-bold rounded-none"
+                data-testid="button-cta-book"
+              >
+                Contacte-nos
+              </Button>
+            </Link>
           </div>
         </section>
       </main>
