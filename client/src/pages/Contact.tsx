@@ -61,8 +61,8 @@ export default function Contact() {
       <div className="container mx-auto px-4 py-12">
         {/* Breadcrumb */}
         <div className="mb-8 flex items-center space-x-2 text-sm text-gray-600">
-          <Link href="/">
-            <a className="hover:text-[#f2c92f] transition-colors">Início</a>
+          <Link href="/" className="hover:text-[#f2c92f] transition-colors">
+            Início
           </Link>
           <span>›</span>
           <span className="text-gray-800 font-medium">Contato</span>
