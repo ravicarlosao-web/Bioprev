@@ -109,9 +109,9 @@ export default function Header() {
                 <a href="tel:+244928737888" className="bg-[#0077c0] text-white px-3 sm:px-8 py-1.5 sm:py-2 font-bold text-[11px] sm:text-sm h-[48px] sm:h-[60px] flex items-center transition-colors hover:bg-[#005fa3] whitespace-nowrap">
                   Ligar agora
                 </a>
-                <a href="#" className="text-white font-bold text-[11px] sm:text-sm hover:underline whitespace-nowrap hidden sm:block">
+                <Link href="/contact" className="text-white font-bold text-[11px] sm:text-sm hover:underline whitespace-nowrap">
                   Solicite uma chamada
-                </a>
+                </Link>
               </div>
             </div>
           </motion.div>
