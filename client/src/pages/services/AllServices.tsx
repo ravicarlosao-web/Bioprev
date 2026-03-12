@@ -53,14 +53,11 @@ export default function AllServices() {
                 Como líder nacional em soluções de higiene e controle de pragas, a Bioprev leva serviços especializados, fiáveis e profissionais a clientes comerciais em todo o país.
               </p>
               
-              <Link href="/contact">
-                <Button 
-                  variant="outline" 
-                  className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#333333] px-10 py-6 text-lg font-medium transition-all duration-300 rounded-none"
-                  data-testid="button-get-in-touch"
-                >
-                  Entre em contato
-                </Button>
+              <Link href="/contact"
+                className="inline-block border-2 border-white text-white hover:bg-white hover:text-[#333333] px-10 py-3 text-lg font-medium transition-all duration-300"
+                data-testid="button-get-in-touch"
+              >
+                Entre em contato
               </Link>
             </div>
           </div>
