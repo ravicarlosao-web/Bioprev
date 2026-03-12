@@ -82,20 +82,20 @@ export default function Contact() {
               Leia a nossa <a href="#" className="text-[#007cc3] hover:underline">política de privacidade</a> para entender como usamos seus dados.
             </p>
 
-            <div className="p-8 border-l-[4px] border-[#f2c92f] mb-12 text-[#33333300] bg-[#fafafa00]">
-              <h3 className="text-[18px] font-bold text-gray-900 mb-3">Contatos Diretos</h3>
-              <p className="text-[#555555] mb-6 text-[15px]">
+            <div className="mb-12">
+              <h3 className="text-[16px] font-bold text-[#111111] mb-2">Contatos Diretos</h3>
+              <p className="text-[#555555] mb-4 text-[16px] leading-relaxed">
                 Pode entrar em contato connosco através dos seguintes meios:
               </p>
-              <div className="flex flex-col gap-4 font-bold text-[16px] text-[#007cc3]">
-                <a href="mailto:geral@bioprev.com" className="hover:underline flex items-center">
-                  <Mail className="w-[16px] h-[16px] text-[#d5a8df] mr-3" fill="currentColor" strokeWidth={0} /> geral@bioprev.com
+              <div className="flex flex-col gap-2 text-[16px] text-[#007cc3] font-bold">
+                <a href="mailto:geral@bioprev.com" className="hover:underline">
+                  geral@bioprev.com
                 </a>
-                <a href="tel:+244928737888" className="hover:underline flex items-center">
-                  <Phone className="w-[16px] h-[16px] text-[#d82c75] mr-3" fill="currentColor" strokeWidth={0} /> +244 928 737 888
+                <a href="tel:+244928737888" className="hover:underline">
+                  +244 928 737 888
                 </a>
-                <a href="tel:+244947059109" className="hover:underline flex items-center">
-                  <Phone className="w-[16px] h-[16px] text-[#d82c75] mr-3" fill="currentColor" strokeWidth={0} /> +244 947 059 109
+                <a href="tel:+244947059109" className="hover:underline">
+                  +244 947 059 109
                 </a>
               </div>
             </div>
