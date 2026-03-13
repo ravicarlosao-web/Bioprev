@@ -130,7 +130,7 @@ export default function AllServices() {
                 <p className="text-[#666666] text-sm sm:text-base leading-relaxed mb-5 sm:mb-8">
                   Uma série de soluções de gestão de pragas conectadas digitalmente fornecem aos clientes dados, insights e relatórios para prevenir e gerenciar pragas proativamente.
                 </p>
-                <Link href="/contact"
+                <Link href="/services/disinfestation"
                   className="inline-block text-[#007cc3] font-medium border border-[#007cc3] px-4 sm:px-6 py-2 text-sm sm:text-base hover:bg-[#007cc3] hover:text-white transition-all"
                 >
                   Saiba mais

@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import services1Img from "../../assets/images/services-1.jpg";
 import services2Img from "../../assets/images/services-2.jpg";
 
@@ -19,12 +20,13 @@ export default function Services() {
               <p className="text-[#333333] mb-6 sm:mb-8 text-[13px] sm:text-[14px] leading-relaxed" data-testid="text-service-desc-1">
                 A Bioprev é reconhecida como a parceira preferida de controle de pragas em Angola, apoiando empresas, condomínios e instituições em Luanda, Benguela e Huambo com soluções profissionais e eficazes.
               </p>
-              <button 
-                className="border border-[#0077c0] text-[#0077c0] hover:bg-[#0077c0] hover:text-white transition-colors duration-300 font-normal px-5 sm:px-6 py-2 text-[13px] sm:text-[14px]"
+              <Link 
+                href="/services"
+                className="border border-[#0077c0] text-[#0077c0] hover:bg-[#0077c0] hover:text-white transition-colors duration-300 font-normal px-5 sm:px-6 py-2 text-[13px] sm:text-[14px] inline-block"
                 data-testid="button-service-1"
               >
                 Saiba mais
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -42,12 +44,13 @@ export default function Services() {
               <p className="text-[#333333] mb-6 sm:mb-8 text-[13px] sm:text-[14px] leading-relaxed" data-testid="text-service-desc-2">
                 Uma gama de soluções de gestão de pragas conectadas e digitalmente aprimoradas fornece aos clientes comerciais dados, percepções e relatórios incomparáveis para prevenir e gerenciar pragas de forma proativa.
               </p>
-              <button 
-                className="border border-[#0077c0] text-[#0077c0] hover:bg-[#0077c0] hover:text-white transition-colors duration-300 font-normal px-5 sm:px-6 py-2 text-[13px] sm:text-[14px]"
+              <Link 
+                href="/services/disinfestation"
+                className="border border-[#0077c0] text-[#0077c0] hover:bg-[#0077c0] hover:text-white transition-colors duration-300 font-normal px-5 sm:px-6 py-2 text-[13px] sm:text-[14px] inline-block"
                 data-testid="button-service-2"
               >
                 Saiba mais
-              </button>
+              </Link>
             </div>
           </div>
         </div>

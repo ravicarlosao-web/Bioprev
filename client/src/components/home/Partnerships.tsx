@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import LogoCarousel from "./LogoCarousel";
 
 export default function Partnerships() {
@@ -60,12 +61,13 @@ export default function Partnerships() {
             <p className="text-[#666666] leading-relaxed text-[16px] mb-8 flex-grow">
               Estamos comprometidos em reduzir o impacto ambiental dos produtos e serviços nos quais você confia para proteger a sua empresa contra pragas. Utilizamos produtos certificados e sem prejuízo para a saúde do homem e para o meio ambiente.
             </p>
-            <button 
-              className="w-fit px-6 py-2 border border-[#007cc3] text-[#007cc3] font-medium hover:bg-[#007cc3] hover:text-white transition-colors duration-300"
+            <Link 
+              href="/about"
+              className="w-fit px-6 py-2 border border-[#007cc3] text-[#007cc3] font-medium hover:bg-[#007cc3] hover:text-white transition-colors duration-300 inline-block"
               data-testid="button-find-out-more"
             >
               Saiba mais
-            </button>
+            </Link>
           </div>
 
           <div className="bg-white border-t-4 border-[#f2c92f] shadow-lg p-8 flex flex-col h-full">
@@ -75,12 +77,13 @@ export default function Partnerships() {
             <p className="text-[#666666] leading-relaxed text-[16px] mb-8 flex-grow">
               Com filiais em Luanda, Benguela e Huambo, a Bioprev está perto de si para atender às suas necessidades comerciais e residenciais de controle de pragas. Conheça os nossos serviços, soluções e preços.
             </p>
-            <button 
-              className="w-fit px-6 py-2 border border-[#007cc3] text-[#007cc3] font-medium hover:bg-[#007cc3] hover:text-white transition-colors duration-300"
+            <Link 
+              href="/locations"
+              className="w-fit px-6 py-2 border border-[#007cc3] text-[#007cc3] font-medium hover:bg-[#007cc3] hover:text-white transition-colors duration-300 inline-block"
               data-testid="button-choose-location"
             >
               Ver localizações
-            </button>
+            </Link>
           </div>
         </div>
       </div>

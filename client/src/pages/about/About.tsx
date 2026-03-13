@@ -92,7 +92,7 @@ export default function About() {
                 <p className="text-[#666666] text-sm sm:text-base leading-relaxed mb-5 sm:mb-8">
                   Cada membro da nossa equipa desempenha um papel essencial, utilizando as melhores práticas e tecnologias para garantir soluções eficazes e personalizadas. Contamos com colaboradores altamente capacitados em todas as áreas que atuamos.
                 </p>
-                <Link href="/contact"
+                <Link href="/about/careers"
                   className="inline-block text-[#007cc3] font-medium border border-[#007cc3] px-4 sm:px-6 py-2 text-sm sm:text-base hover:bg-[#007cc3] hover:text-white transition-all"
                 >
                   Saiba mais
@@ -114,7 +114,7 @@ export default function About() {
                 <p className="text-[#666666] text-sm sm:text-base leading-relaxed mb-5 sm:mb-8">
                   Com sedes operacionais em Luanda, Benguela e Huambo, a BIOPREV garante uma cobertura que abrange as principais regiões de Angola, levando serviços de excelência a empresas e condomínios em todo o país.
                 </p>
-                <Link href="/contact"
+                <Link href="/locations"
                   className="inline-block text-[#007cc3] font-medium border border-[#007cc3] px-4 sm:px-6 py-2 text-sm sm:text-base hover:bg-[#007cc3] hover:text-white transition-all"
                 >
                   Saiba mais
