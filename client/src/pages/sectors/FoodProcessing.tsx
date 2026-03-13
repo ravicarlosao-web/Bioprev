@@ -7,7 +7,7 @@ const data: SectorPageData = {
   seoDescription: "Soluções de controle de pragas e higiene para a indústria de processamento de alimentos em Angola. Conformidade HACCP e segurança alimentar com a Bioprev.",
   seoKeywords: "controle pragas indústria alimentar Angola, HACCP Angola, segurança alimentar, higiene processamento alimentos, Bioprev alimentar",
   seoCanonical: "/sectors/food-processing",
-  heroImage: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=2000",
+  heroImage: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=75&w=1280",
   heroImageAlt: "Processamento alimentar",
   breadcrumbLabel: "Processamento alimentar",
   heroTitle: "Controle de pragas para\nprocessamento alimentar",
@@ -20,13 +20,13 @@ const data: SectorPageData = {
     {
       title: "Controle preventivo de pragas",
       description: "Programas preventivos que identificam e eliminam riscos de pragas antes que se tornem problemas, protegendo as suas linhas de produção e garantindo a conformidade com as normas de segurança alimentar.",
-      image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Controle preventivo"
     },
     {
       title: "Monitorização contínua",
       description: "Sistemas avançados de monitorização que detetam a atividade de pragas em tempo real, permitindo uma resposta imediata e minimizando o risco de contaminação dos seus produtos alimentares.",
-      image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Monitorização contínua"
     }
   ],

@@ -7,7 +7,7 @@ const data: ServicePageData = {
   seoDescription: "Fornecimento de água potável certificada para eventos, indústria e construção em Angola. A Bioprev garante água pura e segura com cisternas certificadas.",
   seoKeywords: "água potável Angola, fornecimento água Luanda, cisternas água certificada, abastecimento água Angola, Bioprev água",
   seoCanonical: "/services/water",
-  heroImage: "https://images.unsplash.com/photo-1548936226-be5006d2e279?auto=format&fit=crop&q=80&w=2000",
+  heroImage: "https://images.unsplash.com/photo-1548936226-be5006d2e279?auto=format&fit=crop&q=75&w=1280",
   heroImageAlt: "Fornecimento de água potável",
   breadcrumbLabel: "Água potável",
   heroTitle: "Fornecimento de água\npotável",
@@ -20,13 +20,13 @@ const data: ServicePageData = {
     {
       title: "Cisternas alimentares",
       description: "Frota de cisternas alimentares certificadas para o transporte seguro de água potável, com limpeza e desinfeção regulares e rastreabilidade completa de cada carga.",
-      image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Cisternas alimentares"
     },
     {
       title: "Apoio a eventos",
       description: "Abastecimento contínuo de água potável para grandes eventos, festivais, feiras e concentrações de público, com planeamento logístico e capacidade de resposta rápida.",
-      image: "https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Apoio a eventos"
     }
   ],

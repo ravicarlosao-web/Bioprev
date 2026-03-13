@@ -7,7 +7,7 @@ const data: ServicePageData = {
   seoDescription: "Recolha de resíduos urbanos, domésticos, hospitalares, industriais e pós-construção em Angola. A Bioprev garante gestão ambiental responsável em Luanda, Benguela e Huambo.",
   seoKeywords: "recolha resíduos Angola, gestão lixo Luanda, resíduos hospitalares, resíduos industriais Angola, recolha lixo, Bioprev resíduos",
   seoCanonical: "/services/waste",
-  heroImage: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&q=80&w=2000",
+  heroImage: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&q=75&w=1280",
   heroImageAlt: "Recolha de resíduos",
   breadcrumbLabel: "Recolha de resíduos",
   heroTitle: "Recolha de resíduos\ne gestão de lixo",
@@ -20,13 +20,13 @@ const data: ServicePageData = {
     {
       title: "Resíduos urbanos e domésticos",
       description: "Recolha regular de resíduos urbanos em condomínios, bairros e áreas residenciais, além de serviços de recolha doméstica personalizada, mantendo os espaços limpos e saudáveis para as comunidades.",
-      image: "https://images.unsplash.com/photo-1618477461839-210199432687?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1618477461839-210199432687?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Resíduos urbanos e domésticos"
     },
     {
       title: "Resíduos especializados",
       description: "Manuseamento seguro e transporte certificado de resíduos pós-construção, hospitalares e industriais, cumprindo todas as normas de segurança e garantindo o destino correto de cada tipo de resíduo.",
-      image: "https://images.unsplash.com/photo-1591193686104-fddba4d0e4d8?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1591193686104-fddba4d0e4d8?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Resíduos especializados"
     }
   ],

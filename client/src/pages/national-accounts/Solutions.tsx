@@ -7,7 +7,7 @@ const data: ServicePageData = {
   seoDescription: "Todos os serviços Bioprev num único programa nacional: desinfestação, limpeza, resíduos, água e jardinagem coordenados centralmente em Angola.",
   seoKeywords: "soluções nacionais pragas Angola, serviços integrados controle pragas, programa nacional Bioprev, serviços multi-localização",
   seoCanonical: "/national-accounts/solutions",
-  heroImage: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=2000",
+  heroImage: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=75&w=1280",
   heroImageAlt: "Soluções nacionais Bioprev",
   breadcrumbLabel: "Soluções nacionais",
   breadcrumbParent: { label: "Contas nacionais", href: "/national-accounts" },
@@ -21,13 +21,13 @@ const data: ServicePageData = {
     {
       title: "Desinfestação e controle de pragas",
       description: "Fumigação, pulverização, desratização, desbaratização e gel — todos os métodos de desinfestação disponíveis em todas as suas localizações, com protocolos padronizados e relatórios unificados.",
-      image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Desinfestação nacional"
     },
     {
       title: "Limpeza, resíduos e manutenção",
       description: "Limpeza industrial e doméstica, recolha de resíduos, tratamento de água e jardinagem — serviços complementares que garantem a higiene e apresentação de todas as suas instalações.",
-      image: "https://images.unsplash.com/photo-1581578731522-745505146317?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1581578731522-745505146317?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Serviços complementares"
     }
   ],

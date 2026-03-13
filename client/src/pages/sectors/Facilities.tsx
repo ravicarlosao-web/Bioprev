@@ -7,7 +7,7 @@ const data: SectorPageData = {
   seoDescription: "Soluções de controle de pragas para gestores de edifícios comerciais e instalações em Angola. Proteção discreta e eficaz com a Bioprev.",
   seoKeywords: "controle pragas edifícios Angola, gestão instalações, pragas edifícios comerciais, Bioprev instalações",
   seoCanonical: "/sectors/facilities",
-  heroImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2000",
+  heroImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=75&w=1280",
   heroImageAlt: "Gestão de instalações",
   breadcrumbLabel: "Gestão de instalações",
   heroTitle: "Controle de pragas para\ngestão de instalações",
@@ -20,13 +20,13 @@ const data: SectorPageData = {
     {
       title: "Programas para edifícios comerciais",
       description: "Soluções de controle de pragas desenhadas para edifícios de escritórios e centros comerciais, com intervenções discretas que não perturbam as operações dos inquilinos.",
-      image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Edifícios comerciais"
     },
     {
       title: "Manutenção preventiva integrada",
       description: "Programas contínuos que se integram no plano de manutenção das suas instalações, prevenindo infestações antes que causem problemas aos ocupantes ou danos estruturais.",
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Manutenção preventiva"
     }
   ],

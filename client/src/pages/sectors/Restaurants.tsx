@@ -7,7 +7,7 @@ const data: SectorPageData = {
   seoDescription: "Controle de pragas para restaurantes, bares e catering em Angola. A Bioprev garante segurança alimentar e higiene total no seu estabelecimento.",
   seoKeywords: "controle pragas restaurantes Angola, pragas restauração, higiene restaurantes Luanda, segurança alimentar catering, Bioprev restauração",
   seoCanonical: "/sectors/restaurants",
-  heroImage: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=2000",
+  heroImage: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=75&w=1280",
   heroImageAlt: "Restauração",
   breadcrumbLabel: "Restauração",
   heroTitle: "Controle de pragas para\nrestauração e catering",
@@ -20,13 +20,13 @@ const data: SectorPageData = {
     {
       title: "Proteção da cozinha",
       description: "Programas intensivos para cozinhas profissionais que eliminam baratas, roedores e insetos voadores, garantindo a segurança dos alimentos preparados e servidos aos seus clientes.",
-      image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Cozinha profissional"
     },
     {
       title: "Sala e áreas de clientes",
       description: "Soluções discretas para o salão, esplanadas e áreas de clientes que mantêm os espaços livres de pragas sem comprometer a experiência gastronómica dos seus clientes.",
-      image: "https://images.unsplash.com/photo-1550966871-3ed3cdb51f3a?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1550966871-3ed3cdb51f3a?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Sala de restaurante"
     }
   ],

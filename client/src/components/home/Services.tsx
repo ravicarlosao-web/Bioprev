@@ -1,5 +1,5 @@
 import services1Img from "../../assets/images/services-1.jpg";
-import services2Img from "../../assets/images/services-2.png";
+import services2Img from "../../assets/images/services-2.jpg";
 
 export default function Services() {
   return (

@@ -7,7 +7,7 @@ const data: SectorPageData = {
   seoDescription: "Soluções de controle de pragas para hotéis e resorts em Angola. A Bioprev garante os mais altos padrões de higiene e conforto para os seus hóspedes.",
   seoKeywords: "controle pragas hotéis Angola, pragas hotelaria, higiene hotéis Luanda, Bioprev hotelaria",
   seoCanonical: "/sectors/hospitality",
-  heroImage: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=2000",
+  heroImage: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=75&w=1280",
   heroImageAlt: "Hotelaria",
   breadcrumbLabel: "Hotelaria",
   heroTitle: "Controle de pragas para\no setor hoteleiro",
@@ -20,13 +20,13 @@ const data: SectorPageData = {
     {
       title: "Proteção de áreas de hóspedes",
       description: "Programas discretos para quartos, suites e áreas comuns que eliminam pragas como percevejos, baratas e formigas sem causar qualquer inconveniente aos hóspedes.",
-      image: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Quartos de hotel"
     },
     {
       title: "Segurança alimentar no hotel",
       description: "Soluções para cozinhas, restaurantes e bares do hotel que garantem a segurança alimentar e a conformidade com as normas sanitárias, protegendo a saúde dos hóspedes.",
-      image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Restaurante de hotel"
     }
   ],

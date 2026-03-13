@@ -7,7 +7,7 @@ const data: SectorPageData = {
   seoDescription: "Controle de pragas para supermercados e lojas de alimentos em Angola. A Bioprev mantém os seus espaços em conformidade sanitária e livres de pragas.",
   seoKeywords: "controle pragas supermercados Angola, pragas retalho alimentar, higiene lojas alimentos, Bioprev retalho",
   seoCanonical: "/sectors/food-retail",
-  heroImage: "https://images.unsplash.com/photo-1604719312566-8912e9227c6a?auto=format&fit=crop&q=80&w=2000",
+  heroImage: "https://images.unsplash.com/photo-1604719312566-8912e9227c6a?auto=format&fit=crop&q=75&w=1280",
   heroImageAlt: "Retalho alimentar",
   breadcrumbLabel: "Retalho alimentar",
   heroTitle: "Controle de pragas para\nretalho alimentar",
@@ -20,13 +20,13 @@ const data: SectorPageData = {
     {
       title: "Proteção da área de vendas",
       description: "Programas para áreas de venda ao público que mantêm os espaços livres de pragas de forma discreta, utilizando métodos que não interferem com a experiência de compra dos clientes.",
-      image: "https://images.unsplash.com/photo-1534723452862-4c874018d66d?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1534723452862-4c874018d66d?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Área de vendas"
     },
     {
       title: "Gestão de armazém e stock",
       description: "Soluções para áreas de armazenamento e câmaras frias que protegem o stock contra roedores, insetos e outras pragas que podem contaminar ou danificar os produtos.",
-      image: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Armazém de stock"
     }
   ],

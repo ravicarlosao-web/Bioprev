@@ -90,6 +90,25 @@
   --ring: 351 81% 49%;
 }
 
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fade-in 0.2s ease-out both;
+  }
+  .animate-scale-in {
+    animation: scale-in 0.3s ease-out both;
+  }
+}
+
 @layer base {
   * {
     @apply border-border;
@@ -98,7 +117,6 @@
     @apply font-sans antialiased bg-background text-foreground;
   }
   
-  /* Bioprev specific styles */
   h1, h2, h3, h4, h5, h6 {
     @apply font-semibold tracking-tight;
   }

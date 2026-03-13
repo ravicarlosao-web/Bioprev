@@ -7,7 +7,7 @@ const data: SectorPageData = {
   seoDescription: "Proteção de armazéns e centros de distribuição contra pragas em Angola. A Bioprev salvaguarda a integridade dos seus produtos e da cadeia de abastecimento.",
   seoKeywords: "controle pragas armazéns Angola, pragas logística, proteção mercadorias armazenadas, Bioprev logística",
   seoCanonical: "/sectors/logistics",
-  heroImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=2000",
+  heroImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=75&w=1280",
   heroImageAlt: "Logística e armazenamento",
   breadcrumbLabel: "Logística e armazenamento",
   heroTitle: "Controle de pragas para\nlogística e armazenamento",
@@ -20,13 +20,13 @@ const data: SectorPageData = {
     {
       title: "Proteção de armazéns",
       description: "Programas abrangentes de controle de pragas para armazéns de todos os tamanhos, com foco na prevenção de danos a mercadorias armazenadas e na manutenção de condições sanitárias adequadas.",
-      image: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Proteção de armazéns"
     },
     {
       title: "Centros de distribuição",
       description: "Soluções para centros de distribuição com elevada rotação de mercadorias, onde a velocidade das operações exige métodos de controle de pragas eficientes e não disruptivos.",
-      image: "https://images.unsplash.com/photo-1565891741441-64926e441838?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1565891741441-64926e441838?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Centros de distribuição"
     }
   ],

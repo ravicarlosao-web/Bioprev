@@ -7,7 +7,7 @@ const data: SectorPageData = {
   seoDescription: "Soluções de controle de pragas para laboratórios e fábricas farmacêuticas em Angola. Conformidade GMP e proteção da saúde pública com a Bioprev.",
   seoKeywords: "controle pragas farmacêutica Angola, GMP Angola, pragas laboratórios, higiene farmacêutica, Bioprev farmacêutica",
   seoCanonical: "/sectors/pharmaceutical",
-  heroImage: "https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&q=80&w=2000",
+  heroImage: "https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&q=75&w=1280",
   heroImageAlt: "Indústria farmacêutica",
   breadcrumbLabel: "Farmacêutica",
   heroTitle: "Controle de pragas para\na indústria farmacêutica",
@@ -20,13 +20,13 @@ const data: SectorPageData = {
     {
       title: "Ambientes de produção GMP",
       description: "Programas de controle de pragas desenhados para cumprir os requisitos das Boas Práticas de Fabrico, com documentação completa e métodos compatíveis com ambientes farmacêuticos.",
-      image: "https://images.unsplash.com/photo-1563213126-a4273aed2016?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1563213126-a4273aed2016?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Produção farmacêutica"
     },
     {
       title: "Laboratórios e investigação",
       description: "Soluções para ambientes de laboratório onde a precisão e a esterilidade são fundamentais, utilizando métodos que não interferem com as condições controladas necessárias para a investigação.",
-      image: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Laboratório"
     }
   ],

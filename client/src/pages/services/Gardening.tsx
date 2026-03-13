@@ -7,7 +7,7 @@ const data: ServicePageData = {
   seoDescription: "Serviços profissionais de jardinagem e paisagismo em Angola. A Bioprev cria e mantém espaços verdes para empresas, hotéis e condomínios em Luanda, Benguela e Huambo.",
   seoKeywords: "jardinagem Angola, paisagismo Luanda, manutenção jardins, espaços verdes empresas Angola, Bioprev jardinagem",
   seoCanonical: "/services/gardening",
-  heroImage: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&q=80&w=2000",
+  heroImage: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&q=75&w=1280",
   heroImageAlt: "Serviços de jardinagem",
   breadcrumbLabel: "Jardinagem",
   heroTitle: "Serviços de jardinagem\ne paisagismo",
@@ -20,13 +20,13 @@ const data: ServicePageData = {
     {
       title: "Manutenção regular",
       description: "Serviços de manutenção programada que incluem corte de relva, podas, fertilização, controlo de ervas daninhas e cuidados sazonais para manter os seus jardins sempre impecáveis.",
-      image: "https://images.unsplash.com/photo-1592150621344-bb30b13e7d0b?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1592150621344-bb30b13e7d0b?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Manutenção de jardins"
     },
     {
       title: "Projeto paisagístico",
       description: "Design e criação de novos jardins e espaços de lazer, com seleção de espécies adaptadas ao clima local, sistemas de rega eficientes e elementos decorativos.",
-      image: "https://images.unsplash.com/photo-1416872834464-4e7852621763?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1416872834464-4e7852621763?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Projeto paisagístico"
     }
   ],

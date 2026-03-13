@@ -7,7 +7,7 @@ const data: ServicePageData = {
   seoDescription: "Programa centralizado de gestão de pragas para empresas com múltiplas localizações em Angola. Simplifique custos e garanta proteção consistente com a Bioprev.",
   seoKeywords: "contas nacionais controle pragas Angola, gestão centralizada pragas, programa multi-localizações, Bioprev contas nacionais",
   seoCanonical: "/national-accounts/overview",
-  heroImage: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=2000",
+  heroImage: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=75&w=1280",
   heroImageAlt: "Visão geral das contas nacionais",
   breadcrumbLabel: "Visão geral",
   breadcrumbParent: { label: "Contas nacionais", href: "/national-accounts" },
@@ -21,13 +21,13 @@ const data: ServicePageData = {
     {
       title: "Gestão centralizada",
       description: "Um gestor de conta dedicado coordena todos os serviços em todas as suas localizações, garantindo comunicação clara, resposta rápida e serviço consistente em cada unidade da sua organização.",
-      image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Gestão centralizada"
     },
     {
       title: "Cobertura em todo o país",
       description: "Com filiais operacionais em Luanda, Benguela e Huambo, a Bioprev garante cobertura em todas as principais regiões de Angola, com equipas locais que conhecem as condições específicas de cada zona.",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Cobertura nacional"
     }
   ],

@@ -32,7 +32,7 @@ export default function AllNationalAccounts() {
         <section className="relative h-[300px] sm:h-[380px] md:h-[460px] lg:h-[500px] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=2000"
+              src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=75&w=1280"
               alt="Contas nacionais Bioprev"
               className="w-full h-full object-cover"
             />
@@ -86,7 +86,7 @@ export default function AllNationalAccounts() {
         <section className="grid grid-cols-1 md:grid-cols-2">
           <div className="relative h-[350px] sm:h-[420px] md:h-[500px] lg:h-[600px] group overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1000"
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=75&w=800"
               alt="Visão geral das contas nacionais"
                 loading="lazy"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -110,7 +110,7 @@ export default function AllNationalAccounts() {
 
           <div className="relative h-[350px] sm:h-[420px] md:h-[500px] lg:h-[600px] group overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1000"
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=75&w=800"
                 loading="lazy"
               alt="Soluções nacionais"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

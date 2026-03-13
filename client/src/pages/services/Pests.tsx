@@ -7,7 +7,7 @@ const data: ServicePageData = {
   seoDescription: "Eliminação profissional de gorgulhos, traças e carunchos em produtos armazenados. A Bioprev protege os seus alimentos e mercadorias em Angola.",
   seoKeywords: "gorgulhos Angola, traças carunchos, insetos produtos armazenados, controlo pragas alimentos, Bioprev pragas",
   seoCanonical: "/services/pests",
-  heroImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=2000",
+  heroImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=75&w=1280",
   heroImageAlt: "Gorgulhos e traças (carunchos)",
   breadcrumbLabel: "Gorgulhos e traças",
   heroTitle: "Controlo de gorgulhos\ne traças (carunchos)",
@@ -20,13 +20,13 @@ const data: ServicePageData = {
     {
       title: "Controlo de traças",
       description: "Tratamentos especializados para eliminar traças têxteis e alimentares, protegendo museus, arquivos, lojas têxteis e armazéns alimentares com métodos seguros e eficazes.",
-      image: "https://images.unsplash.com/photo-1590611380053-9a367201c10d?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1590611380053-9a367201c10d?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Controlo de traças"
     },
     {
       title: "Controlo de gorgulhos",
       description: "Soluções para silos, armazéns e indústria alimentar que eliminam gorgulhos e protegem cereais, farinhas e outros produtos secos contra contaminação e perdas de stock.",
-      image: "https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Controlo de gorgulhos"
     }
   ],

@@ -7,7 +7,7 @@ const data: ServicePageData = {
   seoDescription: "Serviços de desinfestação, fumigação, pulverização, desratização e desbaratização em Angola. A Bioprev elimina pragas com segurança em Luanda, Benguela e Huambo.",
   seoKeywords: "desinfestação Angola, fumigação Luanda, pulverização, desratização Angola, desbaratização, controle de pragas Angola, Bioprev desinfestação",
   seoCanonical: "/services/disinfestation",
-  heroImage: "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&q=80&w=2000",
+  heroImage: "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&q=75&w=1280",
   heroImageAlt: "Serviço de desinfestação",
   breadcrumbLabel: "Desinfestação",
   heroTitle: "Serviços de desinfestação\ngeral e profissional",
@@ -20,13 +20,13 @@ const data: ServicePageData = {
     {
       title: "Desinfestação especializada",
       description: "Os nossos serviços de desinfestação especializada fornecem uma resposta rápida para ajudá-lo a manter um alto nível de higiene nas suas instalações, reduzindo o risco de infecção e contaminação através de fumigação, pulverização e tratamentos com gel.",
-      image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Desinfestação especializada"
     },
     {
       title: "Desinfestação preventiva",
       description: "Uma série de soluções de desinfestação preventiva — incluindo desratização e desbaratização — concebidas para ajudar as empresas a manter um ambiente seguro e proporcionar paz de espírito aos funcionários e visitantes.",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Desinfestação preventiva"
     }
   ],

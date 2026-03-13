@@ -7,7 +7,7 @@ const data: SectorPageData = {
   seoDescription: "Soluções discretas de controle de pragas para escritórios em Angola. A Bioprev protege o bem-estar dos colaboradores e a imagem profissional da empresa.",
   seoKeywords: "controle pragas escritórios Angola, pragas ambiente trabalho, desinfestação escritórios Luanda, Bioprev escritórios",
   seoCanonical: "/sectors/offices",
-  heroImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2000",
+  heroImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=75&w=1280",
   heroImageAlt: "Escritórios",
   breadcrumbLabel: "Escritórios",
   heroTitle: "Controle de pragas para\nambientes de escritório",
@@ -20,13 +20,13 @@ const data: SectorPageData = {
     {
       title: "Escritórios corporativos",
       description: "Programas para sedes corporativas e grandes escritórios, com cobertura de todas as áreas — desde os open spaces às salas de reunião, copas e zonas técnicas — com total discrição.",
-      image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Escritório corporativo"
     },
     {
       title: "Espaços partilhados e coworking",
       description: "Soluções para espaços de trabalho partilhados e coworking, onde a elevada rotação de utilizadores e o acesso público criam desafios adicionais para o controle de pragas.",
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Espaço de coworking"
     }
   ],
