@@ -11,6 +11,7 @@ export default function Services() {
             src={services1Img}
             alt="Serviços de controle de pragas" 
             className="absolute inset-0 w-full h-full object-cover"
+            loading="lazy"
           />
           <div className="absolute inset-0 flex items-center justify-center md:justify-start md:pl-[15%]">
             <div className="bg-white border-t-4 border-[#f2c92f] p-6 sm:p-8 md:p-10 z-10 w-[88%] sm:w-[85%] md:w-[380px] shadow-xl">
@@ -33,6 +34,7 @@ export default function Services() {
             src={services2Img}
             alt="Controle de pragas digital" 
             className="absolute inset-0 w-full h-full object-cover"
+            loading="lazy"
           />
           <div className="absolute inset-0 flex items-center justify-center md:justify-start md:pl-[15%]">
             <div className="bg-white border-t-4 border-[#f2c92f] p-6 sm:p-8 md:p-10 z-10 w-[88%] sm:w-[85%] md:w-[380px] shadow-xl">

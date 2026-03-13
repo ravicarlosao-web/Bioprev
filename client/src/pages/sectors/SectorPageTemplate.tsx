@@ -4,6 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Link } from "wouter";
 import Footer from "@/components/layout/Footer";
 import type { LucideIcon } from "lucide-react";
+import SEOHead, { breadcrumbSchema, serviceSchema } from "@/components/SEOHead";
 
 export interface SectorServiceCard {
   title: string;
@@ -31,6 +32,10 @@ export interface SectorProcessCard {
 }
 
 export interface SectorPageData {
+  seoTitle: string;
+  seoDescription: string;
+  seoKeywords?: string;
+  seoCanonical: string;
   heroImage: string;
   heroImageAlt: string;
   breadcrumbLabel: string;
@@ -58,6 +63,20 @@ export interface SectorPageData {
 export default function SectorPageTemplate({ data }: { data: SectorPageData }) {
   return (
     <div className="min-h-screen bg-white flex flex-col font-sans">
+      <SEOHead
+        title={data.seoTitle}
+        description={data.seoDescription}
+        canonical={data.seoCanonical}
+        keywords={data.seoKeywords}
+        structuredData={[
+          breadcrumbSchema([
+            { name: "Início", url: "/" },
+            { name: "Setores", url: "/sectors" },
+            { name: data.breadcrumbLabel, url: data.seoCanonical },
+          ]),
+          serviceSchema(data.seoTitle, data.seoDescription, data.seoCanonical),
+        ]}
+      />
       <Header />
       
       <main className="flex-grow">
@@ -124,6 +143,7 @@ export default function SectorPageTemplate({ data }: { data: SectorPageData }) {
                 src={card.image}
                 alt={card.imageAlt}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                loading="lazy"
               />
               <div className={`absolute inset-0 ${idx === 0 ? 'bg-black/20' : 'bg-black/30'}`} />
               <div className="absolute inset-0 flex items-center justify-center px-4 sm:px-6">

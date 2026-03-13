@@ -3,6 +3,10 @@ import { Search, Target, CheckCircle2 } from "lucide-react";
 import SectorPageTemplate, { type SectorPageData } from "./SectorPageTemplate";
 
 const data: SectorPageData = {
+  seoTitle: "Controle de Pragas para Processamento Alimentar",
+  seoDescription: "Soluções de controle de pragas e higiene para a indústria de processamento de alimentos em Angola. Conformidade HACCP e segurança alimentar com a Bioprev.",
+  seoKeywords: "controle pragas indústria alimentar Angola, HACCP Angola, segurança alimentar, higiene processamento alimentos, Bioprev alimentar",
+  seoCanonical: "/sectors/food-processing",
   heroImage: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=2000",
   heroImageAlt: "Processamento alimentar",
   breadcrumbLabel: "Processamento alimentar",

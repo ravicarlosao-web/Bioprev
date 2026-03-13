@@ -6,6 +6,7 @@ import blogIndustry from "@/assets/images/blog-industry.jpg";
 import blogInnovation from "@/assets/images/blog-innovation.jpg";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 
 export default function BlogList() {
   const blogPosts = [
@@ -41,6 +42,17 @@ export default function BlogList() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col font-sans">
+      <SEOHead
+        title="Blog"
+        description="Blog Bioprev Angola — artigos, notícias e dicas sobre controle de pragas, segurança alimentar, higiene e boas práticas para empresas e residências em Angola."
+        canonical="/blog"
+        keywords="blog controle pragas Angola, artigos desinfestação, dicas pragas, segurança alimentar Angola, notícias Bioprev"
+        type="blog"
+        structuredData={breadcrumbSchema([
+          { name: "Início", url: "/" },
+          { name: "Blog", url: "/blog" },
+        ])}
+      />
       <Header />
       
       <main className="flex-grow">

@@ -3,6 +3,10 @@ import { Search, Target, CheckCircle2 } from "lucide-react";
 import SectorPageTemplate, { type SectorPageData } from "./SectorPageTemplate";
 
 const data: SectorPageData = {
+  seoTitle: "Controle de Pragas para Restauração",
+  seoDescription: "Controle de pragas para restaurantes, bares e catering em Angola. A Bioprev garante segurança alimentar e higiene total no seu estabelecimento.",
+  seoKeywords: "controle pragas restaurantes Angola, pragas restauração, higiene restaurantes Luanda, segurança alimentar catering, Bioprev restauração",
+  seoCanonical: "/sectors/restaurants",
   heroImage: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=2000",
   heroImageAlt: "Restauração",
   breadcrumbLabel: "Restauração",

@@ -146,18 +146,22 @@ export default function Header() {
       <div className="w-full bg-white border-b border-gray-100 relative h-[70px] sm:h-[80px] md:h-[90px]">
         <div className="container mx-auto px-4 h-full">
           <div className="flex items-center justify-between h-full">
+            <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-white focus:px-4 focus:py-2 focus:text-[#007cc3] focus:font-bold focus:rounded">
+              Saltar para o conteúdo principal
+            </a>
+
             {/* Logo - Restrained to the main navigation bar */}
-            <Link href="/">
+            <Link href="/" aria-label="Bioprev Angola — Página inicial">
               <div 
                 className="flex items-center justify-center h-full cursor-pointer py-2"
                 data-testid="text-logo-container"
               >
-                <img src={logoImg} alt="Bioprev Logo" className="w-[120px] sm:w-[150px] md:w-[180px] max-h-full object-contain" data-testid="img-logo" />
+                <img src={logoImg} alt="Bioprev Angola — Controle de pragas, limpeza e higiene" className="w-[120px] sm:w-[150px] md:w-[180px] max-h-full object-contain" data-testid="img-logo" />
               </div>
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center h-full text-[15px] font-extrabold text-[#333333]">
+            <nav className="hidden lg:flex items-center h-full text-[15px] font-extrabold text-[#333333]" aria-label="Navegação principal">
               {menuItems.map((item) => (
                 <div 
                   key={item.id}

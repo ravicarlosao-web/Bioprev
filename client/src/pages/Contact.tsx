@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Mail, Phone } from "lucide-react";
+import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -57,6 +58,16 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEOHead
+        title="Contato"
+        description="Entre em contacto com a Bioprev Angola. Solicite orçamento gratuito para controle de pragas, desinfestação, limpeza e outros serviços. WhatsApp: +244 928 737 888."
+        canonical="/contact"
+        keywords="contato Bioprev Angola, orçamento controle pragas, contato desinfestação Luanda, telefone Bioprev Angola"
+        structuredData={breadcrumbSchema([
+          { name: "Início", url: "/" },
+          { name: "Contato", url: "/contact" },
+        ])}
+      />
       <Header />
       <div className="container mx-auto px-4 py-12">
         {/* Breadcrumb */}

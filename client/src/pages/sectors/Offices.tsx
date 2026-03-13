@@ -3,6 +3,10 @@ import { Search, Target, CheckCircle2 } from "lucide-react";
 import SectorPageTemplate, { type SectorPageData } from "./SectorPageTemplate";
 
 const data: SectorPageData = {
+  seoTitle: "Controle de Pragas para Escritórios",
+  seoDescription: "Soluções discretas de controle de pragas para escritórios em Angola. A Bioprev protege o bem-estar dos colaboradores e a imagem profissional da empresa.",
+  seoKeywords: "controle pragas escritórios Angola, pragas ambiente trabalho, desinfestação escritórios Luanda, Bioprev escritórios",
+  seoCanonical: "/sectors/offices",
   heroImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2000",
   heroImageAlt: "Escritórios",
   breadcrumbLabel: "Escritórios",

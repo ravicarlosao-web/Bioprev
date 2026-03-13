@@ -3,6 +3,10 @@ import { Search, Target, CheckCircle2 } from "lucide-react";
 import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
 
 const data: ServicePageData = {
+  seoTitle: "Jardinagem e Paisagismo em Angola",
+  seoDescription: "Serviços profissionais de jardinagem e paisagismo em Angola. A Bioprev cria e mantém espaços verdes para empresas, hotéis e condomínios em Luanda, Benguela e Huambo.",
+  seoKeywords: "jardinagem Angola, paisagismo Luanda, manutenção jardins, espaços verdes empresas Angola, Bioprev jardinagem",
+  seoCanonical: "/services/gardening",
   heroImage: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&q=80&w=2000",
   heroImageAlt: "Serviços de jardinagem",
   breadcrumbLabel: "Jardinagem",

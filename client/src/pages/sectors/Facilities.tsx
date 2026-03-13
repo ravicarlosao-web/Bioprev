@@ -3,6 +3,10 @@ import { Search, Target, CheckCircle2 } from "lucide-react";
 import SectorPageTemplate, { type SectorPageData } from "./SectorPageTemplate";
 
 const data: SectorPageData = {
+  seoTitle: "Controle de Pragas para Gestão de Instalações",
+  seoDescription: "Soluções de controle de pragas para gestores de edifícios comerciais e instalações em Angola. Proteção discreta e eficaz com a Bioprev.",
+  seoKeywords: "controle pragas edifícios Angola, gestão instalações, pragas edifícios comerciais, Bioprev instalações",
+  seoCanonical: "/sectors/facilities",
   heroImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2000",
   heroImageAlt: "Gestão de instalações",
   breadcrumbLabel: "Gestão de instalações",

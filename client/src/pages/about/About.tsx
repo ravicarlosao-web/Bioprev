@@ -3,10 +3,21 @@ import Header from "@/components/layout/Header";
 import { Link } from "wouter";
 import Footer from "@/components/layout/Footer";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 
 export default function About() {
   return (
     <div className="min-h-screen bg-white flex flex-col font-sans">
+      <SEOHead
+        title="Sobre a Bioprev"
+        description="Conheça a Bioprev Angola — líder em controle de pragas, desinfestação e higiene. Mais de uma década de experiência protegendo residências e empresas em Angola."
+        canonical="/about"
+        keywords="sobre Bioprev Angola, empresa controle pragas Angola, história Bioprev, quem somos Bioprev"
+        structuredData={breadcrumbSchema([
+          { name: "Início", url: "/" },
+          { name: "Sobre", url: "/about" },
+        ])}
+      />
       <Header />
       
       <main className="flex-grow">
@@ -71,6 +82,7 @@ export default function About() {
             <img
               src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1200"
               alt="Equipa BIOPREV"
+                loading="lazy"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-black/20" />
@@ -91,6 +103,7 @@ export default function About() {
           <div className="relative h-[350px] sm:h-[420px] md:h-[500px] lg:h-[600px] group overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200"
+                loading="lazy"
               alt="Tecnologia e inovação"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />

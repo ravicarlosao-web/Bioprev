@@ -3,6 +3,7 @@ import { ChevronRight, Plus, CheckCircle2, Target, Search, Globe, Crosshair, Use
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Link } from "wouter";
 import Footer from "@/components/layout/Footer";
+import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 
 export default function AllNationalAccounts() {
   const steps = [
@@ -15,6 +16,16 @@ export default function AllNationalAccounts() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col font-sans">
+      <SEOHead
+        title="Contas Nacionais"
+        description="Programa de Contas Nacionais Bioprev — gestão centralizada de controle de pragas para empresas com múltiplas localizações em Angola. Um contrato, cobertura total."
+        canonical="/national-accounts"
+        keywords="contas nacionais controle pragas Angola, gestão centralizada pragas, programa multi-localização, Bioprev contas nacionais"
+        structuredData={breadcrumbSchema([
+          { name: "Início", url: "/" },
+          { name: "Contas Nacionais", url: "/national-accounts" },
+        ])}
+      />
       <Header />
 
       <main className="flex-grow">
@@ -77,6 +88,7 @@ export default function AllNationalAccounts() {
             <img
               src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1000"
               alt="Visão geral das contas nacionais"
+                loading="lazy"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-black/20" />
@@ -99,6 +111,7 @@ export default function AllNationalAccounts() {
           <div className="relative h-[350px] sm:h-[420px] md:h-[500px] lg:h-[600px] group overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1000"
+                loading="lazy"
               alt="Soluções nacionais"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />

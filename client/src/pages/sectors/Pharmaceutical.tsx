@@ -3,6 +3,10 @@ import { Search, Target, CheckCircle2 } from "lucide-react";
 import SectorPageTemplate, { type SectorPageData } from "./SectorPageTemplate";
 
 const data: SectorPageData = {
+  seoTitle: "Controle de Pragas para Indústria Farmacêutica",
+  seoDescription: "Soluções de controle de pragas para laboratórios e fábricas farmacêuticas em Angola. Conformidade GMP e proteção da saúde pública com a Bioprev.",
+  seoKeywords: "controle pragas farmacêutica Angola, GMP Angola, pragas laboratórios, higiene farmacêutica, Bioprev farmacêutica",
+  seoCanonical: "/sectors/pharmaceutical",
   heroImage: "https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&q=80&w=2000",
   heroImageAlt: "Indústria farmacêutica",
   breadcrumbLabel: "Farmacêutica",

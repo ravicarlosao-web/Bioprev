@@ -3,6 +3,10 @@ import { Search, Target, CheckCircle2 } from "lucide-react";
 import SectorPageTemplate, { type SectorPageData } from "./SectorPageTemplate";
 
 const data: SectorPageData = {
+  seoTitle: "Controle de Pragas para Retalho Alimentar",
+  seoDescription: "Controle de pragas para supermercados e lojas de alimentos em Angola. A Bioprev mantém os seus espaços em conformidade sanitária e livres de pragas.",
+  seoKeywords: "controle pragas supermercados Angola, pragas retalho alimentar, higiene lojas alimentos, Bioprev retalho",
+  seoCanonical: "/sectors/food-retail",
   heroImage: "https://images.unsplash.com/photo-1604719312566-8912e9227c6a?auto=format&fit=crop&q=80&w=2000",
   heroImageAlt: "Retalho alimentar",
   breadcrumbLabel: "Retalho alimentar",

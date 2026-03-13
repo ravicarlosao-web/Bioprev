@@ -3,6 +3,7 @@ import { ChevronRight, Plus, CheckCircle2, Target, Search, Factory, ShoppingCart
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Link } from "wouter";
 import Footer from "@/components/layout/Footer";
+import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 
 export default function AllServices() {
   const sectors = [
@@ -23,6 +24,16 @@ export default function AllServices() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col font-sans">
+      <SEOHead
+        title="Serviços"
+        description="Serviços completos de controle de pragas, desinfestação, limpeza profissional, recolha de resíduos, tratamento de água e jardinagem em Angola. Soluções Bioprev."
+        canonical="/services"
+        keywords="serviços controle pragas Angola, desinfestação, limpeza profissional, recolha resíduos, tratamento água, jardinagem, Bioprev serviços"
+        structuredData={breadcrumbSchema([
+          { name: "Início", url: "/" },
+          { name: "Serviços", url: "/services" },
+        ])}
+      />
       <Header />
       
       <main className="flex-grow">
@@ -86,6 +97,7 @@ export default function AllServices() {
             <img 
               src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1000" 
               alt="Controle de pragas" 
+                loading="lazy"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-black/20" />
@@ -107,6 +119,7 @@ export default function AllServices() {
           <div className="relative h-[350px] sm:h-[420px] md:h-[500px] lg:h-[600px] group overflow-hidden">
             <img 
               src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000" 
+                loading="lazy"
               alt="Controle de pragas digital" 
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />

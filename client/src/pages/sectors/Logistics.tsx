@@ -3,6 +3,10 @@ import { Search, Target, CheckCircle2 } from "lucide-react";
 import SectorPageTemplate, { type SectorPageData } from "./SectorPageTemplate";
 
 const data: SectorPageData = {
+  seoTitle: "Controle de Pragas para Logística e Armazenamento",
+  seoDescription: "Proteção de armazéns e centros de distribuição contra pragas em Angola. A Bioprev salvaguarda a integridade dos seus produtos e da cadeia de abastecimento.",
+  seoKeywords: "controle pragas armazéns Angola, pragas logística, proteção mercadorias armazenadas, Bioprev logística",
+  seoCanonical: "/sectors/logistics",
   heroImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=2000",
   heroImageAlt: "Logística e armazenamento",
   breadcrumbLabel: "Logística e armazenamento",

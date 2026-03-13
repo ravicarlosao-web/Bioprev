@@ -44,7 +44,7 @@ export default function Footer() {
 
           {/* Column 4 - Logo and Socials */}
           <div className="flex flex-col items-start md:items-end space-y-6">
-            <img src={logoImg} alt="Bioprev Logo" className="h-16 object-contain" />
+            <img src={logoImg} alt="Bioprev Logo" className="h-16 object-contain" loading="lazy" />
             
             <div className="flex space-x-4">
               <a href="https://www.linkedin.com/company/bioprev-pres/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-[#666666] hover:border-[#007cc3] hover:text-[#007cc3] transition-colors" aria-label="LinkedIn">

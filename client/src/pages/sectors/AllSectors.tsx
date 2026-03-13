@@ -3,6 +3,7 @@ import { ChevronRight, Plus, CheckCircle2, Target, Search, Factory, Building2, W
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Link } from "wouter";
 import Footer from "@/components/layout/Footer";
+import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 
 export default function AllSectors() {
   const sectors = [
@@ -26,6 +27,16 @@ export default function AllSectors() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col font-sans">
+      <SEOHead
+        title="Setores"
+        description="Soluções de controle de pragas para todos os setores em Angola: indústria alimentar, hotelaria, logística, farmacêutica, escritórios, restauração e gestão de instalações."
+        canonical="/sectors"
+        keywords="setores controle pragas Angola, pragas indústria alimentar, pragas hotelaria, pragas farmacêutica, pragas restauração, Bioprev setores"
+        structuredData={breadcrumbSchema([
+          { name: "Início", url: "/" },
+          { name: "Setores", url: "/sectors" },
+        ])}
+      />
       <Header />
       
       <main className="flex-grow">
@@ -89,6 +100,7 @@ export default function AllSectors() {
             <img 
               src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=1000" 
               alt="Indústria alimentar" 
+                loading="lazy"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-black/20" />
@@ -111,6 +123,7 @@ export default function AllSectors() {
           <div className="relative h-[350px] sm:h-[420px] md:h-[500px] lg:h-[600px] group overflow-hidden">
             <img 
               src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000" 
+                loading="lazy"
               alt="Setores comerciais e industriais" 
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />

@@ -3,6 +3,7 @@ import { ChevronRight, Globe, ShieldCheck, Bug } from "lucide-react";
 import blogFruitFlies from "@/assets/images/blog-fruit-flies.jpg";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 
 export default function BlogPost() {
   const { id } = useParams();
@@ -18,6 +19,18 @@ export default function BlogPost() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col font-sans">
+      <SEOHead
+        title={title}
+        description={`${title} — Leia no blog Bioprev Angola sobre controle de pragas, segurança alimentar e boas práticas de higiene.`}
+        canonical={`/blog/${id}`}
+        keywords="controle pragas Angola, artigo pragas, blog Bioprev, segurança alimentar"
+        type="article"
+        structuredData={breadcrumbSchema([
+          { name: "Início", url: "/" },
+          { name: "Blog", url: "/blog" },
+          { name: breadcrumbCategory, url: `/blog/${id}` },
+        ])}
+      />
       <Header />
       
       <main className="flex-grow">

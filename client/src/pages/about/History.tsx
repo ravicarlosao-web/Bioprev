@@ -2,6 +2,7 @@ import { ChevronRight, Clock, Award, Users } from "lucide-react";
 import Header from "@/components/layout/Header";
 import { Link } from "wouter";
 import Footer from "@/components/layout/Footer";
+import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 
 export default function History() {
   const timeline = [
@@ -13,6 +14,17 @@ export default function History() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col font-sans">
+      <SEOHead
+        title="Nossa História"
+        description="Conheça a história da Bioprev Angola — desde a fundação em 2010 até à liderança nacional em controle de pragas. Mais de uma década de excelência e inovação."
+        canonical="/about/history"
+        keywords="história Bioprev Angola, fundação Bioprev, evolução controle pragas Angola, Bioprev desde 2010"
+        structuredData={breadcrumbSchema([
+          { name: "Início", url: "/" },
+          { name: "Sobre", url: "/about" },
+          { name: "Nossa História", url: "/about/history" },
+        ])}
+      />
       <Header />
       
       <main className="flex-grow">

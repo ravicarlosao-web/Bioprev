@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { MapPin, Phone, Mail, Clock, ChevronRight } from "lucide-react";
+import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 
 interface LocationData {
   id: string;
@@ -51,6 +52,16 @@ export default function Locations() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEOHead
+        title="Localizações"
+        description="Encontre a Bioprev Angola perto de si. Escritórios em Luanda (Rua Urbanova, Benfica), Benguela e Huambo. Contacte-nos para controle de pragas na sua região."
+        canonical="/locations"
+        keywords="Bioprev Luanda, Bioprev Benguela, Bioprev Huambo, localizações controle pragas Angola, escritórios Bioprev"
+        structuredData={breadcrumbSchema([
+          { name: "Início", url: "/" },
+          { name: "Localizações", url: "/locations" },
+        ])}
+      />
       <Header />
 
       <div className="bg-[#001d3d] text-white py-16 md:py-20">

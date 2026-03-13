@@ -3,6 +3,10 @@ import { Search, Target, CheckCircle2 } from "lucide-react";
 import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
 
 const data: ServicePageData = {
+  seoTitle: "Desinfestação Profissional em Angola",
+  seoDescription: "Serviços de desinfestação, fumigação, pulverização, desratização e desbaratização em Angola. A Bioprev elimina pragas com segurança em Luanda, Benguela e Huambo.",
+  seoKeywords: "desinfestação Angola, fumigação Luanda, pulverização, desratização Angola, desbaratização, controle de pragas Angola, Bioprev desinfestação",
+  seoCanonical: "/services/disinfestation",
   heroImage: "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&q=80&w=2000",
   heroImageAlt: "Serviço de desinfestação",
   breadcrumbLabel: "Desinfestação",

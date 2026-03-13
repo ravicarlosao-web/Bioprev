@@ -3,6 +3,10 @@ import { Search, Target, CheckCircle2 } from "lucide-react";
 import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
 
 const data: ServicePageData = {
+  seoTitle: "Limpeza Profissional em Angola",
+  seoDescription: "Serviços de limpeza industrial, doméstica, urbana e de tanques de combustível em Angola. A Bioprev mantém os seus espaços limpos e saudáveis em Luanda, Benguela e Huambo.",
+  seoKeywords: "limpeza profissional Angola, limpeza industrial Luanda, limpeza doméstica Angola, varredura urbana, limpeza tanques combustível, Bioprev limpeza",
+  seoCanonical: "/services/cleaning",
   heroImage: "https://images.unsplash.com/photo-1581578731522-745505146317?auto=format&fit=crop&q=80&w=2000",
   heroImageAlt: "Serviços de limpeza",
   breadcrumbLabel: "Serviços de limpeza",

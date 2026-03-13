@@ -3,6 +3,10 @@ import { Search, Target, CheckCircle2 } from "lucide-react";
 import ServicePageTemplate, { type ServicePageData } from "../services/ServicePageTemplate";
 
 const data: ServicePageData = {
+  seoTitle: "Contas Nacionais — Visão Geral",
+  seoDescription: "Programa centralizado de gestão de pragas para empresas com múltiplas localizações em Angola. Simplifique custos e garanta proteção consistente com a Bioprev.",
+  seoKeywords: "contas nacionais controle pragas Angola, gestão centralizada pragas, programa multi-localizações, Bioprev contas nacionais",
+  seoCanonical: "/national-accounts/overview",
   heroImage: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=2000",
   heroImageAlt: "Visão geral das contas nacionais",
   breadcrumbLabel: "Visão geral",

@@ -3,6 +3,10 @@ import { Search, Target, CheckCircle2 } from "lucide-react";
 import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
 
 const data: ServicePageData = {
+  seoTitle: "Fornecimento de Água Potável em Angola",
+  seoDescription: "Fornecimento de água potável certificada para eventos, indústria e construção em Angola. A Bioprev garante água pura e segura com cisternas certificadas.",
+  seoKeywords: "água potável Angola, fornecimento água Luanda, cisternas água certificada, abastecimento água Angola, Bioprev água",
+  seoCanonical: "/services/water",
   heroImage: "https://images.unsplash.com/photo-1548936226-be5006d2e279?auto=format&fit=crop&q=80&w=2000",
   heroImageAlt: "Fornecimento de água potável",
   breadcrumbLabel: "Água potável",

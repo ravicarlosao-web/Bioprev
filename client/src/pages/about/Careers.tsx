@@ -2,10 +2,22 @@ import { ChevronRight, Briefcase, GraduationCap, HeartHandshake } from "lucide-r
 import Header from "@/components/layout/Header";
 import { Link } from "wouter";
 import Footer from "@/components/layout/Footer";
+import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 
 export default function Careers() {
   return (
     <div className="min-h-screen bg-white flex flex-col font-sans">
+      <SEOHead
+        title="Carreiras"
+        description="Junte-se à equipa Bioprev Angola. Oportunidades de carreira em controle de pragas, limpeza e serviços ambientais. Trabalhe com os líderes do setor em Angola."
+        canonical="/about/careers"
+        keywords="carreiras Bioprev Angola, empregos controle pragas, vagas Bioprev, trabalhar Bioprev Angola"
+        structuredData={breadcrumbSchema([
+          { name: "Início", url: "/" },
+          { name: "Sobre", url: "/about" },
+          { name: "Carreiras", url: "/about/careers" },
+        ])}
+      />
       <Header />
       
       <main className="flex-grow">

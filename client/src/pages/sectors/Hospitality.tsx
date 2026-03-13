@@ -3,6 +3,10 @@ import { Search, Target, CheckCircle2 } from "lucide-react";
 import SectorPageTemplate, { type SectorPageData } from "./SectorPageTemplate";
 
 const data: SectorPageData = {
+  seoTitle: "Controle de Pragas para Hotelaria",
+  seoDescription: "Soluções de controle de pragas para hotéis e resorts em Angola. A Bioprev garante os mais altos padrões de higiene e conforto para os seus hóspedes.",
+  seoKeywords: "controle pragas hotéis Angola, pragas hotelaria, higiene hotéis Luanda, Bioprev hotelaria",
+  seoCanonical: "/sectors/hospitality",
   heroImage: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=2000",
   heroImageAlt: "Hotelaria",
   breadcrumbLabel: "Hotelaria",

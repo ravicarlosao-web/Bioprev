@@ -3,6 +3,10 @@ import { Search, Target, CheckCircle2 } from "lucide-react";
 import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
 
 const data: ServicePageData = {
+  seoTitle: "Controlo de Gorgulhos e Traças em Angola",
+  seoDescription: "Eliminação profissional de gorgulhos, traças e carunchos em produtos armazenados. A Bioprev protege os seus alimentos e mercadorias em Angola.",
+  seoKeywords: "gorgulhos Angola, traças carunchos, insetos produtos armazenados, controlo pragas alimentos, Bioprev pragas",
+  seoCanonical: "/services/pests",
   heroImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=2000",
   heroImageAlt: "Gorgulhos e traças (carunchos)",
   breadcrumbLabel: "Gorgulhos e traças",

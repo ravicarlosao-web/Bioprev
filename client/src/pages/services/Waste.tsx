@@ -3,6 +3,10 @@ import { Search, Target, CheckCircle2 } from "lucide-react";
 import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
 
 const data: ServicePageData = {
+  seoTitle: "Recolha de Resíduos em Angola",
+  seoDescription: "Recolha de resíduos urbanos, domésticos, hospitalares, industriais e pós-construção em Angola. A Bioprev garante gestão ambiental responsável em Luanda, Benguela e Huambo.",
+  seoKeywords: "recolha resíduos Angola, gestão lixo Luanda, resíduos hospitalares, resíduos industriais Angola, recolha lixo, Bioprev resíduos",
+  seoCanonical: "/services/waste",
   heroImage: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&q=80&w=2000",
   heroImageAlt: "Recolha de resíduos",
   breadcrumbLabel: "Recolha de resíduos",
