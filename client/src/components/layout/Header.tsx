@@ -1,4 +1,4 @@
-import { Search, MapPin, Phone, User, Menu, Truck, Target, Cloud, Globe, Info, BookOpen, Bug, Wind, Droplets, Trash2, Trees, ShieldCheck, Building2, Factory, Warehouse, Hotel, ShoppingCart, Pill, Briefcase, LayoutGrid, ChevronRight } from "lucide-react";
+import { Search, MapPin, Phone, User, Menu, Truck, Target, Cloud, Globe, Info, BookOpen, Bug, Wind, Droplets, Trash2, Trees, ShieldCheck, Building2, Factory, Warehouse, Hotel, ShoppingCart, Pill, Briefcase, LayoutGrid, ChevronRight, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "wouter";
@@ -40,6 +40,7 @@ export default function Header() {
         { icon: Trash2, text: 'Recolha de\nResíduos', href: '/services/waste' },
         { icon: Droplets, text: 'Fornecimento de\nAgua potavel', href: '/services/water' },
         { icon: Trees, text: 'Serviço de\nJardinagem', href: '/services/gardening' },
+        { icon: BarChart3, text: 'Relatórios\nEstatísticos', href: '/services/reports' },
       ]
     },
     {

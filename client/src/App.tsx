@@ -18,6 +18,7 @@ const Cleaning = lazy(() => import("@/pages/services/Cleaning"));
 const Waste = lazy(() => import("@/pages/services/Waste"));
 const Water = lazy(() => import("@/pages/services/Water"));
 const Gardening = lazy(() => import("@/pages/services/Gardening"));
+const Reports = lazy(() => import("@/pages/services/Reports"));
 const BlogList = lazy(() => import("@/pages/blog/BlogList"));
 const BlogPost = lazy(() => import("@/pages/blog/BlogPost"));
 const About = lazy(() => import("@/pages/about/About"));
@@ -59,6 +60,7 @@ function Router() {
         <Route path="/services/waste" component={Waste} />
         <Route path="/services/water" component={Water} />
         <Route path="/services/gardening" component={Gardening} />
+        <Route path="/services/reports" component={Reports} />
         <Route path="/sectors" component={AllSectors} />
         <Route path="/sectors/food-processing" component={FoodProcessing} />
         <Route path="/sectors/facilities" component={Facilities} />
