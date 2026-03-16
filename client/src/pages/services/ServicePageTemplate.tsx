@@ -300,9 +300,9 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
                 </p>
               </div>
 
-              <div ref={sectorsGridReveal.ref} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+              <div ref={sectorsGridReveal.ref} className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8">
                 {data.sectors.map((sector, idx) => (
-                  <div key={idx} className={`bg-white border-t-4 border-[#f2c92f] shadow-sm p-5 sm:p-6 md:p-8 flex flex-col hover-lift sr-hidden stagger-${idx + 1} ${sectorsGridReveal.isVisible ? 'sr-visible' : ''}`}>
+                  <div key={idx} className={`bg-white border-t-4 border-[#f2c92f] shadow-sm p-5 sm:p-6 md:p-8 flex flex-col hover-lift sr-hidden stagger-${idx + 1} w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-22px)] ${sectorsGridReveal.isVisible ? 'sr-visible' : ''}`}>
                     <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
                       <sector.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-[#007cc3] shrink-0" strokeWidth={1.5} />
                       <h3 className="text-base sm:text-lg md:text-xl font-medium text-[#333333]">{sector.name}</h3>
