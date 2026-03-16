@@ -13,7 +13,6 @@ const NationalOverview = lazy(() => import("@/pages/national-accounts/Overview")
 const NationalSolutions = lazy(() => import("@/pages/national-accounts/Solutions"));
 const AllServices = lazy(() => import("@/pages/services/AllServices"));
 const Disinfestation = lazy(() => import("@/pages/services/Disinfestation"));
-const Pests = lazy(() => import("@/pages/services/Pests"));
 const Cleaning = lazy(() => import("@/pages/services/Cleaning"));
 const Waste = lazy(() => import("@/pages/services/Waste"));
 const Water = lazy(() => import("@/pages/services/Water"));
@@ -55,7 +54,6 @@ function Router() {
         <Route path="/national-accounts/solutions" component={NationalSolutions} />
         <Route path="/services" component={AllServices} />
         <Route path="/services/disinfestation" component={Disinfestation} />
-        <Route path="/services/pests" component={Pests} />
         <Route path="/services/cleaning" component={Cleaning} />
         <Route path="/services/waste" component={Waste} />
         <Route path="/services/water" component={Water} />

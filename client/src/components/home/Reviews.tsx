@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const reviews = [
   {
@@ -103,6 +104,8 @@ function useItemsPerView() {
 }
 
 export default function Reviews() {
+  const headerReveal = useScrollReveal(0.2);
+  const carouselReveal = useScrollReveal(0.1);
   const itemsPerView = useItemsPerView();
   const [currentIndex, setCurrentIndex] = useState(0);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -165,7 +168,10 @@ export default function Reviews() {
   return (
     <section className="w-full bg-[#f2f4f6] py-16">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-10">
+        <div
+          ref={headerReveal.ref}
+          className={`text-center mb-10 sr-hidden ${headerReveal.isVisible ? 'sr-visible' : ''}`}
+        >
           <h2 className="text-[22px] font-bold text-[#333333]">
             Avaliação de <span className="text-[#f2c92f]">4.9</span>{" "}
             <span className="font-normal text-gray-500">
@@ -174,7 +180,7 @@ export default function Reviews() {
           </h2>
         </div>
 
-        <div className="relative max-w-6xl mx-auto">
+        <div ref={carouselReveal.ref} className={`relative max-w-6xl mx-auto sr-scale ${carouselReveal.isVisible ? 'sr-visible' : ''}`}>
           <div
             className="overflow-hidden"
             onTouchStart={handleTouchStart}
