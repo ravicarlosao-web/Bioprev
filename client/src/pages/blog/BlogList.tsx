@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { ArrowRight, ChevronRight, Home } from "lucide-react";
+import { ArrowRight, ChevronRight, Home, Mail, CheckCircle2, Loader2 } from "lucide-react";
 import blogNews from "@/assets/images/blog-news.jpg";
 import blogFoodSafety from "@/assets/images/blog-food-safety.jpg";
 import blogIndustry from "@/assets/images/blog-industry.jpg";
@@ -7,8 +7,32 @@ import blogInnovation from "@/assets/images/blog-innovation.jpg";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
+import { useState } from "react";
+import { useMutation } from "@tanstack/react-query";
+import { apiRequest } from "@/lib/queryClient";
 
 export default function BlogList() {
+  const [email, setEmail] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
+
+  const newsletterMutation = useMutation({
+    mutationFn: async (emailValue: string) => {
+      const res = await apiRequest("POST", "/api/newsletter", { email: emailValue });
+      return res.json();
+    },
+    onSuccess: (data) => {
+      setSuccessMessage(data.message);
+      setEmail("");
+    },
+  });
+
+  const handleNewsletterSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email.trim()) return;
+    setSuccessMessage("");
+    newsletterMutation.mutate(email.trim());
+  };
+
   const blogPosts = [
     {
       id: "noticias-e-lideranca",
@@ -100,6 +124,66 @@ export default function BlogList() {
             ))}
           </div>
         </div>
+
+        <section className="py-14 sm:py-18 md:py-24 bg-[#001d3d]">
+          <div className="container mx-auto px-4 sm:px-6 max-w-3xl text-center">
+            <div className="flex justify-center mb-6">
+              <div className="w-14 h-14 rounded-full bg-[#f2c92f]/20 flex items-center justify-center">
+                <Mail className="w-7 h-7 text-[#f2c92f]" />
+              </div>
+            </div>
+            <h2 className="text-2xl sm:text-3xl md:text-[36px] font-medium text-white mb-4 leading-tight">
+              Subscreva a nossa newsletter
+            </h2>
+            <p className="text-white/70 text-sm sm:text-base mb-8 sm:mb-10 leading-relaxed max-w-xl mx-auto">
+              Receba os nossos artigos, dicas e novidades sobre controle de pragas, higiene e segurança alimentar diretamente no seu email.
+            </p>
+
+            {successMessage ? (
+              <div className="flex items-center justify-center gap-3 bg-green-500/20 border border-green-500/30 rounded-sm px-6 py-4 max-w-md mx-auto" data-testid="text-newsletter-success">
+                <CheckCircle2 className="w-5 h-5 text-green-400 shrink-0" />
+                <p className="text-green-300 text-sm sm:text-base">{successMessage}</p>
+              </div>
+            ) : (
+              <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Insira o seu email"
+                  required
+                  className="flex-1 px-4 py-3 bg-white/10 border border-white/20 text-white placeholder:text-white/40 text-sm sm:text-base focus:outline-none focus:border-[#f2c92f] transition-colors"
+                  data-testid="input-newsletter-email"
+                />
+                <button
+                  type="submit"
+                  disabled={newsletterMutation.isPending}
+                  className="px-6 sm:px-8 py-3 bg-[#f2c92f] text-[#001d3d] font-bold text-sm sm:text-base hover:bg-[#f2c92f]/90 transition-colors disabled:opacity-60 flex items-center justify-center gap-2 shrink-0"
+                  data-testid="button-newsletter-submit"
+                >
+                  {newsletterMutation.isPending ? (
+                    <>
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                      A subscrever...
+                    </>
+                  ) : (
+                    "Subscrever"
+                  )}
+                </button>
+              </form>
+            )}
+
+            {newsletterMutation.isError && (
+              <p className="text-red-400 text-sm mt-4" data-testid="text-newsletter-error">
+                {(newsletterMutation.error as any)?.message || "Erro ao processar. Tente novamente."}
+              </p>
+            )}
+
+            <p className="text-white/40 text-xs mt-6">
+              Ao subscrever, concorda em receber comunicações da Bioprev. Pode cancelar a qualquer momento.
+            </p>
+          </div>
+        </section>
       </main>
 
       <Footer />
