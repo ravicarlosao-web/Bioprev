@@ -60,6 +60,7 @@ function Router() {
         <Route path="/services/waste" component={Waste} />
         <Route path="/services/water" component={Water} />
         <Route path="/services/gardening" component={Gardening} />
+        <Route path="/reports" component={Reports} />
         <Route path="/services/reports" component={Reports} />
         <Route path="/sectors" component={AllSectors} />
         <Route path="/sectors/food-processing" component={FoodProcessing} />
