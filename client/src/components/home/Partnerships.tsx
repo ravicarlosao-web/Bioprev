@@ -1,7 +1,13 @@
 import { Link } from "wouter";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 import LogoCarousel from "./LogoCarousel";
 
 export default function Partnerships() {
+  const headerReveal = useScrollReveal(0.2);
+  const carouselReveal = useScrollReveal(0.1);
+  const textReveal = useScrollReveal(0.15);
+  const cardsReveal = useScrollReveal(0.15);
+
   const logos = [
     { name: "Angola Lissar", src: "https://www.angoalissar.com/wp-content/uploads/2016/08/menu_Logo.png" },
     { name: "Feito em Angola", src: "https://feitoemangola.gov.ao/wp-content/uploads/2023/07/basel.png" },
@@ -15,7 +21,10 @@ export default function Partnerships() {
 
   return (
     <section className="py-20 bg-white">
-      <div className="container mx-auto px-4 max-w-6xl text-center mb-16">
+      <div
+        ref={headerReveal.ref}
+        className={`container mx-auto px-4 max-w-6xl text-center mb-16 sr-hidden ${headerReveal.isVisible ? 'sr-visible' : ''}`}
+      >
         <h2 className="text-3xl md:text-[32px] font-medium text-[#333333] mb-8 leading-tight">
           Os nossos parceiros e clientes
         </h2>
@@ -24,37 +33,45 @@ export default function Partnerships() {
         </p>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-8 md:px-20 max-w-7xl mb-16 sm:mb-24">
+      <div
+        ref={carouselReveal.ref}
+        className={`container mx-auto px-4 sm:px-8 md:px-20 max-w-7xl mb-16 sm:mb-24 sr-scale ${carouselReveal.isVisible ? 'sr-visible' : ''}`}
+      >
         <LogoCarousel logos={logos} />
       </div>
 
       <div className="container mx-auto px-4 max-w-4xl text-left">
-        <p className="text-[#333333] mb-12 text-[16px]">
-          Com presença em <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">Luanda, Benguela e Huambo</span>, a Bioprev protege residências e empresas contra pragas em todo o território angolano. O nosso compromisso é construído em:
-        </p>
+        <div
+          ref={textReveal.ref}
+          className={`sr-hidden ${textReveal.isVisible ? 'sr-visible' : ''}`}
+        >
+          <p className="text-[#333333] mb-12 text-[16px]">
+            Com presença em <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">Luanda, Benguela e Huambo</span>, a Bioprev protege residências e empresas contra pragas em todo o território angolano. O nosso compromisso é construído em:
+          </p>
 
-        <div className="space-y-12">
-          <div>
-            <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">
-              Dando a você paz de espírito
-            </h3>
-            <p className="text-[#333333] leading-relaxed text-[16px]">
-              Com uma equipa de técnicos qualificados e certificados em todo o país, adaptamos soluções de controle de pragas a vários setores, agindo como a sua linha de frente de defesa contra possíveis ameaças de pragas nas suas instalações.
-            </p>
-          </div>
+          <div className="space-y-12">
+            <div>
+              <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">
+                Dando a você paz de espírito
+              </h3>
+              <p className="text-[#333333] leading-relaxed text-[16px]">
+                Com uma equipa de técnicos qualificados e certificados em todo o país, adaptamos soluções de controle de pragas a vários setores, agindo como a sua linha de frente de defesa contra possíveis ameaças de pragas nas suas instalações.
+              </p>
+            </div>
 
-          <div>
-            <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">
-              Salvaguardando a sua reputação
-            </h3>
-            <p className="text-[#333333] leading-relaxed text-[16px]">
-              Adotamos uma estratégia com visão de futuro, combinando medidas preventivas com respostas rápidas. Garantimos que a sua casa ou empresa permaneça livre de pragas graças a tecnologias de ponta e a uma abordagem abrangente de controle de pragas.
-            </p>
+            <div>
+              <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">
+                Salvaguardando a sua reputação
+              </h3>
+              <p className="text-[#333333] leading-relaxed text-[16px]">
+                Adotamos uma estratégia com visão de futuro, combinando medidas preventivas com respostas rápidas. Garantimos que a sua casa ou empresa permaneça livre de pragas graças a tecnologias de ponta e a uma abordagem abrangente de controle de pragas.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div className="mt-12 sm:mt-24 grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-          <div className="bg-white border-t-4 border-[#f2c92f] shadow-lg p-8 flex flex-col h-full">
+        <div ref={cardsReveal.ref} className="mt-12 sm:mt-24 grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+          <div className={`bg-white border-t-4 border-[#f2c92f] shadow-lg p-8 flex flex-col h-full hover-lift sr-left stagger-1 ${cardsReveal.isVisible ? 'sr-visible' : ''}`}>
             <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">
               Controle de pragas responsável
             </h3>
@@ -70,7 +87,7 @@ export default function Partnerships() {
             </Link>
           </div>
 
-          <div className="bg-white border-t-4 border-[#f2c92f] shadow-lg p-8 flex flex-col h-full">
+          <div className={`bg-white border-t-4 border-[#f2c92f] shadow-lg p-8 flex flex-col h-full hover-lift sr-right stagger-2 ${cardsReveal.isVisible ? 'sr-visible' : ''}`}>
             <h3 className="text-2xl md:text-[28px] font-medium text-[#333333] mb-6">
               Especialistas locais em controle de pragas
             </h3>

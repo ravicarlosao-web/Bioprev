@@ -4,8 +4,26 @@ import { Link } from "wouter";
 import Footer from "@/components/layout/Footer";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { useEffect, useState } from "react";
 
 export default function About() {
+  const [heroLoaded, setHeroLoaded] = useState(false);
+  const introReveal = useScrollReveal(0.15);
+  const cardsReveal = useScrollReveal(0.15);
+  const mvvHeader = useScrollReveal(0.2);
+  const mvvCards = useScrollReveal(0.1);
+  const whyHeader = useScrollReveal(0.2);
+  const whyContent = useScrollReveal(0.1);
+  const servicesHeader = useScrollReveal(0.15);
+  const servicesCards = useScrollReveal(0.1);
+  const ctaReveal = useScrollReveal(0.2);
+
+  useEffect(() => {
+    const t = setTimeout(() => setHeroLoaded(true), 100);
+    return () => clearTimeout(t);
+  }, []);
+
   return (
     <div className="min-h-screen bg-white flex flex-col font-sans">
       <SEOHead
@@ -26,14 +44,14 @@ export default function About() {
             <img 
               src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=75&w=1280" 
               alt="Quem somos - BIOPREV" 
-              className="w-full h-full object-cover"
+              className={`w-full h-full object-cover transition-transform duration-[1.5s] ease-out ${heroLoaded ? 'scale-100' : 'scale-110'}`}
             />
             <div className="absolute inset-0 bg-black/50" />
           </div>
           
           <div className="container mx-auto px-4 sm:px-6 z-10">
             <div className="max-w-3xl">
-              <nav className="flex flex-wrap items-center gap-1 text-white/90 text-xs sm:text-sm mb-4 sm:mb-6 md:mb-8 font-medium" data-testid="breadcrumb-about">
+              <nav className={`flex flex-wrap items-center gap-1 text-white/90 text-xs sm:text-sm mb-4 sm:mb-6 md:mb-8 font-medium transition-all duration-700 ${heroLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`} data-testid="breadcrumb-about">
                 <Link href="/" className="hover:underline">Início</Link>
                 <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4" />
                 <span>Sobre</span>
@@ -41,16 +59,16 @@ export default function About() {
                 <span>Quem somos</span>
               </nav>
               
-              <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-3 sm:mb-5 md:mb-6 leading-tight" data-testid="heading-about">
+              <h1 className={`text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-3 sm:mb-5 md:mb-6 leading-tight transition-all duration-1000 delay-150 ${heroLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`} data-testid="heading-about">
                 Quem somos
               </h1>
               
-              <p className="text-white/90 text-sm sm:text-base md:text-lg lg:text-xl max-w-2xl mb-5 sm:mb-8 md:mb-10 leading-relaxed font-light">
+              <p className={`text-white/90 text-sm sm:text-base md:text-lg lg:text-xl max-w-2xl mb-5 sm:mb-8 md:mb-10 leading-relaxed font-light transition-all duration-1000 delay-300 ${heroLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
                 Conheça a BIOPREV — empresa de direito angolano com mais de nove anos de experiência, sedes em Luanda, Benguela e Huambo, e um compromisso inabalável com a excelência.
               </p>
 
               <Link href="/contact"
-                className="inline-block border-2 border-white text-white hover:bg-white hover:text-[#333333] px-6 sm:px-8 md:px-10 py-2.5 sm:py-3 text-sm sm:text-base md:text-lg font-medium transition-all duration-300"
+                className={`inline-block border-2 border-white text-white hover:bg-white hover:text-[#333333] px-6 sm:px-8 md:px-10 py-2.5 sm:py-3 text-sm sm:text-base md:text-lg font-medium transition-all duration-1000 delay-500 ${heroLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
                 data-testid="link-contact-hero"
               >
                 Entre em contato
@@ -60,7 +78,10 @@ export default function About() {
         </section>
 
         <section className="py-12 sm:py-16 md:py-20 bg-white">
-          <div className="container mx-auto px-4 sm:px-6 max-w-4xl text-center">
+          <div
+            ref={introReveal.ref}
+            className={`container mx-auto px-4 sm:px-6 max-w-4xl text-center sr-hidden ${introReveal.isVisible ? 'sr-visible' : ''}`}
+          >
             <p className="text-[#333333] text-base sm:text-lg mb-5 sm:mb-8 leading-relaxed font-medium">
               A BIOPREV é uma empresa de prestação de serviços nas áreas de Limpeza Empresarial, Jardinagem, Recolha de Lixo (urbano) e Desinfestação Geral. Empresa de direito Angolano, existente há mais de nove anos no mercado, com sedes localizadas em Luanda, Benguela e Huambo.
             </p>
@@ -77,17 +98,17 @@ export default function About() {
           </div>
         </section>
 
-        <section className="grid grid-cols-1 md:grid-cols-2">
+        <section ref={cardsReveal.ref} className="grid grid-cols-1 md:grid-cols-2">
           <div className="relative h-[350px] sm:h-[420px] md:h-[500px] lg:h-[600px] group overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=75&w=1280"
               alt="Equipa BIOPREV"
-                loading="lazy"
+              loading="lazy"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-black/20" />
             <div className="absolute inset-0 flex items-center justify-center px-4 sm:px-6">
-              <div className="bg-white border-t-4 border-[#f2c92f] shadow-xl p-5 sm:p-7 md:p-8 lg:p-10 w-full max-w-sm sm:max-w-md">
+              <div className={`bg-white border-t-4 border-[#f2c92f] shadow-xl p-5 sm:p-7 md:p-8 lg:p-10 w-full max-w-sm sm:max-w-md hover-lift sr-left stagger-1 ${cardsReveal.isVisible ? 'sr-visible' : ''}`}>
                 <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-medium text-[#333333] mb-3 sm:mb-5">Profissionais dedicados</h3>
                 <p className="text-[#666666] text-sm sm:text-base leading-relaxed mb-5 sm:mb-8">
                   Cada membro da nossa equipa desempenha um papel essencial, utilizando as melhores práticas e tecnologias para garantir soluções eficazes e personalizadas. Contamos com colaboradores altamente capacitados em todas as áreas que atuamos.
@@ -103,13 +124,13 @@ export default function About() {
           <div className="relative h-[350px] sm:h-[420px] md:h-[500px] lg:h-[600px] group overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=75&w=1280"
-                loading="lazy"
+              loading="lazy"
               alt="Tecnologia e inovação"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-black/30" />
             <div className="absolute inset-0 flex items-center justify-center px-4 sm:px-6">
-              <div className="bg-white border-t-4 border-[#f2c92f] shadow-xl p-5 sm:p-7 md:p-8 lg:p-10 w-full max-w-sm sm:max-w-md">
+              <div className={`bg-white border-t-4 border-[#f2c92f] shadow-xl p-5 sm:p-7 md:p-8 lg:p-10 w-full max-w-sm sm:max-w-md hover-lift sr-right stagger-2 ${cardsReveal.isVisible ? 'sr-visible' : ''}`}>
                 <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-medium text-[#333333] mb-3 sm:mb-5">Cobertura nacional</h3>
                 <p className="text-[#666666] text-sm sm:text-base leading-relaxed mb-5 sm:mb-8">
                   Com sedes operacionais em Luanda, Benguela e Huambo, a BIOPREV garante uma cobertura que abrange as principais regiões de Angola, levando serviços de excelência a empresas e condomínios em todo o país.
@@ -126,7 +147,10 @@ export default function About() {
 
         <section className="py-14 sm:py-18 md:py-24 bg-[#f8f9fa]">
           <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
-            <div className="text-center mb-10 sm:mb-16">
+            <div
+              ref={mvvHeader.ref}
+              className={`text-center mb-10 sm:mb-16 sr-hidden ${mvvHeader.isVisible ? 'sr-visible' : ''}`}
+            >
               <h2 className="text-2xl sm:text-3xl md:text-[36px] font-medium text-[#333333] mb-5 sm:mb-8 leading-tight">
                 Missão, Visão & Valores
               </h2>
@@ -135,50 +159,44 @@ export default function About() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-              <div className="bg-white border-t-4 border-[#f2c92f] shadow-sm p-5 sm:p-6 md:p-8 flex flex-col" data-testid="card-missao">
-                <h3 className="text-base sm:text-lg md:text-xl font-medium text-[#333333] mb-3 sm:mb-4">Missão</h3>
-                <p className="text-[#666666] leading-relaxed text-sm sm:text-[15px] mb-4">
-                  A nossa missão acima de tudo é superar as expectativas de cada cliente e parceiro. Buscamos a excelência na operação de serviços inovadores e de altíssima qualidade, com foco total no resultado do serviço prestado.
-                </p>
-                <p className="text-[#666666] leading-relaxed text-sm sm:text-[15px] flex-grow">
-                  Tornando-se parte ativa da estratégia e sucesso de cada empresa que servimos, oferecemos alta qualidade ao menor custo possível, assegurando valor real para os nossos clientes.
-                </p>
-              </div>
-
-              <div className="bg-white border-t-4 border-[#f2c92f] shadow-sm p-5 sm:p-6 md:p-8 flex flex-col" data-testid="card-visao">
-                <h3 className="text-base sm:text-lg md:text-xl font-medium text-[#333333] mb-3 sm:mb-4">Visão</h3>
-                <p className="text-[#666666] leading-relaxed text-sm sm:text-[15px] mb-4">
-                  A nossa visão é, através da constante inovação das nossas práticas e processos, tornarmo-nos uma empresa de referência no sector, no mercado angolano, sendo reconhecida pela excelência na prestação de serviços aos nossos clientes.
-                </p>
-                <p className="text-[#666666] leading-relaxed text-sm sm:text-[15px] flex-grow">
-                  Aspiramos a expandir a nossa presença em todo o território nacional, levando soluções de qualidade a cada província de Angola.
-                </p>
-              </div>
-
-              <div className="bg-white border-t-4 border-[#f2c92f] shadow-sm p-5 sm:p-6 md:p-8 flex flex-col sm:col-span-2 md:col-span-1" data-testid="card-valores">
-                <h3 className="text-base sm:text-lg md:text-xl font-medium text-[#333333] mb-3 sm:mb-4">Valores</h3>
-                <p className="text-[#666666] leading-relaxed text-sm sm:text-[15px] mb-4">
-                  Os valores e princípios que nos regem são o que mais nos distingue. Preocupamo-nos profundamente com a forma como fazemos e conduzimos o nosso negócio, considerando o respeito e a ética como essenciais.
-                </p>
-                <p className="text-[#666666] leading-relaxed text-sm sm:text-[15px] flex-grow">
-                  Profissionalismo e responsabilidade estão presentes em todos os momentos de relacionamento com cada cliente e colaborador, garantindo relações baseadas na confiança e transparência.
-                </p>
-              </div>
+            <div ref={mvvCards.ref} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+              {[
+                { id: "missao", title: "Missão", p1: "A nossa missão acima de tudo é superar as expectativas de cada cliente e parceiro. Buscamos a excelência na operação de serviços inovadores e de altíssima qualidade, com foco total no resultado do serviço prestado.", p2: "Tornando-se parte ativa da estratégia e sucesso de cada empresa que servimos, oferecemos alta qualidade ao menor custo possível, assegurando valor real para os nossos clientes." },
+                { id: "visao", title: "Visão", p1: "A nossa visão é, através da constante inovação das nossas práticas e processos, tornarmo-nos uma empresa de referência no sector, no mercado angolano, sendo reconhecida pela excelência na prestação de serviços aos nossos clientes.", p2: "Aspiramos a expandir a nossa presença em todo o território nacional, levando soluções de qualidade a cada província de Angola." },
+                { id: "valores", title: "Valores", p1: "Os valores e princípios que nos regem são o que mais nos distingue. Preocupamo-nos profundamente com a forma como fazemos e conduzimos o nosso negócio, considerando o respeito e a ética como essenciais.", p2: "Profissionalismo e responsabilidade estão presentes em todos os momentos de relacionamento com cada cliente e colaborador, garantindo relações baseadas na confiança e transparência.", extra: "sm:col-span-2 md:col-span-1" },
+              ].map((card, idx) => (
+                <div
+                  key={card.id}
+                  className={`bg-white border-t-4 border-[#f2c92f] shadow-sm p-5 sm:p-6 md:p-8 flex flex-col hover-lift sr-hidden stagger-${idx + 1} ${card.extra || ''} ${mvvCards.isVisible ? 'sr-visible' : ''}`}
+                  data-testid={`card-${card.id}`}
+                >
+                  <h3 className="text-base sm:text-lg md:text-xl font-medium text-[#333333] mb-3 sm:mb-4">{card.title}</h3>
+                  <p className="text-[#666666] leading-relaxed text-sm sm:text-[15px] mb-4">{card.p1}</p>
+                  <p className="text-[#666666] leading-relaxed text-sm sm:text-[15px] flex-grow">{card.p2}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
 
         <section className="py-14 sm:py-18 md:py-24 bg-[#f2f5f7]">
           <div className="container mx-auto px-4 sm:px-6 max-w-4xl text-center">
-            <h2 className="text-2xl sm:text-3xl md:text-[36px] font-medium text-[#333333] mb-5 sm:mb-8 leading-tight">
-              Porquê escolher a BIOPREV?
-            </h2>
-            <p className="text-[#666666] text-sm sm:text-base mb-8 sm:mb-12 leading-relaxed">
-              É com a intenção de servir a população e instituições no controlo de pragas e prestação de serviços que a BIOPREV utiliza equipamentos e métodos mais modernos, com garantia de um serviço profissional e eficiente.
-            </p>
+            <div
+              ref={whyHeader.ref}
+              className={`sr-hidden ${whyHeader.isVisible ? 'sr-visible' : ''}`}
+            >
+              <h2 className="text-2xl sm:text-3xl md:text-[36px] font-medium text-[#333333] mb-5 sm:mb-8 leading-tight">
+                Porquê escolher a BIOPREV?
+              </h2>
+              <p className="text-[#666666] text-sm sm:text-base mb-8 sm:mb-12 leading-relaxed">
+                É com a intenção de servir a população e instituições no controlo de pragas e prestação de serviços que a BIOPREV utiliza equipamentos e métodos mais modernos, com garantia de um serviço profissional e eficiente.
+              </p>
+            </div>
 
-            <div className="space-y-2">
+            <div
+              ref={whyContent.ref}
+              className="space-y-2"
+            >
               {[
                 { title: "Equipamentos de última geração", content: "Investimos continuamente em tecnologia avançada para garantir resultados superiores e duradouros. Os nossos equipamentos permitem atender a sua demanda de forma personalizada com rapidez e eficiência, oferecendo soluções práticas e eficazes com qualidade e confiabilidade." },
                 { title: "Equipa técnica hábil e dedicada", content: "Contamos com profissionais altamente capacitados, com formação contínua em todas as áreas de atuação. Cada membro da equipa é treinado para oferecer o melhor serviço, utilizando as melhores práticas e tecnologias do mercado." },
@@ -186,24 +204,32 @@ export default function About() {
                 { title: "Cobertura nacional com sedes operacionais", content: "Com sedes em Luanda, Benguela e Huambo, cobrimos as principais regiões de Angola com rapidez e eficácia. A nossa frota própria e equipas locais garantem resposta rápida em todo o território." },
                 { title: "Alta qualidade ao menor custo possível", content: "Tornando-se parte ativa da estratégia e sucesso de cada empresa que servimos, oferecemos alta qualidade ao menor custo possível. A nossa missão é superar as expectativas de cada cliente e parceiro, com foco total no resultado do serviço prestado." },
               ].map((step, idx) => (
-                <Accordion type="single" collapsible key={idx} className="w-full">
-                  <AccordionItem value={`item-${idx}`} className="border-none">
-                    <AccordionTrigger className="bg-[#d0dae1] px-4 sm:px-6 md:px-8 py-4 sm:py-5 hover:bg-[#c4cfd7] transition-colors hover:no-underline rounded-none group">
-                      <span className="text-[15px] sm:text-[17px] md:text-[18px] font-medium text-[#333333] text-left">{step.title}</span>
-                      <Plus className="w-5 h-5 sm:w-6 sm:h-6 text-[#333333] shrink-0 transition-transform duration-200 group-data-[state=open]:rotate-45" />
-                    </AccordionTrigger>
-                    <AccordionContent className="bg-white px-4 sm:px-6 md:px-8 py-4 sm:py-6 text-left text-[#666666] text-sm sm:text-base leading-relaxed border-x border-b border-[#d0dae1]">
-                      {step.content}
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
+                <div
+                  key={idx}
+                  className={`sr-hidden stagger-${idx + 1} ${whyContent.isVisible ? 'sr-visible' : ''}`}
+                >
+                  <Accordion type="single" collapsible className="w-full">
+                    <AccordionItem value={`item-${idx}`} className="border-none">
+                      <AccordionTrigger className="bg-[#d0dae1] px-4 sm:px-6 md:px-8 py-4 sm:py-5 hover:bg-[#c4cfd7] transition-colors hover:no-underline rounded-none group">
+                        <span className="text-[15px] sm:text-[17px] md:text-[18px] font-medium text-[#333333] text-left">{step.title}</span>
+                        <Plus className="w-5 h-5 sm:w-6 sm:h-6 text-[#333333] shrink-0 transition-transform duration-200 group-data-[state=open]:rotate-45" />
+                      </AccordionTrigger>
+                      <AccordionContent className="bg-white px-4 sm:px-6 md:px-8 py-4 sm:py-6 text-left text-[#666666] text-sm sm:text-base leading-relaxed border-x border-b border-[#d0dae1]">
+                        {step.content}
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
+                </div>
               ))}
             </div>
           </div>
         </section>
 
         <section className="py-14 sm:py-18 md:py-24 bg-white">
-          <div className="container mx-auto px-4 sm:px-6 max-w-4xl text-center mb-10 sm:mb-16 md:mb-20">
+          <div
+            ref={servicesHeader.ref}
+            className={`container mx-auto px-4 sm:px-6 max-w-4xl text-center mb-10 sm:mb-16 md:mb-20 sr-hidden ${servicesHeader.isVisible ? 'sr-visible' : ''}`}
+          >
             <h2 className="text-2xl sm:text-3xl md:text-[36px] font-medium text-[#333333] mb-5 sm:mb-8 leading-tight">
               Descubra os nossos serviços
             </h2>
@@ -218,13 +244,16 @@ export default function About() {
           </div>
 
           <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
+            <div ref={servicesCards.ref} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
               {[
                 { title: "Desinfestação Geral", subtitle: "Fumigação, pulverização, desratização, desbaratização e tratamentos com gel.", items: ["Fumigação por via seca", "Pulverização de superfícies", "Desratização profissional", "Desbaratização com gel e spray"], link: "/services/disinfestation" },
                 { title: "Limpeza Profissional", subtitle: "Limpeza industrial, doméstica, urbana e de tanques de combustível.", items: ["Limpeza industrial e hospitalar", "Limpeza doméstica", "Varredura urbana em vias públicas", "Limpeza de tanques de combustível"], link: "/services/cleaning" },
                 { title: "Recolha de Resíduos", subtitle: "Recolha urbana, doméstica, pós-construção, hospitalar e industrial.", items: ["Resíduos urbanos e domésticos", "Resíduos pós-construção", "Resíduos hospitalares", "Resíduos industriais"], link: "/services/waste" },
               ].map((card, idx) => (
-                <div key={idx} className={`bg-white border-t-4 border-[#f2c92f] shadow-lg p-6 sm:p-8 md:p-10 flex flex-col h-full ${idx === 2 ? 'sm:col-span-2 md:col-span-1' : ''}`}>
+                <div
+                  key={idx}
+                  className={`bg-white border-t-4 border-[#f2c92f] shadow-lg p-6 sm:p-8 md:p-10 flex flex-col h-full hover-lift sr-hidden stagger-${idx + 1} ${idx === 2 ? 'sm:col-span-2 md:col-span-1' : ''} ${servicesCards.isVisible ? 'sr-visible' : ''}`}
+                >
                   <h3 className="text-lg sm:text-xl md:text-[22px] font-medium text-[#333333] mb-4 sm:mb-6 text-center">{card.title}</h3>
                   <p className="text-[#666666] text-xs sm:text-sm mb-5 sm:mb-8 text-center leading-relaxed">
                     {card.subtitle}
@@ -247,11 +276,14 @@ export default function About() {
           </div>
         </section>
 
-        <section className="bg-[#007cc3] py-10 sm:py-14 md:py-16 text-center">
-          <div className="container mx-auto px-4 sm:px-6">
+        <section className="bg-[#007cc3] py-10 sm:py-14 md:py-16 text-center overflow-hidden">
+          <div
+            ref={ctaReveal.ref}
+            className={`container mx-auto px-4 sm:px-6 sr-hidden ${ctaReveal.isVisible ? 'sr-visible' : ''}`}
+          >
             <h2 className="text-white text-xl sm:text-2xl md:text-3xl font-medium mb-5 sm:mb-8">Pronto para trabalhar com a BIOPREV?</h2>
             <Link href="/contact"
-              className="inline-block bg-white text-[#007cc3] hover:bg-white/90 px-8 sm:px-10 md:px-12 py-2.5 sm:py-3 text-sm sm:text-base md:text-lg font-bold transition-colors"
+              className="inline-block bg-white text-[#007cc3] hover:bg-white/90 px-8 sm:px-10 md:px-12 py-2.5 sm:py-3 text-sm sm:text-base md:text-lg font-bold transition-all duration-300 hover:shadow-lg"
               data-testid="link-contact-cta"
             >
               Contacte-nos
