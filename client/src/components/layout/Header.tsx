@@ -1,4 +1,4 @@
-import { Search, MapPin, Phone, User, Menu, Truck, Target, Cloud, Globe, Info, BookOpen, Bug, Wind, Droplets, Trash2, Trees, ShieldCheck, Building2, Factory, Warehouse, Hotel, ShoppingCart, Pill, Briefcase, LayoutGrid, ChevronRight, BarChart3, Lamp, FileText, PieChart, Lock } from "lucide-react";
+import { Search, MapPin, Phone, User, Menu, Truck, Target, Cloud, Globe, Info, BookOpen, Bug, Wind, Droplets, Trash2, Trees, ShieldCheck, Building2, Factory, Warehouse, Hotel, ShoppingCart, Pill, Briefcase, LayoutGrid, ChevronRight, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "wouter";
@@ -40,19 +40,6 @@ export default function Header() {
         { icon: Trash2, text: 'Recolha de\nResíduos', href: '/services/waste' },
         { icon: Droplets, text: 'Fornecimento de\nAgua potavel', href: '/services/water' },
         { icon: Trees, text: 'Serviço de\nJardinagem', href: '/services/gardening' },
-      ]
-    },
-    {
-      id: 'reports',
-      label: 'Relatórios',
-      testId: 'nav-reports',
-      content: [
-        { icon: BarChart3, text: 'Plataforma de\nRelatórios', href: '/reports' },
-        { icon: Lamp, text: 'Pragas por\nArmadilha', href: '/reports#tipos-relatorios' },
-        { icon: FileText, text: 'Consumo de\nPesticida', href: '/reports#tipos-relatorios' },
-        { icon: Bug, text: 'Ocorrência\nde Pragas', href: '/reports#tipos-relatorios' },
-        { icon: PieChart, text: 'Gráficos de\nMonitoramento', href: '/reports#graficos' },
-        { icon: Lock, text: 'Acesso à\nPlataforma', href: '/reports#acesso' },
       ]
     },
     {
@@ -163,53 +150,71 @@ export default function Header() {
             </Link>
 
             <nav className="hidden lg:flex items-center h-full text-[15px] font-extrabold text-[#333333]" aria-label="Navegação principal">
-              {menuItems.map((item) => (
-                <div 
-                  key={item.id}
-                  className="relative h-full flex items-center group cursor-pointer px-4"
-                  onMouseEnter={() => setActiveMenu(item.id)}
-                  onMouseLeave={() => setActiveMenu(null)}
-                >
-                  <Link href={item.id === 'services' ? '/services' : item.id === 'reports' ? '/reports' : '#'}>
-                    <span 
-                      className={`transition-colors tracking-wider ${activeMenu === item.id ? 'text-[#333333]' : 'hover:text-[#f2c92f]'}`} 
-                      data-testid={item.testId}
-                    >
-                      {item.label}
-                    </span>
-                  </Link>
-                  
+              {menuItems.map((item) => {
+                const menuNode = (
                   <div 
-                    className={`absolute bottom-0 left-0 w-full h-1 bg-[#f2c92f] transition-transform duration-200 origin-center ${activeMenu === item.id ? 'scale-x-100' : 'scale-x-0'}`} 
-                  />
-                  
-                  <div 
-                    className={`fixed top-[126px] left-0 w-full z-40 transition-opacity duration-150 ${activeMenu === item.id ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+                    key={item.id}
+                    className="relative h-full flex items-center group cursor-pointer px-4"
+                    onMouseEnter={() => setActiveMenu(item.id)}
+                    onMouseLeave={() => setActiveMenu(null)}
                   >
-                    <div className="absolute top-[-10px] left-0 w-full h-[10px] bg-transparent" />
-                    <div className="w-full bg-[#f2f2f2] shadow-xl border-t-0 py-0">
-                      <div className="container mx-auto px-4 flex justify-center">
-                        <div className="flex bg-white border-x border-gray-200">
-                          {item.content.map((subItem, idx) => (
-                            <Link 
-                              key={idx}
-                              href={subItem.href || (subItem.text.includes('Todos') ? '/services' : '#')} 
-                              className={`flex flex-col items-center justify-center p-6 w-[140px] min-h-[160px] hover:bg-gray-50 transition-colors ${idx !== item.content.length - 1 ? 'border-r border-gray-100' : ''} text-center group/item relative`}
-                            >
-                              <div className="absolute bottom-0 left-0 w-full h-1 bg-[#f2c92f] transform scale-x-0 group-hover/item:scale-x-100 transition-transform duration-200 origin-center" />
-                              
-                              <subItem.icon className="w-12 h-12 text-[#333333] mb-3 transition-transform group-hover/item:scale-105" strokeWidth={0.75} />
-                              <span className="text-[13px] font-normal text-[#333333] whitespace-pre-line leading-tight">
-                                {subItem.text}
-                              </span>
-                            </Link>
-                          ))}
+                    <Link href={item.id === 'services' ? '/services' : '#'}>
+                      <span 
+                        className={`transition-colors tracking-wider ${activeMenu === item.id ? 'text-[#333333]' : 'hover:text-[#f2c92f]'}`} 
+                        data-testid={item.testId}
+                      >
+                        {item.label}
+                      </span>
+                    </Link>
+                    
+                    <div 
+                      className={`absolute bottom-0 left-0 w-full h-1 bg-[#f2c92f] transition-transform duration-200 origin-center ${activeMenu === item.id ? 'scale-x-100' : 'scale-x-0'}`} 
+                    />
+                    
+                    <div 
+                      className={`fixed top-[126px] left-0 w-full z-40 transition-opacity duration-150 ${activeMenu === item.id ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+                    >
+                      <div className="absolute top-[-10px] left-0 w-full h-[10px] bg-transparent" />
+                      <div className="w-full bg-[#f2f2f2] shadow-xl border-t-0 py-0">
+                        <div className="container mx-auto px-4 flex justify-center">
+                          <div className="flex bg-white border-x border-gray-200">
+                            {item.content.map((subItem, idx) => (
+                              <Link 
+                                key={idx}
+                                href={subItem.href || (subItem.text.includes('Todos') ? '/services' : '#')} 
+                                className={`flex flex-col items-center justify-center p-6 w-[140px] min-h-[160px] hover:bg-gray-50 transition-colors ${idx !== item.content.length - 1 ? 'border-r border-gray-100' : ''} text-center group/item relative`}
+                              >
+                                <div className="absolute bottom-0 left-0 w-full h-1 bg-[#f2c92f] transform scale-x-0 group-hover/item:scale-x-100 transition-transform duration-200 origin-center" />
+                                
+                                <subItem.icon className="w-12 h-12 text-[#333333] mb-3 transition-transform group-hover/item:scale-105" strokeWidth={0.75} />
+                                <span className="text-[13px] font-normal text-[#333333] whitespace-pre-line leading-tight">
+                                  {subItem.text}
+                                </span>
+                              </Link>
+                            ))}
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                );
+
+                if (item.id === 'services') {
+                  return (
+                    <span key="services-and-reports" className="contents">
+                      {menuNode}
+                      <div className="relative h-full flex items-center px-4" key="reports-direct">
+                        <Link href="/reports">
+                          <span className="transition-colors tracking-wider hover:text-[#f2c92f]" data-testid="nav-reports">
+                            Relatórios
+                          </span>
+                        </Link>
+                      </div>
+                    </span>
+                  );
+                }
+                return menuNode;
+              })}
             </nav>
 
             <div className="ml-auto lg:hidden flex items-center">
@@ -237,33 +242,54 @@ export default function Header() {
         </div>
 
         <div className="py-2">
-          {menuItems.map((item) => (
-            <div key={item.id} className="border-b border-gray-50">
-              <button
-                className="w-full flex items-center justify-between px-6 py-4 text-[15px] font-bold text-[#333333] hover:bg-gray-50"
-                onClick={() => setMobileSubmenu(mobileSubmenu === item.id ? null : item.id)}
-                data-testid={`mobile-${item.testId}`}
-              >
-                {item.label}
-                <ChevronRight className={`w-4 h-4 transition-transform duration-200 ${mobileSubmenu === item.id ? 'rotate-90' : ''}`} />
-              </button>
-              <div
-                className={`overflow-hidden bg-gray-50 transition-all duration-200 ${mobileSubmenu === item.id ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}
-              >
-                {item.content.map((subItem, idx) => (
-                  <Link
-                    key={idx}
-                    href={subItem.href || '#'}
-                    onClick={() => { setMobileMenuOpen(false); setMobileSubmenu(null); }}
-                    className="flex items-center gap-3 px-8 py-3 text-[14px] text-[#555555] hover:text-[#007cc3] hover:bg-white transition-colors"
-                  >
-                    <subItem.icon className="w-5 h-5 text-[#007cc3] shrink-0" strokeWidth={1.5} />
-                    <span className="whitespace-pre-line leading-tight">{subItem.text}</span>
-                  </Link>
-                ))}
+          {menuItems.map((item) => {
+            const mobileNode = (
+              <div key={item.id} className="border-b border-gray-50">
+                <button
+                  className="w-full flex items-center justify-between px-6 py-4 text-[15px] font-bold text-[#333333] hover:bg-gray-50"
+                  onClick={() => setMobileSubmenu(mobileSubmenu === item.id ? null : item.id)}
+                  data-testid={`mobile-${item.testId}`}
+                >
+                  {item.label}
+                  <ChevronRight className={`w-4 h-4 transition-transform duration-200 ${mobileSubmenu === item.id ? 'rotate-90' : ''}`} />
+                </button>
+                <div
+                  className={`overflow-hidden bg-gray-50 transition-all duration-200 ${mobileSubmenu === item.id ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}
+                >
+                  {item.content.map((subItem, idx) => (
+                    <Link
+                      key={idx}
+                      href={subItem.href || '#'}
+                      onClick={() => { setMobileMenuOpen(false); setMobileSubmenu(null); }}
+                      className="flex items-center gap-3 px-8 py-3 text-[14px] text-[#555555] hover:text-[#007cc3] hover:bg-white transition-colors"
+                    >
+                      <subItem.icon className="w-5 h-5 text-[#007cc3] shrink-0" strokeWidth={1.5} />
+                      <span className="whitespace-pre-line leading-tight">{subItem.text}</span>
+                    </Link>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+
+            if (item.id === 'services') {
+              return (
+                <span key="mobile-services-and-reports" className="contents">
+                  {mobileNode}
+                  <div key="mobile-reports" className="border-b border-gray-50">
+                    <Link
+                      href="/reports"
+                      onClick={() => { setMobileMenuOpen(false); setMobileSubmenu(null); }}
+                      className="w-full flex items-center px-6 py-4 text-[15px] font-bold text-[#333333] hover:bg-gray-50"
+                      data-testid="mobile-nav-reports"
+                    >
+                      Relatórios
+                    </Link>
+                  </div>
+                </span>
+              );
+            }
+            return mobileNode;
+          })}
         </div>
 
         <div className="p-6 space-y-3 border-t border-gray-100">
