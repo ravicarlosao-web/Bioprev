@@ -33,6 +33,12 @@ export interface ServiceProcessCard {
   items: string[];
 }
 
+export interface SectorItem {
+  icon: LucideIcon;
+  name: string;
+  description: string;
+}
+
 export interface ServicePageData {
   seoTitle: string;
   seoDescription: string;
@@ -61,6 +67,9 @@ export interface ServicePageData {
   whyText2: string;
   processCards: [ServiceProcessCard, ServiceProcessCard, ServiceProcessCard];
   ctaTitle: string;
+  sectorsTitle?: string;
+  sectorsText?: string;
+  sectors?: SectorItem[];
 }
 
 export default function ServicePageTemplate({ data }: { data: ServicePageData }) {
@@ -75,6 +84,8 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
   const stepsReveal = useScrollReveal(0.1);
   const whyReveal = useScrollReveal(0.15);
   const processReveal = useScrollReveal(0.1);
+  const sectorsHeaderReveal = useScrollReveal(0.15);
+  const sectorsGridReveal = useScrollReveal(0.1);
   const ctaReveal = useScrollReveal(0.2);
 
   useEffect(() => {
@@ -276,6 +287,33 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
             </div>
           </div>
         </section>
+
+        {data.sectors && data.sectors.length > 0 && (
+          <section className="py-14 sm:py-18 md:py-24 bg-[#f8f9fa]">
+            <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
+              <div ref={sectorsHeaderReveal.ref} className={`text-center mb-10 sm:mb-16 sr-hidden ${sectorsHeaderReveal.isVisible ? 'sr-visible' : ''}`}>
+                <h2 className="text-2xl sm:text-3xl md:text-[36px] font-medium text-[#333333] mb-5 sm:mb-8 leading-tight">
+                  {data.sectorsTitle || "Setores de atuação"}
+                </h2>
+                <p className="text-[#666666] text-sm sm:text-base max-w-4xl mx-auto leading-relaxed">
+                  {data.sectorsText || "Conheça os setores empresariais que beneficiam deste serviço e como adaptamos as nossas soluções às necessidades específicas de cada indústria."}
+                </p>
+              </div>
+
+              <div ref={sectorsGridReveal.ref} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+                {data.sectors.map((sector, idx) => (
+                  <div key={idx} className={`bg-white border-t-4 border-[#f2c92f] shadow-sm p-5 sm:p-6 md:p-8 flex flex-col hover-lift sr-hidden stagger-${idx + 1} ${sectorsGridReveal.isVisible ? 'sr-visible' : ''}`}>
+                    <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+                      <sector.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-[#007cc3] shrink-0" strokeWidth={1.5} />
+                      <h3 className="text-base sm:text-lg md:text-xl font-medium text-[#333333]">{sector.name}</h3>
+                    </div>
+                    <p className="text-[#666666] leading-relaxed text-sm sm:text-[15px] flex-grow">{sector.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         <section className="bg-[#007cc3] py-10 sm:py-14 md:py-16 text-center overflow-hidden">
           <div ref={ctaReveal.ref} className={`container mx-auto px-4 sm:px-6 sr-hidden ${ctaReveal.isVisible ? 'sr-visible' : ''}`}>

@@ -1,4 +1,4 @@
-import { TreePine, Flower2, Droplets, Sun, Scissors, Bug, Palette, Wrench } from "lucide-react";
+import { TreePine, Flower2, Droplets, Sun, Scissors, Bug, Palette, Wrench, Hotel, Utensils, Briefcase, Building2, Home } from "lucide-react";
 import { Search, Target, CheckCircle2 } from "lucide-react";
 import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
 
@@ -59,7 +59,16 @@ const data: ServicePageData = {
     { icon: Target, title: "2. Execução profissional", subtitle: "Implementação e manutenção de qualidade", items: ["Equipas treinadas e equipamento adequado", "Espécies adaptadas ao clima local", "Sistemas de rega eficientes"] },
     { icon: CheckCircle2, title: "3. Acompanhamento contínuo", subtitle: "Jardins sempre saudáveis e bonitos", items: ["Manutenção programada regular", "Controlo fitossanitário preventivo", "Ajustes sazonais e renovação"] }
   ],
-  ctaTitle: "Transforme os seus espaços verdes com a Bioprev"
+  ctaTitle: "Transforme os seus espaços verdes com a Bioprev",
+  sectorsTitle: "Setores onde atuamos com jardinagem",
+  sectorsText: "A Bioprev cria e mantém espaços verdes para os mais diversos setores, combinando estética, funcionalidade e sustentabilidade em cada projeto.",
+  sectors: [
+    { icon: Hotel, name: "Hotelaria", description: "Manutenção de jardins, piscinas e áreas de lazer exteriores de hotéis e resorts, criando ambientes acolhedores para os hóspedes." },
+    { icon: Briefcase, name: "Escritórios", description: "Espaços verdes corporativos que melhoram o bem-estar dos colaboradores e projetam uma imagem profissional e sustentável." },
+    { icon: Building2, name: "Gestão de instalações", description: "Manutenção de jardins e áreas verdes em edifícios comerciais, centros empresariais e condomínios." },
+    { icon: Utensils, name: "Restauração", description: "Jardins e esplanadas de restaurantes que proporcionam ambientes agradáveis para os clientes e valorizam o espaço." },
+    { icon: Home, name: "Residencial", description: "Criação e manutenção de jardins residenciais e de condomínios, com cuidados adaptados às preferências de cada cliente." },
+  ]
 };
 
 export default function Gardening() {

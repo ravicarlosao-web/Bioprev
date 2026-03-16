@@ -1,4 +1,4 @@
-import { ShieldCheck, Zap, Shield, SprayCan, Microscope, Wind, FileCheck, AlertTriangle, Bug, Rat, Wheat, Archive, Thermometer, FlaskConical, ScanLine, BarChart3 } from "lucide-react";
+import { ShieldCheck, Zap, Shield, SprayCan, Microscope, Wind, FileCheck, AlertTriangle, Bug, Rat, Wheat, Archive, Thermometer, FlaskConical, ScanLine, BarChart3, Factory, Hotel, Utensils, ShoppingCart, Briefcase, Building2, Warehouse, Pill } from "lucide-react";
 import { Search, Target, CheckCircle2 } from "lucide-react";
 import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
 
@@ -67,7 +67,19 @@ const data: ServicePageData = {
     { icon: Target, title: "2. Tratamento especializado", subtitle: "Programa abrangente adaptado às suas necessidades", items: ["Fumigação, pulverização ou aplicação de gel", "Desratização, desbaratização e controlo de gorgulhos/traças", "Tratamento térmico e monitorização por feromonas"] },
     { icon: CheckCircle2, title: "3. Verificação e certificação", subtitle: "Garantindo um ambiente limpo e seguro", items: ["Certificado de desinfestação pós-serviço", "Relatórios estatísticos completos por cliente", "Monitoramento contínuo e prevenção de reinfestação"] }
   ],
-  ctaTitle: "Agende a sua avaliação de desinfestação hoje"
+  ctaTitle: "Agende a sua avaliação de desinfestação hoje",
+  sectorsTitle: "Setores onde atuamos com desinfestação",
+  sectorsText: "Os nossos serviços de desinfestação são adaptados às necessidades específicas de cada setor, garantindo soluções eficazes e em conformidade com as regulamentações de cada indústria.",
+  sectors: [
+    { icon: Factory, name: "Processamento alimentar", description: "Proteção de linhas de produção e armazéns de alimentos contra pragas que podem comprometer a segurança alimentar, com métodos compatíveis com normas HACCP." },
+    { icon: Hotel, name: "Hotelaria", description: "Soluções discretas para hotéis e resorts que eliminam percevejos, baratas e roedores sem perturbar os hóspedes, protegendo a reputação do estabelecimento." },
+    { icon: Utensils, name: "Restauração", description: "Programas intensivos para cozinhas e salas de restaurantes que garantem a segurança alimentar e a conformidade sanitária." },
+    { icon: ShoppingCart, name: "Retalho alimentar", description: "Controle de pragas em supermercados e lojas de alimentos, protegendo produtos expostos e áreas de armazenamento." },
+    { icon: Briefcase, name: "Escritórios", description: "Tratamentos discretos fora do horário laboral para manter ambientes de escritório confortáveis e livres de pragas." },
+    { icon: Building2, name: "Gestão de instalações", description: "Programas coordenados para edifícios comerciais com múltiplos inquilinos, garantindo proteção uniforme em todas as áreas." },
+    { icon: Warehouse, name: "Logística e armazenamento", description: "Proteção de armazéns e centros de distribuição contra roedores e insetos que podem danificar mercadorias armazenadas." },
+    { icon: Pill, name: "Farmacêutica", description: "Soluções de controle de pragas compatíveis com normas GMP para laboratórios e instalações farmacêuticas, com documentação completa para auditorias." },
+  ]
 };
 
 export default function Disinfestation() {

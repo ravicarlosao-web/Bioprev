@@ -1,4 +1,4 @@
-import { Trash2, Recycle, Truck, FileCheck, AlertTriangle, Leaf, Factory, Shield, Building, Home, HardHat } from "lucide-react";
+import { Trash2, Recycle, Truck, FileCheck, AlertTriangle, Leaf, Factory, Shield, Building, Home, HardHat, Hotel, Utensils, Building2, Warehouse, Pill } from "lucide-react";
 import { Search, Target, CheckCircle2 } from "lucide-react";
 import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
 
@@ -59,7 +59,17 @@ const data: ServicePageData = {
     { icon: Target, title: "2. Recolha especializada", subtitle: "Frota própria e equipas certificadas", items: ["Recolha urbana e doméstica regular", "Remoção de entulho pós-construção", "Resíduos hospitalares e industriais"] },
     { icon: CheckCircle2, title: "3. Conformidade garantida", subtitle: "Documentação e rastreabilidade total", items: ["Certificados de destino final", "Relatórios ambientais periódicos", "Tecnologias atualizadas de remoção"] }
   ],
-  ctaTitle: "Soluções completas de recolha de resíduos"
+  ctaTitle: "Soluções completas de recolha de resíduos",
+  sectorsTitle: "Setores onde atuamos com recolha de resíduos",
+  sectorsText: "A Bioprev oferece soluções de recolha e gestão de resíduos adaptadas às necessidades e regulamentações de cada setor, garantindo conformidade ambiental e rastreabilidade total.",
+  sectors: [
+    { icon: Hotel, name: "Hotelaria", description: "Gestão de resíduos orgânicos, recicláveis e outros gerados por hotéis e resorts, com recolha discreta e frequente." },
+    { icon: Utensils, name: "Restauração", description: "Recolha de resíduos alimentares e embalagens de restaurantes e serviços de catering, cumprindo normas de higiene." },
+    { icon: Factory, name: "Processamento alimentar", description: "Gestão de resíduos de produção alimentar, incluindo subprodutos orgânicos e materiais de embalagem." },
+    { icon: Building2, name: "Gestão de instalações", description: "Recolha de resíduos em edifícios comerciais e centros empresariais, com separação e reciclagem otimizadas." },
+    { icon: Warehouse, name: "Logística e armazenamento", description: "Remoção de resíduos de embalagem, paletes danificadas e outros materiais gerados em operações logísticas." },
+    { icon: Pill, name: "Farmacêutica", description: "Gestão especializada de resíduos farmacêuticos e hospitalares, com manuseamento seguro e destino certificado." },
+  ]
 };
 
 export default function Waste() {

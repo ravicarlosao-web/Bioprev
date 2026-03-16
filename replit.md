@@ -15,7 +15,7 @@ client/
   index.html              # HTML base com meta tags SEO, lang="pt-AO"
   public/
     robots.txt            # Ficheiro robots para crawlers
-    sitemap.xml           # Sitemap com todas as 28 páginas
+    sitemap.xml           # Sitemap com todas as páginas
     favicon.png
     opengraph.jpg
   src/
@@ -30,8 +30,7 @@ client/
       Locations.tsx       # 3 cidades com Google Maps
       not-found.tsx       # 404 em português com SEOHead noindex
       about/              # About, History, Careers
-      services/           # AllServices, ServicePageTemplate, Disinfestation, Pests, Cleaning, Waste, Water, Gardening
-      sectors/            # AllSectors, SectorPageTemplate, 8 setores
+      services/           # AllServices, ServicePageTemplate, Disinfestation, Cleaning, Waste, Water, Gardening, Reports
       blog/               # BlogList, BlogPost
       national-accounts/  # AllNationalAccounts, Overview, Solutions
 server/
@@ -41,8 +40,13 @@ shared/
   schema.ts
 ```
 
+## Arquitetura de Setores (IMPORTANTE)
+Os setores empresariais (Hotelaria, Escritórios, Restauração, Farmacêutica, etc.) **NÃO** têm páginas próprias.
+Em vez disso, cada página de serviço tem uma secção "Setores de atuação" que mostra os setores onde aquele serviço se aplica, com descrições adaptadas.
+Os setores são definidos no campo `sectors` do `ServicePageData` no `ServicePageTemplate.tsx`.
+
 ## SEO
-- **react-helmet-async**: Títulos e descriptions dinâmicos para cada uma das 28 páginas
+- **react-helmet-async**: Títulos e descriptions dinâmicos para cada página
 - **JSON-LD**: Organization, WebSite, LocalBusiness na Home; BreadcrumbList + Service em cada página
 - **Sitemap**: `client/public/sitemap.xml`
 - **Robots**: `client/public/robots.txt`
@@ -63,5 +67,5 @@ shared/
 - Benguela: `+244 927 375 940` / `+244 912 289 858` — Rua do Compão
 - Huambo: `+244 912 289 858`
 
-## Total de Páginas: 28
-Home, Contact, Locations, About×3, Services×7, Sectors×9, Blog×2, NationalAccounts×3, 404
+## Total de Páginas: 19
+Home, Contact, Locations, About×3, Services×7, Blog×2, NationalAccounts×3, 404

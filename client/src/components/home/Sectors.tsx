@@ -1,5 +1,4 @@
-import { Factory, Building2, Truck, Hotel, ShoppingCart, Plus } from "lucide-react";
-import { Link } from "wouter";
+import { Factory, Building2, Truck, Hotel, ShoppingCart, Briefcase, Utensils, Pill } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 export default function Sectors() {
@@ -12,6 +11,9 @@ export default function Sectors() {
     { name: "Logística e armazenamento", icon: <Truck className="w-16 h-16 text-[#333333] stroke-[1px]" /> },
     { name: "Hotéis", icon: <Hotel className="w-16 h-16 text-[#333333] stroke-[1px]" /> },
     { name: "Varejo de alimentos", icon: <ShoppingCart className="w-16 h-16 text-[#333333] stroke-[1px]" /> },
+    { name: "Restauração", icon: <Utensils className="w-16 h-16 text-[#333333] stroke-[1px]" /> },
+    { name: "Escritórios", icon: <Briefcase className="w-16 h-16 text-[#333333] stroke-[1px]" /> },
+    { name: "Farmacêutica", icon: <Pill className="w-16 h-16 text-[#333333] stroke-[1px]" /> },
   ];
 
   return (
@@ -24,16 +26,16 @@ export default function Sectors() {
           Líderes nacionais em serviços personalizados de controle de pragas
         </h2>
         <p className="text-[#333333] max-w-4xl mx-auto leading-relaxed text-[16px]">
-          A Bioprev é líder nacional em <span className="text-[#007cc3] cursor-pointer hover:underline">controle de pragas</span> e <span className="text-[#007cc3] cursor-pointer hover:underline">serviços especializados de desinfecção</span>, atendendo a diversos setores, como <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">Processamento de Alimentos</span>, <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">Logística</span>, <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">Gestão de Instalações</span> e <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">muito mais</span> em todo o país — seja nosso parceiro para experiência nacional em controle de pragas adaptada à sua indústria.
+          A Bioprev é líder nacional em <span className="text-[#007cc3]">controle de pragas</span> e <span className="text-[#007cc3]">serviços especializados de desinfecção</span>, atendendo a diversos setores, como <span className="text-[#007cc3] font-bold">Processamento de Alimentos</span>, <span className="text-[#007cc3] font-bold">Logística</span>, <span className="text-[#007cc3] font-bold">Gestão de Instalações</span> e <span className="text-[#007cc3] font-bold">muito mais</span> em todo o país — seja nosso parceiro para experiência nacional em controle de pragas adaptada à sua indústria.
         </p>
       </div>
 
       <div className="container mx-auto px-4 max-w-7xl">
-        <div ref={gridReveal.ref} className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 sm:gap-4">
+        <div ref={gridReveal.ref} className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4">
           {sectors.map((sector, index) => (
             <div 
               key={index} 
-              className={`bg-white p-4 sm:p-6 md:p-8 flex flex-col items-center text-center shadow-sm hover-lift cursor-pointer group h-full sr-hidden stagger-${index + 1} ${gridReveal.isVisible ? 'sr-visible' : ''}`}
+              className={`bg-white p-4 sm:p-6 md:p-8 flex flex-col items-center text-center shadow-sm hover-lift cursor-default group h-full sr-hidden stagger-${index + 1} ${gridReveal.isVisible ? 'sr-visible' : ''}`}
               data-testid={`card-sector-${index}`}
             >
               <div className="mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300 [&>svg]:w-10 [&>svg]:h-10 sm:[&>svg]:w-12 sm:[&>svg]:h-12 md:[&>svg]:w-16 md:[&>svg]:h-16">
@@ -44,18 +46,6 @@ export default function Sectors() {
               </p>
             </div>
           ))}
-          
-          <Link href="/sectors">
-            <div 
-              className={`bg-[#1a2b3b] p-4 sm:p-6 md:p-8 flex flex-col items-center justify-center text-center shadow-sm hover:bg-[#243a4e] transition-all duration-300 cursor-pointer text-white h-full hover:shadow-lg sr-hidden stagger-6 ${gridReveal.isVisible ? 'sr-visible' : ''}`}
-              data-testid="card-sector-all"
-            >
-              <Plus className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mb-3 sm:mb-4 stroke-[3px]" />
-              <p className="font-bold text-[12px] sm:text-[13px] md:text-[14px] uppercase tracking-wider">
-                Ver todos os setores
-              </p>
-            </div>
-          </Link>
         </div>
       </div>
     </section>

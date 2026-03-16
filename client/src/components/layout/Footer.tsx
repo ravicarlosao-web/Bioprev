@@ -28,7 +28,6 @@ export default function Footer() {
             <Link href="/services"><span className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium cursor-pointer">Serviços</span></Link>
             <Link href="/reports"><span className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium cursor-pointer">Relatórios</span></Link>
             <Link href="/national-accounts"><span className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium cursor-pointer">Contas nacionais</span></Link>
-            <Link href="/sectors"><span className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium cursor-pointer">Setores de negócios</span></Link>
             <Link href="/about"><span className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium cursor-pointer">Sobre</span></Link>
             <Link href="/blog"><span className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium cursor-pointer">Blog</span></Link>
           </div>

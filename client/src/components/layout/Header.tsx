@@ -1,4 +1,4 @@
-import { Search, MapPin, Phone, User, Menu, Truck, Target, Cloud, Globe, Info, BookOpen, Wind, Droplets, Trash2, Trees, ShieldCheck, Building2, Factory, Warehouse, Hotel, ShoppingCart, Pill, Briefcase, LayoutGrid, ChevronRight, BarChart3 } from "lucide-react";
+import { Search, MapPin, Phone, Menu, Target, Globe, Info, BookOpen, Wind, Droplets, Trash2, Trees, ShieldCheck, ChevronRight, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "wouter";
@@ -48,21 +48,6 @@ export default function Header() {
       content: [
         { icon: Globe, text: 'Visão\ngeral', href: '/national-accounts/overview' },
         { icon: Target, text: 'Soluções\nnacionais', href: '/national-accounts/solutions' },
-      ]
-    },
-    {
-      id: 'sectors',
-      label: 'Setores empresariais',
-      testId: 'nav-sectors',
-      content: [
-        { icon: LayoutGrid, text: 'Todos os setores\nempresariais', href: '/sectors' },
-        { icon: Factory, text: 'Processamento\nalimentar', href: '/sectors/food-processing' },
-        { icon: Building2, text: 'Gestão de\ninstalações', href: '/sectors/facilities' },
-        { icon: Warehouse, text: 'Logística e\narmazenamento', href: '/sectors/logistics' },
-        { icon: Hotel, text: 'Hotelaria', href: '/sectors/hospitality' },
-        { icon: ShoppingCart, text: 'Retalho\nalimentar', href: '/sectors/food-retail' },
-        { icon: Pill, text: 'Farmacêutica', href: '/sectors/pharmaceutical' },
-        { icon: Briefcase, text: 'Escritórios', href: '/sectors/offices' },
       ]
     },
     {

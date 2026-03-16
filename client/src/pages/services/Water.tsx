@@ -1,4 +1,4 @@
-import { Droplets, FlaskConical, Truck, ThermometerSun, ShieldCheck, Clock, Building2, Users } from "lucide-react";
+import { Droplets, FlaskConical, Truck, ThermometerSun, ShieldCheck, Clock, Building2, Users, Hotel, Factory, Warehouse, HardHat } from "lucide-react";
 import { Search, Target, CheckCircle2 } from "lucide-react";
 import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
 
@@ -59,7 +59,16 @@ const data: ServicePageData = {
     { icon: Target, title: "2. Fornecimento certificado", subtitle: "Qualidade em cada entrega", items: ["Água analisada laboratorialmente", "Transporte em cisternas alimentares", "Entrega por técnicos qualificados"] },
     { icon: CheckCircle2, title: "3. Monitorização contínua", subtitle: "Qualidade garantida no armazenamento", items: ["Limpeza periódica de depósitos", "Análises de controlo da água armazenada", "Relatórios de qualidade regulares"] }
   ],
-  ctaTitle: "Garanta água potável de qualidade para o seu negócio"
+  ctaTitle: "Garanta água potável de qualidade para o seu negócio",
+  sectorsTitle: "Setores onde fornecemos água potável",
+  sectorsText: "A Bioprev garante o abastecimento de água potável certificada para diversos setores, com entregas programadas e capacidade de resposta urgente.",
+  sectors: [
+    { icon: Hotel, name: "Hotelaria", description: "Abastecimento de água potável para hotéis e resorts, garantindo qualidade para consumo dos hóspedes e operações de cozinha." },
+    { icon: Factory, name: "Processamento alimentar", description: "Fornecimento de água certificada para processos de produção alimentar que exigem os mais altos padrões de qualidade." },
+    { icon: Building2, name: "Gestão de instalações", description: "Abastecimento de edifícios comerciais e escritórios sem acesso à rede de distribuição ou com necessidade de reforço." },
+    { icon: Warehouse, name: "Logística e armazenamento", description: "Fornecimento de água potável para centros logísticos e armazéns, garantindo o bem-estar dos trabalhadores." },
+    { icon: HardHat, name: "Construção civil", description: "Abastecimento contínuo de água potável para obras de construção, cumprindo normas de segurança e saúde no trabalho." },
+  ]
 };
 
 export default function Water() {

@@ -1,4 +1,4 @@
-import { Sparkles, Building2, Factory, Home, Truck, Fuel, GraduationCap, Sofa } from "lucide-react";
+import { Sparkles, Building2, Factory, Home, Truck, Fuel, GraduationCap, Sofa, Hotel, Utensils, Briefcase, ShoppingCart, Warehouse, Pill } from "lucide-react";
 import { Search, Target, CheckCircle2 } from "lucide-react";
 import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
 
@@ -59,7 +59,19 @@ const data: ServicePageData = {
     { icon: Target, title: "2. Execução profissional", subtitle: "Equipas treinadas e equipamento de qualidade", items: ["Limpeza industrial, doméstica e urbana", "Limpeza de tanques de combustível", "Produtos ecológicos e seguros"] },
     { icon: CheckCircle2, title: "3. Qualidade garantida", subtitle: "Padrões elevados em cada visita", items: ["Inspeções regulares de qualidade", "Feedback e melhoria contínua", "Relatórios periódicos de serviço"] }
   ],
-  ctaTitle: "Ambiente limpo é produtividade garantida"
+  ctaTitle: "Ambiente limpo é produtividade garantida",
+  sectorsTitle: "Setores onde atuamos com limpeza profissional",
+  sectorsText: "A Bioprev adapta os seus serviços de limpeza às exigências de cada setor, garantindo ambientes limpos, seguros e em conformidade com as normas específicas de cada indústria.",
+  sectors: [
+    { icon: Hotel, name: "Hotelaria", description: "Limpeza profissional de quartos, áreas comuns, restaurantes e spas, mantendo os mais altos padrões de higiene que os hóspedes esperam." },
+    { icon: Utensils, name: "Restauração", description: "Programas de limpeza intensiva para cozinhas, salas de refeição e áreas de preparação de alimentos, garantindo conformidade sanitária." },
+    { icon: Briefcase, name: "Escritórios", description: "Serviços diários ou periódicos de limpeza para escritórios, salas de reunião, copas e instalações sanitárias, com horários flexíveis." },
+    { icon: Building2, name: "Gestão de instalações", description: "Limpeza coordenada para edifícios comerciais com múltiplos pisos e inquilinos, incluindo áreas comuns e zonas técnicas." },
+    { icon: Factory, name: "Processamento alimentar", description: "Limpeza especializada de instalações de produção alimentar, seguindo protocolos rigorosos de higiene e desinfecção." },
+    { icon: ShoppingCart, name: "Retalho alimentar", description: "Limpeza de supermercados e lojas de alimentos, incluindo áreas de venda, zonas de preparação e câmaras frigoríficas." },
+    { icon: Warehouse, name: "Logística e armazenamento", description: "Limpeza industrial de armazéns e centros de distribuição, mantendo condições sanitárias adequadas para as mercadorias." },
+    { icon: Pill, name: "Farmacêutica", description: "Limpeza de salas limpas, laboratórios e áreas de produção farmacêutica, cumprindo os padrões GMP exigidos pela indústria." },
+  ]
 };
 
 export default function Cleaning() {

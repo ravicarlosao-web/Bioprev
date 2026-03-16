@@ -61,51 +61,6 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://bioprevangola.com/sectors</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://bioprevangola.com/sectors/food-processing</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bioprevangola.com/sectors/facilities</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bioprevangola.com/sectors/logistics</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bioprevangola.com/sectors/hospitality</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bioprevangola.com/sectors/food-retail</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bioprevangola.com/sectors/pharmaceutical</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bioprevangola.com/sectors/offices</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bioprevangola.com/sectors/restaurants</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://bioprevangola.com/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

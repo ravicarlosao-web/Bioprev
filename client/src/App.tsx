@@ -23,15 +23,6 @@ const BlogPost = lazy(() => import("@/pages/blog/BlogPost"));
 const About = lazy(() => import("@/pages/about/About"));
 const History = lazy(() => import("@/pages/about/History"));
 const Careers = lazy(() => import("@/pages/about/Careers"));
-const AllSectors = lazy(() => import("@/pages/sectors/AllSectors"));
-const FoodProcessing = lazy(() => import("@/pages/sectors/FoodProcessing"));
-const Facilities = lazy(() => import("@/pages/sectors/Facilities"));
-const Logistics = lazy(() => import("@/pages/sectors/Logistics"));
-const Hospitality = lazy(() => import("@/pages/sectors/Hospitality"));
-const FoodRetail = lazy(() => import("@/pages/sectors/FoodRetail"));
-const Pharmaceutical = lazy(() => import("@/pages/sectors/Pharmaceutical"));
-const Offices = lazy(() => import("@/pages/sectors/Offices"));
-const Restaurants = lazy(() => import("@/pages/sectors/Restaurants"));
 const NotFound = lazy(() => import("@/pages/not-found"));
 
 function PageLoader() {
@@ -60,15 +51,6 @@ function Router() {
         <Route path="/services/gardening" component={Gardening} />
         <Route path="/reports" component={Reports} />
         <Route path="/services/reports" component={Reports} />
-        <Route path="/sectors" component={AllSectors} />
-        <Route path="/sectors/food-processing" component={FoodProcessing} />
-        <Route path="/sectors/facilities" component={Facilities} />
-        <Route path="/sectors/logistics" component={Logistics} />
-        <Route path="/sectors/hospitality" component={Hospitality} />
-        <Route path="/sectors/food-retail" component={FoodRetail} />
-        <Route path="/sectors/pharmaceutical" component={Pharmaceutical} />
-        <Route path="/sectors/offices" component={Offices} />
-        <Route path="/sectors/restaurants" component={Restaurants} />
         <Route path="/about" component={About} />
         <Route path="/about/history" component={History} />
         <Route path="/about/careers" component={Careers} />

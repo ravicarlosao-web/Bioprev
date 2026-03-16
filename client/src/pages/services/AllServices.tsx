@@ -1,5 +1,5 @@
 import Header from "@/components/layout/Header";
-import { ChevronRight, Plus, CheckCircle2, Target, Search, Factory, ShoppingCart, Warehouse, Building2, Hotel } from "lucide-react";
+import { ChevronRight, Plus, CheckCircle2, Target, Search, Factory, ShoppingCart, Warehouse, Building2, Hotel, Briefcase, Utensils, Pill } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Link } from "wouter";
 import Footer from "@/components/layout/Footer";
@@ -7,11 +7,14 @@ import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 
 export default function AllServices() {
   const sectors = [
-    { name: "Processamento alimentar", icon: Factory, href: "/sectors/food-processing" },
-    { name: "Retalho alimentar", icon: ShoppingCart, href: "/sectors/food-retail" },
-    { name: "Logística e armazenamento", icon: Warehouse, href: "/sectors/logistics" },
-    { name: "Gestão de instalações", icon: Building2, href: "/sectors/facilities" },
-    { name: "Hotelaria", icon: Hotel, href: "/sectors/hospitality" },
+    { name: "Processamento alimentar", icon: Factory },
+    { name: "Retalho alimentar", icon: ShoppingCart },
+    { name: "Logística e armazenamento", icon: Warehouse },
+    { name: "Gestão de instalações", icon: Building2 },
+    { name: "Hotelaria", icon: Hotel },
+    { name: "Escritórios", icon: Briefcase },
+    { name: "Restauração", icon: Utensils },
+    { name: "Farmacêutica", icon: Pill },
   ];
 
   const ipmSteps = [
@@ -149,23 +152,15 @@ export default function AllServices() {
               A Bioprev oferece programas de Gestão Integrada de Pragas (IPM) adaptados às necessidades individuais de cada cliente, apoiando totalmente os requisitos regulamentares e de auditoria.
             </p>
             
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
               {sectors.map((sector, idx) => (
-                <Link key={idx} href={sector.href}>
-                  <div className="bg-white border border-gray-100 p-4 sm:p-6 flex flex-col items-center justify-center hover:shadow-md transition-shadow cursor-pointer group h-full min-h-[100px] sm:min-h-[120px]">
-                    <div className="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 mb-2 sm:mb-4 flex items-center justify-center">
-                      <sector.icon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-[#333333] group-hover:text-[#007cc3] transition-colors" strokeWidth={1} />
-                    </div>
-                    <span className="text-[11px] sm:text-[13px] font-bold text-[#007cc3] text-center leading-tight">{sector.name}</span>
+                <div key={idx} className="bg-white border border-gray-100 p-4 sm:p-6 flex flex-col items-center justify-center hover:shadow-md transition-shadow group h-full min-h-[100px] sm:min-h-[120px]">
+                  <div className="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 mb-2 sm:mb-4 flex items-center justify-center">
+                    <sector.icon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-[#333333] group-hover:text-[#007cc3] transition-colors" strokeWidth={1} />
                   </div>
-                </Link>
-              ))}
-              <Link href="/sectors">
-                <div className="bg-[#1a2b3c] p-4 sm:p-6 flex flex-col items-center justify-center cursor-pointer group h-full min-h-[100px] sm:min-h-[120px]">
-                  <Plus className="w-8 h-8 sm:w-10 sm:h-10 text-white mb-2 sm:mb-4 transition-transform group-hover:scale-110" strokeWidth={1} />
-                  <span className="text-[11px] sm:text-[13px] font-bold text-white text-center">Ver todos os setores</span>
+                  <span className="text-[11px] sm:text-[13px] font-bold text-[#007cc3] text-center leading-tight">{sector.name}</span>
                 </div>
-              </Link>
+              ))}
             </div>
           </div>
         </section>
