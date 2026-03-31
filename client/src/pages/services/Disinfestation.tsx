@@ -1,13 +1,14 @@
 import { ShieldCheck, Zap, Shield, SprayCan, Microscope, Wind, FileCheck, AlertTriangle, Bug, Rat, Wheat, Archive, Thermometer, FlaskConical, ScanLine, BarChart3, Factory, Hotel, Utensils, ShoppingCart, Briefcase, Building2, Warehouse, Pill } from "lucide-react";
 import { Search, Target, CheckCircle2 } from "lucide-react";
 import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
+import desinfestacaoHero from "../../assets/images/service-desinfestacao-hero.jpg";
 
 const data: ServicePageData = {
   seoTitle: "Desinfestação Profissional em Angola",
   seoDescription: "Serviços de desinfestação, fumigação, pulverização, desratização, desbaratização e controlo de gorgulhos e traças em Angola. A Bioprev elimina pragas com segurança em Luanda, Benguela e Huambo.",
   seoKeywords: "desinfestação Angola, fumigação Luanda, pulverização, desratização Angola, desbaratização, gorgulhos, traças, carunchos, controle de pragas Angola, Bioprev desinfestação",
   seoCanonical: "/services/disinfestation",
-  heroImage: "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&q=75&w=1280",
+  heroImage: desinfestacaoHero,
   heroImageAlt: "Serviço de desinfestação",
   breadcrumbLabel: "Desinfestação",
   heroTitle: "Serviços de desinfestação\ngeral e profissional",
