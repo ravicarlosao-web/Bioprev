@@ -19,6 +19,19 @@ import wintradeLogo from "../../assets/images/partner-wintrade.png";
 import multiterminaisLogo from "../../assets/images/partner-multiterminais.png";
 import sodosaLogo from "../../assets/images/partner-sodosa.png";
 import mangoleLogo from "../../assets/images/partner-mangole.png";
+import betnaLogo from "../../assets/images/partner-betna.png";
+import isiaLogo from "../../assets/images/partner-isia.png";
+import espacosLogo from "../../assets/images/partner-espacos.png";
+import praiaMorenaLogo from "../../assets/images/partner-praiamorena.png";
+import bekoLogo from "../../assets/images/partner-beko.png";
+import suaveLogo from "../../assets/images/partner-suave.png";
+import carlizLogo from "../../assets/images/partner-carliz.png";
+import hashtagLogo from "../../assets/images/partner-hashtag.png";
+import damazeLogo from "../../assets/images/partner-damaze.png";
+import mundoCasaLogo from "../../assets/images/partner-mundocasa.png";
+import ladyStoneLogo from "../../assets/images/partner-ladystone.png";
+import dulceriaLogo from "../../assets/images/partner-dulceria.png";
+import automaniaLogo from "../../assets/images/partner-automania.png";
 
 export default function Partnerships() {
   const headerReveal = useScrollReveal(0.2);
@@ -45,6 +58,19 @@ export default function Partnerships() {
     { name: "Multiterminais", src: multiterminaisLogo },
     { name: "Sodosa Holdings", src: sodosaLogo },
     { name: "Mangolê", src: mangoleLogo },
+    { name: "Betna Alimentos", src: betnaLogo },
+    { name: "ISIA", src: isiaLogo },
+    { name: "Espaços", src: espacosLogo },
+    { name: "Praia Morena Hotel", src: praiaMorenaLogo },
+    { name: "Beko", src: bekoLogo },
+    { name: "Suave", src: suaveLogo },
+    { name: "Carliz Rolamentos", src: carlizLogo },
+    { name: "Hashtag Restaurante", src: hashtagLogo },
+    { name: "Damaze", src: damazeLogo },
+    { name: "Mundo da Casa", src: mundoCasaLogo },
+    { name: "Lady Stone", src: ladyStoneLogo },
+    { name: "Dulceria Nacional", src: dulceriaLogo },
+    { name: "Automania", src: automaniaLogo },
   ];
 
   return (
