@@ -16,7 +16,7 @@ export default function Hero() {
         <img 
           src={heroBg}
           alt="Especialista em controle de pragas" 
-          className={`absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] ease-out ${loaded ? 'scale-100' : 'scale-110'}`}
+          className={`absolute inset-0 w-full h-full object-cover object-[center_25%] transition-transform duration-[1.5s] ease-out ${loaded ? 'scale-100' : 'scale-110'}`}
         />
         
         <div className="relative h-full container mx-auto px-4 flex flex-col items-center justify-center text-center">
