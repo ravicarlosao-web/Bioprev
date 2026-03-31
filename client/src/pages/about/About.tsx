@@ -6,6 +6,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { useEffect, useState } from "react";
+import aboutHeroBg from "../../assets/images/about-hero.jpg";
 
 export default function About() {
   const [heroLoaded, setHeroLoaded] = useState(false);
@@ -42,7 +43,7 @@ export default function About() {
         <section className="relative h-[300px] sm:h-[380px] md:h-[460px] lg:h-[500px] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img 
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=75&w=1280" 
+              src={aboutHeroBg}
               alt="Quem somos - BIOPREV" 
               className={`w-full h-full object-cover transition-transform duration-[1.5s] ease-out ${heroLoaded ? 'scale-100' : 'scale-110'}`}
             />
