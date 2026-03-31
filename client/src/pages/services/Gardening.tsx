@@ -2,6 +2,8 @@ import { TreePine, Flower2, Droplets, Sun, Scissors, Bug, Palette, Wrench, Hotel
 import { Search, Target, CheckCircle2 } from "lucide-react";
 import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
 import jardinagemHero from "../../assets/images/service-jardinagem-hero.jpg";
+import gardeningCard1 from "../../assets/images/gardening-card1.jpg";
+import gardeningCard2 from "../../assets/images/gardening-card2.jpg";
 
 const data: ServicePageData = {
   seoTitle: "Jardinagem e Paisagismo em Angola",
@@ -21,13 +23,13 @@ const data: ServicePageData = {
     {
       title: "Manutenção regular",
       description: "Serviços de manutenção programada que incluem corte de relva, podas, fertilização, controlo de ervas daninhas e cuidados sazonais para manter os seus jardins sempre impecáveis.",
-      image: "https://images.unsplash.com/photo-1592150621344-bb30b13e7d0b?auto=format&fit=crop&q=75&w=800",
+      image: gardeningCard1,
       imageAlt: "Manutenção de jardins"
     },
     {
       title: "Projeto paisagístico",
       description: "Design e criação de novos jardins e espaços de lazer, com seleção de espécies adaptadas ao clima local, sistemas de rega eficientes e elementos decorativos.",
-      image: "https://images.unsplash.com/photo-1416872834464-4e7852621763?auto=format&fit=crop&q=75&w=800",
+      image: gardeningCard2,
       imageAlt: "Projeto paisagístico"
     }
   ],
