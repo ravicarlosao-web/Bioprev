@@ -1,6 +1,12 @@
 import { Link } from "wouter";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import LogoCarousel from "./LogoCarousel";
+import lactiangolLogo from "../../assets/images/partner-lactiangol.png";
+import deshanLogo from "../../assets/images/partner-deshan.png";
+import grandLakesLogo from "../../assets/images/partner-grandlakes.png";
+import jornalAngolaLogo from "../../assets/images/partner-jornal-angola.png";
+import carrinhoLogo from "../../assets/images/partner-carrinho.png";
+import omatapaloLogo from "../../assets/images/partner-omatapalo.png";
 
 export default function Partnerships() {
   const headerReveal = useScrollReveal(0.2);
@@ -9,14 +15,12 @@ export default function Partnerships() {
   const cardsReveal = useScrollReveal(0.15);
 
   const logos = [
-    { name: "Angola Lissar", src: "https://www.angoalissar.com/wp-content/uploads/2016/08/menu_Logo.png" },
-    { name: "Feito em Angola", src: "https://feitoemangola.gov.ao/wp-content/uploads/2023/07/basel.png" },
-    { name: "Elisal", src: "https://www.elisal.ao/wp-content/uploads/2023/02/logo-elisal.png" },
-    { name: "Oceaneering", src: "https://cdn.asp.events/CLIENT_GEP_Even_167A59CF_99D9_1363_5D410151722916AC/sites/gep-corporate-site/media/libraries/gep-partners/Oceaneering.png/fit-in/500x500/filters:no_upscale()" },
-    { name: "Toyota Angola", src: "https://ao.empregosyoyota.net/storage/images/jobs/BiGTyg3RchyvpGR08n83fif0fqhCH0-metaMTczNDk2NDY3MzA1NS5qcGc=-.jpg" },
-    { name: "Oceaneering", src: "https://images.seeklogo.com/logo-png/31/3/oceaneering-international-logo-png_seeklogo-310930.png" },
-    { name: "Yewhing", src: "https://pt.yewhing.com/themes/yewhing/images/logo.png" },
-    { name: "GMA Angola", src: "https://static.gmangola.com/images/gma_logo_152x136.png" },
+    { name: "Lactiangol", src: lactiangolLogo },
+    { name: "De Shan Agriculture", src: deshanLogo },
+    { name: "Grand Lakes", src: grandLakesLogo },
+    { name: "Jornal de Angola", src: jornalAngolaLogo },
+    { name: "Carrinho", src: carrinhoLogo },
+    { name: "Omatapalo", src: omatapaloLogo },
   ];
 
   return (
