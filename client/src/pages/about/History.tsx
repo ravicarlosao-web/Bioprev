@@ -3,6 +3,7 @@ import Header from "@/components/layout/Header";
 import { Link } from "wouter";
 import Footer from "@/components/layout/Footer";
 import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
+import nossaHistoriaHero from "../../assets/images/nossa-historia-hero.jpg";
 
 export default function History() {
   const timeline = [
@@ -32,7 +33,7 @@ export default function History() {
         <section className="relative h-[350px] sm:h-[420px] md:h-[500px] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img 
-              src="/src/assets/images/history-hero.jpg" 
+              src={nossaHistoriaHero} 
               alt="Nossa História - BIOPREV" 
               className="w-full h-full object-cover"
             />
