@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
 
@@ -9,16 +9,21 @@ interface LogoCarouselProps {
   }>;
 }
 
+const AUTOPLAY_INTERVAL = 2500;
+
 export default function LogoCarousel({ logos }: LogoCarouselProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel({
-    align: "center",
+    align: "start",
     containScroll: "trimSnaps",
     loop: true,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    dragFree: true,
   });
   
   const [canScrollPrev, setCanScrollPrev] = useState(false);
   const [canScrollNext, setCanScrollNext] = useState(false);
+  const isPaused = useRef(false);
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const scrollPrev = () => emblaApi && emblaApi.scrollPrev();
   const scrollNext = () => emblaApi && emblaApi.scrollNext();
@@ -34,13 +39,26 @@ export default function LogoCarousel({ logos }: LogoCarouselProps) {
     emblaApi.on("select", onSelect);
     onSelect();
 
+    // Autoplay
+    intervalRef.current = setInterval(() => {
+      if (!isPaused.current && emblaApi) {
+        emblaApi.scrollNext();
+      }
+    }, AUTOPLAY_INTERVAL);
+
     return () => {
       emblaApi.off("select", onSelect);
+      if (intervalRef.current) clearInterval(intervalRef.current);
     };
   }, [emblaApi]);
 
   return (
-    <div className="relative w-full mb-24" data-testid="carousel-logos">
+    <div
+      className="relative w-full mb-24"
+      data-testid="carousel-logos"
+      onMouseEnter={() => { isPaused.current = true; }}
+      onMouseLeave={() => { isPaused.current = false; }}
+    >
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex gap-8">
           {logos.map((logo, index) => (
