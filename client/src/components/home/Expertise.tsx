@@ -26,7 +26,7 @@ export default function Expertise() {
       ),
     },
     {
-      title: "Uma equipe, um contato",
+      title: "Uma equipe, um contacto",
       description: "A nossa Equipa de Gestão de Contas Nacionais fornece serviços personalizados e um ponto de contacto único dedicado, garantindo uma experiência de gestão de pragas consistente e sem esforço em toda a sua propriedade.",
       icon: (
         <div className="w-24 h-24 rounded-full bg-[#f0f7fc] border-2 border-[#cce4f2] shadow-sm flex items-center justify-center transition-transform hover:scale-110 duration-300">
