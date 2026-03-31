@@ -43,7 +43,7 @@ export default function Contact() {
         ? 'Cliente existente' 
         : 'Novo cliente residencial';
 
-    const message = `*Nova Consulta de Contato (Site)*\n\n` +
+    const message = `*Nova Consulta de Contacto (Site)*\n\n` +
       `*Tipo:* ${typeLabel}\n` +
       `*Nome:* ${formData.firstName} ${formData.lastName}\n` +
       `*Email:* ${formData.email}\n` +
@@ -59,13 +59,13 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-white">
       <SEOHead
-        title="Contato"
+        title="Contacto"
         description="Entre em contacto com a Bioprev Angola. Solicite orçamento gratuito para controle de pragas, desinfestação, limpeza e outros serviços. WhatsApp: +244 928 737 888."
         canonical="/contact"
-        keywords="contato Bioprev Angola, orçamento controle pragas, contato desinfestação Luanda, telefone Bioprev Angola"
+        keywords="contacto Bioprev Angola, orçamento controle pragas, contacto desinfestação Luanda, telefone Bioprev Angola"
         structuredData={breadcrumbSchema([
           { name: "Início", url: "/" },
-          { name: "Contato", url: "/contact" },
+          { name: "Contacto", url: "/contact" },
         ])}
       />
       <Header />
@@ -76,11 +76,11 @@ export default function Contact() {
             Início
           </Link>
           <span>›</span>
-          <span className="text-gray-800 font-medium">Contato</span>
+          <span className="text-gray-800 font-medium">Contacto</span>
         </div>
 
         {/* Main Title */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#f2c92f] mb-8 sm:mb-12 text-center">Contato</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#f2c92f] mb-8 sm:mb-12 text-center">Contacto</h1>
 
         {/* Form Section */}
         <div className="max-w-3xl mx-auto">
@@ -94,9 +94,9 @@ export default function Contact() {
             </p>
 
             <div className="mb-12">
-              <h3 className="text-[16px] font-medium text-[#111111] mb-2">Contatos Diretos</h3>
+              <h3 className="text-[16px] font-medium text-[#111111] mb-2">Contactos Diretos</h3>
               <p className="text-[#555555] mb-4 text-[16px] leading-relaxed">
-                Pode entrar em contato connosco através dos seguintes meios:
+                Pode entrar em contacto connosco através dos seguintes meios:
               </p>
               <div className="flex flex-col gap-2 text-[16px] text-[#007cc3] font-medium">
                 <a href="mailto:geral@bioprev.com" className="hover:underline">
