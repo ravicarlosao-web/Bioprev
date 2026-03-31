@@ -64,7 +64,7 @@ export default function About() {
               </h1>
               
               <p className={`text-white/90 text-sm sm:text-base md:text-lg lg:text-xl max-w-2xl mb-5 sm:mb-8 md:mb-10 leading-relaxed font-light transition-all duration-1000 delay-300 ${heroLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
-                Conheça a BIOPREV — empresa de direito angolano com mais de nove anos de experiência, sedes em Luanda, Benguela e Huambo, e um compromisso inabalável com a excelência.
+                Conheça a BIOPREV — empresa de direito angolano, 15 anos de experiência, com sede em Luanda, localizada na Rua do Clube Hípico S/N, Benfica, com filial em Benguela, Huambo, Lubango e Kwanza Norte, e com objetivos modernos de aplicação profissional e máxima qualidade.
               </p>
 
               <Link href="/contact"
