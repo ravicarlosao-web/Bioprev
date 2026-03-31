@@ -110,7 +110,7 @@ export default function Header() {
               </a>
               <Link href="/contact" className="flex items-center hover:text-[#f2c92f] transition-colors" data-testid="link-contact">
                 <Phone className="w-4 h-4 mr-1.5" strokeWidth={2.5} />
-                Contato
+                Contacto
               </Link>
             </div>
           </div>
@@ -281,7 +281,7 @@ export default function Header() {
             <MapPin className="w-4 h-4" /> Locais
           </Link>
           <Link href="/contact" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-2 text-[14px] text-[#555555] hover:text-[#007cc3]">
-            <Phone className="w-4 h-4" /> Contato
+            <Phone className="w-4 h-4" /> Contacto
           </Link>
           <a href="tel:+244928737888" className="flex items-center gap-2 text-[14px] font-bold text-[#007cc3]">
             <Phone className="w-4 h-4" /> +244 928 737 888
