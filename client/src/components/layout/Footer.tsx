@@ -18,7 +18,7 @@ export default function Footer() {
           <div className="space-y-3">
             <Link href="/locations"><span className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium cursor-pointer">Locais</span></Link>
             <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Pesquisar</a>
-            <Link href="/contact"><span className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium cursor-pointer">Contato</span></Link>
+            <Link href="/contact"><span className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium cursor-pointer">Contacto</span></Link>
             <a href="#" className="block text-[#666666] hover:text-[#007cc3] text-sm font-medium">Entrar</a>
           </div>
 
