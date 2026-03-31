@@ -72,7 +72,7 @@ export default function About() {
                 className={`inline-block border-2 border-white text-white hover:bg-white hover:text-[#333333] px-6 sm:px-8 md:px-10 py-2.5 sm:py-3 text-sm sm:text-base md:text-lg font-medium transition-all duration-1000 delay-500 ${heroLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
                 data-testid="link-contact-hero"
               >
-                Entre em contato
+                Entre em contacto
               </Link>
             </div>
           </div>
