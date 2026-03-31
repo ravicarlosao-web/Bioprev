@@ -2,6 +2,7 @@ import { Trash2, Recycle, Truck, FileCheck, AlertTriangle, Leaf, Factory, Shield
 import { Search, Target, CheckCircle2 } from "lucide-react";
 import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
 import residuosHero from "../../assets/images/service-residuos-hero.jpg";
+import residuosCard1 from "../../assets/images/service-residuos-card1.jpg";
 
 const data: ServicePageData = {
   seoTitle: "Recolha de Resíduos em Angola",
@@ -21,7 +22,7 @@ const data: ServicePageData = {
     {
       title: "Resíduos urbanos e domésticos",
       description: "Recolha regular de resíduos urbanos em condomínios, bairros e áreas residenciais, além de serviços de recolha doméstica personalizada, mantendo os espaços limpos e saudáveis para as comunidades.",
-      image: "https://images.unsplash.com/photo-1618477461839-210199432687?auto=format&fit=crop&q=75&w=800",
+      image: residuosCard1,
       imageAlt: "Resíduos urbanos e domésticos"
     },
     {
