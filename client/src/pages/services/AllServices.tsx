@@ -70,7 +70,7 @@ export default function AllServices() {
                 className="inline-block border-2 border-white text-white hover:bg-white hover:text-[#333333] px-6 sm:px-8 md:px-10 py-2.5 sm:py-3 text-sm sm:text-base md:text-lg font-medium transition-all duration-300"
                 data-testid="button-get-in-touch"
               >
-                Entre em contato
+                Entre em contacto
               </Link>
             </div>
           </div>
