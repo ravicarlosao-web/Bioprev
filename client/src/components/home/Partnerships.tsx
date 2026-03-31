@@ -7,6 +7,18 @@ import grandLakesLogo from "../../assets/images/partner-grandlakes.png";
 import jornalAngolaLogo from "../../assets/images/partner-jornal-angola.png";
 import carrinhoLogo from "../../assets/images/partner-carrinho.png";
 import omatapaloLogo from "../../assets/images/partner-omatapalo.png";
+import agosto1Logo from "../../assets/images/partner-1agosto.png";
+import rafinoleLogo from "../../assets/images/partner-rafinole.png";
+import zafiraLogo from "../../assets/images/partner-zafira.png";
+import wilogLogo from "../../assets/images/partner-wilog.png";
+import brisasLogo from "../../assets/images/partner-brisas.png";
+import progasLogo from "../../assets/images/partner-progas.png";
+import coolmixLogo from "../../assets/images/partner-coolmix.png";
+import joiafefLogo from "../../assets/images/partner-joiafef.png";
+import wintradeLogo from "../../assets/images/partner-wintrade.png";
+import multiterminaisLogo from "../../assets/images/partner-multiterminais.png";
+import sodosaLogo from "../../assets/images/partner-sodosa.png";
+import mangoleLogo from "../../assets/images/partner-mangole.png";
 
 export default function Partnerships() {
   const headerReveal = useScrollReveal(0.2);
@@ -21,6 +33,18 @@ export default function Partnerships() {
     { name: "Jornal de Angola", src: jornalAngolaLogo },
     { name: "Carrinho", src: carrinhoLogo },
     { name: "Omatapalo", src: omatapaloLogo },
+    { name: "Clube Desportivo 1º de Agosto", src: agosto1Logo },
+    { name: "Rafinole", src: rafinoleLogo },
+    { name: "Zafira", src: zafiraLogo },
+    { name: "WiLog International", src: wilogLogo },
+    { name: "Brisas Condomínio Horizontal", src: brisasLogo },
+    { name: "Progás", src: progasLogo },
+    { name: "Coolmix", src: coolmixLogo },
+    { name: "Joia Fef", src: joiafefLogo },
+    { name: "Wintrade", src: wintradeLogo },
+    { name: "Multiterminais", src: multiterminaisLogo },
+    { name: "Sodosa Holdings", src: sodosaLogo },
+    { name: "Mangolê", src: mangoleLogo },
   ];
 
   return (
