@@ -26,7 +26,7 @@ const data: ServicePageData = {
     },
     {
       title: "Cobertura em todo o país",
-      description: "Com filiais operacionais em Luanda, Benguela e Huambo, a Bioprev garante cobertura em todas as principais regiões de Angola, com equipas locais que conhecem as condições específicas de cada zona.",
+      description: "Conheça a BIOPREV — empresa de direito angolano com 15 anos de experiência, com sede em Luanda, na Rua do Clube Hípico S/N, Benfica, com filial em Benguela, Huambo, Lubango e Kwanza Norte, e com objetivos modernos de aplicação profissional e máxima qualidade.",
       image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=75&w=800",
       imageAlt: "Cobertura nacional"
     }
