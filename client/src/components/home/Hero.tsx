@@ -18,8 +18,9 @@ export default function Hero() {
           alt="Especialista em controle de pragas" 
           className={`absolute inset-0 w-full h-full object-cover object-[center_25%] transition-transform duration-[1.5s] ease-out ${loaded ? 'scale-100' : 'scale-110'}`}
         />
+        <div className="absolute inset-0 bg-[#001d3d]/60" />
         
-        <div className="relative h-full container mx-auto px-4 flex flex-col items-center justify-center text-center">
+        <div className="relative z-10 h-full container mx-auto px-4 flex flex-col items-center justify-center text-center">
           <h1
             className={`text-2xl sm:text-3xl md:text-5xl font-normal text-white mb-6 md:mb-8 max-w-4xl leading-tight px-2 transition-all duration-1000 ease-out ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
             data-testid="text-hero-title"
