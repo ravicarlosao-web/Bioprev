@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-import services1Img from "../../assets/images/services-1.jpg";
+import services1Img from "../../assets/images/home-pragas-card.jpg";
 import services2Img from "../../assets/images/services-2.jpg";
 
 export default function Services() {
