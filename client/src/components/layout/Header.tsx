@@ -1,8 +1,19 @@
-import { Search, MapPin, Phone, Menu, Target, Globe, Info, BookOpen, Wind, Droplets, Trash2, Trees, ShieldCheck, ChevronRight, BarChart3 } from "lucide-react";
+import { Search, MapPin, Phone, Menu, Target, Globe, Info, BookOpen, Wind, Droplets, Trash2, Trees, ShieldCheck, ChevronRight, BarChart3, Factory, Hotel, Utensils, ShoppingCart, Briefcase, Building2, Warehouse, Pill } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "wouter";
 import logoImg from "@/assets/images/logo.png";
+
+const disinfestationSectors = [
+  { icon: Factory, name: 'Processamento\nalimentar' },
+  { icon: Hotel, name: 'Hotelaria' },
+  { icon: Utensils, name: 'Restauração' },
+  { icon: ShoppingCart, name: 'Retalho\nalimentar' },
+  { icon: Briefcase, name: 'Escritórios' },
+  { icon: Building2, name: 'Gestão de\ninstalações' },
+  { icon: Warehouse, name: 'Logística e\narmazenamento' },
+  { icon: Pill, name: 'Farmacêutica' },
+];
 
 export default function Header() {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
@@ -10,6 +21,7 @@ export default function Header() {
   const [location] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileSubmenu, setMobileSubmenu] = useState<string | null>(null);
+  const [hoveredService, setHoveredService] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -140,7 +152,7 @@ export default function Header() {
                     key={item.id}
                     className="relative h-full flex items-center group cursor-pointer px-4"
                     onMouseEnter={() => setActiveMenu(item.id)}
-                    onMouseLeave={() => setActiveMenu(null)}
+                    onMouseLeave={() => { setActiveMenu(null); setHoveredService(null); }}
                   >
                     <Link href={item.id === 'services' ? '/services' : '#'}>
                       <span 
@@ -161,22 +173,66 @@ export default function Header() {
                       <div className="absolute top-[-10px] left-0 w-full h-[10px] bg-transparent" />
                       <div className="w-full bg-[#f2f2f2] shadow-xl border-t-0 py-0">
                         <div className="container mx-auto px-4 flex justify-center">
-                          <div className="flex bg-white border-x border-gray-200">
-                            {item.content.map((subItem, idx) => (
-                              <Link 
-                                key={idx}
-                                href={subItem.href || (subItem.text.includes('Todos') ? '/services' : '#')} 
-                                className={`flex flex-col items-center justify-center p-6 w-[140px] min-h-[160px] hover:bg-gray-50 transition-colors ${idx !== item.content.length - 1 ? 'border-r border-gray-100' : ''} text-center group/item relative`}
+                          {item.id === 'services' ? (
+                            <div className="flex flex-col bg-white border-x border-gray-200">
+                              <div className="flex">
+                                {item.content.map((subItem, idx) => {
+                                  const isDisin = subItem.href === '/services/disinfestation';
+                                  return (
+                                    <Link 
+                                      key={idx}
+                                      href={subItem.href || '#'} 
+                                      className={`flex flex-col items-center justify-center p-6 w-[140px] min-h-[160px] hover:bg-gray-50 transition-colors ${idx !== item.content.length - 1 ? 'border-r border-gray-100' : ''} text-center group/item relative ${isDisin && hoveredService === 'disinfestation' ? 'bg-[#f4f8ff]' : ''}`}
+                                      onMouseEnter={() => setHoveredService(isDisin ? 'disinfestation' : null)}
+                                    >
+                                      <div className="absolute bottom-0 left-0 w-full h-1 bg-[#f2c92f] transform scale-x-0 group-hover/item:scale-x-100 transition-transform duration-200 origin-center" />
+                                      <subItem.icon className={`w-12 h-12 mb-3 transition-transform group-hover/item:scale-105 ${isDisin && hoveredService === 'disinfestation' ? 'text-[#007cc3]' : 'text-[#333333]'}`} strokeWidth={0.75} />
+                                      <span className="text-[13px] font-normal text-[#333333] whitespace-pre-line leading-tight">
+                                        {subItem.text}
+                                      </span>
+                                    </Link>
+                                  );
+                                })}
+                              </div>
+
+                              <div
+                                className={`overflow-hidden transition-all duration-250 border-t border-gray-200 ${hoveredService === 'disinfestation' ? 'max-h-[130px] opacity-100' : 'max-h-0 opacity-0'}`}
+                                onMouseEnter={() => setHoveredService('disinfestation')}
                               >
-                                <div className="absolute bottom-0 left-0 w-full h-1 bg-[#f2c92f] transform scale-x-0 group-hover/item:scale-x-100 transition-transform duration-200 origin-center" />
-                                
-                                <subItem.icon className="w-12 h-12 text-[#333333] mb-3 transition-transform group-hover/item:scale-105" strokeWidth={0.75} />
-                                <span className="text-[13px] font-normal text-[#333333] whitespace-pre-line leading-tight">
-                                  {subItem.text}
-                                </span>
-                              </Link>
-                            ))}
-                          </div>
+                                <div className="flex bg-[#f4f8ff]">
+                                  {disinfestationSectors.map((sector, idx) => (
+                                    <Link
+                                      key={idx}
+                                      href="/services/disinfestation#sectors"
+                                      className={`flex flex-col items-center justify-center py-3 px-2 flex-1 min-h-[110px] hover:bg-[#e8f2fb] transition-colors ${idx !== disinfestationSectors.length - 1 ? 'border-r border-blue-100' : ''} text-center group/sector relative`}
+                                    >
+                                      <div className="absolute bottom-0 left-0 w-full h-[3px] bg-[#007cc3] transform scale-x-0 group-hover/sector:scale-x-100 transition-transform duration-200 origin-center" />
+                                      <sector.icon className="w-7 h-7 text-[#007cc3] mb-1.5 transition-transform group-hover/sector:scale-110" strokeWidth={1.5} />
+                                      <span className="text-[11px] font-normal text-[#333333] whitespace-pre-line leading-tight">
+                                        {sector.name}
+                                      </span>
+                                    </Link>
+                                  ))}
+                                </div>
+                              </div>
+                            </div>
+                          ) : (
+                            <div className="flex bg-white border-x border-gray-200">
+                              {item.content.map((subItem, idx) => (
+                                <Link 
+                                  key={idx}
+                                  href={subItem.href || '#'} 
+                                  className={`flex flex-col items-center justify-center p-6 w-[140px] min-h-[160px] hover:bg-gray-50 transition-colors ${idx !== item.content.length - 1 ? 'border-r border-gray-100' : ''} text-center group/item relative`}
+                                >
+                                  <div className="absolute bottom-0 left-0 w-full h-1 bg-[#f2c92f] transform scale-x-0 group-hover/item:scale-x-100 transition-transform duration-200 origin-center" />
+                                  <subItem.icon className="w-12 h-12 text-[#333333] mb-3 transition-transform group-hover/item:scale-105" strokeWidth={0.75} />
+                                  <span className="text-[13px] font-normal text-[#333333] whitespace-pre-line leading-tight">
+                                    {subItem.text}
+                                  </span>
+                                </Link>
+                              ))}
+                            </div>
+                          )}
                         </div>
                       </div>
                     </div>
@@ -238,18 +294,35 @@ export default function Header() {
                   <ChevronRight className={`w-4 h-4 transition-transform duration-200 ${mobileSubmenu === item.id ? 'rotate-90' : ''}`} />
                 </button>
                 <div
-                  className={`overflow-hidden bg-gray-50 transition-all duration-200 ${mobileSubmenu === item.id ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}
+                  className={`overflow-hidden bg-gray-50 transition-all duration-200 ${mobileSubmenu === item.id ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'}`}
                 >
                   {item.content.map((subItem, idx) => (
-                    <Link
-                      key={idx}
-                      href={subItem.href || '#'}
-                      onClick={() => { setMobileMenuOpen(false); setMobileSubmenu(null); }}
-                      className="flex items-center gap-3 px-8 py-3 text-[14px] text-[#555555] hover:text-[#007cc3] hover:bg-white transition-colors"
-                    >
-                      <subItem.icon className="w-5 h-5 text-[#007cc3] shrink-0" strokeWidth={1.5} />
-                      <span className="whitespace-pre-line leading-tight">{subItem.text}</span>
-                    </Link>
+                    <div key={idx}>
+                      <Link
+                        href={subItem.href || '#'}
+                        onClick={() => { setMobileMenuOpen(false); setMobileSubmenu(null); }}
+                        className="flex items-center gap-3 px-8 py-3 text-[14px] text-[#555555] hover:text-[#007cc3] hover:bg-white transition-colors"
+                      >
+                        <subItem.icon className="w-5 h-5 text-[#007cc3] shrink-0" strokeWidth={1.5} />
+                        <span className="whitespace-pre-line leading-tight">{subItem.text}</span>
+                      </Link>
+                      {item.id === 'services' && subItem.href === '/services/disinfestation' && (
+                        <div className="bg-[#f0f6fc] border-t border-blue-100">
+                          <p className="px-8 pt-2 pb-1 text-[11px] font-semibold text-[#007cc3] uppercase tracking-wider">Setores de atuação</p>
+                          {disinfestationSectors.map((sector, sIdx) => (
+                            <Link
+                              key={sIdx}
+                              href="/services/disinfestation#sectors"
+                              onClick={() => { setMobileMenuOpen(false); setMobileSubmenu(null); }}
+                              className="flex items-center gap-3 px-8 py-2 text-[13px] text-[#555555] hover:text-[#007cc3] hover:bg-white transition-colors"
+                            >
+                              <sector.icon className="w-4 h-4 text-[#007cc3] shrink-0" strokeWidth={1.5} />
+                              <span className="whitespace-pre-line leading-tight">{sector.name}</span>
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </div>
                   ))}
                 </div>
               </div>

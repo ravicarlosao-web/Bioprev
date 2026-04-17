@@ -92,6 +92,17 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
     return () => clearTimeout(t);
   }, []);
 
+  useEffect(() => {
+    if (window.location.hash) {
+      const id = window.location.hash.slice(1);
+      const t = setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 500);
+      return () => clearTimeout(t);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-white flex flex-col font-sans">
       <SEOHead
@@ -266,7 +277,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
         </section>
 
         {data.sectors && data.sectors.length > 0 && (
-          <section className="py-14 sm:py-18 md:py-24 bg-[#f8f9fa]">
+          <section id="sectors" className="py-14 sm:py-18 md:py-24 bg-[#f8f9fa]">
             <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
               <div ref={sectorsHeaderReveal.ref} className={`text-center mb-10 sm:mb-16 sr-hidden ${sectorsHeaderReveal.isVisible ? 'sr-visible' : ''}`}>
                 <h2 className="text-2xl sm:text-3xl md:text-[36px] font-medium text-[#333333] mb-5 sm:mb-8 leading-tight">
