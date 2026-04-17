@@ -1,5 +1,4 @@
 import { Zap, Shield, SprayCan, Microscope, Wind, FileCheck, AlertTriangle, Bug, Rat, Wheat, Archive, Thermometer, FlaskConical, BarChart3, Factory, Hotel, Utensils, ShoppingCart, Briefcase, Building2, Warehouse, Pill } from "lucide-react";
-import { Search, Target, CheckCircle2 } from "lucide-react";
 import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
 import desinfestacaoHero from "../../assets/images/service-desinfestacao-hero.jpg";
 
@@ -61,11 +60,6 @@ const data: ServicePageData = {
   whyTitle: "Porquê escolher a Bioprev para desinfestação?",
   whyText1: "Na Bioprev, os nossos especialistas em desinfestação dedicam-se a identificar as soluções mais seguras e eficazes para proteger a sua casa e negócio. Oferecemos métodos completos — fumigação, pulverização, desratização, desbaratização, controlo de gorgulhos e traças, e gel — cada um selecionado após inspeção minuciosa. Os gorgulhos, traças e carunchos podem destruir stocks inteiros em pouco tempo, sendo um perigo real para a indústria alimentar, armazéns e silos.",
   whyText2: "Utilizamos apenas produtos certificados e sem prejuízo para a saúde do homem e para o meio ambiente. Além de tratamentos eficazes, oferecemos um sistema completo de relatórios estatísticos de controle de pragas — cada cliente possui acesso a dados sobre pragas capturadas, consumo de pesticida, fichas de monitoramento e relatórios de trabalho preventivo e corretivo. Escolha a Bioprev para soluções completas, ecológicas e um compromisso com os mais altos padrões de serviço.",
-  processCards: [
-    { icon: Search, title: "1. Avaliação de risco", subtitle: "Pesquisa e consulta sem complicações", items: ["Inspeção programada no horário de sua conveniência", "Identificação dos focos de infestação", "Seleção do método mais adequado para cada praga"] },
-    { icon: Target, title: "2. Tratamento especializado", subtitle: "Programa abrangente adaptado às suas necessidades", items: ["Fumigação, pulverização ou aplicação de gel", "Desratização, desbaratização e controlo de gorgulhos/traças", "Tratamento térmico para pragas em produtos armazenados"] },
-    { icon: CheckCircle2, title: "3. Verificação e certificação", subtitle: "Garantindo um ambiente limpo e seguro", items: ["Certificado de desinfestação pós-serviço", "Relatórios estatísticos completos por cliente", "Monitoramento contínuo e prevenção de reinfestação"] }
-  ],
   ctaTitle: "Agende a sua avaliação de desinfestação hoje",
   sectorsTitle: "Setores onde atuamos com desinfestação",
   sectorsText: "Os nossos serviços de desinfestação são adaptados às necessidades específicas de cada setor, garantindo soluções eficazes e em conformidade com as regulamentações de cada indústria.",

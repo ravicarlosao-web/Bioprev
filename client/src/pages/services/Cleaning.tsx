@@ -1,5 +1,4 @@
 import { Sparkles, Building2, Factory, Home, Truck, Fuel, GraduationCap, Hotel, Utensils, Briefcase, ShoppingCart, Warehouse, Pill } from "lucide-react";
-import { Search, Target, CheckCircle2 } from "lucide-react";
 import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
 import limpezaHero from "../../assets/images/service-limpeza-hero.jpg";
 
@@ -54,11 +53,6 @@ const data: ServicePageData = {
   whyTitle: "Porquê escolher a Bioprev para limpeza?",
   whyText1: "Na Bioprev, acreditamos que um ambiente limpo é fundamental para a produtividade, o bem-estar e a imagem profissional da sua organização. As nossas equipas de limpeza são cuidadosamente selecionadas, formadas e supervisionadas para garantir os mais altos padrões de serviço — seja limpeza industrial, doméstica, urbana ou de tanques de combustível.",
   whyText2: "Utilizamos produtos de limpeza ecológicos e equipamento profissional de última geração. A limpeza das cidades, por exemplo, é uma necessidade imperativa que tratamos com a mesma seriedade que a limpeza de instalações industriais. Trabalhamos de forma discreta e eficiente para que os seus espaços estejam sempre impecáveis.",
-  processCards: [
-    { icon: Search, title: "1. Avaliação personalizada", subtitle: "Análise detalhada das suas necessidades", items: ["Inspeção de todas as áreas e superfícies", "Avaliação de necessidades domésticas e urbanas", "Orçamento transparente sem surpresas"] },
-    { icon: Target, title: "2. Execução profissional", subtitle: "Equipas treinadas e equipamento de qualidade", items: ["Limpeza industrial, doméstica e urbana", "Limpeza de tanques de combustível", "Produtos ecológicos e seguros"] },
-    { icon: CheckCircle2, title: "3. Qualidade garantida", subtitle: "Padrões elevados em cada visita", items: ["Inspeções regulares de qualidade", "Feedback e melhoria contínua", "Relatórios periódicos de serviço"] }
-  ],
   ctaTitle: "Ambiente limpo é produtividade garantida",
   sectorsTitle: "Setores onde atuamos com limpeza profissional",
   sectorsText: "A Bioprev adapta os seus serviços de limpeza às exigências de cada setor, garantindo ambientes limpos, seguros e em conformidade com as normas específicas de cada indústria.",

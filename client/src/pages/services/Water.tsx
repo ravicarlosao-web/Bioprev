@@ -1,5 +1,4 @@
 import { Droplets, FlaskConical, Truck, ThermometerSun, ShieldCheck, Clock, Building2, Users, Hotel, Factory, Warehouse, HardHat } from "lucide-react";
-import { Search, Target, CheckCircle2 } from "lucide-react";
 import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
 
 const data: ServicePageData = {
@@ -52,11 +51,6 @@ const data: ServicePageData = {
   whyTitle: "Porquê escolher a Bioprev para água potável?",
   whyText1: "A qualidade da água que fornece aos seus colaboradores, clientes e visitantes é uma questão de saúde pública e de responsabilidade corporativa. Na Bioprev, cada entrega é tratada com o rigor e a atenção que a saúde das pessoas exige, com rastreabilidade completa e certificação em todas as fases.",
   whyText2: "Com uma frota de cisternas alimentares e uma equipa de técnicos especializados, garantimos entregas pontuais em todo o território angolano, mesmo em situações de emergência ou em locais de difícil acesso.",
-  processCards: [
-    { icon: Search, title: "1. Avaliação de necessidades", subtitle: "Planeamento do abastecimento", items: ["Determinação do volume necessário", "Análise do ponto de entrega e depósitos", "Definição da frequência de abastecimento"] },
-    { icon: Target, title: "2. Fornecimento certificado", subtitle: "Qualidade em cada entrega", items: ["Água analisada laboratorialmente", "Transporte em cisternas alimentares", "Entrega por técnicos qualificados"] },
-    { icon: CheckCircle2, title: "3. Monitorização contínua", subtitle: "Qualidade garantida no armazenamento", items: ["Limpeza periódica de depósitos", "Análises de controlo da água armazenada", "Relatórios de qualidade regulares"] }
-  ],
   ctaTitle: "Garanta água potável de qualidade para o seu negócio",
   sectorsTitle: "Setores onde fornecemos água potável",
   sectorsText: "A Bioprev garante o abastecimento de água potável certificada para diversos setores, com entregas programadas e capacidade de resposta urgente.",

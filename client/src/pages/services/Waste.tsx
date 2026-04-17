@@ -1,5 +1,4 @@
 import { Factory, Shield, Home, HardHat, Hotel, Utensils, Building2, Warehouse } from "lucide-react";
-import { Search, Target, CheckCircle2 } from "lucide-react";
 import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
 import residuosHero from "../../assets/images/service-residuos-hero.jpg";
 import residuosCard1 from "../../assets/images/service-residuos-card1.jpg";
@@ -49,11 +48,6 @@ const data: ServicePageData = {
   whyTitle: "Porquê escolher a Bioprev para recolha de resíduos?",
   whyText1: "A BIOPREV conta com equipes especializadas na coleta de resíduos, usando técnicas de limpeza e coleta com ajuda das mais atualizadas tecnologias de remoção de lixo considerando todos os aspetos como saúde e imagem dos clientes. Para realizarmos os serviços de recolha de resíduos, usamos parâmetros definidos, para selecionarmos o tipo de recipiente e equipamentos a ser utilizado por cada cliente.",
   whyText2: "Com frota própria e licenças para o transporte de todos os tipos de resíduos em Angola — urbanos, domésticos, pós-construção, hospitalares e industriais — oferecemos tranquilidade e conformidade total, com documentação que suporta auditorias ambientais e demonstra responsabilidade corporativa.",
-  processCards: [
-    { icon: Search, title: "1. Avaliação de resíduos", subtitle: "Análise completa dos seus fluxos", items: ["Classificação por tipo: urbano, doméstico, hospitalar, industrial", "Seleção de recipientes e equipamentos adequados", "Definição de frequência de recolha"] },
-    { icon: Target, title: "2. Recolha especializada", subtitle: "Frota própria e equipas certificadas", items: ["Recolha urbana e doméstica regular", "Remoção de entulho pós-construção", "Resíduos hospitalares e industriais"] },
-    { icon: CheckCircle2, title: "3. Conformidade garantida", subtitle: "Documentação e rastreabilidade total", items: ["Certificados de destino final", "Relatórios ambientais periódicos", "Tecnologias atualizadas de remoção"] }
-  ],
   ctaTitle: "Soluções completas de recolha de resíduos",
   sectorsTitle: "Setores onde atuamos com recolha de resíduos",
   sectorsText: "A Bioprev oferece soluções de recolha e gestão de resíduos adaptadas às necessidades e regulamentações de cada setor, garantindo conformidade ambiental e rastreabilidade total.",

@@ -1,5 +1,4 @@
 import { Zap, Shield, Bug, SprayCan, Droplets, Trees, Trash2, ClipboardCheck } from "lucide-react";
-import { Search, Target, CheckCircle2 } from "lucide-react";
 import ServicePageTemplate, { type ServicePageData } from "../services/ServicePageTemplate";
 
 const data: ServicePageData = {
@@ -55,11 +54,6 @@ const data: ServicePageData = {
   whyTitle: "Uma solução completa para toda a organização",
   whyText1: "Gerir múltiplos fornecedores para diferentes serviços de higiene e manutenção consome tempo, gera inconsistências e dificulta a visibilidade sobre o estado geral das suas instalações. Com as soluções nacionais da Bioprev, simplifica tudo num único programa integrado.",
   whyText2: "Desde a desinfestação até à jardinagem, cada serviço é coordenado pelo mesmo gestor de conta, prestado por equipas especializadas e documentado em relatórios consolidados. O resultado é menos trabalho administrativo, mais consistência e melhor proteção para toda a organização.",
-  processCards: [
-    { icon: Search, title: "1. Diagnóstico integrado", subtitle: "Avaliação de todas as necessidades", items: ["Levantamento de serviços por localização", "Identificação de prioridades e riscos", "Proposta integrada multi-serviço"] },
-    { icon: Target, title: "2. Execução coordenada", subtitle: "Equipas especializadas em cada região", items: ["Desinfestação, limpeza e recolha integrados", "Cronogramas coordenados sem sobreposições", "Equipas locais em Luanda, Benguela e Huambo"] },
-    { icon: CheckCircle2, title: "3. Gestão unificada", subtitle: "Visibilidade e controle total", items: ["Relatórios consolidados multi-serviço", "Gestor de conta como ponto único", "Otimização contínua do programa"] }
-  ],
   ctaTitle: "Todas as soluções que a sua organização precisa"
 };
 

@@ -1,5 +1,4 @@
 import { TreePine, Flower2, Droplets, Sun, Scissors, Bug, Palette, Wrench, Hotel, Utensils, Briefcase, Building2, Home } from "lucide-react";
-import { Search, Target, CheckCircle2 } from "lucide-react";
 import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
 import jardinagemHero from "../../assets/images/service-jardinagem-hero.jpg";
 import gardeningCard1 from "../../assets/images/gardening-card1.jpg";
@@ -57,11 +56,6 @@ const data: ServicePageData = {
   whyTitle: "Porquê escolher a Bioprev para jardinagem?",
   whyText1: "Os seus espaços verdes são uma extensão da imagem da sua organização. Na Bioprev, tratamos cada jardim como uma obra de arte viva que requer conhecimento, dedicação e atenção constante. A nossa equipa de profissionais garante que os seus exteriores refletem a qualidade e o profissionalismo que define a sua marca.",
   whyText2: "Com experiência em projetos de todos os tamanhos — desde pequenos jardins corporativos a grandes parques empresariais — oferecemos soluções que combinam beleza, funcionalidade e sustentabilidade, adaptadas ao clima e às condições específicas de Angola.",
-  processCards: [
-    { icon: Search, title: "1. Avaliação do espaço", subtitle: "Análise completa do terreno e necessidades", items: ["Avaliação de solo e condições climáticas", "Identificação de espécies existentes", "Definição de objetivos e orçamento"] },
-    { icon: Target, title: "2. Execução profissional", subtitle: "Implementação e manutenção de qualidade", items: ["Equipas treinadas e equipamento adequado", "Espécies adaptadas ao clima local", "Sistemas de rega eficientes"] },
-    { icon: CheckCircle2, title: "3. Acompanhamento contínuo", subtitle: "Jardins sempre saudáveis e bonitos", items: ["Manutenção programada regular", "Controlo fitossanitário preventivo", "Ajustes sazonais e renovação"] }
-  ],
   ctaTitle: "Transforme os seus espaços verdes com a Bioprev",
   sectorsTitle: "Setores onde atuamos com jardinagem",
   sectorsText: "A Bioprev cria e mantém espaços verdes para os mais diversos setores, combinando estética, funcionalidade e sustentabilidade em cada projeto.",

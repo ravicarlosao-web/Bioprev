@@ -65,7 +65,7 @@ export interface ServicePageData {
   whyTitle: string;
   whyText1: string;
   whyText2: string;
-  processCards: [ServiceProcessCard, ServiceProcessCard, ServiceProcessCard];
+  processCards?: [ServiceProcessCard, ServiceProcessCard, ServiceProcessCard];
   ctaTitle: string;
   sectorsTitle?: string;
   sectorsText?: string;
@@ -83,7 +83,6 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
   const approachReveal = useScrollReveal(0.15);
   const stepsReveal = useScrollReveal(0.1);
   const whyReveal = useScrollReveal(0.15);
-  const processReveal = useScrollReveal(0.1);
   const sectorsHeaderReveal = useScrollReveal(0.15);
   const sectorsGridReveal = useScrollReveal(0.1);
   const ctaReveal = useScrollReveal(0.2);
@@ -264,28 +263,6 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
             </div>
           </div>
 
-          <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
-            <div ref={processReveal.ref} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
-              {data.processCards.map((card, idx) => (
-                <div key={idx} className={`bg-white border-t-4 border-[#f2c92f] shadow-lg p-6 sm:p-8 md:p-10 flex flex-col h-full hover-lift sr-hidden stagger-${idx + 1} ${idx === 2 ? 'sm:col-span-2 md:col-span-1' : ''} ${processReveal.isVisible ? 'sr-visible' : ''}`}>
-                  <div className="mb-5 sm:mb-8 flex justify-center">
-                    <card.icon className="w-10 h-10 sm:w-12 sm:h-12 text-[#333333]" strokeWidth={1} />
-                  </div>
-                  <h3 className="text-lg sm:text-xl md:text-[22px] font-medium text-[#333333] mb-4 sm:mb-6 text-center">{card.title}</h3>
-                  <p className="text-[#666666] text-xs sm:text-sm mb-5 sm:mb-8 text-center leading-relaxed">
-                    {card.subtitle}
-                  </p>
-                  <div className="space-y-2 mt-auto">
-                    {card.items.map((item, i) => (
-                      <div key={i} className="bg-[#f2f5f7] p-3 sm:p-4 text-[12px] sm:text-[13px] text-[#333333] leading-tight">
-                        {item}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
         </section>
 
         {data.sectors && data.sectors.length > 0 && (
