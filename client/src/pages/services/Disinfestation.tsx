@@ -63,7 +63,7 @@ const data: ServicePageData = {
   whyText2: "Utilizamos apenas produtos certificados e sem prejuízo para a saúde do homem e para o meio ambiente. Além de tratamentos eficazes, oferecemos um sistema completo de relatórios estatísticos de controle de pragas — cada cliente possui acesso a dados sobre pragas capturadas, consumo de pesticida, fichas de monitoramento e relatórios de trabalho preventivo e corretivo. Escolha a Bioprev para soluções completas, ecológicas e um compromisso com os mais altos padrões de serviço.",
   processCards: [
     { icon: Search, title: "1. Avaliação de risco", subtitle: "Pesquisa e consulta sem complicações", items: ["Inspeção programada no horário de sua conveniência", "Identificação dos focos de infestação", "Seleção do método mais adequado para cada praga"] },
-    { icon: Target, title: "2. Tratamento especializado", subtitle: "Programa abrangente adaptado às suas necessidades", items: ["Fumigação, pulverização ou aplicação de gel", "Desratização, desbaratização e controlo de gorgulhos/traças", "Tratamento térmico e monitorização por feromonas"] },
+    { icon: Target, title: "2. Tratamento especializado", subtitle: "Programa abrangente adaptado às suas necessidades", items: ["Fumigação, pulverização ou aplicação de gel", "Desratização, desbaratização e controlo de gorgulhos/traças", "Tratamento térmico para pragas em produtos armazenados"] },
     { icon: CheckCircle2, title: "3. Verificação e certificação", subtitle: "Garantindo um ambiente limpo e seguro", items: ["Certificado de desinfestação pós-serviço", "Relatórios estatísticos completos por cliente", "Monitoramento contínuo e prevenção de reinfestação"] }
   ],
   ctaTitle: "Agende a sua avaliação de desinfestação hoje",
