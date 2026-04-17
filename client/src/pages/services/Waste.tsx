@@ -1,4 +1,4 @@
-import { Trash2, Recycle, Truck, FileCheck, AlertTriangle, Leaf, Factory, Shield, Building, Home, HardHat, Hotel, Utensils, Building2, Warehouse, Pill } from "lucide-react";
+import { Factory, Shield, Home, HardHat, Hotel, Utensils, Building2, Warehouse } from "lucide-react";
 import { Search, Target, CheckCircle2 } from "lucide-react";
 import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
 import residuosHero from "../../assets/images/service-residuos-hero.jpg";
@@ -14,10 +14,7 @@ const data: ServicePageData = {
   breadcrumbLabel: "Recolha de resíduos",
   heroTitle: "Recolha de resíduos\ne gestão de lixo",
   heroSubtitle: "Recolha de resíduos urbanos, domésticos, pós-construção, hospitalares e industriais. A BIOPREV conta com equipes especializadas na coleta de resíduos, usando técnicas e tecnologias atualizadas considerando a saúde e imagem dos clientes.",
-  introText: "Residual da fonte de produção, para o ponto de tratamento ou disposição final. Para realizarmos os serviços de recolha de resíduos, usamos parâmetros definidos, para selecionarmos o tipo de recipiente e equipamentos a ser utilizado por cada cliente.",
   introSubtext: "A BIOPREV conta com equipes especializadas na coleta de resíduos, usando técnicas de limpeza e coleta de resíduos com ajuda das mais atualizadas tecnologias de remoção de lixo considerando todos os aspetos como saúde e imagem dos clientes. Trabalhamos com soluções de recolha para cinco categorias principais: resíduos urbanos, domésticos, pós-construção, hospitalares e industriais.",
-  sectionTitle: "Gestão completa de resíduos para cada necessidade",
-  sectionText: "A Bioprev oferece programas de gestão de resíduos que combinam eficiência operacional com responsabilidade ambiental. Cobrimos todas as categorias — desde resíduos urbanos e domésticos até pós-construção, hospitalares e industriais — com equipas e equipamentos adequados a cada tipo.",
   serviceCards: [
     {
       title: "Resíduos urbanos e domésticos",
@@ -35,14 +32,10 @@ const data: ServicePageData = {
   detailsTitle: "Os nossos serviços de recolha de resíduos",
   detailsSubtitle: "Soluções completas para todos os tipos de resíduos, desde a recolha na origem até ao destino final, com equipas e equipamentos adequados a cada categoria.",
   details: [
-    { icon: Trash2, title: "Resíduos urbanos", description: "Serviço de recolha programada de resíduos urbanos em condomínios, bairros e áreas comerciais, com frequência adaptada ao volume de produção e às necessidades da comunidade." },
     { icon: Home, title: "Resíduos domésticos", description: "Recolha de lixo doméstico em residências e condomínios, com contentores adequados e frequência regular, mantendo o ambiente residencial limpo e saudável para as famílias." },
     { icon: HardHat, title: "Resíduos pós-construção", description: "Recolha e remoção de entulho e resíduos gerados por obras de construção, demolição ou renovação, incluindo transporte para destinos licenciados e limpeza do local da obra." },
     { icon: Shield, title: "Resíduos hospitalares", description: "Gestão especializada de resíduos hospitalares e clínicos, seguindo protocolos rigorosos de segurança biológica para o manuseamento, transporte e tratamento adequado de resíduos de saúde." },
     { icon: Factory, title: "Resíduos industriais", description: "Soluções para a gestão de resíduos de produção industrial, incluindo resíduos de processos fabris, químicos e materiais contaminados, com transporte e destino certificados." },
-    { icon: Truck, title: "Transporte com frota própria", description: "Frota de veículos próprios licenciados e equipados para o transporte seguro de todos os tipos de resíduos, com rastreabilidade completa desde a recolha até ao destino final." },
-    { icon: Recycle, title: "Separação e reciclagem", description: "Implementação de sistemas de separação na origem e recolha seletiva para maximizar a taxa de reciclagem de papel, plástico, vidro e metais, reduzindo custos e impacto ambiental." },
-    { icon: FileCheck, title: "Certificação de destino", description: "Documentação completa que certifica o destino final de todos os resíduos recolhidos, garantindo rastreabilidade total e conformidade com as normas ambientais em vigor." }
   ],
   approachTitle: "O nosso ciclo de gestão de resíduos",
   approachText: "A Bioprev segue um ciclo completo de gestão de resíduos que garante a conformidade ambiental e a rastreabilidade desde a origem até ao destino final, para todas as categorias de resíduos.",
@@ -70,7 +63,6 @@ const data: ServicePageData = {
     { icon: Factory, name: "Processamento alimentar", description: "Gestão de resíduos de produção alimentar, incluindo subprodutos orgânicos e materiais de embalagem." },
     { icon: Building2, name: "Gestão de instalações", description: "Recolha de resíduos em edifícios comerciais e centros empresariais, com separação e reciclagem otimizadas." },
     { icon: Warehouse, name: "Logística e armazenamento", description: "Remoção de resíduos de embalagem, paletes danificadas e outros materiais gerados em operações logísticas." },
-    { icon: Pill, name: "Farmacêutica", description: "Gestão especializada de resíduos farmacêuticos e hospitalares, com manuseamento seguro e destino certificado." },
   ]
 };
 

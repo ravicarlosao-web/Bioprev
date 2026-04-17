@@ -1,4 +1,4 @@
-import { Sparkles, Building2, Factory, Home, Truck, Fuel, GraduationCap, Sofa, Hotel, Utensils, Briefcase, ShoppingCart, Warehouse, Pill } from "lucide-react";
+import { Sparkles, Building2, Factory, Home, Truck, Fuel, GraduationCap, Hotel, Utensils, Briefcase, ShoppingCart, Warehouse, Pill } from "lucide-react";
 import { Search, Target, CheckCircle2 } from "lucide-react";
 import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
 import limpezaHero from "../../assets/images/service-limpeza-hero.jpg";
@@ -41,7 +41,6 @@ const data: ServicePageData = {
     { icon: Building2, title: "Limpeza de escritórios", description: "Serviço diário ou periódico de limpeza de escritórios, incluindo áreas de trabalho, salas de reunião, copas e instalações sanitárias, com horários flexíveis adaptados ao funcionamento do seu negócio." },
     { icon: Sparkles, title: "Limpeza hospitalar e alimentar", description: "Programas de limpeza rigorosos para hospitais, clínicas e áreas de preparação alimentar, seguindo protocolos de higiene e desinfecção que garantem a segurança de pacientes, colaboradores e consumidores." },
     { icon: GraduationCap, title: "Limpeza pós-obra e centros comerciais", description: "Serviços de limpeza intensiva após obras de construção ou renovação, e manutenção regular de centros comerciais, estacionamentos e áreas públicas de grande circulação." },
-    { icon: Sofa, title: "Limpeza de estofados e pisos", description: "Tratamento profissional de carpetes, tapetes, cortinas e mobiliário estofado, além de lavagem, enceramento e polimento de pisos de todos os tipos — mosaico, madeira, vinil, betão e pedra natural." }
   ],
   approachTitle: "O nosso processo de limpeza",
   approachText: "A Bioprev segue uma metodologia profissional que garante resultados consistentes e de alta qualidade em cada intervenção de limpeza, seja industrial, doméstica ou urbana.",

@@ -12,8 +12,6 @@ const data: ServicePageData = {
   breadcrumbLabel: "Água potável",
   heroTitle: "Fornecimento de água\npotável",
   heroSubtitle: "Abastecimento de água potável certificada para eventos, indústria, construção e situações de emergência em todo o território angolano.",
-  introText: "O acesso a água potável de qualidade é essencial para a saúde e para o funcionamento de qualquer atividade. A Bioprev garante o fornecimento de água potável certificada, transportada em condições que preservam a sua pureza.",
-  introSubtext: "O nosso serviço de fornecimento de água potável segue os mais rigorosos padrões de saúde pública e segurança alimentar. Utilizamos cisternas alimentares certificadas, realizamos análises laboratoriais regulares e garantimos a rastreabilidade de toda a água fornecida, desde a captação até à entrega no ponto de consumo.",
   sectionTitle: "Qualidade e pureza em cada entrega",
   sectionText: "A Bioprev fornece água potável para os mais diversos fins — desde grandes eventos a obras de construção, escritórios sem rede de abastecimento e situações de emergência — sempre com qualidade certificada e entrega pontual.",
   serviceCards: [
