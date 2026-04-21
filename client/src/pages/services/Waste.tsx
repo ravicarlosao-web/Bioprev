@@ -11,7 +11,7 @@ const data: ServicePageData = {
   heroImage: residuosHero,
   heroImageAlt: "Recolha de resíduos",
   breadcrumbLabel: "Recolha de resíduos",
-  heroTitle: "Recolha de resíduos\ne gestão de lixo",
+  heroTitle: "Recolha de residuos\nUrbanos (Solidos)",
   heroSubtitle: "Recolha de resíduos urbanos, domésticos, pós-construção, hospitalares e industriais. A BIOPREV conta com equipes especializadas na coleta de resíduos, usando técnicas e tecnologias atualizadas considerando a saúde e imagem dos clientes.",
   introSubtext: "A BIOPREV conta com equipes especializadas na coleta de resíduos, usando técnicas de limpeza e coleta de resíduos com ajuda das mais atualizadas tecnologias de remoção de lixo considerando todos os aspetos como saúde e imagem dos clientes. Trabalhamos com soluções de recolha para cinco categorias principais: resíduos urbanos, domésticos, pós-construção, hospitalares e industriais.",
   serviceCards: [
