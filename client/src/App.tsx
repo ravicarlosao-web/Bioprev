@@ -19,6 +19,8 @@ const Water = lazy(() => import("@/pages/services/Water"));
 const Gardening = lazy(() => import("@/pages/services/Gardening"));
 const Reports = lazy(() => import("@/pages/services/Reports"));
 const BlogList = lazy(() => import("@/pages/blog/BlogList"));
+const BlogLatestNews = lazy(() => import("@/pages/blog/BlogList").then((module) => ({ default: module.BlogLatestNews })));
+const BlogPreventionTips = lazy(() => import("@/pages/blog/BlogList").then((module) => ({ default: module.BlogPreventionTips })));
 const BlogPost = lazy(() => import("@/pages/blog/BlogPost"));
 const About = lazy(() => import("@/pages/about/About"));
 const History = lazy(() => import("@/pages/about/History"));
@@ -55,6 +57,8 @@ function Router() {
         <Route path="/about/history" component={History} />
         <Route path="/about/careers" component={Careers} />
         <Route path="/blog" component={BlogList} />
+        <Route path="/blog/ultimas-noticias" component={BlogLatestNews} />
+        <Route path="/blog/dicas-prevencao" component={BlogPreventionTips} />
         <Route path="/blog/:id" component={BlogPost} />
         <Route component={NotFound} />
       </Switch>
