@@ -48,9 +48,6 @@ const data: ServicePageData = {
     { title: "Entrega e armazenamento", content: "A entrega é realizada por técnicos treinados que verificam as condições do ponto de receção e do depósito de armazenamento do cliente antes de transferir a água." },
     { title: "Monitorização de depósitos", content: "Oferecemos serviço de monitorização periódica dos depósitos e reservatórios do cliente, incluindo limpeza e desinfeção programadas para manter a qualidade da água armazenada." }
   ],
-  whyTitle: "Porquê escolher a Bioprev para água potável?",
-  whyText1: "A qualidade da água que fornece aos seus colaboradores, clientes e visitantes é uma questão de saúde pública e de responsabilidade corporativa. Na Bioprev, cada entrega é tratada com o rigor e a atenção que a saúde das pessoas exige, com rastreabilidade completa e certificação em todas as fases.",
-  whyText2: "Com uma frota de cisternas alimentares e uma equipa de técnicos especializados, garantimos entregas pontuais em todo o território angolano, mesmo em situações de emergência ou em locais de difícil acesso.",
   ctaTitle: "Garanta água potável de qualidade para o seu negócio",
   sectorsTitle: "Setores onde fornecemos água potável",
   sectorsText: "A Bioprev garante o abastecimento de água potável certificada para diversos setores, com entregas programadas e capacidade de resposta urgente.",

@@ -51,9 +51,6 @@ const data: ServicePageData = {
     { title: "Monitorização integrada", content: "Todos os serviços são monitorizados de forma integrada, com relatórios que combinam dados de desinfestação, limpeza, resíduos e outros serviços para oferecer uma visão completa do estado de cada instalação." },
     { title: "Revisão e adaptação", content: "Realizamos revisões periódicas de todos os serviços para avaliar resultados, identificar novas necessidades e adaptar o programa às mudanças nas operações ou nas condições das instalações." }
   ],
-  whyTitle: "Uma solução completa para toda a organização",
-  whyText1: "Gerir múltiplos fornecedores para diferentes serviços de higiene e manutenção consome tempo, gera inconsistências e dificulta a visibilidade sobre o estado geral das suas instalações. Com as soluções nacionais da Bioprev, simplifica tudo num único programa integrado.",
-  whyText2: "Desde a desinfestação até à jardinagem, cada serviço é coordenado pelo mesmo gestor de conta, prestado por equipas especializadas e documentado em relatórios consolidados. O resultado é menos trabalho administrativo, mais consistência e melhor proteção para toda a organização.",
   ctaTitle: "Todas as soluções que a sua organização precisa"
 };
 

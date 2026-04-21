@@ -62,9 +62,9 @@ export interface ServicePageData {
   approachTitle: string;
   approachText: string;
   approachSteps: ServiceStep[];
-  whyTitle: string;
-  whyText1: string;
-  whyText2: string;
+  whyTitle?: string;
+  whyText1?: string;
+  whyText2?: string;
   processCards?: [ServiceProcessCard, ServiceProcessCard, ServiceProcessCard];
   ctaTitle: string;
   sectorsTitle?: string;
@@ -263,18 +263,20 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
           </div>
         </section>
 
-        <section className="py-14 sm:py-18 md:py-24 bg-white">
-          <div ref={whyReveal.ref} className={`container mx-auto px-4 sm:px-6 max-w-4xl text-center mb-10 sm:mb-16 md:mb-20 sr-hidden ${whyReveal.isVisible ? 'sr-visible' : ''}`}>
-            <h2 className="text-2xl sm:text-3xl md:text-[36px] font-medium text-[#333333] mb-5 sm:mb-8 leading-tight">
-              {data.whyTitle}
-            </h2>
-            <div className="space-y-5 sm:space-y-8 text-[#333333] text-[15px] sm:text-[17px] leading-relaxed text-left">
-              <p>{data.whyText1}</p>
-              <p>{data.whyText2}</p>
+        {data.whyTitle && (
+          <section className="py-14 sm:py-18 md:py-24 bg-white">
+            <div ref={whyReveal.ref} className={`container mx-auto px-4 sm:px-6 max-w-4xl text-center mb-10 sm:mb-16 md:mb-20 sr-hidden ${whyReveal.isVisible ? 'sr-visible' : ''}`}>
+              <h2 className="text-2xl sm:text-3xl md:text-[36px] font-medium text-[#333333] mb-5 sm:mb-8 leading-tight">
+                {data.whyTitle}
+              </h2>
+              <div className="space-y-5 sm:space-y-8 text-[#333333] text-[15px] sm:text-[17px] leading-relaxed text-left">
+                {data.whyText1 && <p>{data.whyText1}</p>}
+                {data.whyText2 && <p>{data.whyText2}</p>}
+              </div>
             </div>
-          </div>
 
-        </section>
+          </section>
+        )}
 
         {data.sectors && data.sectors.length > 0 && (
           <section id="sectors" className="py-14 sm:py-18 md:py-24 bg-[#f8f9fa]">

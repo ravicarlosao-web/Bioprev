@@ -53,9 +53,6 @@ const data: ServicePageData = {
     { title: "Controlo fitossanitário", content: "Realizamos inspeções regulares para detetar precocemente pragas e doenças, aplicando tratamentos preventivos e curativos que protegem a saúde das plantas." },
     { title: "Limpeza e conservação", content: "Mantemos todos os elementos do jardim — caminhos, bordaduras, equipamentos e mobiliário — limpos e em bom estado, garantindo um aspeto cuidado e convidativo." }
   ],
-  whyTitle: "Porquê escolher a Bioprev para jardinagem?",
-  whyText1: "Os seus espaços verdes são uma extensão da imagem da sua organização. Na Bioprev, tratamos cada jardim como uma obra de arte viva que requer conhecimento, dedicação e atenção constante. A nossa equipa de profissionais garante que os seus exteriores refletem a qualidade e o profissionalismo que define a sua marca.",
-  whyText2: "Com experiência em projetos de todos os tamanhos — desde pequenos jardins corporativos a grandes parques empresariais — oferecemos soluções que combinam beleza, funcionalidade e sustentabilidade, adaptadas ao clima e às condições específicas de Angola.",
   ctaTitle: "Transforme os seus espaços verdes com a Bioprev",
   sectorsTitle: "Setores onde atuamos com jardinagem",
   sectorsText: "A Bioprev cria e mantém espaços verdes para os mais diversos setores, combinando estética, funcionalidade e sustentabilidade em cada projeto.",

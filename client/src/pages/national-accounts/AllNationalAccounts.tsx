@@ -1,5 +1,5 @@
 import Header from "@/components/layout/Header";
-import { ChevronRight, Plus, CheckCircle2, Target, Search, Globe, Crosshair, Users, Building2, Handshake, BarChart3 } from "lucide-react";
+import { ChevronRight, Plus, Globe, Crosshair, Users, Building2, Handshake, BarChart3 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Link } from "wouter";
 import Footer from "@/components/layout/Footer";
@@ -188,65 +188,6 @@ export default function AllNationalAccounts() {
                   </AccordionItem>
                 </Accordion>
               ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-14 sm:py-18 md:py-24 bg-white">
-          <div className="container mx-auto px-4 sm:px-6 max-w-4xl text-center mb-10 sm:mb-16 md:mb-20">
-            <h2 className="text-2xl sm:text-3xl md:text-[36px] font-medium text-[#333333] mb-5 sm:mb-8 leading-tight">
-              Porquê escolher as Contas Nacionais da Bioprev?
-            </h2>
-            <div className="space-y-5 sm:space-y-8 text-[#333333] text-[15px] sm:text-[17px] leading-relaxed text-left">
-              <p>
-                Gerir o controle de pragas em múltiplas localizações sem um programa centralizado significa lidar com múltiplos fornecedores, contratos diferentes, níveis de serviço inconsistentes e falta de visibilidade sobre o estado geral da organização. O programa de Contas Nacionais da Bioprev elimina todas estas complicações.
-              </p>
-              <p>
-                Com um gestor de conta dedicado, relatórios consolidados e equipas locais em Luanda, Benguela e Huambo, garantimos que cada instalação recebe proteção de primeiro nível enquanto simplificamos a sua gestão e reduzimos os custos operacionais.
-              </p>
-            </div>
-          </div>
-
-          <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
-              <div className="bg-white border-t-4 border-[#f2c92f] shadow-lg p-6 sm:p-8 md:p-10 flex flex-col h-full">
-                <div className="mb-5 sm:mb-8 flex justify-center">
-                  <Search className="w-10 h-10 sm:w-12 sm:h-12 text-[#333333]" strokeWidth={1} />
-                </div>
-                <h3 className="text-lg sm:text-xl md:text-[22px] font-medium text-[#333333] mb-4 sm:mb-6 text-center">1. Auditoria nacional</h3>
-                <p className="text-[#666666] text-xs sm:text-sm mb-5 sm:mb-8 text-center leading-relaxed">Avaliação completa de todas as suas localizações</p>
-                <div className="space-y-2 mt-auto">
-                  {["Inspeção de todas as instalações em Angola", "Identificação de riscos comuns e específicos", "Plano de gestão unificado e personalizado"].map((item, i) => (
-                    <div key={i} className="bg-[#f2f5f7] p-3 sm:p-4 text-[12px] sm:text-[13px] text-[#333333] leading-tight">{item}</div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="bg-white border-t-4 border-[#f2c92f] shadow-lg p-6 sm:p-8 md:p-10 flex flex-col h-full">
-                <div className="mb-5 sm:mb-8 flex justify-center">
-                  <Target className="w-10 h-10 sm:w-12 sm:h-12 text-[#333333]" strokeWidth={1} />
-                </div>
-                <h3 className="text-lg sm:text-xl md:text-[22px] font-medium text-[#333333] mb-4 sm:mb-6 text-center">2. Implementação coordenada</h3>
-                <p className="text-[#666666] text-xs sm:text-sm mb-5 sm:mb-8 text-center leading-relaxed">Serviço consistente em todas as unidades</p>
-                <div className="space-y-2 mt-auto">
-                  {["Equipas locais em Luanda, Benguela e Huambo", "Protocolos padronizados de qualidade", "Gestor de conta dedicado como ponto de contacto"].map((item, i) => (
-                    <div key={i} className="bg-[#f2f5f7] p-3 sm:p-4 text-[12px] sm:text-[13px] text-[#333333] leading-tight">{item}</div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="bg-white border-t-4 border-[#f2c92f] shadow-lg p-6 sm:p-8 md:p-10 flex flex-col h-full sm:col-span-2 md:col-span-1">
-                <div className="mb-5 sm:mb-8 flex justify-center">
-                  <CheckCircle2 className="w-10 h-10 sm:w-12 sm:h-12 text-[#333333]" strokeWidth={1} />
-                </div>
-                <h3 className="text-lg sm:text-xl md:text-[22px] font-medium text-[#333333] mb-4 sm:mb-6 text-center">3. Relatórios e otimização</h3>
-                <p className="text-[#666666] text-xs sm:text-sm mb-5 sm:mb-8 text-center leading-relaxed">Visibilidade total e melhoria contínua</p>
-                <div className="space-y-2 mt-auto">
-                  {["Relatórios consolidados de todas as localizações", "Indicadores de desempenho e tendências", "Revisões periódicas e otimização do programa"].map((item, i) => (
-                    <div key={i} className="bg-[#f2f5f7] p-3 sm:p-4 text-[12px] sm:text-[13px] text-[#333333] leading-tight">{item}</div>
-                  ))}
-                </div>
-              </div>
             </div>
           </div>
         </section>

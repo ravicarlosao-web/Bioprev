@@ -51,9 +51,6 @@ const data: ServicePageData = {
     { title: "Atribuição de gestor de conta", content: "Atribuímos um gestor de conta dedicado que será o seu ponto de contacto único, responsável por coordenar todos os serviços, gerir as equipas locais e garantir a qualidade do programa." },
     { title: "Implementação e monitorização", content: "Iniciamos a implementação do programa em todas as localizações simultaneamente, com monitorização contínua e relatórios regulares que permitem acompanhar os resultados e identificar oportunidades de melhoria." }
   ],
-  whyTitle: "Porquê escolher as Contas Nacionais da Bioprev?",
-  whyText1: "Empresas com presença em múltiplas regiões de Angola precisam de um parceiro que compreenda a complexidade de gerir o controle de pragas de forma centralizada. A Bioprev é a única empresa em Angola com filiais operacionais em Luanda, Benguela e Huambo, garantindo cobertura e proximidade em todo o território.",
-  whyText2: "O nosso programa de Contas Nacionais foi desenvolvido com base na experiência adquirida com empresas angolanas de referência, e é desenhado para simplificar a gestão, reduzir custos e garantir que cada instalação recebe proteção de primeiro nível, com total transparência e relatórios unificados.",
   ctaTitle: "Simplifique a gestão de pragas da sua organização"
 };
 

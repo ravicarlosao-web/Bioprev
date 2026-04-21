@@ -1,8 +1,7 @@
-import { ChevronRight, Plus } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import Header from "@/components/layout/Header";
 import { Link } from "wouter";
 import Footer from "@/components/layout/Footer";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { useEffect, useState } from "react";
@@ -14,8 +13,6 @@ export default function About() {
   const cardsReveal = useScrollReveal(0.15);
   const mvvHeader = useScrollReveal(0.2);
   const mvvCards = useScrollReveal(0.1);
-  const whyHeader = useScrollReveal(0.2);
-  const whyContent = useScrollReveal(0.1);
   const servicesHeader = useScrollReveal(0.15);
   const servicesCards = useScrollReveal(0.1);
   const ctaReveal = useScrollReveal(0.2);
@@ -174,52 +171,6 @@ export default function About() {
                   <h3 className="text-base sm:text-lg md:text-xl font-medium text-[#333333] mb-3 sm:mb-4">{card.title}</h3>
                   <p className="text-[#666666] leading-relaxed text-sm sm:text-[15px] mb-4">{card.p1}</p>
                   <p className="text-[#666666] leading-relaxed text-sm sm:text-[15px] flex-grow">{card.p2}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-14 sm:py-18 md:py-24 bg-[#f2f5f7]">
-          <div className="container mx-auto px-4 sm:px-6 max-w-4xl text-center">
-            <div
-              ref={whyHeader.ref}
-              className={`sr-hidden ${whyHeader.isVisible ? 'sr-visible' : ''}`}
-            >
-              <h2 className="text-2xl sm:text-3xl md:text-[36px] font-medium text-[#333333] mb-5 sm:mb-8 leading-tight">
-                Porquê escolher a BIOPREV?
-              </h2>
-              <p className="text-[#666666] text-sm sm:text-base mb-8 sm:mb-12 leading-relaxed">
-                É com a intenção de servir a população e instituições no controlo de pragas e prestação de serviços que a BIOPREV utiliza equipamentos e métodos mais modernos, com garantia de um serviço profissional e eficiente.
-              </p>
-            </div>
-
-            <div
-              ref={whyContent.ref}
-              className="space-y-2"
-            >
-              {[
-                { title: "Equipamentos de última geração", content: "Investimos continuamente em tecnologia avançada para garantir resultados superiores e duradouros. Os nossos equipamentos permitem atender a sua demanda de forma personalizada com rapidez e eficiência, oferecendo soluções práticas e eficazes com qualidade e confiabilidade." },
-                { title: "Equipa técnica hábil e dedicada", content: "Contamos com profissionais altamente capacitados, com formação contínua em todas as áreas de atuação. Cada membro da equipa é treinado para oferecer o melhor serviço, utilizando as melhores práticas e tecnologias do mercado." },
-                { title: "Produtos seguros e certificados", content: "Utilizamos apenas produtos certificados e sem prejuízo para a saúde do homem e para o meio ambiente. Todos os nossos procedimentos seguem normas de segurança rigorosas, assegurando a proteção dos colaboradores, clientes e do ecossistema." },
-                { title: "Cobertura nacional com sedes operacionais", content: "Com sedes em Luanda, Benguela e Huambo, cobrimos as principais regiões de Angola com rapidez e eficácia. A nossa frota própria e equipas locais garantem resposta rápida em todo o território." },
-                { title: "Alta qualidade ao menor custo possível", content: "Tornando-se parte ativa da estratégia e sucesso de cada empresa que servimos, oferecemos alta qualidade ao menor custo possível. A nossa missão é superar as expectativas de cada cliente e parceiro, com foco total no resultado do serviço prestado." },
-              ].map((step, idx) => (
-                <div
-                  key={idx}
-                  className={`sr-hidden stagger-${idx + 1} ${whyContent.isVisible ? 'sr-visible' : ''}`}
-                >
-                  <Accordion type="single" collapsible className="w-full">
-                    <AccordionItem value={`item-${idx}`} className="border-none">
-                      <AccordionTrigger className="bg-[#d0dae1] px-4 sm:px-6 md:px-8 py-4 sm:py-5 hover:bg-[#c4cfd7] transition-colors hover:no-underline rounded-none group">
-                        <span className="text-[15px] sm:text-[17px] md:text-[18px] font-medium text-[#333333] text-left">{step.title}</span>
-                        <Plus className="w-5 h-5 sm:w-6 sm:h-6 text-[#333333] shrink-0 transition-transform duration-200 group-data-[state=open]:rotate-45" />
-                      </AccordionTrigger>
-                      <AccordionContent className="bg-white px-4 sm:px-6 md:px-8 py-4 sm:py-6 text-left text-[#666666] text-sm sm:text-base leading-relaxed border-x border-b border-[#d0dae1]">
-                        {step.content}
-                      </AccordionContent>
-                    </AccordionItem>
-                  </Accordion>
                 </div>
               ))}
             </div>

@@ -49,9 +49,6 @@ const data: ServicePageData = {
     { title: "Controlo de qualidade", content: "Realizamos inspeções regulares de qualidade utilizando checklists detalhados e feedback dos clientes para garantir que os padrões são mantidos e melhorados continuamente em todas as intervenções." },
     { title: "Relatório de serviço", content: "Fornecemos relatórios periódicos que documentam os serviços realizados, os resultados das inspeções de qualidade e as recomendações para otimização do programa de limpeza." }
   ],
-  whyTitle: "Porquê escolher a Bioprev para limpeza?",
-  whyText1: "Na Bioprev, acreditamos que um ambiente limpo é fundamental para a produtividade, o bem-estar e a imagem profissional da sua organização. As nossas equipas de limpeza são cuidadosamente selecionadas, formadas e supervisionadas para garantir os mais altos padrões de serviço — seja limpeza industrial, doméstica, urbana ou de tanques de combustível.",
-  whyText2: "Utilizamos produtos de limpeza ecológicos e equipamento profissional de última geração. A limpeza das cidades, por exemplo, é uma necessidade imperativa que tratamos com a mesma seriedade que a limpeza de instalações industriais. Trabalhamos de forma discreta e eficiente para que os seus espaços estejam sempre impecáveis.",
   ctaTitle: "Ambiente limpo é produtividade garantida",
   sectorsTitle: "Setores onde atuamos com limpeza profissional",
   sectorsText: "A Bioprev adapta os seus serviços de limpeza às exigências de cada setor, garantindo ambientes limpos, seguros e em conformidade com as normas específicas de cada indústria.",

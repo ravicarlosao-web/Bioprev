@@ -45,9 +45,6 @@ const data: ServicePageData = {
     { title: "Transporte e destino certificado", content: "Encaminhamos cada tipo de resíduo para o destino mais adequado — reciclagem, tratamento específico ou disposição final — garantindo que todos os processos cumprem as normas ambientais e de segurança." },
     { title: "Certificação e relatórios", content: "Emitimos certificados que documentam o destino final de todos os resíduos recolhidos, garantindo a rastreabilidade total e o cumprimento das obrigações legais da sua empresa ou condomínio." }
   ],
-  whyTitle: "Porquê escolher a Bioprev para recolha de resíduos?",
-  whyText1: "A BIOPREV conta com equipes especializadas na coleta de resíduos, usando técnicas de limpeza e coleta com ajuda das mais atualizadas tecnologias de remoção de lixo considerando todos os aspetos como saúde e imagem dos clientes. Para realizarmos os serviços de recolha de resíduos, usamos parâmetros definidos, para selecionarmos o tipo de recipiente e equipamentos a ser utilizado por cada cliente.",
-  whyText2: "Com frota própria e licenças para o transporte de todos os tipos de resíduos em Angola — urbanos, domésticos, pós-construção, hospitalares e industriais — oferecemos tranquilidade e conformidade total, com documentação que suporta auditorias ambientais e demonstra responsabilidade corporativa.",
   ctaTitle: "Soluções completas de recolha de resíduos",
   sectorsTitle: "Setores onde atuamos com recolha de resíduos",
   sectorsText: "A Bioprev oferece soluções de recolha e gestão de resíduos adaptadas às necessidades e regulamentações de cada setor, garantindo conformidade ambiental e rastreabilidade total.",
