@@ -1,7 +1,8 @@
 import { Link } from "wouter";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import services1Img from "../../assets/images/home-pragas-card.jpg";
-import services2Img from "../../assets/images/services-2.jpg";
+
+const digitalPestControlImg = "https://images.unsplash.com/photo-1713952160156-bb59cac789a9?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
 export default function Services() {
   const card1 = useScrollReveal(0.2);
@@ -37,7 +38,7 @@ export default function Services() {
 
         <div ref={card2.ref} className="relative group overflow-hidden h-[400px] sm:h-[450px] md:h-[500px]">
           <img 
-            src={services2Img}
+            src={digitalPestControlImg}
             alt="Controle de pragas digital" 
             className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             loading="lazy"
