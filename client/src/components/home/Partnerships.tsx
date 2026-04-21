@@ -32,6 +32,10 @@ import mundoCasaLogo from "../../assets/images/partner-mundocasa.png";
 import ladyStoneLogo from "../../assets/images/partner-ladystone.png";
 import dulceriaLogo from "../../assets/images/partner-dulceria.png";
 import automaniaLogo from "../../assets/images/partner-automania.png";
+import elisalLogo from "@assets/ELISAL_(nalogoo.com)_(1)_1776763042846.png";
+import grandesMoagensLogo from "@assets/image_1776763097233.png";
+import angolissarLogo from "@assets/image_1776763278021.png";
+import ghionLogo from "@assets/image_1776763442976.png";
 
 export default function Partnerships() {
   const headerReveal = useScrollReveal(0.2);
@@ -71,6 +75,10 @@ export default function Partnerships() {
     { name: "Lady Stone", src: ladyStoneLogo },
     { name: "Dulceria Nacional", src: dulceriaLogo },
     { name: "Automania", src: automaniaLogo },
+    { name: "Elisal", src: elisalLogo },
+    { name: "Grandes Moagens", src: grandesMoagensLogo },
+    { name: "Angolissar", src: angolissarLogo },
+    { name: "Ghion Alimentos", src: ghionLogo },
   ];
 
   return (

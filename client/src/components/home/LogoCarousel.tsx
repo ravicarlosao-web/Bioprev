@@ -71,7 +71,7 @@ export default function LogoCarousel({ logos }: LogoCarouselProps) {
                 <img
                   src={logo.src}
                   alt={logo.name}
-                  className="max-h-32 max-w-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                  className="max-h-32 max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                   data-testid={`logo-image-${index}`}
                   onError={(e) => {
