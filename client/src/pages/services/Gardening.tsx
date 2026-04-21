@@ -6,7 +6,7 @@ import gardeningCard2 from "../../assets/images/gardening-card2.jpg";
 
 const data: ServicePageData = {
   seoTitle: "Jardinagem e Paisagismo em Angola",
-  seoDescription: "Serviços profissionais de jardinagem e paisagismo em Angola. A Bioprev cria e mantém espaços verdes para empresas, hotéis e condomínios em Luanda, Benguela e Huambo.",
+  seoDescription: "Serviços profissionais de jardinagem e paisagismo em Angola para empresas, hotéis e condomínios em Luanda, Benguela e Huambo.",
   seoKeywords: "jardinagem Angola, paisagismo Luanda, manutenção jardins, espaços verdes empresas Angola, Bioprev jardinagem",
   seoCanonical: "/services/gardening",
   heroImage: jardinagemHero,
@@ -15,9 +15,6 @@ const data: ServicePageData = {
   heroTitle: "Serviços de jardinagem\ne paisagismo",
   heroSubtitle: "Criação e manutenção de espaços verdes deslumbrantes que valorizam a imagem da sua organização e contribuem para o bem-estar de todos.",
   introText: "Os espaços verdes são o cartão de visita do seu negócio. A Bioprev oferece serviços de jardinagem e paisagismo profissional que transformam e mantêm os seus exteriores em perfeitas condições durante todo o ano.",
-  introSubtext: "A nossa equipa de jardineiros e paisagistas profissionais possui conhecimento profundo da flora local e das condições climáticas de Angola, permitindo-nos criar e manter jardins que prosperam no nosso clima. Desde a conceção de novos espaços verdes à manutenção regular de jardins existentes, oferecemos um serviço completo que valoriza as suas instalações.",
-  sectionTitle: "Espaços verdes que inspiram",
-  sectionText: "A Bioprev cria e mantém espaços verdes para empresas, hotéis, condomínios e espaços públicos, combinando estética, funcionalidade e sustentabilidade em cada projeto.",
   serviceCards: [
     {
       title: "Manutenção regular",
@@ -35,7 +32,7 @@ const data: ServicePageData = {
   details: [],
   ctaTitle: "Transforme os seus espaços verdes com a Bioprev",
   sectorsTitle: "Setores onde atuamos com jardinagem",
-  sectorsText: "A Bioprev cria e mantém espaços verdes para os mais diversos setores, combinando estética, funcionalidade e sustentabilidade em cada projeto.",
+  sectorsText: "A Bioprev adapta os serviços de jardinagem às necessidades de cada setor, valorizando áreas exteriores com manutenção profissional e atenção aos detalhes.",
   sectors: [
     { icon: Hotel, name: "Hotelaria", description: "Manutenção de jardins, piscinas e áreas de lazer exteriores de hotéis e resorts, criando ambientes acolhedores para os hóspedes." },
     { icon: Briefcase, name: "Escritórios", description: "Espaços verdes corporativos que melhoram o bem-estar dos colaboradores e projetam uma imagem profissional e sustentável." },

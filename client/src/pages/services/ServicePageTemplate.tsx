@@ -52,9 +52,9 @@ export interface ServicePageData {
   heroSubtitle: string;
   introTitle: string;
   introText: string;
-  introSubtext: string;
-  sectionTitle: string;
-  sectionText: string;
+  introSubtext?: string;
+  sectionTitle?: string;
+  sectionText?: string;
   serviceCards: [ServiceCard, ServiceCard];
   details: ServiceDetailItem[];
   detailsTitle?: string;
@@ -162,19 +162,25 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
 
         <section className="py-12 sm:py-16 md:py-20 bg-white">
           <div ref={introReveal.ref} className={`container mx-auto px-4 sm:px-6 max-w-4xl text-center sr-hidden ${introReveal.isVisible ? 'sr-visible' : ''}`}>
-            <p className="text-[#333333] text-base sm:text-lg mb-5 sm:mb-8 leading-relaxed font-medium">
+            <p className={`text-[#333333] text-base sm:text-lg leading-relaxed font-medium ${(data.introSubtext || data.sectionTitle || data.sectionText) ? 'mb-5 sm:mb-8' : ''}`}>
               {data.introText}
             </p>
-            <p className="text-[#666666] text-sm sm:text-base mb-10 sm:mb-16 leading-relaxed">
-              {data.introSubtext}
-            </p>
+            {data.introSubtext && (
+              <p className={`text-[#666666] text-sm sm:text-base leading-relaxed ${(data.sectionTitle || data.sectionText) ? 'mb-10 sm:mb-16' : ''}`}>
+                {data.introSubtext}
+              </p>
+            )}
 
-            <h2 className="text-2xl sm:text-3xl md:text-[36px] font-medium text-[#333333] mb-5 sm:mb-8 leading-tight">
-              {data.sectionTitle}
-            </h2>
-            <p className="text-[#666666] text-sm sm:text-base leading-relaxed">
-              {data.sectionText}
-            </p>
+            {data.sectionTitle && (
+              <h2 className="text-2xl sm:text-3xl md:text-[36px] font-medium text-[#333333] mb-5 sm:mb-8 leading-tight">
+                {data.sectionTitle}
+              </h2>
+            )}
+            {data.sectionText && (
+              <p className="text-[#666666] text-sm sm:text-base leading-relaxed">
+                {data.sectionText}
+              </p>
+            )}
           </div>
         </section>
 
