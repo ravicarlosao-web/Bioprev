@@ -1,7 +1,7 @@
 import { ChevronDown } from "lucide-react";
 import { useEffect, useState } from "react";
 
-const heroBg = "https://plus.unsplash.com/premium_photo-1682126082802-983618de1dd9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGVzdCUyMGNvbnRyb2x8ZW58MHx8MHx8fDA%3D";
+const heroBg = "https://plus.unsplash.com/premium_photo-1682126082802-983618de1dd9?w=1920&auto=format&fit=crop&q=90&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGVzdCUyMGNvbnRyb2x8ZW58MHx8MHx8fDA%3D";
 
 export default function Hero() {
   const [loaded, setLoaded] = useState(false);
@@ -17,7 +17,7 @@ export default function Hero() {
         <img 
           src={heroBg}
           alt="Especialista em controle de pragas" 
-          className={`absolute inset-0 w-full h-full object-cover object-[center_25%] transition-transform duration-[1.5s] ease-out ${loaded ? 'scale-100' : 'scale-110'}`}
+          className={`absolute inset-0 w-full h-full object-cover object-[center_45%] transition-transform duration-[1.5s] ease-out ${loaded ? 'scale-100' : 'scale-105'}`}
         />
         <div className="absolute inset-0 bg-[#001d3d]/60" />
         
