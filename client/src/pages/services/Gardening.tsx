@@ -1,4 +1,4 @@
-import { TreePine, Flower2, Droplets, Sun, Scissors, Bug, Palette, Wrench, Hotel, Utensils, Briefcase, Building2, Home } from "lucide-react";
+import { Hotel, Utensils, Briefcase, Building2, Home } from "lucide-react";
 import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
 import jardinagemHero from "../../assets/images/service-jardinagem-hero.jpg";
 import gardeningCard1 from "../../assets/images/gardening-card1.jpg";
@@ -32,27 +32,7 @@ const data: ServicePageData = {
       imageAlt: "Projeto paisagístico"
     }
   ],
-  detailsTitle: "Os nossos serviços de jardinagem",
-  detailsSubtitle: "Soluções completas de jardinagem e paisagismo para criar e manter espaços verdes de excelência.",
-  details: [
-    { icon: TreePine, title: "Manutenção de jardins", description: "Corte de relva, podas de árvores e arbustos, limpeza de canteiros e cuidados sazonais programados para manter os seus espaços sempre cuidados." },
-    { icon: Flower2, title: "Plantação e floração", description: "Seleção e plantação de espécies adaptadas ao clima de Angola, com programas de floração sazonal que garantem cor e vida durante todo o ano." },
-    { icon: Droplets, title: "Sistemas de rega", description: "Projeto, instalação e manutenção de sistemas de rega automática eficientes que otimizam o consumo de água e garantem a hidratação adequada de todas as plantas." },
-    { icon: Sun, title: "Limpeza de terrenos", description: "Serviços de limpeza e desmatação de terrenos, preparação de solo para novos projetos e remoção de vegetação indesejada." },
-    { icon: Scissors, title: "Poda artística", description: "Podas de formação e poda artística de sebes, topiárias e árvores ornamentais que conferem carácter e distinção aos seus espaços." },
-    { icon: Bug, title: "Controlo fitossanitário", description: "Tratamentos preventivos e curativos contra pragas e doenças de plantas, utilizando métodos integrados e produtos ecológicos sempre que possível." },
-    { icon: Palette, title: "Design paisagístico", description: "Projetos de paisagismo completos, desde a conceção à execução, incluindo seleção de plantas, pavimentos, iluminação e elementos decorativos." },
-    { icon: Wrench, title: "Instalação de equipamentos", description: "Instalação de sistemas de iluminação exterior, mobiliário de jardim, pérgolas, fontes e outros elementos que valorizam os seus espaços verdes." }
-  ],
-  approachTitle: "O nosso ciclo de manutenção",
-  approachText: "A Bioprev segue um ciclo de manutenção estruturado que garante que os seus espaços verdes se mantêm saudáveis e atraentes em todas as estações do ano.",
-  approachSteps: [
-    { title: "Planeamento paisagístico", content: "Avaliamos o espaço existente, as condições de solo e clima, e desenvolvemos um plano de manutenção ou um projeto paisagístico personalizado que responde aos seus objetivos e orçamento." },
-    { title: "Manutenção programada", content: "Implementamos um calendário de manutenção regular que inclui corte de relva, podas, fertilização, controlo de ervas daninhas e cuidados sazonais específicos para cada espécie." },
-    { title: "Gestão de sistemas de rega", content: "Monitorizamos e ajustamos os sistemas de rega de acordo com as condições meteorológicas e as necessidades das plantas, otimizando o consumo de água." },
-    { title: "Controlo fitossanitário", content: "Realizamos inspeções regulares para detetar precocemente pragas e doenças, aplicando tratamentos preventivos e curativos que protegem a saúde das plantas." },
-    { title: "Limpeza e conservação", content: "Mantemos todos os elementos do jardim — caminhos, bordaduras, equipamentos e mobiliário — limpos e em bom estado, garantindo um aspeto cuidado e convidativo." }
-  ],
+  details: [],
   ctaTitle: "Transforme os seus espaços verdes com a Bioprev",
   sectorsTitle: "Setores onde atuamos com jardinagem",
   sectorsText: "A Bioprev cria e mantém espaços verdes para os mais diversos setores, combinando estética, funcionalidade e sustentabilidade em cada projeto.",

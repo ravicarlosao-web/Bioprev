@@ -57,11 +57,11 @@ export interface ServicePageData {
   sectionText: string;
   serviceCards: [ServiceCard, ServiceCard];
   details: ServiceDetailItem[];
-  detailsTitle: string;
-  detailsSubtitle: string;
-  approachTitle: string;
-  approachText: string;
-  approachSteps: ServiceStep[];
+  detailsTitle?: string;
+  detailsSubtitle?: string;
+  approachTitle?: string;
+  approachText?: string;
+  approachSteps?: ServiceStep[];
   whyTitle?: string;
   whyText1?: string;
   whyText2?: string;
@@ -232,36 +232,40 @@ export default function ServicePageTemplate({ data }: { data: ServicePageData })
           </section>
         )}
 
-        <section className="py-14 sm:py-18 md:py-24 bg-[#f2f5f7]">
-          <div className="container mx-auto px-4 sm:px-6 max-w-4xl text-center">
-            <div ref={approachReveal.ref} className={`sr-hidden ${approachReveal.isVisible ? 'sr-visible' : ''}`}>
-              <h2 className="text-2xl sm:text-3xl md:text-[36px] font-medium text-[#333333] mb-5 sm:mb-8 leading-tight">
-                {data.approachTitle}
-              </h2>
-              <p className="text-[#666666] text-sm sm:text-base mb-8 sm:mb-12 leading-relaxed">
-                {data.approachText}
-              </p>
-            </div>
+        {data.approachTitle && data.approachSteps && data.approachSteps.length > 0 && (
+          <section className="py-14 sm:py-18 md:py-24 bg-[#f2f5f7]">
+            <div className="container mx-auto px-4 sm:px-6 max-w-4xl text-center">
+              <div ref={approachReveal.ref} className={`sr-hidden ${approachReveal.isVisible ? 'sr-visible' : ''}`}>
+                <h2 className="text-2xl sm:text-3xl md:text-[36px] font-medium text-[#333333] mb-5 sm:mb-8 leading-tight">
+                  {data.approachTitle}
+                </h2>
+                {data.approachText && (
+                  <p className="text-[#666666] text-sm sm:text-base mb-8 sm:mb-12 leading-relaxed">
+                    {data.approachText}
+                  </p>
+                )}
+              </div>
 
-            <div ref={stepsReveal.ref} className="space-y-2">
-              {data.approachSteps.map((step, idx) => (
-                <div key={idx} className={`sr-hidden stagger-${idx + 1} ${stepsReveal.isVisible ? 'sr-visible' : ''}`}>
-                  <Accordion type="single" collapsible className="w-full">
-                    <AccordionItem value={`item-${idx}`} className="border-none">
-                      <AccordionTrigger className="bg-[#d0dae1] px-4 sm:px-6 md:px-8 py-4 sm:py-5 hover:bg-[#c4cfd7] transition-colors hover:no-underline rounded-none group">
-                        <span className="text-[15px] sm:text-[17px] md:text-[18px] font-medium text-[#333333] text-left">{step.title}</span>
-                        <Plus className="w-5 h-5 sm:w-6 sm:h-6 text-[#333333] shrink-0 transition-transform duration-200 group-data-[state=open]:rotate-45" />
-                      </AccordionTrigger>
-                      <AccordionContent className="bg-white px-4 sm:px-6 md:px-8 py-4 sm:py-6 text-left text-[#666666] text-sm sm:text-base leading-relaxed border-x border-b border-[#d0dae1]">
-                        {step.content}
-                      </AccordionContent>
-                    </AccordionItem>
-                  </Accordion>
-                </div>
-              ))}
+              <div ref={stepsReveal.ref} className="space-y-2">
+                {data.approachSteps.map((step, idx) => (
+                  <div key={idx} className={`sr-hidden stagger-${idx + 1} ${stepsReveal.isVisible ? 'sr-visible' : ''}`}>
+                    <Accordion type="single" collapsible className="w-full">
+                      <AccordionItem value={`item-${idx}`} className="border-none">
+                        <AccordionTrigger className="bg-[#d0dae1] px-4 sm:px-6 md:px-8 py-4 sm:py-5 hover:bg-[#c4cfd7] transition-colors hover:no-underline rounded-none group">
+                          <span className="text-[15px] sm:text-[17px] md:text-[18px] font-medium text-[#333333] text-left">{step.title}</span>
+                          <Plus className="w-5 h-5 sm:w-6 sm:h-6 text-[#333333] shrink-0 transition-transform duration-200 group-data-[state=open]:rotate-45" />
+                        </AccordionTrigger>
+                        <AccordionContent className="bg-white px-4 sm:px-6 md:px-8 py-4 sm:py-6 text-left text-[#666666] text-sm sm:text-base leading-relaxed border-x border-b border-[#d0dae1]">
+                          {step.content}
+                        </AccordionContent>
+                      </AccordionItem>
+                    </Accordion>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        )}
 
         {data.whyTitle && (
           <section className="py-14 sm:py-18 md:py-24 bg-white">
