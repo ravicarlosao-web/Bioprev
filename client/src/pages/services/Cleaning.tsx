@@ -6,7 +6,7 @@ const data: ServicePageData = {
   seoDescription: "Serviços de limpeza industrial, doméstica, urbana e de tanques de combustível em Angola. A Bioprev mantém os seus espaços limpos e saudáveis em Luanda, Benguela e Huambo.",
   seoKeywords: "limpeza profissional Angola, limpeza industrial Luanda, limpeza doméstica Angola, varredura urbana, limpeza tanques combustível, Bioprev limpeza",
   seoCanonical: "/services/cleaning",
-  heroImage: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&q=80&w=1920",
+  heroImage: "https://images.unsplash.com/photo-1740657254989-42fe9c3b8cce?q=80&w=1312&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   heroImageAlt: "Materiais de limpeza profissional em ambiente higienizado",
   breadcrumbLabel: "Serviços de limpeza",
   heroTitle: "Serviços de limpeza\nprofissional",
