@@ -1,4 +1,3 @@
-import { ChevronDown } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const heroBg = "https://plus.unsplash.com/premium_photo-1682126082802-983618de1dd9?w=1920&auto=format&fit=crop&q=90&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGVzdCUyMGNvbnRyb2x8ZW58MHx8MHx8fDA%3D";
@@ -36,21 +35,6 @@ export default function Hero() {
             >
               Contate o seu especialista local da Bioprev
             </button>
-          </div>
-        </div>
-
-        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] z-20">
-          <svg 
-            viewBox="0 0 1200 120" 
-            preserveAspectRatio="none" 
-            className="relative block w-full h-[40px]"
-            fill="#ffffff"
-          >
-            <path d="M0,0 L600,120 L1200,0 L1200,120 L0,120 Z"></path>
-          </svg>
-          
-          <div className={`absolute bottom-[25px] left-1/2 transform -translate-x-1/2 z-30 transition-all duration-1000 delay-700 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-3'}`}>
-            <ChevronDown className="text-white w-12 h-12 stroke-[1px] animate-float" />
           </div>
         </div>
       </div>
