@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-
-const heroBg = "https://plus.unsplash.com/premium_photo-1682126082802-983618de1dd9?w=1920&auto=format&fit=crop&q=90&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGVzdCUyMGNvbnRyb2x8ZW58MHx8MHx8fDA%3D";
+import heroBg from "@/assets/images/gardening-hero-new.jpg";
 
 export default function Hero() {
   const [loaded, setLoaded] = useState(false);
