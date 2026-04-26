@@ -1,6 +1,6 @@
 import { Hotel, Utensils, Briefcase, Building2, Home } from "lucide-react";
 import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
-import jardinagemHero from "../../assets/images/gardening-hero-new.jpg";
+import jardinagemHero from "@/assets/images/gardening-hero-new.jpg";
 import gardeningCard1 from "../../assets/images/gardening-card1.jpg";
 import gardeningCard2 from "../../assets/images/gardening-card2.jpg";
 
