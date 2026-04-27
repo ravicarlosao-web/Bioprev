@@ -1,12 +1,13 @@
 import { Droplets, FlaskConical, Truck, ThermometerSun, ShieldCheck, Clock, Building2, Users, Hotel, Factory, Warehouse, HardHat } from "lucide-react";
 import ServicePageTemplate, { type ServicePageData } from "./ServicePageTemplate";
+import aguaHero from "@/assets/images/service-agua-hero.jpg";
 
 const data: ServicePageData = {
   seoTitle: "Fornecimento de Água Potável em Angola",
   seoDescription: "Fornecimento de água potável certificada para eventos, indústria e construção em Angola. A Bioprev garante água pura e segura com cisternas certificadas.",
   seoKeywords: "água potável Angola, fornecimento água Luanda, cisternas água certificada, abastecimento água Angola, Bioprev água",
   seoCanonical: "/services/water",
-  heroImage: "https://images.unsplash.com/photo-1548936226-be5006d2e279?auto=format&fit=crop&q=75&w=1280",
+  heroImage: aguaHero,
   heroImageAlt: "Fornecimento de água potável",
   breadcrumbLabel: "Água potável",
   heroTitle: "Fornecimento de água\npotável",
