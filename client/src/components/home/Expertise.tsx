@@ -43,7 +43,7 @@ export default function Expertise() {
         className={`container mx-auto px-4 max-w-6xl text-center mb-10 sm:mb-16 sr-hidden ${headerReveal.isVisible ? 'sr-visible' : ''}`}
       >
         <h2 className="text-2xl sm:text-3xl md:text-[32px] font-medium text-[#333333] mb-6 sm:mb-8 leading-tight">
-          Capacitando empresas com experiência nacional em controle de pragas
+          Empresa com experiência nacional em controle de pragas.
         </h2>
         <p className="text-[#333333] max-w-4xl mx-auto leading-relaxed text-[16px]">
           Na Bioprev, trazemos excelência no controlo de pragas, protegendo empresas em todo o país com a nossa experiência incomparável e soluções inovadoras. Veja por que você prosperará em parceria com a nossa <span className="text-[#007cc3] font-bold cursor-pointer hover:underline">Equipa de Gestão de Contas Nacionais.</span>
