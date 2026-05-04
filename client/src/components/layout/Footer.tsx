@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Company Certificate */}
         <div className="rounded-3xl border border-[#e5e7eb] bg-white p-5 mb-10 sm:mb-16 shadow-sm flex items-center justify-center">
-          <img src={certificateImage} alt="Certificado EIC ISO 9001 da Bioprev" className="w-full max-w-md object-contain" loading="lazy" />
+          <img src={certificateImage} alt="Certificado EIC ISO 9001 da Bioprev" className="w-full max-w-xs object-contain" loading="lazy" />
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 mb-10 sm:mb-16">
