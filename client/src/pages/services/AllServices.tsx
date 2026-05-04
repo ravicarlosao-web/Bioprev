@@ -43,7 +43,7 @@ export default function AllServices() {
         <section className="relative h-[300px] sm:h-[380px] md:h-[460px] lg:h-[500px] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img 
-              src="blob:https://app.titan.email/c301f936-baa2-4ffe-a27b-d2791cd8132d" 
+              src="https://res.cloudinary.com/ddcgvnakp/image/upload/v1777903722/37_1_gpayxe.jpg" 
               alt="Técnico de controle de pragas" 
               className="w-full h-full object-cover"
             />
