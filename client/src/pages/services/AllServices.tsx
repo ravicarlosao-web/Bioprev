@@ -43,7 +43,7 @@ export default function AllServices() {
         <section className="relative h-[300px] sm:h-[380px] md:h-[460px] lg:h-[500px] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img 
-              src="https://res.cloudinary.com/ddcgvnakp/image/upload/v1777903722/37_1_gpayxe.jpg" 
+              src="https://res.cloudinary.com/ddcgvnakp/image/upload/v1777906774/imagem_1_tvee6f.png" 
               alt="Técnico de controle de pragas" 
               className="w-full h-full object-cover"
             />
