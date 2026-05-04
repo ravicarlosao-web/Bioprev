@@ -3,7 +3,7 @@ import Header from "@/components/layout/Header";
 import { Link } from "wouter";
 import Footer from "@/components/layout/Footer";
 import SEOHead, { breadcrumbSchema } from "@/components/SEOHead";
-import carreirasHero from "../../assets/images/carreiras-hero.jpg";
+import carreirasHero from "../../assets/images/careers-hero.jpg";
 
 export default function Careers() {
   return (
