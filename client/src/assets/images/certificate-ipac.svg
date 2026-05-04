@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" role="img" aria-labelledby="cert2Title cert2Desc">
+  <title id="cert2Title">Certificado IPAC</title>
+  <desc id="cert2Desc">Selo de certificação IPAC com estrela e texto de qualidade.</desc>
+  <rect width="420" height="280" rx="28" fill="#ffffff" stroke="#181818" stroke-width="6"/>
+  <polygon points="210,60 250,140 210,120 170,140" fill="#ff2f6b"/>
+  <circle cx="210" cy="180" r="62" fill="#f4f4f5" stroke="#181818" stroke-width="5"/>
+  <text x="210" y="181" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#181818">IPAC</text>
+  <text x="210" y="215" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="500" fill="#181818">Acreditado</text>
+  <rect x="110" y="34" width="200" height="28" rx="14" fill="#181818"/>
+  <text x="210" y="54" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Empresa certificada</text>
+</svg>

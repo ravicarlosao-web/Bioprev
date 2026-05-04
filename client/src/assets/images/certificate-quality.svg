@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" role="img" aria-labelledby="cert3Title cert3Desc">
+  <title id="cert3Title">Certificado de Qualidade</title>
+  <desc id="cert3Desc">Selo de qualidade com fita e texto de certificado.</desc>
+  <rect width="420" height="280" rx="28" fill="#ffffff" stroke="#181818" stroke-width="6"/>
+  <path d="M110 84h200v80H110z" fill="#fef3c7" stroke="#181818" stroke-width="5"/>
+  <path d="M185 180l15 48 15-48" fill="#ffb703" stroke="#181818" stroke-width="5"/>
+  <circle cx="210" cy="118" r="30" fill="#181818"/>
+  <text x="210" y="126" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff">OK</text>
+  <text x="210" y="60" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#181818">Certificado</text>
+  <text x="210" y="220" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" fill="#181818">Empresa Bioprev</text>
+</svg>

@@ -1,16 +1,25 @@
 import { Link } from "wouter";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import logoImg from "@/assets/images/logo.png";
+import certificateEicIso from "@/assets/images/certificate-eic-iso9001.svg";
+import certificateIpac from "@/assets/images/certificate-ipac.svg";
+import certificateQuality from "@/assets/images/certificate-quality.svg";
 
 export default function Footer() {
   return (
     <footer className="bg-white border-t-8 border-[#f2c92f] pt-16 pb-8">
       <div className="container mx-auto px-4 max-w-6xl">
-        {/* Company Info Banner */}
-        <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10 mb-10 sm:mb-16 text-sm text-[#666666]">
-          <span className="flex items-center gap-2">📍 Luanda · Benguela · Huambo</span>
-          <span className="flex items-center gap-2">📞 +244 928 737 888</span>
-          <span className="flex items-center gap-2">✉️ geral@bioprev.com</span>
+        {/* Company Certificates */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10 sm:mb-16 items-stretch">
+          <div className="rounded-3xl border border-[#e5e7eb] bg-white p-5 shadow-sm flex items-center justify-center">
+            <img src={certificateEicIso} alt="Certificado ISO 9001 da Bioprev" className="max-h-32 object-contain" loading="lazy" />
+          </div>
+          <div className="rounded-3xl border border-[#e5e7eb] bg-white p-5 shadow-sm flex items-center justify-center">
+            <img src={certificateIpac} alt="Certificado IPAC da Bioprev" className="max-h-32 object-contain" loading="lazy" />
+          </div>
+          <div className="rounded-3xl border border-[#e5e7eb] bg-white p-5 shadow-sm flex items-center justify-center">
+            <img src={certificateQuality} alt="Certificado de qualidade da Bioprev" className="max-h-32 object-contain" loading="lazy" />
+          </div>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 mb-10 sm:mb-16">
